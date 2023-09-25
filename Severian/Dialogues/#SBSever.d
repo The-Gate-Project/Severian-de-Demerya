@@ -1104,11 +1104,11 @@ EXIT
 
 CHAIN
 IF WEIGHT #-999 ~Global("#SeverTalkHaerDalis","GLOBAL",0)
-                 InParty("Haer'Dalis")
+                 InParty("HaerDalis")
                  InParty("#Severian")
                  CombatCounter(0)
                  !See([ENEMY])
-                 !StateCheck("Haer'Dalis",CD_STATE_NOTVALID)
+                 !StateCheck("HaerDalis",CD_STATE_NOTVALID)
                  !StateCheck("#Severian",CD_STATE_NOTVALID)~ THEN BHAERDA SeverTalkHaerDalis1
 @800625
 DO ~SetGlobal("#SeverTalkHaerDalis","GLOBAL",1)~
@@ -1121,11 +1121,11 @@ EXIT
 
 CHAIN
 IF WEIGHT #-999 ~Global("#SeverTalkHaerDalis","GLOBAL",1)
-                 InParty("Haer'Dalis")
+                 InParty("HaerDalis")
                  InParty("#Severian")
                  CombatCounter(0)
                  !See([ENEMY])
-                 !StateCheck("Haer'Dalis",CD_STATE_NOTVALID)
+                 !StateCheck("HaerDalis",CD_STATE_NOTVALID)
                  !StateCheck("#Severian",CD_STATE_NOTVALID)~ THEN BHAERDA SeverTalkHaerDalis2
 @800661
 DO ~SetGlobal("#SeverTalkHaerDalis","GLOBAL",2)~
@@ -1138,11 +1138,11 @@ EXIT
 
 CHAIN
 IF WEIGHT #-999 ~Global("#SeverTalkHaerDalis","GLOBAL",2)
-                 InParty("Haer'Dalis")
+                 InParty("HaerDalis")
                  InParty("#Severian")
                  CombatCounter(0)
                  !See([ENEMY])
-                 !StateCheck("Haer'Dalis",CD_STATE_NOTVALID)
+                 !StateCheck("HaerDalis",CD_STATE_NOTVALID)
                  !StateCheck("#Severian",CD_STATE_NOTVALID)~ THEN BHAERDA SeverTalkHaerDalis3
 @800900
 DO ~SetGlobal("#SeverTalkHaerDalis","GLOBAL",3)~
@@ -1161,11 +1161,11 @@ EXIT
 
 CHAIN
 IF WEIGHT #-999 ~Global("#SeverTalkHaerDalis","GLOBAL",3)
-                 InParty("Haer'Dalis")
+                 InParty("HaerDalis")
                  InParty("#Severian")
                  CombatCounter(0)
                  !See([ENEMY])
-                 !StateCheck("Haer'Dalis",CD_STATE_NOTVALID)
+                 !StateCheck("HaerDalis",CD_STATE_NOTVALID)
                  !StateCheck("#Severian",CD_STATE_NOTVALID)~ THEN BHAERDA SeverTalkHaerDalis4
 @800677
 DO ~SetGlobal("#SeverTalkHaerDalis","GLOBAL",4)~
@@ -1176,12 +1176,12 @@ DO ~SetGlobal("#SeverTalkHaerDalis","GLOBAL",4)~
 EXIT
 
 CHAIN
-IF WEIGHT #-999 ~InParty("Haer'Dalis")
+IF WEIGHT #-999 ~InParty("HaerDalis")
                  InParty("#Severian")
                  Global("#SeverTalkHaerDalis","GLOBAL",4)
                  CombatCounter(0)
                  !See([ENEMY])
-                 !StateCheck("Haer'Dalis",CD_STATE_NOTVALID)
+                 !StateCheck("HaerDalis",CD_STATE_NOTVALID)
                  !StateCheck("#Severian",CD_STATE_NOTVALID)~ THEN "#SBSever" SeverTalkHaerDalis5
 @800684
 DO ~SetGlobal("#SeverTalkHaerDalis","GLOBAL",5)~ 
@@ -1194,11 +1194,11 @@ EXIT
 CHAIN
 IF WEIGHT #-999 ~Global("#SeverRomanceActive","GLOBAL",1)
                  Global("#SeverTalkHaerDalis","GLOBAL",5)
-                 InParty("Haer'Dalis")
+                 InParty("HaerDalis")
                  InParty("#Severian")
                  CombatCounter(0)
                  !See([ENEMY])
-                 !StateCheck("Haer'Dalis",CD_STATE_NOTVALID)
+                 !StateCheck("HaerDalis",CD_STATE_NOTVALID)
                  !StateCheck("#Severian",CD_STATE_NOTVALID)~ THEN BHAERDA SeverTalkHaerDalis6
 @800694 = @800695
 DO ~SetGlobal("#SeverTalkHaerDalis","GLOBAL",6)~ 

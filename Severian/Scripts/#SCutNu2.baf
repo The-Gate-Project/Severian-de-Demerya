@@ -21,6 +21,6 @@ THEN
     Wait(1)
     FadeFromColor([20.0],0)
     MoveViewPoint([4418.2756],INSTANT)
-    ActionOverride("#SValy",StartDialogueNoSet(Player1))
+    ActionOverride("#SValyria",StartDialogueNoSet(Player1))
     EndCutSceneMode()
 END

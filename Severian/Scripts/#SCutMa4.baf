@@ -9,7 +9,7 @@ THEN
     CreateVisualEffectObject("SPSARMOR","#Severian")
     SetGlobal("#SeverianMailikki","GLOBAL",5)
     Wait(1)
-    ActionOverride("#SValy",StartDialogueNoSet(Player1))
+    ActionOverride("#SValyria",StartDialogueNoSet(Player1))
     EndCutSceneMode()
 END
 

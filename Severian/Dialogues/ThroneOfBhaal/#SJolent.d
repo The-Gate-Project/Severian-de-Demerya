@@ -73,7 +73,7 @@ IF ~~ THEN BEGIN JourChance
 SAY @207017
 IF ~~ THEN DO ~SetGlobal("#SJolentaSeverian","GLOBAL",7)
                StartCutSceneMode()
-               StartCutScene("#SCtGro5")~ EXIT
+               StartCutScene("#SCtGro2")~ EXIT
 END
 
 END

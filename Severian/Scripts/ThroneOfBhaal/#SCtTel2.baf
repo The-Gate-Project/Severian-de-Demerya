@@ -17,7 +17,7 @@ THEN
     Wait(1)
     FadeFromColor([20.0],0)
     Wait(1)
-    ActionOverride(Player1,CreateItem("#SGlace",0,0,0))
-    ActionOverride(Player1,CreateItem("#SArc",0,0,0))
+    //ActionOverride(Player1,CreateItem("#SGlace",0,0,0)) // Missing item
+    //ActionOverride(Player1,CreateItem("#SArc",0,0,0)) // Missing item
     EndCutSceneMode()
 END

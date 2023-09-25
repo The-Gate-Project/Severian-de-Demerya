@@ -1277,6 +1277,14 @@ COMPILE ~Severian/Scripts/#SAr2008.baf~
 COPY ~Severian/Areas/#SAr1800.are~ ~override~
 COMPILE ~Severian/Scripts/#SAr1800.baf~
 
+// Missing cre
+
+COPY ~Severian/Creatures/#SevRess.cre~ ~override~
+COPY ~Severian/Creatures/#SRune1.cre~ ~override~
+COPY ~Severian/Creatures/#SRune2.cre~ ~override~
+COPY ~Severian/Creatures/#SQUIRR.CRE~ ~override~
+
+
 // CUTSCENES POUR SOA
 
 COMPILE ~Severian/Scripts/#SCut800.baf~

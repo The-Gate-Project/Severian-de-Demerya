@@ -843,10 +843,10 @@ END
 
 END
 
-BEGIN SAREV25J
+APPEND ~SAREV25J~
 
 
-IF ~Global("#SeverTalkSarevokToB","GLOBAL",3)~ THEN BEGIN SeverianTueSarevok
+IF ~Global("#SeverTalkSarevokToB","GLOBAL",3)~ THEN BEGIN SarevokTueSeverian
 SAY @210115
 IF ~~ THEN REPLY @210116 GOTO RendreService
 IF ~~ THEN REPLY @210117 GOTO SoufflerBougie
@@ -878,6 +878,8 @@ IF ~~ THEN DO ~SetGlobal("#SeverTalkSarevokToB","GLOBAL",4)
                LeaveParty()
                Enemy()
                Attack(Player1)~ EXIT
+END
+
 END
 
 APPEND ~#SValy25~
