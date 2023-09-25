@@ -301,7 +301,7 @@ THEN
     CreateCreature("#SMoust",[4485.3012],15)
     CreateCreature("#SLouve",[4686.3083],6)
     CreateCreature("#SBlaidd",[4590.3057],12)
-    CreateCreature("#SMichele",[4046.3239],15)
+    CreateCreature("#SMichel",[4046.3239],15)
     CreateCreature("#Smfar01",[4090.3227],15)
     CreateCreature("#Smfar02",[4069.3263],8)
     CreateCreature("#Skid01",[4321.3306],7)
@@ -336,7 +336,7 @@ END
 IF
   Global("#SConvivesAppear","GLOBAL",15)
   !InMyArea("#SDorrana")
-  !InMyArea("#SValy")
+  !InMyArea("#SValyria")
   !InMyArea("#SKalas")
   !InMyArea("#SNaenia")
 THEN
@@ -401,7 +401,7 @@ THEN
  CreateCreatureObjectEffect("#SDorra","SPDIMDR1",Player1)
  CreateCreatureObjectEffect("#SNaenia","SPDIMDR1",Player1)
  CreateCreatureObjectEffect("#SKalas","SPDIMDR1",Player1)
- ActionOverride("#SValy",StartDialogNoSet(Player1))
+ ActionOverride("#SValyria",StartDialogNoSet(Player1))
 END
 
 IF
@@ -450,7 +450,7 @@ Global("#SFinalRomanceSuivantsMailikki","GLOBAL",4)
 !InMyArea("#SDuorok")
 !InMyArea("#SPerian")
 !InMyArea("#SDorrana")
-!InMyArea("#SValy")
+!InMyArea("#SValyria")
 !InMyArea("#SKalas")
 !InMyArea("#SNaenia")
 THEN

@@ -40,7 +40,7 @@ IF
 THEN
   RESPONSE #100
     SetGlobal("#SeverQuest1","GLOBAL",13)
-     ActionOverride("#IsaRat",DestroySelf())
+     ActionOverride("#SIsaRat",DestroySelf())
      ActionOverride("#Severian",StartDialogNoSet(Player1))
 END
 

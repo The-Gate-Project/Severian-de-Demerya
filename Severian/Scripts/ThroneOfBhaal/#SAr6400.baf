@@ -8,8 +8,8 @@ SetGlobal("#SeverYohnLeBronze","GLOBAL",3)
 CreateCreature("#SMaryan",[2172.668],4)
 CreateCreature("#SWilos",[2041.680],12)
 CreateCreature("#SPetit",[2121.619],0)
-CreateCreature("#SYaga1",[1953.760],0)
-CreateCreature("#SYaga2",[2007.828],0)
+CreateCreature("#SYaga1",[1953.760],0) // Missing Creature
+CreateCreature("#SYaga2",[2007.828],0) // Missing Creature
 END
 
 IF  
