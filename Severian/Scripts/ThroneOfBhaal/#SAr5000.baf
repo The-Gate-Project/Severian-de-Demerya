@@ -1,0 +1,12 @@
+// APPARITION DU MASQUE A SARADUSH
+
+
+IF
+  InParty("#Severian")
+  Global("#SeverRomanceActive","GLOBAL",2)
+  Global("#SeverianMask","GLOBAL",0)
+THEN 
+  RESPONSE #100
+    SetGlobal("#SeverianMask","GLOBAL",1)
+    CreateCreature("#SMask",[1722.1381],15)
+END

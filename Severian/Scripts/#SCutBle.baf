@@ -1,0 +1,24 @@
+
+IF
+  Global("#SeverianBlessure","GLOBAL",0)
+THEN
+  RESPONSE #100
+    CutSceneId(Player1)
+    MoveViewPoint([2062.3245],INSTANT)
+    FadeToColor([20.0],0)
+    Wait(1)
+    LeaveAreaLUA("AR1105","",[465.421],10)
+    ActionOverride(Player2,LeaveAreaLUA("AR1105","",[967.210],2))
+    ActionOverride(Player3,LeaveAreaLUA("AR1105","",[1016.210],2))
+    ActionOverride(Player4,LeaveAreaLUA("AR1105","",[1016.246],2))
+    ActionOverride(Player5,LeaveAreaLUA("AR1105","",[1064.246],2))
+    ActionOverride(Player6,LeaveAreaLUA("AR1105","",[1064.282],2))
+    SetGlobal("#SeverianBlessure","GLOBAL",1)
+    CreateCreatureImpassable("#SevBles",[500.390], 6)
+    Wait(1)
+    FadeFromColor([20.0],0)
+    Wait(1)
+    PlaySong(0)
+    PlaySound("#SMusicF")
+    EndCutSceneMode()
+END

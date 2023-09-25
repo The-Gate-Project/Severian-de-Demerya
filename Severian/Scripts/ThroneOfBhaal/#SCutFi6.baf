@@ -1,0 +1,17 @@
+IF
+ True()
+THEN 
+ RESPONSE #100
+ CutSceneId(Player1)
+ Wait(1)
+ FadeToColor([20.0],0)
+ Wait(1)
+ SetGlobal("#SDernierMiroirAme","GLOBAL",9)
+ RestorePartyLocations()
+ Wait(1)
+ FadeFromColor([20.0],0)
+ ActionOverride("#Severian",Face(4))
+ Wait(2)
+ ActionOverride("#SValy25",StartDialogueNoSet(Player1))
+ EndCutSceneMode()
+END

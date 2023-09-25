@@ -1,0 +1,36 @@
+// RENCONTRE FORET DE TETHYR
+
+IF
+ Range(Player1,40)
+ InParty("#Severian")
+ Global("#SeverRomanceActive","GLOBAL",2)
+ Global("#SeverYohnLeBronze","GLOBAL",3)
+ !StateCheck(Player1,CD_STATE_NOTVALID)
+ !StateCheck("#Severian",CD_STATE_NOTVALID)
+THEN
+ RESPONSE #100
+PlaySong(0)
+PlaySound("#SMus25L")
+SetGlobal("#SeverYohnLeBronze","GLOBAL",4)
+StartDialogueNoSet(Player1)
+END
+
+IF 
+ Range(Player1,40)
+ InParty("#Severian")
+ 
+Global("#SeverYohnLeBronze","GLOBAL",5)
+ !StateCheck(Player1,CD_STATE_NOTVALID)
+ !StateCheck("#Severian",CD_STATE_NOTVALID)
+ CombatCounter(0)
+ !Detect([enemy])
+THEN
+ RESPONSE #100
+ PlaySong(0)
+ PlaySound("#SMus25L")
+ SetGlobal("#SeverYohnLeBronze","GLOBAL",6)
+ StartDialogueNoSet(Player1)
+END
+ 
+
+

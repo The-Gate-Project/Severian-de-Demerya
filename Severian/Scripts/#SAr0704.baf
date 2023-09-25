@@ -1,0 +1,123 @@
+// Spawns Mithrest
+
+IF
+  Global("#SeverExists","AR0704",0)
+  Gender(Protagonist,FEMALE)
+  OR(3)
+  !Alignment(Player1,LAWFUL_EVIL)
+  !Alignment(Player1,NEUTRAL_EVIL)
+  !Alignment(Player1,CHAOTIC_EVIL)
+  OR(2)
+  CheckStatGT(Player1,10,CHR)
+  CheckStat(Player1,10,CHR)
+  OR(3)
+  Race(Player1,HUMAN)
+  Race(Player1,ELF)
+  Race(Player1,HALF_ELF)
+THEN
+  RESPONSE #100
+    SetGlobal("#SeverExists","AR0704",1)
+    CreateCreature("#Sever",[460.384],14)
+END
+
+
+IF
+  Global("#SHugorCreation","AR0704",3)
+THEN
+  RESPONSE #100
+    StartCutSceneMode()
+    StartCutScene("#SCut704")
+END
+
+IF
+  Global("#SHugorAttackSeverian","AR0704",1)
+  Global("#SHugorAttackCharname","AR0704",1)
+THEN
+  RESPONSE #100
+    SetGlobal("#SHugorAttackSeverian","AR0704",2)
+    SetGlobal("#SHugorAttackCharname","AR0704",2)
+    ActionOverride("#SHugor",Attack(NearestEnemyOf(Myself))
+    ActionOverride("#SMerc1",Attack(NearestEnemyOf(Myself))
+    ActionOverride("#SMerc2",Attack(NearestEnemyOf(Myself))
+    ActionOverride("#Severian",Attack("#SHugor"))
+END
+
+
+IF
+  Dead("#SHugor")
+  !Dead("#SMerc1")
+THEN
+  RESPONSE #100
+    ActionOverride("#Severian",Attack("#SMerc1"))
+END
+
+IF
+  Dead("#SHugor")
+  Dead("#SMerc1")
+  !Dead("#SMerc2")
+THEN
+  RESPONSE #100
+    ActionOverride("#Severian",Attack("#SMerc2"))
+END
+
+
+IF
+ Global("#SeverianInvisible","AR0704",1)
+THEN
+  RESPONSE #100
+   SetGlobal("#SeverianInvisible","AR0704",2)
+   DisplayStringHead("#Severian",@300)
+   Wait(3)
+   ReallyForceSpell("#Severian",WIZARD_IMPROVED_INVISIBILITY)
+END
+
+IF
+  Global("#SDeadHugor","GLOBAL",0)
+  Dead("#SHugor")
+  Dead("#SMerc1")
+  Dead("#SMerc2")
+THEN
+  RESPONSE #100
+    SetGlobal("#SDeadHugor","GLOBAL",1)
+    ActionOverride("#Severian",StartDialogueNoSet(Player1))
+END
+
+
+IF 
+ Global("#SDeadHugor","GLOBAL",2)
+ Global("#SRomanceRepasMithrest","AR0704",3)
+  THEN RESPONSE #100
+   SetDialog("#SeverR")
+   ActionOverride("#Severian",Dialog(Player1))
+END
+
+IF
+ Dead("#SHugor")
+ Global("#SExperienceHugor","GLOBAL",0)
+THEN
+  RESPONSE #100
+ AddexperienceParty(5000)
+ SetGlobal("#SExperienceHugor","GLOBAL",1)
+END
+    
+IF
+ Dead("#SMerc1")
+ Global("#SExperienceMerc1","GLOBAL",0)
+THEN
+  RESPONSE #100
+ AddexperienceParty(2000)
+ SetGlobal("#SExperienceMerc1","GLOBAL",1)
+END
+
+IF
+ Dead("#SMerc2")
+ Global("#SExperienceMerc2","GLOBAL",0)
+THEN
+  RESPONSE #100
+ AddexperienceParty(2000)
+ SetGlobal("#SExperienceMerc2","GLOBAL",1)
+END
+    
+
+
+

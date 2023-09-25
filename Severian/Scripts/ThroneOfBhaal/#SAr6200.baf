@@ -1,0 +1,85 @@
+// EPILOGUE 1
+// CHARNAME FEMME
+// DIVINITE
+// SI ROMANCE
+
+IF
+   Global("StartEndBios","AR6200",1)
+   InParty("#Severian")
+   Global("#SeverianBio","GLOBAL",0)
+   Global("#SeverRomanceActive","GLOBAL",2)
+   Global("PlayerChoseEssence","GLOBAL",1)
+THEN
+   RESPONSE #100
+      SetGlobal("#SeverianBio","GLOBAL",1)
+      TextScreen("#Sevpil1")
+END
+
+// EPILOGUE 3
+// CHARNAME FEMME
+// MORTELLE
+// ROMANCE
+
+
+IF
+   Global("StartEndBios","AR6200",1)
+   InParty("#Severian")
+   Global("#SeverianBio","GLOBAL",0)
+   Global("#SeverRomanceActive","GLOBAL",2)
+   Global("PlayerChoseEssence","GLOBAL",0)
+THEN
+   RESPONSE #100
+      SetGlobal("#SeverianBio","GLOBAL",1)
+      TextScreen("#Sevpil3")
+END
+
+
+// EPILOGUE 2
+// CHARNAME FEMME
+// NO ROMANCE
+// SEVERIAN EST CN OU LM
+
+
+IF
+   Global("StartEndBios","AR6200",1)
+   InParty("#Severian")
+   Global("#SeverianBio","GLOBAL",0)
+   Gender(Protagonist,FEMALE)
+   !Global("#SeverRomanceActive","GLOBAL",2)
+   OR(2)
+   Alignment("#Severian",CHAOTIC_NEUTRAL)
+   Alignment("#Severian",LAWFUL_EVIL)
+   OR(2)
+   Global("PlayerChoseEssence","GLOBAL",1)
+   Global("PlayerChoseEssence","GLOBAL",0)
+THEN
+   RESPONSE #100
+      SetGlobal("#SeverianBio","GLOBAL",1)
+      TextScreen("#Sevpil2")
+END
+
+
+
+// EPILOGUE 4
+// CHARNAME FEMME
+// NO ROMANCE
+// SEVERIAN EST CB
+
+
+IF
+   Global("StartEndBios","AR6200",1)
+   InParty("#Severian")
+   Global("#SeverianBio","GLOBAL",0)
+   Gender(Protagonist,FEMALE)
+   !Global("#SeverRomanceActive","GLOBAL",2)
+   Alignment("#Severian",CHAOTIC_GOOD)
+   OR(2)
+   Global("PlayerChoseEssence","GLOBAL",0)
+   Global("PlayerChoseEssence","GLOBAL",1)
+THEN
+   RESPONSE #100
+      SetGlobal("#SeverianBio","GLOBAL",1)
+      TextScreen("#Sevpil4")
+END
+
+

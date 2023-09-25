@@ -1,0 +1,25 @@
+IF
+ True()
+THEN
+ RESPONSE #100
+CutSceneId(Player1)
+SetGlobal("#SDeadSeverian","GLOBAL",5)
+MoveViewObject("#SValy3",INSTANT)
+Wait(2)
+CreateVisualEffectObject("SPCLOUD2","#SValy3")
+Wait(2)
+ActionOverride("#SValy3",DestroySelf())
+Wait(2)
+MoveToPoint([1986.1145])
+Face(12)
+ActionOverride("#Severian",MoveToPoint([2025.1146]))
+ActionOverride("#Severian",Face(4))
+MoveViewPoint([2025.1146],FAST)
+Wait(1)
+DisPlayStringHead(Player1,@203250)
+Wait(2)
+ActionOverride("#Severian",StartDialogueNoSet(Player1))
+EndCutSceneMode()
+END
+
+

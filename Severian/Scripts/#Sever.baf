@@ -1,0 +1,686 @@
+IF
+  !HasItemEquiped("#SArmor",Myself)
+  GlobalTimerExpired("#STmMalus","LOCALS")
+  AreaType(OUTDOOR)
+  AreaType(DAYNIGHT)
+  !TimeOfDay(NIGHT)
+THEN
+  RESPONSE #100
+    ReallyForceSpellRES("#SMalus4",Myself)
+    SetGlobalTimer("#STmMalus","LOCALS",TWO_MINUTES)
+
+END
+
+IF
+   GlobalGT("#SeverJoined","GLOBAL",1)
+THEN
+  RESPONSE #100
+     SetGlobal("#SeverJoined","GLOBAL",3)
+     SetGlobalTimer("#STmMalus","LOCALS",1)
+     Continue()
+END
+
+IF
+   Global("#SeverJoined","GLOBAL",2) // Premier engagement de Severian
+THEN
+  RESPONSE #100
+    SetGlobal("#SCimetiere", "GLOBAL", -1)
+    SetGlobalTimer("#SMekhrenTimer","LOCALS",ONE_DAY)
+    SetGlobal("#SeverQuest1","GLOBAL",1)
+    ActionOverride("#SBlaidd", StartDialog("#SKikOut","#Severian")
+    SetGlobal("#SeverJoined","GLOBAL",1)
+END
+
+IF
+  GlobalTimerExpired("#SMekhrenTimer","LOCALS")
+  GlobalLT("#SeverQuest1","GLOBAL",101)
+THEN
+  RESPONSE #100
+    IncrementGlobal("#SMekhrenRemind","LOCALS",1)
+    StartDialogNoSet(Player1)
+END
+
+
+// CHAPITRE 2
+
+ IF
+   Global("#SDecisifImnesvale","AR1100",9)
+ THEN
+   RESPONSE #100
+    SetDialog("#SeverR")
+    Dialog(Player1)
+END
+
+IF
+  Global("#SeverMallo","GLOBAL",1)
+THEN
+  RESPONSE #100
+    PlaySong(0)
+    PlaySound("#SMusicJ")
+    SetGlobal("#SeverMallo","GLOBAL",2)
+    SetDialog("#SeverR")
+    Dialog(Player1)
+END
+
+IF
+  Global("#SeverEnterrement","GLOBAL",10)
+ THEN
+   RESPONSE #100
+     PlaySong(0)
+     PlaySound("#SMusicJ")
+     SetDialog("#SeverR")
+     Dialog(Player1)
+END 
+
+IF
+ Global("#SeverianMailikki","GLOBAL",8)
+ !InMyArea("#SPerian")
+ !InMyArea("#SDorrana")
+ !InMyArea("#SValy")
+ !InMyArea("#SKalas")
+ !InMyArea("#SNaenia")
+ !InMyArea("#SDuorok")
+THEN
+ RESPONSE #100
+ SetGlobal("#SeverianMailikki","GLOBAL",9)  
+ SetDialog("#SeverR")
+ Dialog(Player1)
+END
+
+IF
+ Global("#SeverianMailikki","GLOBAL",-2)
+ !InMyArea("#SPerian")
+ !InMyArea("#SDuorok")
+THEN
+ RESPONSE #100
+   SetGlobal("#SeverianMailikki","GLOBAL",-3)
+   SetDialog("#SeverR")
+   Dialog(Player1)
+END
+
+IF
+ Global("#SeverianMailikki","GLOBAL",16)
+THEN
+ RESPONSE #100
+   SetDialog("#SeverR")
+   Dialog(Player1)
+END
+
+
+IF
+ !InMyArea("#SPerian")
+ !InMyArea("#SDuorok")
+ !InMyArea("#SMichel")
+ !InMyArea("#SMallory")
+  Global("#SPinkieQuete","GLOBAL",7)
+  Global("#SMalloQuete","GLOBAL",8)
+THEN
+  RESPONSE #100
+  SetGlobal("#SPinkieQuete","GLOBAL",8)
+  SetGlobal("#SMalloQuete","GLOBAL",9)
+END
+
+IF
+  Global("#SPinkieQuete","GLOBAL",8)
+  Global("#SMalloQuete","GLOBAL",9)
+THEN
+ RESPONSE #100
+  SetDialog("#SeverR")
+  Dialog(Player1)
+END
+
+IF
+ Global("#SConvivesAppear","GLOBAL",4)
+THEN
+  RESPONSE #100
+  SetDialog("#SeverR")
+  Dialog(Player1)
+END
+
+IF
+ Global("#SConvivesAppear","GLOBAL",6)
+THEN
+  RESPONSE #100
+  SetDialog("#SeverR")
+  Dialog(Player1)
+END
+
+IF
+  Global("#SConvivesAppear","GLOBAL",8)
+THEN
+  RESPONSE #100
+  SetDialog("#SeverR")
+  Dialog(Player1)
+END
+
+IF
+  Global("#SConvivesAppear","GLOBAL",10)
+THEN
+  RESPONSE #100
+  SetDialog("#SeverR")
+  Dialog(Player1)
+END
+
+IF
+  Global("#SConvivesAppear","GLOBAL",12)
+THEN
+  RESPONSE #100
+  SetDialog("#SeverR")
+  Dialog(Player1)
+END
+
+IF
+  Global("#SConvivesAppear","GLOBAL",20)
+THEN
+  RESPONSE #100
+  SetDialog("#SeverR")
+  Dialog(Player1)
+END
+
+IF 
+ Global("#SConvivesAppear","GLOBAL",22)
+THEN
+  RESPONSE #100
+  SetDialog("#SeverR")
+  Dialog(Player1)
+END
+
+IF
+ Global("#SDecisifImnesvale","AR1100",10)
+ Global("#SeverSexe","LOCALS",1)
+THEN
+  RESPONSE #100
+  SetDialog("#SeverR")
+  Dialog(Player1)
+END
+
+
+// CHAPITRE 3
+
+IF
+  Global("#SRomanceFinalCouronne","GLOBAL",8)
+THEN
+  RESPONSE #100
+  SetDialog("#SeverR")
+  Dialog("#SPeyr")
+END
+
+IF
+ Global("#SRomanceFinalCouronne","GLOBAL",10)
+THEN
+  RESPONSE #100
+  SetDialog("#SeverR")
+  Dialog("#SPeyr")
+END
+
+
+// DEBUT DE LA ROMANCE
+
+IF
+  RealGlobalTimerExpired("#SeverRomance","GLOBAL")
+  Global("#SeverQuest1","GLOBAL",101)
+  Global("#SeverRomanceActive","GLOBAL",0)
+  Gender(Protagonist,FEMALE)
+  InParty("#Severian")
+  !Alignment(Player1,LAWFUL_EVIL)
+  !Alignment(Player1,NEUTRAL_EVIL)
+  !Alignment(Player1,CHAOTIC_EVIL)
+  !StateCheck(Player1,CD_STATE_NOTVALID)
+  !StateCheck("#Severian",CD_STATE_NOTVALID)
+  Global("#SeverLoveTlk","LOCALS",1)
+  OR(3)
+    Race(Player1,HUMAN)
+    Race(Player1,ELF)
+    Race(Player1,HALF_ELF)
+THEN
+  RESPONSE #100
+    SetGlobal("#SeverRomanceActive","GLOBAL",1)
+    IncrementGlobal("#SeverLoveTlk","LOCALS",1)
+END
+
+IF
+ CombatCounter(0)
+ Global("#SeverRomanceActive","GLOBAL",1)
+ Global("#SeverLoveTlk","LOCALS",2)
+THEN 
+  RESPONSE #100
+    PlaySong(0)
+    PlaySound("#SMusicC")
+    SetDialog("#SeverR")
+    Dialog(Player1)
+END
+
+// GESTION DEUXIEME DIALOGUE
+
+IF
+  InParty("#Severian")
+  !StateCheck(Player1,CD_STATE_NOTVALID)
+  !StateCheck("#Severian",CD_STATE_NOTVALID)
+  Global("#SeverRomanceActive","GLOBAL",1)
+  Global("#SeverLoveTlk","LOCALS",3)
+  RealGlobalTimerExpired("#SeverRomance","GLOBAL")
+THEN
+  RESPONSE #100
+    IncrementGlobal("#SeverLoveTlk","LOCALS",1)
+END
+
+IF
+  CombatCounter(0)
+  Global("#SeverLoveTlk","LOCALS",4)
+  Global("#SeverRomanceActive","GLOBAL",1)
+THEN
+  RESPONSE #100
+    PlaySong(0)
+    PlaySound("#SMusicC")
+    SetDialog("#SeverR")
+    Dialog(Player1)
+END
+
+// GESTION TROISIEME DIALOGUE
+
+IF
+  InParty("#Severian")
+  Global("#SeverRomanceActive","GLOBAL",1)
+  Global("#SeverLoveTlk","LOCALS",5)
+  !StateCheck(Player1,CD_STATE_NOTVALID)
+  !StateCheck("#Severian",CD_STATE_NOTVALID)
+  RealGlobalTimerExpired("#SeverRomance","GLOBAL")
+THEN
+  RESPONSE #100
+    IncrementGlobal("#SeverLoveTlk","LOCALS",1)
+END
+
+IF
+  InParty("#Severian")
+  CombatCounter(0)
+  Global("#SeverRomanceActive","GLOBAL",1)
+  Global("#SeverLoveTlk","LOCALS",6)
+THEN
+  RESPONSE #100
+  PlaySong(0)
+  PlaySound("#SMusicC")
+  SetDialog("#SeverR")
+  Dialog(Player1)
+END
+
+// GESTION QUATRIEME DIALOGUE
+
+IF
+  InParty("#Severian")
+  Global("#SeverRomanceActive","GLOBAL",1)
+  Global("#SeverLoveTlk","LOCALS",7)
+  AreaCheck("AR0704")
+  Global("#SRomanceRepasMithrest","AR0704",0)
+  Global("#SDeadHugor","GLOBAL",2)
+  !StateCheck(Player1,CD_STATE_NOTVALID)
+  !StateCheck("#Severian",CD_STATE_NOTVALID)
+THEN
+  RESPONSE #100
+    IncrementGlobal("#SeverLoveTlk","LOCALS",1)
+END
+
+IF
+  InParty("#Severian")
+  Global("#SeverRomanceActive","GLOBAL",1)
+  Global("#SeverLoveTlk","LOCALS",8)
+  Global("#SRomanceRepasMithrest","AR0704",0)
+THEN
+  RESPONSE #100
+  PlaySong(0)
+  PlaySound("#SMusicD")
+  SetGlobal("#SRomanceRepasMithrest","AR0704",1)
+  SetDialog("#SeverR")
+  Dialog(Player1)
+END
+
+// GESTION CINQUIEME DIALOGUE
+
+IF
+  InParty("#Severian")
+  Global("#SeverRomanceActive","GLOBAL",1)
+  Global("#SeverLoveTlk","LOCALS",9)
+  !StateCheck(Player1,CD_STATE_NOTVALID)
+  !StateCheck("#Severian",CD_STATE_NOTVALID)
+  RealGlobalTimerExpired("#SeverRomance","GLOBAL")
+  Range(Player1,10)
+  !AreaCheck("AR1404")
+  AreaType(OUTDOOR)
+  !AreaType(CITY)
+  TimeOfDay(DAY)
+  !InMyArea("#SBlaidd")
+THEN
+  RESPONSE #100
+    IncrementGlobal("#SeverLoveTlk","LOCALS",1)
+END
+
+IF
+  InParty("#Severian")
+  CombatCounter(0)
+  Global("#SeverRomanceActive","GLOBAL",1)
+  Global("#SeverLoveTlk","LOCALS",10)
+THEN
+  RESPONSE #100
+  PlaySong(0)
+  PlaySound("#SMusicD")
+  Weather(NOWEATHER)
+  StartCutSceneMode()
+  StartCutScene("#SCtRom5")
+END
+
+// GESTION SIXIEME DIALOGUE
+
+IF
+  InParty("#Severian")
+  Global("#SeverRomanceActive","GLOBAL",1)
+  Global("#SeverLoveTlk","LOCALS",11)
+  !StateCheck(Player1,CD_STATE_NOTVALID)
+  !StateCheck("#Severian",CD_STATE_NOTVALID)
+  RealGlobalTimerExpired("#SeverRomance","GLOBAL")
+  AreaType(OUTDOOR)
+  TimeOfDay(DAY)
+THEN
+  RESPONSE #100
+    IncrementGlobal("#SeverLoveTlk","LOCALS",1)
+END
+
+IF
+  InParty("#Severian")
+  CombatCounter(0)
+  Global("#SeverRomanceActive","GLOBAL",1)
+  Global("#SeverLoveTlk","LOCALS",12)
+THEN
+  RESPONSE #100
+  PlaySong(0)
+  PlaySound("#SMusicD")
+  SetDialog("#SeverR")
+  Dialog(Player1)
+END
+
+// GESTION SEPTIEME DIALOGUE
+
+IF
+  InParty("#Severian")
+  Global("#SeverRomanceActive","GLOBAL",1)
+  Global("#SeverLoveTlk","LOCALS",13)
+  !StateCheck(Player1,CD_STATE_NOTVALID)
+  !StateCheck("#Severian",CD_STATE_NOTVALID)
+  RealGlobalTimerExpired("#SeverRomance","GLOBAL")
+  !AreaCheck("AR1100")
+  !AreaCheck("AR1101")
+  !AreaCheck("AR1102")
+  !AreaCheck("AR1103")
+  !AreaCheck("AR1104")
+  !AreaCheck("AR1105")
+  !AreaCheck("AR1106")
+  !AreaCheck("AR1107")
+  !AreaCheck("AR1400")
+  !AreaCheck("AR1401")
+  !AreaCheck("AR1402")
+  !AreaCheck("AR1403")
+  !AreaCheck("AR1404")
+THEN
+  RESPONSE #100
+    IncrementGlobal("#SeverLoveTlk","LOCALS",1)
+END
+
+IF
+  InParty("#Severian")
+  CombatCounter(0)
+  Global("#SeverRomanceActive","GLOBAL",1)
+  Global("#SeverLoveTlk","LOCALS",14)
+THEN
+  RESPONSE #100
+  PlaySong(0)
+  PlaySound("#SMusicD")
+  SetDialog("#SeverR")
+  Dialog(Player1)
+END
+
+
+// GESTION DU HUITIEME DIALOGUE
+
+IF
+  InParty("#Severian")
+  Global("#SeverRomanceActive","GLOBAL",1)
+  Global("#SeverLoveTlk","LOCALS",15)
+  !StateCheck(Player1,CD_STATE_NOTVALID)
+  !StateCheck("#Severian",CD_STATE_NOTVALID)
+  Global("#SDecisifImnesvale","AR1100",0)
+  Global("VillageSaved","GLOBAL",1)
+  Global("#SRomanceHuit","GLOBAL",1)
+  AreaCheck("AR1100")
+THEN
+  RESPONSE #100
+    IncrementGlobal("#SeverLoveTlk","LOCALS",1)
+END
+
+IF
+  InParty("#Severian")
+  CombatCounter(0)
+  Global("#SeverRomanceActive","GLOBAL",1)
+  Global("#SDecisifImnesvale","AR1100",0)
+  Global("#SeverLoveTlk","LOCALS",16)
+THEN
+  RESPONSE #100
+  PlaySong(0)
+  PlaySound("#SMusicD")
+  SetGlobal("#SDecisifImnesvale","AR1100",1)
+  SetDialog("#SeverR")
+  Dialog(Player1)
+END
+
+
+
+// REPRISE ROMANCE
+// DEUXIEME PARTIE
+
+// DIALOGUE 9
+
+IF
+  InParty("#Severian")
+  Global("#SeverRomanceActive","GLOBAL",2)
+  Global("#SeverLoveTlk","LOCALS",17)
+  Global("#SBlaiddRetour","GLOBAL",1)
+  Detect(Player1)
+  !StateCheck(Player1,CD_STATE_NOTVALID)
+  !StateCheck("#Severian",CD_STATE_NOTVALID)
+  !AreaCheck("AR1100")
+  !AreaCheck("AR1101")
+  !AreaCheck("AR1102")
+  !AreaCheck("AR1103")
+  !AreaCheck("AR1104")
+  !AreaCheck("AR1105")
+  !AreaCheck("AR1106")
+  !AreaCheck("AR1107")
+  !AreaCheck("AR1400")
+  !AreaCheck("AR1401")
+  !AreaCheck("AR1402")
+  !AreaCheck("AR1403")
+  !AreaCheck("AR1404")
+  RealGlobalTimerExpired("#SeverRomance","GLOBAL")
+THEN
+  RESPONSE #100
+    IncrementGlobal("#SeverLoveTlk","LOCALS",1)
+END
+
+IF
+  InParty("#Severian")
+  CombatCounter(0)
+  Global("#SeverRomanceActive","GLOBAL",2)
+  Global("#SeverLoveTlk","LOCALS",18)
+  Global("#SBlaiddRetour","GLOBAL",1)
+  Detect(Player1)
+  !StateCheck(Player1,CD_STATE_NOTVALID)
+  !StateCheck("#Severian",CD_STATE_NOTVALID)
+  !AreaCheck("AR1100")
+  !AreaCheck("AR1101")
+  !AreaCheck("AR1102")
+  !AreaCheck("AR1103")
+  !AreaCheck("AR1104")
+  !AreaCheck("AR1105")
+  !AreaCheck("AR1106")
+  !AreaCheck("AR1107")
+  !AreaCheck("AR1400")
+  !AreaCheck("AR1401")
+  !AreaCheck("AR1402")
+  !AreaCheck("AR1403")
+  !AreaCheck("AR1404")
+  RealGlobalTimerExpired("#SeverRomance","GLOBAL")
+THEN
+  RESPONSE #100
+    PlaySong(0)
+    PlaySound("#SMusicI")
+    SetDialog("#SeverR")
+    Dialog(Player1)
+END
+
+
+// DIALOGUE 10
+
+IF
+  InParty("#Severian")
+  Global("#SeverRomanceActive","GLOBAL",2)
+  Global("#SeverLoveTlk","LOCALS",19)
+  Detect(Player1)
+  !StateCheck(Player1,CD_STATE_NOTVALID)
+  !StateCheck("#Severian",CD_STATE_NOTVALID)
+  CombatCounter(0)
+  RealGlobalTimerExpired("#SeverRomance","GLOBAL")
+THEN
+  RESPONSE #100
+    IncrementGlobal("#SeverLoveTlk","LOCALS",1)
+    PlaySong(0)
+    PlaySound("#SMusicI")
+    StartCutSceneMode()
+    StartCutScene("#SCtRo10")
+END
+
+
+// DIALOGUE 11
+
+IF
+  InParty("#Severian")
+  Global("#SeverRomanceActive","GLOBAL",2)
+  Global("#SeverLoveTlk","LOCALS",21)
+  Detect(Player1)
+  !StateCheck(Player1,CD_STATE_NOTVALID)
+  !StateCheck("#Severian",CD_STATE_NOTVALID)
+  AreaType(OUTDOOR)
+  RealGlobalTimerExpired("#SeverRomance","GLOBAL")
+  Global("#SBlaiddRetour","GLOBAL",1)
+  Global("#SeverDialogue11","GLOBAL",0)
+  TimeOfDay(NIGHT)
+THEN
+  RESPONSE #100
+    IncrementGlobal("#SeverLoveTlk","LOCALS",1)
+END
+
+IF
+  InParty("#Severian")
+  CombatCounter(0)
+  Global("#SeverRomanceActive","GLOBAL",2)
+  Global("#SeverLoveTlk","LOCALS",22)
+THEN
+  RESPONSE #100
+    PlaySong(0)
+    PlaySound("#SMusicI")
+    SetDialog("#SeverR")
+    Dialog(Player1)
+END
+
+IF
+  InParty("#Severian")
+  Detect(Player1)
+  !StateCheck(Player1,CD_STATE_NOTVALID)
+  !StateCheck("#Severian",CD_STATE_NOTVALID)
+  CombatCounter(0)
+  AreaType(OUTDOOR)
+  OR(2)
+    Global("#SeverAlcoolNuit","GLOBAL",1)
+    Global("#SeverNoAlcool","GLOBAL",1)
+  Global("#SeverRomanceActive","GLOBAL",2)
+  Global("#SeverDialogue11","GLOBAL",1)
+THEN
+  RESPONSE #100
+    PlaySong(0)
+    PlaySound("#SMusicI")
+    SetDialog("#SeverR")
+    Dialog(Player1)
+END
+
+// DIALOGUE 12
+
+IF
+ InParty("#Severian")
+ Global("#SeverRomanceActive","GLOBAL",2)
+ Global("#SeverDialogue11","GLOBAL",2)
+ Global("#SeverLoveTlk","LOCALS",23)
+ Detect(Player1)
+ !StateCheck(Player1,CD_STATE_NOTVALID)
+ !StateCheck("#Severian",CD_STATE_NOTVALID)
+ RealGlobalTimerExpired("#SeverRomance","GLOBAL")
+ Global("#SBlaiddRetour","GLOBAL",1)
+THEN
+ RESPONSE #100
+   SetGlobal("#SeverDialogue11","GLOBAL",3)
+   IncrementGlobal("#SeverLoveTlk","LOCALS",1)
+END
+
+IF
+  InParty("#Severian")
+  CombatCounter(0)
+  Global("#SeverRomanceActive","GLOBAL",2)
+  Global("#SeverLoveTlk","LOCALS",24)
+THEN
+  RESPONSE #100
+    PlaySong(0)
+    PlaySound("#SMusicI")
+    SetDialog("#SeverR")
+    Dialog(Player1)
+END
+
+// DIALOGUE 13
+
+IF
+  InParty("#Severian")
+  Global("#SeverRomanceActive","GLOBAL",2)
+  Global("#SeverLoveTlk","LOCALS",25)
+  Global("#SBlaiddRetour","GLOBAL",1)
+  Detect(Player1)
+  !StateCheck(Player1,CD_STATE_NOTVALID)
+  !StateCheck("#Severian",CD_STATE_NOTVALID)
+  !AreaCheck("AR1100")
+  !AreaCheck("AR1101")
+  !AreaCheck("AR1102")
+  !AreaCheck("AR1103")
+  !AreaCheck("AR1104")
+  !AreaCheck("AR1105")
+  !AreaCheck("AR1106")
+  !AreaCheck("AR1107")
+  !AreaCheck("AR1400")
+  !AreaCheck("AR1401")
+  !AreaCheck("AR1402")
+  !AreaCheck("AR1403")
+  !AreaCheck("AR1404")
+  RealGlobalTimerExpired("#SeverRomance","GLOBAL")
+  
+THEN
+  RESPONSE #100
+    IncrementGlobal("#SeverLoveTlk","LOCALS",1)
+END
+
+IF
+  InParty("#Severian")
+  CombatCounter(0)
+  Global("#SeverRomanceActive","GLOBAL",2)
+  Global("#SeverLoveTlk","LOCALS",26)
+THEN
+  RESPONSE #100
+   SetDialog("#SeverR")
+   Dialog(Player1)
+END
+
+
+
+
+  

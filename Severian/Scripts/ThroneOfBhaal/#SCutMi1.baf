@@ -1,0 +1,41 @@
+// ROMANCE DIALOGUE 2
+// MIROIR DE L'AME 1
+
+IF
+  True()
+THEN
+  RESPONSE #100
+    CutSceneId(Player1)
+    Wait(1)
+    FadeToColor([20.0],0)
+    ActionOverride("#Severian",MakeUnselectable(0))
+    Wait(1)
+    LeaveAreaLUA("#SArmi","",[1641.3783],2)
+    ActionOverride("#Severian",LeaveAreaLUA("#SArmi","",[849.2897],8))
+    MoveViewPoint([849.2897],INSTANT)
+    SetGlobal("#SeverMiroirAme","GLOBAL",1)
+    Wait(1)
+    FadeFromColor([20.0],0)
+    Wait(2)
+    PlaySong(0)
+    PlaySound("#SMus25B")
+    Wait(1)
+    DisplayStringHead("#Severian",@200090)
+    Wait(11)
+    DisplayStringHead("#Severian",@200091)
+    Wait(6)
+    DisplayStringHead("#Severian",@200791)
+    Wait(6)
+    DisplayStringHead("#Severian",@200092)
+    Wait(6)
+    ActionOverride("#Severian",MoveToPoint([865.2847]))
+    Wait(1)
+    CreateCreatureImpassable("#SReflet",[880.2798],0)
+    Wait(1)
+    DisplayStringHead("#Severian",@200093)
+    Wait(11)
+    DisplayStringHead("#Severian",@200094)
+    Wait(8)
+    ActionOverride("#SReflet",StartDialogueNoset("#Severian"))
+    EndCutSceneMode()
+END

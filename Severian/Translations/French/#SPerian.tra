@@ -1,0 +1,273 @@
+// CHAPITRE 2
+// AUBERGE D'IMNESVALE
+// LE TROPHEE DE Onyx 1
+
+
+@40 = ~(La porte désormais ouverte vous laisse découvrir une scène pour le moins cocasse: dans un large cercle formé par les clients se trouve un petit homme rouge et gesticulant, hurlant qu'on le relâche...prisonnier de la large gueule d'Onyx qui le tient par son fond de culotte. Vous jureriez, alors que vous sortez tout à fait de la chambre, que le loup est hilare.)~ 
+@41 = ~*Pleurnichements* Lâche-moi, mais lâche-moi donc ! Tu vas déchirer les belles culottes que Mémé Gisel m'a confectionnées !~
+@42 = ~Onyx, lâche-le.~
+@43 = ~(Le loup obtempère comme à regret, amusé.) *Comme tu voudras, mais ce petit homme était très divertissant (Onyx secoue la gueule en tirant la langue.) Par contre, ce derrière a un arrière-goût vraiment désagréable...Pouah !*~
+@44 = ~(Le petit homme atterrit lourdement sur le sol tandis que le cercle de clients se dissipe, déçu par cette si courte scène digne des meilleures comédies grotesques.)~
+@45 = ~Ce n'est pas une façon de me traiter, ça non ! (Il se frotte le derrière en grimaçant, se déplaçant à bonne distance d'Onyx qui désormais attend assis sur son arrière-train, un rien goguenard.)~
+@46 = ~(Mais à peine a-t-il le temps de se remettre de ses émotions que le voici de nouveau ballotté dans les airs...Cette fois-ci, il s'agit de Severian, et le rôdeur ne cache pas sa colère.) Onyx est en train de me dire que tu nous espionnais ? Que faisais-tu sous nos fenêtres ? Réponds ou je peux te faire bien pire !~
+@47 = ~(L'intrus est terrifié et ne parvient qu'à bredouiller.) Je...Je ne vous veux pas de mal...Lâche-moi et je te promets de tout t'expliquer, Severian Stark...~
+@48 = ~(Depuis votre place, vous devinez que Severian accuse le choc d'avoir entendu son nom dans la bouche d'un inconnu. Mais après quelques instants de réflexion, c'est avec une certaine douceur qu'il le redescend à terre.) Entre : je suppose que quoi que tu aies à me dire, personne d'autre ne doit l'entendre. Mais je te préviens : au moindre faux-pas...~
+@49 = ~Oui, nous connaissons tes talents (Il vous désigne du doigt tout en remettant en place son col mis à mal par la poigne de l'halfshade.) <CHARNAME> peut venir, elle aussi.~
+@50 = ~Je ne l'entendais pas autrement (Severian l'invite d'un geste à rentrer dans la chambre tandis qu'Onyx vous suit et va s'allonger auprès du feu, satisfait d'avoir eu sa minute de gloire. Le petit homme ne manque pas de lui adresser un regard inquiet avant de vous suivre.)~
+
+// CHAPITRE 2
+// AUBERGE D'IMNESVALE
+// LE TROPHEE DE Onyx 2
+
+@53 = ~(La curiosité de l'inconnu est évidente alors qu'il entre dans la chambre. La cotte de maille argentée posée sur une chaise est la première chose qui attire son regard tandis que soudain plus décontracté, il sifflote, mains dans les poches. Onyx n'est toutefois qu'à deux pas de lui et vous remarquez qu'il conserve une distance prudente entre son arrière-train et les dents de l'animal.)~
+@54 = ~(Severian achève péniblement de passer le reste de ses vêtements, gêné par son bras en écharpe. Le voir ainsi vous met mal à l'aise : jamais encore ne l'avez-vous vu estropié de la sorte mais vous savez qu'il s'en remettra. Ce n'est qu'une question de temps.)~
+@55 = ~Et que faisais-tu sous nos fenêtres ?~
+@56 = ~Je m'appelle Pyp Soucolline et je devais m'assurer que Severian Stark était bien dans le coin alors j'ai pris une caisse et j'ai essayé de voir si tu étais bien dans ta chambre, l'ami.~
+@57 = ~Tu m'as appelé par mon nom. Que sais-tu de moi ?~
+@570 = ~Pourquoi ne pas avoir demandé à l'aubergiste s'il se trouvait ici ?~
+@58 = ~Impossible. Severian Stark voyage toujours sous des noms d'emprunt, c'est ce que nous avons appris en l'observant...~
+@66 = ~(Pyp fait mine de s'approcher de la cotte de maille. Onyx montre aussitôt les crocs.)~
+@67 = ~Grrrrr !~
+@69 = ~Eh, je ne fais que regarder ! Bon, bon toutou...<CHARNAME> est également une personne fascinante mais c'est toi qui nous intéresses plus particulièrement aujourd'hui.~
+@59 = ~Tu parles par énigmes, Pyp. Que suis-je sensé comprendre ?~
+@60 = ~Je ne suis qu'un messager, Severian. Que pourrais-je te dire de plus ? Il te suffit de me suivre, toi et <CHARNAME>, et tes amis si elle le souhaite. Dame Valyria n'y verrait aucune objection.~
+@61 = ~*Severian, tu devrais suivre ce petit homme aux mollets appétissants. Il a une bonne odeur : tu peux lui faire confiance.*~
+@62 = ~(Un instant, le rôdeur et son loup échangent un long regard.)~
+@620 = ~Je pense qu'Onyx a raison, Severian. Nous devrions suivre Pyp et voir ce que cette Valyria nous veut.~
+@621 = ~Après ce qui s'est passé, ce ne serait pas sage d'aller encore une fois nous jeter dans l'inconnu. N'en as-tu pas déjà assez vu comme ça ?~
+@63 = ~Je fais confiance à Onyx, <CHARNAME>. Il perçoit des choses que nous autres sommes incapables de ressentir. Très bien, Pyp : nous te suivons. Emmène-nous voir cette Dame Valyria, en espérant pour toi qu'il ne s'agisse pas d'un traquenard.~
+@64 = ~(Pyp applaudit.)~
+@70 = ~Grrrr !~
+@71 = ~Ah oui, le loup...(Le jeune Pyp s'en éloigne promptement mais n'en continue pas moins à battre des mains.) A la bonne heure ! Vous ne le regretterez pas ! Suivez-moi, suivez-moi !~
+@65 = ~Très bien, Pyp : nous te suivons. Emmène-nous voir cette Dame Valyria, en espérant pour toi qu'il ne s'agisse pas d'un traquenard.~
+
+
+// CHAPITRE 2
+// AU cœur DU VAL
+// RENCONTRE AVEC LES ADEPTES DE MAILIKKI
+
+@80 = ~(Vous avez marché une heure durant à la suite de Pyp, vous enfonçant toujours plus profondément dans le val parmi des senteurs de fleurs sauvages et de chants d'oiseaux, observant les daims et les biches s'enfuir à votre approche tandis que vous cheminez tantôt sur l'herbe rase d'une prairie, tantôt dans des broussailles, tantôt encore le long de la rivière..)~
+@81 = ~(La petite-personne vous a menés au pied de la Chaussée des Géants, ces gigantesques marches taillées dans la roche par des créatures oubliées en des temps immémoriaux. Un groupe vous y attendait, un groupe d'hommes et de femmes dont les apparences auraient pu vous laisser croire qu'il s'agissait d'un piège. Severian a tressailli lorsque la Chaussée des Géants fut en vue mais vous l'avez apaisé d'un geste, considérant la mine joyeuse du jeune Pyp saluant le groupe de la main.)~
+@82 = ~(Le petit homme a désormais trouvé place sur le rebord d'une marche, laissant ses jambes courtaudes balancer dans le vide près d'un vieux nain à la mine bougonne. Pyp vous considère maintenant avec satisfaction tout en lorgnant prudemment vers Onyx.)~
+
+
+// CHAPITRE 2
+// AU cœur DU VAL
+// LA CONVALESCENCE DE SEVERIAN
+
+
+@100 = ~(Depuis un fourré proche, vous voyez sortir une tête puis une deuxième. L'instant d'après, vous voyez Pyp et Duorok émerger des fourrés.)~
+@101 = ~Ouf, pouf ! L'elfe noir est parti ?~
+@102 = ~On dirait bien, Rase-Motte. Son amourette avec Valy le rend un peu trop susceptible...~
+@103 = ~Oh, mais vous êtes toujours là, vous ? ça tombe bien car nous nous demandions justement si vous seriez présents au mariage !~
+@1030 = ~(Vous ouvrez des yeux ronds.) Mariage ? Quel mariage ?~
+@104 = ~De quoi parles-tu, Pyp ?~
+@105 = ~Du mariage de Téthys, la fille du maire Lloyd ! Il aura lieu dans une semaine et tout le village assistera à l'heureux évènement. Quoi ? Personne ne vous a mis au courant ?~
+@1050 = ~Euh...Non, nous ne sommes pas au courant...~
+@106 = ~Eh bien, l'invitation ne devrait pas tarder je suppose, si vous décidez de vous attarder dans le coin. Peut-être quelqu'un vous attend-il déjà à l'auberge, qui sait ?~
+@1070 = ~Eh bien, je suppose qu'un petit séjour ici ne peut pas nous faire de mal d'autant que ton bras a besoin de guérir, Severian. Nous irons à l'auberge voir si quelqu'un nous y attend pour nous donner cette fameuse invitation.~ // Aller au @112
+@1071 = ~Je ne vois pas pourquoi nous perdrions du temps dans des réjouissances qui ne nous regardent aucunement. J'ai un magicien à attraper et une amie à sauver, je vous le rappelle.~
+@108 = ~(Pyp ouvre de grands yeux surpris tandis que Duorok renifle de mépris.) Je doute que Severian te soit d'une quelconque aide dans son état.~
+@109 = ~Tu n'as pas un si grand cœur que ça, Enfant de Bhaal. Allez viens, Pyp : mon seul regret aura été de ne pas avoir pu payer une bière à Severian.~
+@110 = ~(Le nain tire le petit homme par la manche et c'est à regret que ce dernier vous salue.) Au revoir, Severian ! Au revoir, <CHARNAME> ! Au revoir, tout le monde ! Au revoir...Ehhh !~
+@111 = ~(Le nain s'empare de Pyp par son fond de culotte, déjà en lambeaux.) Mais viens donc !~
+@118 = ~(La voix du nain décroît parmi les arbres.) Andouille de semi-homme...~
+
+@112 = ~Merci, <CHARNAME>. Ce bras devrait se rétablir promptement maintenant avec tes soins et les herbes locales.~
+@113 = ~(Pyp saute de joie.)~
+@114 = ~Grrrr !~
+@115 = ~C'est raté, Onyx ! Si tu crois que j'ai peur de toi, maintenant ! (Et très bravement, Pyp se cache derrière le nain.)~
+@116 = ~Alors, c'est entendu : nous vous verrons au mariage, mes compères.~
+@117 = ~Allez viens, Pyp. Toutes ces formalités m'ont mis la gorge en feu : allons descendre quelques chopines !~ // Aller au @110
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// Entrée dans le journal
+@4000 = ~ Les Chroniques de Severian - Livre 2 : Les fantômes du passé
+
+La bénédiction de Mailikki
+
+Severian est désormais un suivant de Mailikki, la Dame de la Forêt. Même s'il reste un hors-la-loi aux yeux de la société et qu'il lui faudra encore lutter contre ses démons, c'est un heureux renouveau et je le soutiendrai du mieux que je le puis dans cette voie. Une belle conclusion s'annonce puisque Pyp et Duorok, nos nouveaux amis, nous ont dit qu'un mariage se préparait à Imnesvale, et que nous y serions très certainement invités. Il ne nous reste plus qu'à nous rendre à l'auberge pour y recevoir cette invitation et je me réjouis de cette parenthèse de sérénité, qui durera tout le temps de la convalescence de Severian.~
+
+
+// CHAPITRE 2
+// MINI QUETE : LA BIERE DE DUOROK, LES CULOTTES DE PYP
+
+@120 = ~Non, ce n'est pas comme ça que tu dois t'y prendre : d'abord tu propulses ta jambe comme ci, puis tu fais un saut comme ça.~
+@129 = ~Ce n'est quand même pas compliqué, si !~
+@121 = ~Je n'entends décidément rien à la danse des humains !~
+@122 = ~(Sous vos yeux éberlués, vous observez Pyp mimant une gigue, le nain essayant de l'imiter sans succès et sa balourdise l'assimile davantage à un sac de charbon sur un parquet qu'à un svelte danseur.)~
+@123 = ~Toi et tes drôles d'idées ! Non, décidément : à ce mariage tu me trouveras plutôt au comptoir à boire la bonne Cuvée de Grand-Père Gimli. Il paraît qu'ils vont vraiment faire les choses en grand pour l'occasion. Mais au fait, ce bougre de camelot traîne encore en chemin !~
+@124 = ~Il était attendu hier dans la journée mais de nos jours, les routes sont tellement encombrées...Les embouteillages, tout ça !~
+@125 = ~*Ronchonne* Si jamais cette gouleyante bière n'arrive pas à bon port, je te jure Pyp, il va y avoir du grabuge ! Qu'on m'en mette un échantillon sous le nez sinon je n'irai pas à ce mariage, foi de nain !~
+@126 = ~*Pleurnichements* Parle pour toi ! Que devrais-je dire moi, avec mes culottes toutes déchirées ? Je ne peux décemment pas me montrer au mariage ainsi ! J'avais commandé de belles culottes fuchsia en importation directe de Port-Ponant...~
+@127 = ~Viens mon vieux, allons noyer nos soucis dans la dive bouteille. L'aubergiste possède une bière lénifiante dont tu me diras des nouvelles mais bien sûr tu te doutes que rien ne vaut la Cuvée de Grand-Père Gimli.~
+@128 = ~Mes pauvres culottes, snif...~
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// Entrée dans le journal
+@4002 = ~Les Chroniques de Severian - Livre 2 : Les fantômes du passé 
+
+Retrouver le camelot pour Pyp et Duorok
+
+J'ai croisé Pyp et Duorok aujourd'hui, qui se plaignaient entre deux leçons de danse pour le moins burlesques de ne pas avoir vu le camelot sensé être arrivé la veille à Imnesvale et qui doit apporter certaines marchandises indispensables au mariage. Les deux compères n'ont en tout cas pas l'air heureux : peut-être devrais-je faire quelque chose pour eux ? Ce marchand ne doit pas se trouver bien loin du village...~
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// Entrée dans le journal
+@4001 = ~Les Chroniques de Severian - Livre 2 : Les fantômes du passé
+
+La poupée de Mallory
+
+Dans son enthousiasme à revoir Severian, Mallory en a oublié sa poupée sur le banc de l'auberge. Ce dernier souhaite maintenant la lui rendre mais j'ignore où elle peut se trouver à cette heure. Sans doute est-elle au village, ou bien dans les environs proches.~
+
+
+// CHAPITRE 2
+// DANS L'AUBERGE
+// MINI QUETE : LA BIERE DE DUOROK, LES CULOTTES DE Pyp
+
+
+@130 = ~*pleurnichements* Quand je pense que Mémé Gisel me les avait tricotées avec amour ! Je n'irai nulle part sans ces nouvelles culottes, c'est un scandale !~
+@131 = ~Un scandale ! Oui, parfaitement ! Il est hors de question que j'aille à ce mariage sans la Cuvée de Grand-Père Gimli !~
+
+// CHAPITRE 2
+// FIN DE LA MINI QUETE
+
+@146 = ~Ohh, mais les-les-les voilà de retour !~[#SMusicV]
+@132 = ~*Hips !* Alors, <CHARNAME>, que-que (Pyp a visiblement du mal à articuler tandis qu'il agite sous votre nez une chope débordante de bière.) Quelles nou-nouvelles du camelot ?~
+@133 = ~Severian, mon pote ! Installe-toi avec ton amie et laisse-moi te payer chopine ! Le semi-homme ne tient décidément pas l'alcool : je gage que tu ferais mieux !~
+@134 = ~(Le semi-homme en question devient tout rouge.) Ffff-fff-faux !~
+@135 = ~Merci pour l'invitation Maître nain, mais <CHARNAME> et moi-même avons quelques affaires à régler. A charge de revanche, hein ?~
+@136 = ~Tu n'y couperas pas, vaurien ! Alors, <CHARNAME>, quoi de neuf ?~
+@1360 = ~J'ai retrouvé le fameux "camelot" (vous prenez une voix de fausset.) le Grand OR-GA-NI-SA-TEUR de mariages Pinkie Tourtrompette ! Donc voilà, vous qui pleuriez sur bière et culottes, je les ai ici avec moi (vous déposez sur la table les deux paquets contenant leurs biens.)~
+@137 = ~(Pyp affiche des yeux ravis, manquant cependant renverser sa bière sur ses culottes neuves. Il déballe le paquet avec frénésie.)~
+@138 = ~(Duorok goûte à la bière et vous voyez ses joues rosir à vue d'œil.)~
+@139 = ~On dirait qu'on ira bien à ce mariage, compère Pyp ! J'imagine déjà la pyramide de tonneaux de cette Cuvée !~
+@140 = ~Tr-tr-Très seyantes, ces culottes ! Mémé Gisel sera fière de-de-de son petit-fils !~
+@1400 = ~Euh, c'est deux cent pièces d'or, les gars...~ // Aller au @15
+@1401 = ~Je vous les offre, inutile de songer à me payer (si tant est que vous y ayez jamais songé !.)~ // Aller au @19
+@141 = ~(Duorok se gratte la tête.) Quoi...Euh...Ah oui mais...Tu comprends, ces temps-ci, les caisses des Suivants de Mailikki sont plutôt vides et...~
+@142 = ~Duorok, c'est-c'est-c'est un radin, comme tous-tous-tous les nains.~
+@143 = ~Andouille de semi-homme ! Viens là que je t'attrape !~
+@144 = ~Au-au-au secours !~
+@145 = ~(Duorok se gratte la tête.) Quoi ? Ah oui, te payer...Euh, on te doit bien ça mais tu comprends...Ces temps-ci, les caisses des Suivants de Mailikki sont plutôt vides et...~
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// Entrée dans le journal
+@4003 = ~Les Chroniques de Severian - Livre 2 : Les fantômes du passé
+
+Les culottes de Pyp et la bière de Duorok
+
+Il m'en a fallu des efforts pour en arriver jusque là mais enfin, nos nouveaux amis sont fins prêts pour assister au mariage. Mon seul regret dans cette histoire est qu'il va me falloir supporter de nouveau Pinkie...et ce que ces fripouilles m'ont arnaqué de deux cent pièces d'or !~
+
+
+// CHAPITRE 2
+// LE RETOUR DE Onyx
+
+@200 = ~Ouf, vous êtes là ! Le cortège est déjà parti, vous savez ! Il ne manque plus que vous, dépêchez-vous nom d'une pipe !~
+@201 = ~(Severian cache habilement sa déception derrière un voile enthousiaste. Il est manifeste qu'en plus de se sentir gauche dans ce costume, il aurait souhaité poursuivre cet instant en tête-à-tête avec vous.) On te suit, compère.~
+@202 = ~(Pyp sautille de joie et tournicote comiquement sur lui-même avant de prendre la poudre d'escampette, suivi d'Onyx dont l'excitation est à son comble. A peine la queue du loup a-t-elle disparu derrière la porte que vous voyez Severian saisir le fourreau de sa dague pour en fixer la sangle à sa cuisse, invisible sous le manteau de taupe noire revêtu pour l'occasion.)~
+@20200 = ~Mais que fais-tu ? Il ne s'agit que d'un mariage...~ // @203
+@20201 = ~Tu as raison. On ne sait jamais. En ce qui me concerne, me voilà totalement dépouillée : je me vois mal dissimuler une arme sous ma robe (Vous souriez, malicieuse.) Je compte sur toi pour me protéger en cas de pépin, hein Seva ?~ // @205
+@203 = ~(Severian a désormais une pomme dans la main gauche avec laquelle il jongle adroitement.) On ne change pas les bonnes vieilles habitudes, <CHARNAME>. Si on doit avoir ma peau, je veux que ce soit bottes aux pieds et armes en main (Il vous adresse un grand sourire, dissimulant la pomme dans son somptueux manteau.)~
+@204 = ~Allons-y, ma belle. Je crois qu'on nous attend.~
+@205 = ~(Severian n'est pas dupe de votre petit jeu mais il s'y prête néanmoins avec cet air charmeur que vous lui connaissez bien.) Ce bras est désormais vigoureux et je peux faire des prouesses avec cette dague. Compte sur moi, ma chère.~ // @204
+@206 = ~(Rien ne saura gommer totalement chez Severian ces années passées sur la route mais vous vous surprenez à trouver incroyablement séduisant ce mélange de rudesse et d'élégance, dans ce large manteau de taupe noire qui lui confère l'allure d'un prince.)~
+
+
+// DEPART DU VAL 
+
+@210 = ~<CHARNAME>, Severian, vous êtes vraiment obligés de partir ?~
+@211 = ~Nous aussi, on doit partir, Rase-motte. Nous sommes attendus à Eauprofonde pour la présentation de Kalas à la famille de Dame Valyria, tu l'avais oublié ? Beuh, quelle corvée...Allons, viens-t-en bourriquet, ne commence pas à faire attendre le troupeau.~
+@212 = ~(Duorok a saisi Pyp par la manche et le tire en arrière d'un ton faussement badin. En réalité, le petit-homme comme le nain tentent de masquer tant bien que mal leur chagrin quant à votre séparation.)~
+@213 = ~Dites, on se reverra, j'espère ?~
+@214 = ~Bon sang de bois, les autres ont filé...C'est malin : maintenant, il va falloir sprinter avec tout ce barda sur le dos ! Tu as encore gaffé, Pyp ! *Bock* !~
+@215 = ~Aïe ! Mais...~
+
+
+
+/////////////////// A L'ATTENTION DE XICLOING \\\\\\\\\\\\\\\\\\\\
+/////////////////// NE PAS TRADUIRE \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+// ROMANCE, FINAL
+// APPARITION PYP ET DUOROK DANS L'ARENE
+
+@220 = ~Par mes culottes, je n'ai jamais aimé les téléportations ! Kalas a bien failli m'envoyer contre le mur de l'auberge ! Ah, mais voilà <CHARNAME> ! Nous sommes pile à l'heure.~[#SMusicN]
+@221 = ~Mailikki nous protège...La Rune Pourpre a fait son œuvre...(Duorok touche du bout de sa botte les braises fumantes qui grésillent autour de vous, exhalant des fumées noires. Le cadavre de Sarvaj, toujours sous sa forme draconique, retient un instant son attention mais c'est vers vous qu'il se tourne, l'air grave.)~
+@222 = ~Celui que tu recherches n'est pas ici, <CHARNAME>. Oublie ta peine, Enfant de Bhaal : une seconde chance lui a été donnée.~
+@223 = ~Nous suivras-tu, <CHARNAME>, vers l'endroit où Mailikki l'a dissimulé du Mal ?~
+@22300 = ~Severian, vivant ? Comment cela est-il possible ? Je l'ai vu disparaître dans le feu et la magie !~ // @229
+@22301 = ~Je vous ai toujours fait confiance, les amis (Vous considérez les ruines fumantes.) J'ai beaucoup perdu aujourd'hui mais vous me redonnez l'espoir. Je vous suis !~ // @231
+@22302 = ~Non ! Je refuse de vous écouter ! Regardez autour de vous : comment se peut-il qu'il ait survécu ? Vous ne cherchez qu'à me bluffer ! Je ne vous crois pas, je ne crois plus personne ! J'ai été incapable d'intervenir, pourquoi ? !~
+@227 = ~Nous comprenons ta souffrance, <CHARNAME>. Mais tout ce que tu aurais pu faire n'aurait servi à rien. Severian était face à son dernier ennemi et il devait l'affronter seul. C'est le choix qu'il a fait : il ne voulait pas que tu souffres.~
+@228 = ~<CHARNAME>, je t'en conjure : fais-nous confiance ! Rien n'est perdu.~
+@229 = ~Rien n'est impossible pour la Dame de la Forêt. Elle veille sur ses enfants, toujours.~ // @228
+@230 = ~(Le vieux nain et le petit homme vous tendent les mains. Vous les prenez, encore incertaine.)~
+@231 = ~Rien n'est perdu, <CHARNAME>. Fais nous confiance.~
+
+
+/////////////////// A L'ATTENTION DE XICLOING \\\\\\\\\\\\\\\\\\\\
+/////////////////// FIN DU PASSAGE A NE PAS TRADUIRE \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+
+// ROMANCE FINAL
+// SARVAJ
+
+@300 = ~Par mes culottes, je n'ai jamais aimé les téléportations ! Kalas s'y prend vraiment comme un kobold...Ah mais voilà nos amis, et nous sommes pile à l'heure.~ 
+@301 = ~Il était temps que l'on vous retrouve ! <CHARNAME>, Severian : Imnesvale a de gros ennuis. Il faut que vous veniez avec nous.~
+@302 = ~(Severian s'approche de Duorok, l'air grave, et le prend par les épaules.) De quelles sortes d'ennuis parles-tu, mon bon ami ?~
+@303 = ~Après notre séparation, nous sommes partis à Eauprofonde. Lorsque nous sommes revenus, nous avons trouvé les villageois terrifiés : ils parlent d'un groupe d'hommes en armes rôdant dans les collines. Parfois, ils se rendent dans le village pour y semer la terreur et extorquer des informations à ton sujet. Valyria elle-même est tenue en échec par les pouvoirs de celui qui se fait appeler Sarvaj. Il veut quelqu'un et ce quelqu'un, c'est toi.~
+@304 = ~(Severian fronce les sourcils.) <CHARNAME>, on dirait bien que la Rune Pourpre a fini par retrouver ma trace. <CHARNAME>...~
+@350 = ~Il ne s'agit pas de la Rune Pourpre, Severian. Il s'agit du Zentharim. Sarvaj porte le symbole de Cyric. Valyria t'en dira plus.~
+@351 = ~(Le jeune homme secoue la tête, troublé.) Le Zentharim ? Comment...~
+@352 = ~(Severian est manifestement de plus en plus troublé. Il finit par empoigner son arc, l'air déterminé.) Peu importe qu'il soit du Réseau Noir ou de la Rune Pourpre. Je ne laisserai pas le village à ses mains destructrices. <CHARNAME>...?~
+
+@305 = ~Je t'aime et tu le sais, Severian. Je ne te laisserai jamais risquer ta vie seul. C'est toi et moi ensemble, ou rien.~
+@306 = ~Je ne sais pas, Severian. J'ai tant de fois risqué ma vie que j'ai peur de ne plus avoir la volonté de me battre.~
+@307 = ~Cette fois-ci, c'est la goutte d'eau qui fait déborder le vase ! Au nom de quoi, je te prie, irai-je encore une fois me faire cingler les fesses par quelque fanatique à qui je n'ai absolument rien fait ?~
+@308 = ~(Severian vous regarde avec surprise. Vous l'avez manifestement blessé.) <CHARNAME>, j'espère que tu n'es pas sérieuse ? Est-ce que...Est-ce que je dois croire ce que tu es en train de me dire ? T'ai-je moi-même jamais laissé tomber ?!~
+@309 = ~Désolée, c'est que mes nerfs commencent sérieusement à lâcher...Je rêve d'une vie paisible et anonyme, et au final je ne récolte que des ennuis, quoique je fasse. Cela ne s'arrêtera-t-il donc jamais ?~
+@310 = ~Je SUIS sérieuse ! Quand je t'ai rencontré, j'aurais dû me méfier davantage ! Et encore plus lorsque nous avons poussé plus avant cette relation ! L'exaspération a dépassé cet amour que je ressentais pour toi, Severian. Je ne suis plus prête à faire des sacrifices.~
+@311 = ~(Le jeune homme vous considère, choqué.) Je...Je ne peux pas croire ce que j'entends. Depuis quand les sentiments ont-ils disparu de ton cœur, <CHARNAME> ? Quand ? Quand as-tu décidé pour nous deux ?!~
+@312 = ~Je suis mort à l'intérieur. Accomplis ton destin, puisses-tu trouver cette quiétude qui te tient tant à cœur. Mais sache-le : tu ne l'obtiendras pas sans souffrances et ma présence ne changerait rien à cette fatalité. Adieu, <CHARNAME>. Nous ne nous reverrons plus.~
+@313 = ~(L'halfshade prend votre visage dans ses mains.) Je suis désolé, mon amour. Désolé de t'infliger de nouvelles souffrances. Mais...Mais nous devons êtres forts, pour défendre ce qui nous tient à cœur. Nous ne pouvons laisser ces pauvres gens à la merci de ces monstres. Pas plus que je ne puis laisser un passé souillé déterminer mon avenir.~
+@314 = ~Tu n'arriveras pas à me convaincre, Severian. Je suis réellement fatiguée. Quand je t'ai rencontré, j'aurais dû me méfier davantage. Et encore plus lorsque nous avons poussé plus avant cette relation ! L'exaspération a dépassé cet amour que je ressentais pour toi, Severian. Je ne suis plus prête à faire des sacrifices.~
+@315 = ~L'abattement a eu raison de moi un instant, excuse-moi. Je suis une Enfant de Bhaal : je suis forte et déterminée. Allons à Imnesvale et débarrassons Féérune une bonne fois pour toutes de Sarvaj. J'en suis certaine maintenant : ensemble, nous y arriverons, comme toujours.~
+@316 = ~(Severian vous serre la main avec force.) Tu es une Enfant de Bhaal, <CHARNAME>. Quoiqu'il arrive, tu auras toujours de la volonté. Tu t'es toujours battue, et tu te battras encore, quoiqu'il arrive : je te connais et j'ai confiance. Et je serai toujours à tes côtés pour t'y aider.~
+@317 = ~(Severian vous serre la main avec amour et force.) Je n'en attendais pas moins de toi, <CHARNAME>. Je paye finalement mes erreurs et le tribut à payer sera peut-être lourd...Mais j'aurais été heureux de t'avoir connue. (Il vous embrasse tendrement.)~
+@318 = ~Puisque tout le monde est d'accord, retrouvons-nous à Imnesvale. Nous vous attendrons à l'entrée du village mais de grâce, ne tardez pas ou Sarvaj finira par mettre le village à feu et à sang.~
+@319 = ~(Le nain donne une bourrade à Pyp.) Avance, bougre de semi-homme ! Cet idiot d'elfe noir a encore oublié de nous ramener, on est bon pour rentrer à pied !~
+
+// Après mort de Sarvaj
+
+@500 = ~(Pyp agite son arc et saute sur place.) Wouah ! Tu as vu ça Duorok ? En plein dans les fesses !~ 
+@501 = ~*Bock!* Ce n'est pas un jeu ! Severian, <CHARNAME>, retournons sur la place du village. Valyria nous y attend.~
+@502 = ~Viens par ici, toi !~
+@503 = ~Mais...~
+
+
+
+// JOURNAL
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// Entrée dans le journal
+
+@1000 = ~ Les Chroniques de Severian - Livre 3 : Les Ombres de Toril
+
+Sarvaj est en réalité un espion au service du Zentharim
+
+Pyp et Duorok sont apparus pour nous apprendre qu'Imnesvale était investie par une troupe armée de membres du Réseau Noir, dirigée par Sarvaj. Le même Sarvaj qui donna autrefois ses missions à Severian, lorsque ce dernier était tueur à gages pour le compte de la Rune Pourpre. Et c'est lui encore qui projeta sa mort en l'envoyant éliminer Ilkar. La Rune Pourpre et le Zentharim ne formeraient-ils qu'une seule et même organisation ? Ou bien Sarvaj joue-t-il un double-jeu ? Quoiqu'il en soit, les raisons de son animosité envers Severian sont loin d'être claires. En nous rendant à Imnesvale, nous en apprendrons davantage grâce à Valyria et ses amis.~
+
+@1001 = ~ Les Chroniques de Severian - Livre 3 : Les Ombres de Toril
+
+Sarvaj est en réalité un espion au service du Zentharim
+
+L'orgueil de Sarvaj l'a poussé, avant de mourir, à nous livrer les clés de sa rancœur envers Severian. Il était un espion du Zentharim infiltré dans les plus hautes sphères de la Rune Pourpre. Et la Rune Pourpre n'est rien d'autre qu'une ramification de la Légion Ombreuse, venue de Tiraslyn à travers des portails pour conquérir Toril. Sorkailen et Vesthara, qui partageaient des liens filiaux avec Severian, appartenaient à la Légion Ombreuse. c'est la preuve qu'il n'a pas menti et que le Zentharim est bel et bien à couteaux tirés avec la Rune Pourpre. Valyria et ses amis nous ont donné rendez-vous sur la place du village d'Imnesvale pour aviser de la suite.~
+
+
+
+
+
+
+
+

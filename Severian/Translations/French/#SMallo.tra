@@ -1,0 +1,81 @@
+
+// CHAPITRE 2 : LES OMBRES DU PASSE
+// PARTIE 1 : IMNESVALE, AU SORTIR DE L'AUBERGE
+// SCENE 1 : UNE PETITE FILLE, MALLORY, ABORDE LE GROUPE
+// COORDONNEES D'APPARITION : AR1100, 3858, 2889, 7 
+// CONDITIONS DE DECLENCHEMENT : ROMANCE REUSSIE  
+
+@0 = ~(Vous voyez venir vers vous une enfant d'environ huit ans, vêtue d'une robe plutôt sale au demeurant, au petit nez retroussé et aux tresses couleur de miel.) Valarym ! Oh que je suis contente que tu sois de retour !~ 
+@1 = ~(Severian ébouriffe les cheveux de la gamine, ravi.) Mallory ? Alors petite peste, où as-tu encore été te fourrer ?~
+@2 = ~Moustache passe son temps à s'échapper de la maison et moi je passe mon temps à le chercher. D'ailleurs, je le cherchais quand je vous ai vus. J'ai quelque chose pour toi.~
+@3 = ~C'est une dame qui me l'a donné et elle a dit que je ne devais la montrer qu'à toi. Tiens : mission remplie !~
+@4 = ~Cette dame, à quoi ressemblait-elle ? (Saisissant le parchemin scellé que lui tend Mallory, il en brise le sceau sans préambule et commence une lecture qui n'appartient qu'à lui seul.)~
+@5 = ~Elle avait de beaux et longs cheveux rouges, des tatouages sur le visage et des yeux lilas. Une vraie aventurière, comme elle (Mallory vous désigne du doigt.) sauf qu'elle n'avait pas du tout l'air gentil. Je jouais hier soir devant la porte avec Lily quand la dame est venue nous voir : Lily est partie en courant mais moi je suis restée. Je n'ai pas peur, moi ! (La petite fille prend une posture de défi.)~
+@6 = ~(Vous notez que Severian devient livide à ces paroles tandis qu'il relève la tête pour écouter la gamine.)~
+@7 = ~La dame m'a quand même donné une pièce d'or pour vous trouver. Vous allez m'en donner une aussi ?~
+@8 = ~(Severian est devenu de plus en plus pâle à mesure qu'il poursuit sa lecture. Sa voix est rongée par l'inquiétude alors qu'il interroge Mallory.) Cette dame, n'as-tu rien senti de particulier chez elle ?~
+@9 = ~Je me souviens qu'elle avait une longue cape rouge avec une capuche qu'elle avait repoussée en arrière pour me parler. Ah, et puis elle a regardé la lampe du porche avec une drôle d'expression et puis elle a levé des doigts crochus. Alors après, la bougie était soufflée, comme par magie.~
+@10 = ~Il faisait nuit ? Réponds, Mallory : il faisait nuit ? !~
+@11 = ~Mais oui, il faisait nuit ! Avec Lily, on s'amusait à attraper les lucioles qui vivent dans l'herbe autour de la maison de Maman. Comment voulez-vous qu'on les voit s'il y a de la lumière ? Et puis, qu'est-ce que ça peut faire, d'abord ?~
+@12 = ~Et alors, cette pièce d'or ?~
+@1200 = ~Bien sûr, c'est tout mérité.~ // Piece
+@1201 = ~Quand tu auras appris à dire s'il te plaît, petite mal-élevée ! (Vous extirpez toutefois une pièce d'or de votre bourse et la lui lancez d'une pichenette.)~ // Pièce
+@1202 = ~Tu es décidément trop mal élevée pour mériter quoique ce soit. Rentre chez toi, petite, au lieu d'encombrer notre route. Et plus vite que ça, sinon je te flanque une bonne fessée.~
+@13 = ~Vous êtes vraiment trop méchante ! Je souhaite qu'un troll puant passe par là et que ce soit lui qui vous mette une bonne fessée ! Qu'est ce que tu fais avec ces gens, Valarym ? Si tu les laisses et que tu viens à la maison, Maman te fera un bon gâteau comme quand tu étais encore au Val.~
+@14 = ~Bien sûr Mallory, je pourrais passer à l'occasion mais pour le moment, j'ai certaines...affaires à régler. Et si tu allais retrouver Moustache ?~
+@15 = ~(Son ascendant est manifeste sur la petite fille, impressionnée par son attirail et ses manières d'aventurier. Dans son esprit, Severian est probablement le héros de ses rêves, celui qui triomphe de tout et n'éprouve aucune peur. Probablement est-ce dû aux contes que lui lit sa mère avant de s'endormir.)~
+@16 = ~Oui, bien sûr ! Je suis sûre que tu as beaucoup de choses à faire. Et quand tu reviendras, tu viendras manger un gâteau de Maman, hein ? (La fillette s'éloigne en sautillant dans les flaques d'eau. Elle disparaît bientôt au bout de la place.)~
+
+// Piece
+
+@17 = ~(Mallory l'attrape au vol.) Merci, ma Dame ! Encore une vingtaine et je pourrais m'acheter une épée !~
+@1700 = ~(Vous jetez un bref regard à Severian, plus silencieux qu'une tombe, pâle comme un mort, avant de vous reporter sur Mallory.) Une épée ? Qu'est-ce que tu veux faire avec ça ? Tu n'es pas plus haute que trois pommes !~
+@1701 = ~(Vous sortez votre arme de son fourreau et la lui tendez.) Tiens donc ? Essaye déjà de porter ceci, après on verra.~
+@1702 = ~(Vous la chassez.) Bon, cette fois Mallory il va falloir nous laisser. Je dois parler avec S...Valarym.~
+@18 = ~Ah, c'est bon j'ai compris. Mais Valarym, Maman et moi on a été très tristes quand tu es parti du village. Pourquoi tu ne viendrais pas manger un bon gâteau à la maison ? Maman serait contente et moi aussi !~ // @14 @15 @16
+
+// Aventurière
+
+@19 = ~Je veux être une aventurière, comme vous ! Un jour, je pourfendrai des dragons à moi toute seule !~
+@20 = ~Valarym, Maman et moi on a été très tristes quand tu es parti du village. Pourquoi tu ne viendrais pas manger un bon gâteau à la maison ? Maman serait contente et moi aussi !~ // @14 @15 @16
+
+// Porte épée
+
+@21 = ~(Mallory est ravie et rassemble ses forces pour soulever la pesante arme mais malgré tous ses efforts, elle ne peut que la traîner sur le sol.) Attends un peu que je sois plus grande !~ // @20
+
+
+
+
+// MALLORY QUITTE LA ZONE
+// RETOUR #SEVER.TRA
+
+
+// CHAPITRE 2
+// MINI-QUETE : RETROUVER MALLORY
+
+@1000 = ~Ce n'est pas bien, Moustache ! Tu sais bien que Maman n'aime pas que je traîne par ici...mais je m'en moque, hihihi !~ 
+@1010 = ~Oh, voilà Severian et <CHARNAME> ! ça tombe bien, je ne te les ai pas présentés ! (La fillette prend le matou gros et gras dans ses bras.)~
+@102 = ~Moustache, je te présente <CHARNAME> et Severian : ce sont des héros, tu sais ! Mais Severian est blessé, alors tu dois me promettre de ne pas lui sauter dessus comme tu le fais tout le temps.~
+@103 = ~*Miaw*~
+@104 = ~Je suis venu te rapporter quelque chose que tu as oublié, Mallory. Mais je te le rendrai au village : ce n'est pas prudent de te promener par ici.~
+@105 = ~Je suis une exploratrice ! Le vieux Jer prétend que c'est la grotte d'Umar. Vous y croyez, vous, à cette légende ? C'est que les grandes personnes racontent souvent des histoires en croyant que nous les enfants, nous gobons tout...~
+@106 = ~Que dirais-tu de grimper sur mon dos, Mallory ? ça pourrait être amusant, non ?~
+@107 = ~Oh, oui ! Ce sera bien plus rigolo d'être avec toi que dans cette grotte où il ne se passe rien. J'ai récupéré Moustache, c'est l'essentiel, alors oui je vais venir avec toi et <CHARNAME>.~
+@108 = ~(L'halfshade se penche à hauteur de la petite, l'exhortant à s'accrocher à son cou. Avec un bras en écharpe, il ne lui sera pas aisé de la convoyer jusqu'au village mais il a de la ressource et du reste, il ne semble pas avoir besoin de votre aide tandis que Mallory se cale confortablement contre son dos.)~
+@110 = ~Et Moustache ? Je ne peux pas le porter dans mes bras mais on ne peut pas le laisser là.~
+@180 = ~Ne t'en fais pas : je le prends avec moi.~
+@1800 = ~Je suis allergique aux chats...~
+@185 = ~Tu peux bien faire un effort, non ? Il ne sert à rien de s'attarder ici.~
+@186 = ~(Moustache a senti votre réticence et ne se rend pas sans vous avoir administré quelques coups de griffe bien sentis sous les yeux hilares de vos compagnons. Un ridicule dont vous vous seriez bien passée.) Maoowww ! Fssss !~
+@111 = ~(Avec prudence, vous avancez une main vers Moustache qui s'avère au final être une bonne pâte. D'un bond, il saute dans vos bras.)~
+@112 = ~(Rassurée sur le devenir de son chat, Mallory donne ses directives de sa voix enfantine, ébouriffant les cheveux de Severian de ses menottes potelées.) En avant, brave héros Severian ! Maman travaille chez Hendrick : elle doit être à nourrir ses poules en ce moment. Nous la trouverons facilement.~
+@113 = ~A vos ordres, ma princesse !~
+@114 = ~(Et c'est dans cet équipage qu'il ne vous reste plus qu'à reprendre la route d'Imnesvale à la recherche de la mère de Mallory...en suivant les fientes de poule, probablement.)~
+
+
+
+
+
+
+
+

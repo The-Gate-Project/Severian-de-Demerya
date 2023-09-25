@@ -1,0 +1,23 @@
+
+IF
+  Global("#SeverianSoins","GLOBAL",0)
+THEN
+  RESPONSE #100
+    CutSceneId(Player1)
+    Wait(1)
+    FadeToColor([20.0],0)
+    Wait(1)
+    LeaveAreaLUA("AR1105","",[967.186],2)
+    ActionOverride(Player2,LeaveAreaLUA("AR1105","",[967.210],2))
+    ActionOverride(Player3,LeaveAreaLUA("AR1105","",[1016.210],2))
+    ActionOverride(Player4,LeaveAreaLUA("AR1105","",[1016.246],2))
+    ActionOverride(Player5,LeaveAreaLUA("AR1105","",[1064.246],2))
+    ActionOverride(Player6,LeaveAreaLUA("AR1105","",[1064.282],2))
+    TakePartyItem("#SMaBody")
+    DestroyItem("#SMaBody")
+    SetGlobal("#SeverianSoins","GLOBAL",1)
+    Wait(1)
+    FadeFromColor([20.0],0)
+    Wait(1)
+    EndCutSceneMode()
+END

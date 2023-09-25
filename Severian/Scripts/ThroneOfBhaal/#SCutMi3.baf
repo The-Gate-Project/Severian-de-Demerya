@@ -1,0 +1,23 @@
+// MIROIR DE L'AME 3
+
+IF
+  True()
+THEN
+  RESPONSE #100
+    CutSceneId(Player1)
+    Wait(1)
+    FadeToColor([20.0],0)
+    ActionOverride("#Severian",MakeUnselectable(0))
+    Wait(1)
+    LeaveAreaLUA("#SArmi","",[1641.3783],8)
+    ActionOverride("#Severian",LeaveAreaLUA("#SArmi","",[849.2897],8))
+    MoveViewPoint([849.2897],INSTANT)
+    SetGlobal("#STroisiemeMiroirAme","GLOBAL",3)
+    Wait(1)
+    FadeFromColor([20.0],0)
+    Wait(1)
+    ActionOverride("#Severian",MoveToPoint([865.2847]))
+    Wait(1)
+    ActionOverride("#SReflet",StartDialogueNoset("#Severian"))
+    EndCutSceneMode()
+END

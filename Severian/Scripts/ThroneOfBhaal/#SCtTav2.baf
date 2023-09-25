@@ -1,0 +1,24 @@
+// MIROIR DE L'AME 3
+
+IF
+  True()
+THEN
+  RESPONSE #100
+    CutSceneId(Player1)
+    Wait(1)
+    FadeToColor([20.0],0)
+    Wait(1)
+    SetGlobal("#SAfficheMiseAPrix","GLOBAL",3)
+    MoveViewPoint([759.705],INSTANT)
+    JumpToPoint([759.705])
+    Face(4)
+    Wait(1)
+    ActionOverride("#Severian",JumpToPoint([718.706]))
+    ActionOverride("#Severian",FaceObject(Player1)
+    Wait(1)
+    FadeFromColor([20.0],0)
+    Wait(2)
+    SetDialog("#Sev25R")
+    ActionOverride("#Severian",StartDialogueNoset(Player1))
+    EndCutSceneMode()
+END

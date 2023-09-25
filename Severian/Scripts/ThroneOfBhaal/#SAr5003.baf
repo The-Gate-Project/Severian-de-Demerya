@@ -1,0 +1,11 @@
+// MISE A PRIX
+
+IF 
+ InParty("#Severian")
+ Global("#SeverRomanceActive","GLOBAL",2)
+ Global("#SAfficheMiseAPrix","GLOBAL",0)
+THEN
+ RESPONSE #100
+ SetGlobal("#SAfficheMiseAPrix","GLOBAL",1)
+END
+

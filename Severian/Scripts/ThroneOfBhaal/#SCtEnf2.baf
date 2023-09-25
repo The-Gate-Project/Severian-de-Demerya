@@ -1,0 +1,18 @@
+// L'ENFANCE DE SEVERIAN
+// CABANE D'ELVAAR
+
+
+IF
+  True()
+THEN
+  RESPONSE #100
+    CutSceneId("#Severian")
+    Wait(1)
+    MoveViewPoint([831.1297],VERY_FAST)
+    SetGlobal("#SecondMiroirAme","GLOBAL",7)
+    CreateCreature("#SElva25",[831.1297],7)
+    CreateCreature("#SAlys",[878.1272],7)
+    Wait(1)
+    ActionOverride("#SGarc25",StartDialogueNoSet("#SElva25"))
+    EndCutSceneMode()
+END

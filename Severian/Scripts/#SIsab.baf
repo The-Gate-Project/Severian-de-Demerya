@@ -1,0 +1,9 @@
+IF
+  Dead("#SMekhr")
+  Global("#SeverQuest1","GLOBAL", 3)
+THEN
+  RESPONSE #100
+    SetGlobal("#SeverQuest1","GLOBAL", 11)
+    ActionOverride("Container2",CreateItem("#SArmor",0,0,0))
+    StartDialogNoSet(Player1)
+END

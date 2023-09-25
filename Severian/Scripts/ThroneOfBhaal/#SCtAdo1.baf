@@ -1,0 +1,24 @@
+// L'ADOLESCENCE DE SEVERIAN - MEURTRE D'ELVAAR
+// CABANE D'ELVAAR
+
+
+IF
+  True()
+THEN
+  RESPONSE #100
+    CutSceneId("#Severian")
+    Wait(1)
+    FadeToColor([20.0],0)
+    Wait(1)
+    LeaveAreaLUA("#SArMa","",[65.498],8)
+    MoveViewPoint([689.329],INSTANT)
+    SetGlobal("#STroisiemeMiroirAme","GLOBAL",5)
+    CreateCreature("#SAdo25",[657.420],8)
+    CreateCreature("#SElva25",[689.329],0)
+    CreateCreature("#SBlaidd",[622.393],11)
+    Wait(1)
+    FadeFromColor([20.0],0)
+    Wait(2)
+    ActionOverride("#SElva25",StartDialogueNoSet("#SAdo25"))
+    EndCutSceneMode()
+END

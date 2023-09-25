@@ -1,0 +1,16 @@
+IF
+ True()
+THEN
+  RESPONSE #100 
+  CutSceneId(Player1)
+  Wait(1)
+  FadeToColor([20.0],0)
+  Wait(1)
+  SetGlobal("#SFeuDeCamp","GLOBAL",10)
+  MoveViewPoint([1332.2361],INSTANT)
+  Wait(1)
+  FadeFromColor([20.0],0)
+  Wait(1)
+  ActionOverride("#SevFeu",StartDialogueNoSet(Player1))
+  EndCutSceneMode()
+END

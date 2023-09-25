@@ -1,0 +1,18 @@
+IF
+  True()
+THEN
+  RESPONSE #100
+    CutSceneId(Player1)
+    FadeToColor([20.0],0)
+    SetGlobal("#SDecisifImnesvale","AR1100",4)
+    Wait(1)
+    JumpToPoint([1750.3508])
+    ActionOverride("#Severian",JumpToPoint([1812.3547]))
+    Face(14)
+    ActionOverride("#Severian",Face(1))
+    MoveViewObject(Myself,INSTANT)
+    Wait(1)
+    FadeFromColor([20.0],0)
+    ActionOverride("#Severian",Dialog(Player1))
+    EndCutSceneMode()
+END

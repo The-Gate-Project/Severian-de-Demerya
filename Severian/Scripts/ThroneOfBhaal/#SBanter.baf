@@ -1,0 +1,130 @@
+// ACCELERATEUR DE BANTERS POUR THRONE OF BHAAL
+
+IF
+	G("#SBanterGooseRun",0)
+THEN
+	RESPONSE #100
+		SetGlobal("#SBanterGooseRun","GLOBAL",1)
+		RealSetGlobalTimer("#SBanterGoose","GLOBAL",1500)
+END
+
+IF
+	RealGlobalTimerExpired("#SBanterGoose","GLOBAL")
+	G("#SRanABanter",1)
+THEN
+	RESPONSE #100
+		SetGlobal("#SRanABanter","GLOBAL",0)
+		RealSetGlobalTimer("#SBanterGoose","GLOBAL",1500)
+END
+
+IF
+	RealGlobalTimerExpired("#SBanterGoose","GLOBAL")
+	G("#SRanABanter",0)
+	CombatCounter(0)
+	InParty(Player1)
+	InParty(Player2)
+	!InParty(Player3)
+	!InParty(Player4)
+	!InParty(Player5)
+	!InParty(Player6)
+THEN
+	RESPONSE #100
+		SetGlobal("#SRanABanter","GLOBAL",1)
+		ActionOverride(Player2,Interact(Player2))
+END
+
+IF
+	RealGlobalTimerExpired("#SBanterGoose","GLOBAL")
+	G("#SRanABanter",0)
+	CombatCounter(0)
+	InParty(Player1)
+	InParty(Player2)
+	InParty(Player3)
+	!InParty(Player4)
+	!InParty(Player5)
+	!InParty(Player6)
+THEN
+	RESPONSE #50
+		SetGlobal("#SRanABanter","GLOBAL",1)
+		ActionOverride(Player2,Interact(Player2))
+	RESPONSE #50
+		SetGlobal("#SRanABanter","GLOBAL",1)
+		ActionOverride(Player3,Interact(Player3))
+END
+
+IF
+	RealGlobalTimerExpired("#SBanterGoose","GLOBAL")
+	G("#SRanABanter",0)
+	CombatCounter(0)
+	InParty(Player1)
+	InParty(Player2)
+	InParty(Player3)
+	InParty(Player4)
+	!InParty(Player5)
+	!InParty(Player6)
+THEN
+	RESPONSE #34
+		SetGlobal("#SRanABanter","GLOBAL",1)
+		ActionOverride(Player2,Interact(Player2))
+	RESPONSE #33
+		SetGlobal("#SRanABanter","GLOBAL",1)
+		ActionOverride(Player3,Interact(Player3))
+	RESPONSE #33
+		SetGlobal("#SRanABanter","GLOBAL",1)
+		ActionOverride(Player4,Interact(Player4))
+END
+
+IF
+	RealGlobalTimerExpired("#SBanterGoose","GLOBAL")
+	G("#SRanABanter",0)
+	CombatCounter(0)
+	InParty(Player1)
+	InParty(Player2)
+	InParty(Player3)
+	InParty(Player4)
+	InParty(Player5)
+	!InParty(Player6)
+THEN
+	RESPONSE #25
+		SetGlobal("#SRanABanter","GLOBAL",1)
+		ActionOverride(Player2,Interact(Player2))
+	RESPONSE #25
+		SetGlobal("#SRanABanter","GLOBAL",1)
+		ActionOverride(Player3,Interact(Player3))
+	RESPONSE #25
+		SetGlobal("#SRanABanter","GLOBAL",1)
+		ActionOverride(Player4,Interact(Player4))
+	RESPONSE #25
+		SetGlobal("#SRanABanter","GLOBAL",1)
+		ActionOverride(Player5,Interact(Player5))
+END
+
+IF
+	RealGlobalTimerExpired("#SBanterGoose","GLOBAL")
+	G("#SRanABanter",0)
+	CombatCounter(0)
+	InParty(Player1)
+	InParty(Player2)
+	InParty(Player3)
+	InParty(Player4)
+	InParty(Player5)
+	InParty(Player6)
+THEN
+	RESPONSE #20
+		SetGlobal("#SRanABanter","GLOBAL",1)
+		ActionOverride(Player2,Interact(Player2))
+	RESPONSE #20
+		SetGlobal("#SRanABanter","GLOBAL",1)
+		ActionOverride(Player3,Interact(Player3))
+	RESPONSE #20
+		SetGlobal("#SRanABanter","GLOBAL",1)
+		ActionOverride(Player4,Interact(Player4))
+	RESPONSE #20
+		SetGlobal("#SRanABanter","GLOBAL",1)
+		ActionOverride(Player5,Interact(Player5))
+	RESPONSE #20
+		SetGlobal("#SRanABanter","GLOBAL",1)
+		ActionOverride(Player6,Interact(Player6))
+END
+
+

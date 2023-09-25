@@ -1,0 +1,15 @@
+IF
+Global("#SCombatFinalMod","GLOBAL",1)
+Allegiance(Myself,ENEMY)
+Global("#SInvisibleStalkerTob","LOCALS",0)
+THEN
+ RESPONSE #100
+ ReallyForceSpell(Myself,WIZARD_IMPROVED_INVISIBILITY)
+ ReallyForceSpell(Myself,WIZARD_FIRE_SHIELD_RED)
+ ReallyForceSpell(Myself,WIZARD_FIRE_SHIELD_BLUE)
+ ReallyForceSpell(Myself,WIZARD_INVISIBLE_STALKER)
+ ReallyForceSpell(Myself,WIZARD_INVISIBLE_STALKER)
+ ReallyForceSpell(Myself,WIZARD_INVISIBLE_STALKER)
+ ReallyForceSpell(Myself,WIZARD_INVISIBLE_STALKER)
+ SetGlobal("#SInvisibleStalkerTob","LOCALS",1)
+END

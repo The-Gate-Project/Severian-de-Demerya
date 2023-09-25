@@ -1,0 +1,17 @@
+IF
+  True()
+THEN
+  RESPONSE #100
+    CutSceneId(Player1)
+    Wait(1)
+    MoveViewObject(Myself,INSTANT)
+    CreateCreatureObjectOffScreen("#SLittle",Player1,0,0,0)
+    SetGlobal("#SYagaShuraKill","GLOBAL",6)
+    Weather(RAIN)
+    Wait(5)
+    PlaySong(0)
+    PlaySound("#SMus25B")
+    Wait(1)
+    ActionOverride("#SLittle",Dialog(Player1))
+    EndCutSceneMode()
+END

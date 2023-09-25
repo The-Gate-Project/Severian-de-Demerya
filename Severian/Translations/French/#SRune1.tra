@@ -1,0 +1,41 @@
+
+
+/////////////////// A L'ATTENTION DE XICLOING \\\\\\\\\\\\\\\\\\\\
+/////////////////// NE PAS TRADUIRE \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+
+@0 = ~Les joies de l'entropie...Sarvaj, tu veux nous tuer ma parole ? !~
+@1 = ~Plains-toi : regarde où on a atterri...Parole, un lupanar de première classe ! Eh...Visez moi un peu la belle garce que voilà !~
+@2 = ~(Sous vos yeux éberlués, se matérialisent devant vous trois hommes en livrées pourpres. Et c'est de vous dont on parle...Vous avez le temps de jeter un bref coup d’œil autour de vous en quête de Severian...mais le rôdeur est invisible. Vous êtes désormais face à Sarvaj, celui dont le spectre a longtemps plané sur votre histoire....)~
+@3 = ~Ce n'est pas exactement ce que j'espérais mais tant qu'à être ici...Les sauts entropiques aiguisent les appétits et je me sens d'attaque pour quelque prouesse virile...(Sarvaj se tourne dans la direction indiquée par son compagnon et vous examine avec lubricité.) Que voilà une belle pouliche...Tout ce qu'il faut, là où il faut. Tu as du goût, Marrick, mais elle ne sera pas pour toi.~
+@4 = ~(L'homme s'approche de vous : vous constatez avec quelque inquiétude qu'il vous dépasse de deux bonnes têtes et que son arsenal magique est plutôt impressionnant. Vous avez affaire à un guerrier-mage adepte de l'entropie...et de la Rune Pourpre. Instinctivement, les clients de l'auberge se sont écartés, se rencognant dans des parages moins hostiles.)~
+@5 = ~Sarvaj obtient toujours ce qu'il désire. Alors ma jolie, dois-je te traîner dans une des chambres crasseuses de cette auberge ou me suivras-tu gentiment dans un saut entropique jusqu'à des appartements plus confortables ? Je suis sûre que tu apprécierais...~
+@6 = ~(Alors que vous tentez de lever votre arme pour combler la distance réduite qui vous sépare du détestable individu, votre bras reste désespérément le long de votre corps. Impossible de faire un mouvement, et Sarvaj esquisse un sourire apaisant.)~
+@7 = ~Un effet secondaire de la magie entropique...Exotique, n'est-ce pas ? Excitant aussi, je dirais...(Le colosse entend bien profiter de votre paralysie étendue à vos compagnons, et s'approche de vous jusqu'à vous agripper par la taille. Son haleine est sur vous mais vous n'avez plus que votre voix pour vous exprimer, devant une clientèle de l'auberge lâche et du reste, impuissante.)~
+@800 = ~Ôte tes sales pattes de là ou tu vas le regretter, je te le promets...(Vous parvenez à lui cracher au visage.)~ // @11
+@801 = ~Euh...Cela ne peut-il se négocier ? Un plein sac d'or, ça vous irait par exemple ?~
+@9 = ~(Le guerrier-mage éclate de rire, repris en écho par ses hommes.) Vous entendez ça, vous autres ? Mais il me semble, ma belle (il vous caresse la joue.) que tu n'es pas en position de négocier avec moi. Il n'y a pas d'alternative mais tu ne regretteras pas le voyage que je t'offre.~
+@10 = ~Cependant tu parles un peu trop et je n'aime pas la viande qui s'agite trop (Il lève la main, prêt à vous frapper au visage.)~
+@11 = ~(Sarvaj se fige, essuyant lentement l'affront de son visage. Son aplomb est quelque peu amoindri...mais pas sa colère qui lui fait lever la main sur vous.)~
+@12 = ~Chienne ! On ne défie pas la Rune Pourpre de la sorte ! Tu vas me le payer cher !~
+
+// SEVERIAN DANS L'ARENE DE LA COURONNE DE CUIVRE
+
+@13 = ~(Les deux mercenaires vous ont traînée, toujours paralysée par les effets pervers de l'entropie, jusqu'aux abords de la fosse.) Ouvre grand tes jolis yeux, la garce : ce serait dommage que tu rates ça !~
+@14 = ~(De là où vous vous tenez, vous percevez distinctement la silhouette élancée de Severian, contrastant avec la masse toute en muscles de Sarvaj qui le surplombe d'une bonne tête. Aucun des deux hommes ne porte d'arme ni d'équipement d'aucune sorte : c'est un combat à mains nues, un combat à mort...Vous avez déjà vu Severian se servir de ses poings mais Sarvaj n'est pas Adlar et votre cœur se serre tandis qu'un cri monte dans votre gorge : toute demi-déesse que vous soyez, il y a des situations désespérées contre lesquelles vous ne pouvez rien...Mais vous savez que vous comme Severian devez en passer par là pour qu'enfin, un avenir plus serein s'offre à vous.)~ [#SMusicQ]
+@15 = ~(En risquant sa vie pour vous ce soir, c'est vous qu'il protège. Il ne saurait être gage d'amour plus certain que celui-là.)~
+@16 = ~(Sarvaj agite ses poings massifs, impatient d'en découdre.) Je t'écraserai comme un vulgaire moucheron, Severian ! Chacun comprendra ici et ailleurs qu'on ne défie pas la Rune Pourpre sans le payer de sa vie ! Allons, viens ! Viens, espèce de rat fuyant !~
+@17 = ~(Vous connaissez sa façon de se battre par cœur : face à une telle montagne, il serait inutile d'user de la force. Alors, c'est sur son agilité et sa ruse que l'halfshade comptera. D'une roulade, alors que Sarvaj s'approche pour le broyer dans ses poings, Severian lui décoche un coup de pied dans le jarret. Le colosse est à terre, le souffle coupé par la douleur, et sa colère en est décuplée.)~
+@18 = ~Je t'écraserai ! (Le mercenaire se redresse, repart à la charge. Une nouvelle fois, d'une roulade, Severian se dérobe et cette fois, tente un direct dans la face de son adversaire alors que celui-ci a la tête tournée.)~
+@19 = ~(Le poing de Sarvaj intercepte le sien avec fulgurance tandis qu'un ricanement monte de sa gorge.) Tu es encore persuadé que tu vas gagner, halfshade. C'est bien : cela te donne de l'énergie et rend ce combat plus intéressant.~
+@20 = ~(D'une torsion, Sarvaj tord le bras de Severian et l'envoie mordre la poussière d'un coup de pied au ventre.)~
+@21 = ~Severian !~
+@22 = ~(Le jeune homme tient bon bien que la main posée sur son ventre témoignât d'une douleur intense. Il vous jette un coup d’œil confiant tout en se redressant : ses doigts rencontrent le mur de l'arène et il s'y appuie, encore sous le choc. Sa lèvre saigne, conséquence de sa chute et il essuie furieusement son visage maculé de poussière.)~
+@23 = ~(Le guerrier-mage n'attend pas : poussant un cri, il se jette sur Severian en une terrible charge.) Raahhh !~
+@24 = ~(Le rôdeur n'a pas dit son dernier mot : alors que Sarvaj est presque sur lui, prêt à l'écraser de sa masse contre le mur, il se redresse complètement et d'un bond, prend appui sur le mur, pour d'une pirouette atterrir derrière son ennemi et lui décocher un formidable coup de poing dans les côtes.)~
+@25 = ~(Vous voyez le guerrier-mage s'écraser contre le mur, propulsé par le choc. Lorsque Sarvaj se retourne, ses yeux sont injectés de sang...et sa lèvre saigne à son tour. Ses poings se serrent, autour de vous semble se dresser un vent magique.)~
+@26 = ~Cela suffit ! Oublions les règles, misérable rat d’égout ! Je vais te montrer ce qu'il en coûte de défier un entropiste !~
+
+// MORT DE SARVAJ
+
+@30 = ~Damnation ! Il a réussi à tuer Sarvaj ! C'est impossible ! Mais nous reviendrons et puisque Severian est mort, c'est sur ta tête que retombera notre colère ! Vous le payerez cher ! !~

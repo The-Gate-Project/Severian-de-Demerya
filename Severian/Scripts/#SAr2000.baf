@@ -1,0 +1,73 @@
+
+IF
+  Global("#SeverChapDeux","GLOBAL",3)
+  Global("#SNoviceExists","AR2000",0)
+
+THEN
+  RESPONSE #100
+    SetGlobal("#SeverChapDeux","GLOBAL",4)
+    SetGlobal("#SNoviceExists","AR2000",1)
+    CreateCreature("#SNovice",[870.2093],14)
+END
+
+IF
+  Global("#SeverChapDeux","GLOBAL",5)
+THEN 
+  RESPONSE #100
+  SetGlobal("#SeverChapDeux","GLOBAL",4)
+END
+
+IF
+  GlobalGT("#SeverChapDeux","GLOBAL",3)
+  GlobalLT("#SeverChapDeux","GLOBAL",7)
+  Global("#SeverYaman","GLOBAL",0)
+  Global("#STran2008","AR2000",1)
+THEN 
+  RESPONSE #100
+    SetGlobal("#STran2008","AR2000",2)
+    TriggerActivation("Tran2008",FALSE)
+    TriggerActivation("Tran2008b",FALSE)
+    TriggerActivation("#STran2008",TRUE)
+END
+
+IF
+  GlobalGT("#SeverChapDeux","GLOBAL",4)
+  !Global("#SeverYaman","GLOBAL",0)
+  Global("#STran2008","AR2000",2)
+  Global("TempleDoors","AR2000",0)
+THEN
+  RESPONSE #100
+    SetGlobal("#STran2008","AR2000",3)
+    TriggerActivation("Tran2008",TRUE)
+    TriggerActivation("Tran2008b",FALSE)
+    TriggerActivation("#STran2008",FALSE)
+END
+
+IF
+  GlobalGT("#SeverChapDeux","GLOBAL",6)
+  !Global("#SeverYaman","GLOBAL",0)
+  Global("#STran2008","AR2000",2)
+  Global("TempleDoors","AR2000",1)
+THEN
+  RESPONSE #100
+    SetGlobal("#STran2008","AR2000",3)
+    TriggerActivation("Tran2008",FALSE)
+    TriggerActivation("Tran2008b",TRUE)
+    TriggerActivation("#STran2008",FALSE)
+END
+
+
+// SI CHARNAME ABANDONNE SEVERIAN AUX HALFSHADES
+
+IF
+   Global("#SeverChapDeux","GLOBAL",-1)
+   Global("#SeverTranstriggerActivation","GLOBAL",1)
+ THEN
+   RESPONSE #100
+    SetGlobal("#SeverTranstriggerActivation","GLOBAL",2)
+    SetGlobal("#STran2008","AR2000",3)
+    TriggerActivation("Tran2008",FALSE)
+    TriggerActivation("Tran2008b",TRUE)
+    TriggerActivation("#STran2008",FALSE)
+END
+   

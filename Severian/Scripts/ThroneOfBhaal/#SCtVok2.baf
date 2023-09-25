@@ -1,0 +1,21 @@
+IF
+  True()
+THEN
+  RESPONSE #100
+    CutSceneId(Player1)
+    TakeItemReplace("#SRingC","#SRingB","#Severian")
+    ActionOverride("Sarevok",LeaveParty())
+    Wait(1)
+    ActionOverride("#Severian",MakeUnselectable(50000))
+    ActionOverride("Sarevok",MakeUnselectable(50000))
+    ActionOverride("#Severian",Attack("Sarevok"))
+    ActionOverride("Sarevok",Attack("#Severian"))
+    Wait(5)
+    Kill("Sarevok")
+    Wait(1)
+    TakeItemReplace("#SRingB","#SRingC","#Severian")
+    ActionOverride("#Severian",MakeUnselectable(0))
+    Wait(1)
+    ActionOverride("#Severian",StartDialogueNoSet(Player1))
+    EndCutSceneMode()
+END

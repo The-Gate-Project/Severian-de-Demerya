@@ -1,0 +1,36 @@
+// ROMANCE DIALOGUE 2
+// CAMP DES BANDITS
+
+IF
+  True()
+THEN
+  RESPONSE #100
+    CutSceneId(Player1)
+    Wait(1)
+    FadeToColor([20.0],0)
+    Wait(1)
+    ActionOverride("#SWilos",DestroySelf())
+    ActionOverride("#SMaryan",DestroySelf())
+    ActionOverride("#SPetit",DestroySelf())
+    Wait(1)
+    LeaveAreaLUA("#SCamp","",[703.424],8)
+    ActionOverride(Player2,LeaveAreaLUA("#SCamp","",[776.413],8))
+    ActionOverride(Player3,LeaveAreaLUA("#SCamp","",[763.463],8))
+    ActionOverride(Player4,LeaveAreaLUA("#SCamp","",[728.468],8))
+    ActionOverride(Player5,LeaveAreaLUA("#SCamp","",[747.430],8))
+    ActionOverride(Player6,LeaveAreaLUA("#SCamp","",[736.399],8))
+    MoveViewPoint([849.2897],INSTANT)
+    CreateCreature("#SPetit2",[722.378],0)
+    CreateCreature("#SWilos2",[628.270],0)
+    CreateCreature("#SMarya2",[183.361],12)
+    CreateCreature("#SAzeem",[694.299],0)
+    CreateCreature("#SFrere",[423.272],0)
+    CreateCreature("#SLittle",[218.290],12)
+    SetGlobal("#SeverYohnLeBronze","GLOBAL",8) 
+    Wait(1)
+    FadeFromColor([20.0],0)
+    Wait(2)
+    DisplayStringHead(Player1,@200288)
+    Wait(8)
+    EndCutSceneMode()
+END

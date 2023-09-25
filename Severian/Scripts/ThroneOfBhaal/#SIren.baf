@@ -1,0 +1,50 @@
+IF
+Global("#SCombatFinalMod","GLOBAL",1)
+Global("#STransfoSlayer","GLOBAL",0)
+THEN
+ RESPONSE #100
+SetGlobal("#STransfoSlayer","GLOBAL",1)
+ForceSpell(Myself,DO_SOME_EFFECTS)
+CreateVisualEffectObject("SPFIREPI",Myself)
+SmallWait(7)
+ActionOverride("#SIren",Polymorph(SLAYER))
+END
+
+IF
+Global("#STransfoSlayer","GLOBAL",1)
+See(NearestEnemyOf(Myself))
+THEN
+RESPONSE #100
+SetGlobal("#STransfoSlayer","GLOBAL",2)
+ReallyForceSpell(Myself,WIZARD_MISLEAD)
+ReallyForceSpell(Myself,WIZARD_FIRE_SHIELD_RED)
+ReallyForceSpell(Myself,WIZARD_GLOBE_OF_INVULNERABILITY)
+END
+
+
+IF
+Global("#STransfoSlayer","GLOBAL",2)
+THEN
+ RESPONSE #100
+SetGlobal("#STransfoSlayer","GLOBAL",3)
+ForceSpell(NearestEnemyOf(Myself),WIZARD_WAIL_OF_THE_BANSHEE)
+END
+
+IF
+Global("#STransfoSlayer","GLOBAL",3)
+THEN
+ RESPONSE #100
+SetGlobal("#STransfoSlayer","GLOBAL",4)
+ForceSpell(NearestEnemyOf(Myself),WIZARD_MAZE)
+END
+
+IF
+Global("#STransfoSlayer","GLOBAL",4)
+THEN
+ RESPONSE #100
+SetGlobal("#STransfoSlayer","GLOBAL",5)
+Spell(NearestEnemyOf(Myself),WIZARD_PRISMATIC_SPRAY)
+END
+
+
+

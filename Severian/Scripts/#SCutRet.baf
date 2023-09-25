@@ -1,0 +1,35 @@
+IF
+ True()
+THEN
+  RESPONSE #100
+  CutSceneId("#Severian")
+  SetGlobal("#SConvivesAppear","GLOBAL",23)
+  SetGlobal("#SBlaiddRetour","GLOBAL",1)
+  Wait(1)
+  CreateCreature("#SBlaidd",[4203.2634],15)
+  MoveViewPoint([4159.2622],VERY_FAST)
+  Wait(1)
+  Face(6)
+  DisplayStringHead("#SBlaidd",@1203)
+  Wait(10)
+  MoveViewPoint([4432.2765],VERY_FAST)
+  DisplayStringHead(Myself,@1204)
+  Wait(10)
+  ActionOverride("#SBlaidd",MoveToPoint([4389.2762]))
+  Wait(1)
+  DisplayStringHead("#SBlaidd",@1205)
+  Wait(10)
+  DisplayStringHead(Player1,@1206)
+  Wait(7)
+  CreateVisualEffectObject("SPFLAST1","#SBlaidd")
+  ActionOverride("#SBlaidd",DestroySelf())
+  TakeItemReplace("#SRingB","#SRingF","#Severian")
+  SetGlobal("#SeverRomanceActive","GLOBAL",2)
+  SetGlobal("#SClicTalk","GLOBAL",4)
+  EndCutSceneMode()
+END
+
+
+  
+    
+ 

@@ -1,0 +1,21 @@
+
+IF
+  True()
+THEN
+  RESPONSE #100
+    CutSceneId(Player1)
+    Wait(1)
+    FadeToColor([20.0],0)
+    Wait(1)
+    LeaveAreaLUA("#SCamp","",[703.424],2)
+    ActionOverride(Player2,LeaveAreaLUA("#SCamp","",[776.413],2))
+    ActionOverride(Player3,LeaveAreaLUA("#SCamp","",[763.463],2))
+    ActionOverride(Player4,LeaveAreaLUA("#SCamp","",[728.468],2))
+    ActionOverride(Player5,LeaveAreaLUA("#SCamp","",[747.430],2))
+    ActionOverride(Player6,LeaveAreaLUA("#SCamp","",[736.399],2))
+    MoveViewPoint([849.2897],INSTANT)
+    Wait(1)
+    FadeFromColor([20.0],0)
+    Wait(1)
+    EndCutSceneMode()
+END

@@ -1,0 +1,12 @@
+IF
+ True()
+THEN
+  RESPONSE #100
+    CutSceneId("#Severian") 
+    CreateCreatureObjectEffect("VAMPAMB","SPFLESHS","#Severian")
+    Wait(1)
+    DropInventory()
+    LeaveParty()
+    SetGlobal("#SeverEnterrement","GLOBAL",1)
+    EndCutSceneMode()
+END

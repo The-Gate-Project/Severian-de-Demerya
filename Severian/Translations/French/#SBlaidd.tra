@@ -1,0 +1,109 @@
+  // Accueil au Cimetière
+
+@0   = ~(Vous venez à peine de franchir les grilles du cimetière que, depuis l'ombre d'un mausolée, surgit une forme sombre. C'est là visiblement un loup, et il vous observe de ses deux prunelles au bleu céruléen. Il demeure à distance respectable mais depuis votre position, vous avez le sentiment que cet animal n'a rien de naturel tant la lumière et l'obscurité semblent glisser sur son pelage telles des vagues. Le molosse vous barre la route, planté au beau milieu du chemin. Et il ne bronche pas, s'asseyant même sur son arrière-train comme pour mieux vous défier..)~
+@1   = ~(Vous entendez soudain une voix dans votre esprit. Ce n'est point là voix humaine et ce qu'elle prononce ne s'apparente en rien à des mots intelligibles mais par vous ne savez quelle magie, vous les comprenez parfaitement comme si ce langage était vôtre depuis votre naissance. Vous réalisez que le loup est en train d'user de télépathie, à sa manière.)~
+@2   = ~*Vous êtes ceux que Valarym m'a envoyé chercher. Suivez-moi.*~
+@3   = ~Eh bien, si je m'attendais à cela...Un loup qui parle ?~
+@4   = ~(Le loup, qui se léchait négligemment la patte, se redresse et fait demi-tour. Ses yeux azur vous considèrent sans broncher, vous invitant simplement dans son sillage.)~
+@5   = ~Non seulement c'est un loup parlant que Valarym m'envoie, mais en plus cet endroit macabre ne me dit rien qui vaille. Dis à ton maître que je ne souhaite plus le rencontrer.~
+@6   = ~Nous te suivons mais qu'il s'agisse seulement d'un traquenard et il en cuira à ton maître.~
+@500 = ~*Dans ce cas, nous considérerons Valarym libre de ses engagements envers toi. Adieu.* (Le loup disparaît comme il est apparu, happé par les ombres du cimetière...C'est la dernière fois que vous verrez cette animal ainsi que son maître.)~
+
+// Devant Crypte
+
+@8   = ~(La crypte devant laquelle se tient l'animal semble être à l'abandon depuis des années et vous considérez l'entrée obscure avec une certaine appréhension.) *Valarym t'attend à l'intérieur, <CHARNAME>.*~
+@9   = ~Et qui me dit que ce n'est pas un piège ? Pourquoi ne vient-il pas lui-même à ma rencontre ?~
+@10  = ~Je n'aime pas ce lieu où tu veux m'entraîner mais je dois absolument lui parler. Je te suis.~
+@11  = ~(Le loup reste assis à se lécher la patte d'un air royalement indifférent. Il semble se moquer éperdument de votre attitude, considérant sa mission comme remplie.)~
+@13  = ~Finalement, je ne crois pas que ce soit une si bonne idée de te suivre là-dedans. J'ai eu mon compte de traquenards : je ne souhaite plus rencontrer ton maître. Adieu !~
+@1300 = ~*Dans ce cas, nous considérerons Valarym libre de ses engagements envers toi. Adieu.* (Le loup disparaît comme il est apparu, happé par les ombres du cimetière...C'est la dernière fois que vous verrez cette animal ainsi que son maître.)~
+
+
+// Présentation de Onyx aux membres du groupe
+
+@20 = ~(Dans un maelstrom de vent et de lumière, vous voyez apparaître devant vous le même loup qui vous a abordé à votre entrée dans le cimetière d'Athkatla : Onyx, le Familier de Severian.)~
+@21 = ~<CHARNAME>, tu connais déjà Onyx, mon compagnon depuis des lustres. Il nous sera un allié précieux en tant que combattant, messager et éclaireur.~
+@22 = ~Une créature noire comme un puit sans fond, dont je ne tolérerai la présence qu'à bonne distance. Cet animal n'est pas naturel, c'est une insulte à Dame Nature !~ // Jaheira
+@23 = ~Qu'est-ce que c'est ? Un compagnon pour Bouh  ? (Le hamster couine plaintivement entre les larges mains du rôdeur : visiblement, il ne partage pas l'opinion de son maître.)  Minsc adore les animaux ! Gentil, gentil toutou !~ // Minsc
+@24 = ~Ah oui, intéressant. Voilà un animal qu'on voit rarement sur Féérune, sauf à bonne distance de sa lame. J'ai hâte de voir ce dont Onyx est capable.~ // Yoshimo
+@25 = ~Je…Je ne suis pas sûre d'apprécier cet animal. Et il a de si grandes dents...~ // Aerie
+@26 = ~Ahrr Ahrr  ! Sacré bestiau que t'as là, le Sombre  ! Je gage qu'il f'ra fuir nos ennemis comme des fillettes !~ // Korgan
+@29 = ~(Vous observez l'animal d'un air circonspect, encore ébloui par le déluge de lumière qui a précédé son apparition.)~
+@31 = ~(Le loup vous toise de même, dans un face à face qui vous met étrangement mal à l'aise. Vous prenez conscience de votre ignorance face à ce genre de créature.)~
+@33 = ~Je n'ai jamais vu tel cerbère en Ombre-Terre, mais je jurerais qu'il en émane. Il me ferait un parfait serviteur, mais tenu en laisse.~ // Viconia
+@34 = ~Cet objet d'invocation doit être intéressant à étudier mais je ne me sens guère à l'aise devant le résultat obtenu...~ // Nalia
+@35 = ~Par Mystra ! Je serais curieux de voir de plus près l'objet qui invoque tel serviteur (si tant est que ce primate me laisse seulement y toucher.)~ // Edwin
+@36 = ~J'ai vu beaucoup d'animaux au cours de mes missions avec le Cœur Radieux. Et par Helm, aucun loup ne ressemblait à celui-ci. J'espère ne pas avoir à lui enseigner les bonnes manières.~ // Anomen
+@37 = ~Ce loup maléfique est une insulte aux principes de l'Ordre mais si j'ai épousé ta cause <CHARNAME>, je peux bien supporter sa présence également, pourvu qu'il ne soit pas à portée de lame.~ // Keldorn
+@38 = ~Foi de gnome, ma taille me confronte nez à truffe avec cette boule de poils ! Oh dis Severian, avant qu'il ne me mange tout cru, j'aimerais bien voir l'objet qui l'invoque !~ // Jan
+@39 = ~Même si celui-ci est apprivoisé, il ne mérite que mon mépris : de nombreux récits rapportent les méfaits de ces loups de l'ombre qui hantent donjons et forêts, avides d'âmes à dévorer.~ // Valygar
+@40 = ~Si l'Equilibre a voulu que ce loup vienne au monde, alors il en sera ainsi. Je ne m'élèverai pas contre lui.~ // Cernd
+@41 = ~Cette créature me rappelle de bien déplaisants souvenirs. Le fait que ma taille me place face à face avec ce terrible limier ne m'inspire que davantage de courage : je le combattrai s'il le faut.~ // Mazzy
+@42 = ~Tu recèles plus d'un tour dans ton sac, mon épervier. Onyx ferait du plus bel effet au sein de la Garde Fatale...Ou pourquoi pas sur une scène de théâtre, dans le rôle de Cerbère ? Mais il faudrait le grimer un peu...~ // Haer'Dalis
+@43 = ~J'adore les grosses peluches mais je ne suis pas certaine qu'il me laisserait le caresser...Oh dis, je peux, Severian ?~ // Imoen
+
+// Renvoi anticipé de Onyx dans son plan
+@1000 = ~*Tu m'as appelé, Severian ?*~
+@1001 = ~* En effet, j'ai besoin de toi.* (Le Rôdeur flatte affectueusement les flancs de l'animal.)~
+@1002 = ~*Je n'ai plus besoin de toi pour le moment, mon ami.*~
+
+
+// CHAPITRE 2
+// MINI QUETE : L'ESCAPADE DE Onyx
+
+@130 = ~*Puisque <CHARNAME> a eu la bonne idée de rester ici un moment, je vais aller fourrer ma truffe un peu partout. Il y a vraiment de bonnes odeurs par ici, tu sais* (Le loup se pourlèche les babines.)~
+@131 = ~C'est entendu, mon vieux. Mais ne te mets pas dans de sales draps, hein ?~
+@132 = ~*Ne t'en fais pas pour moi* (Le loup remue de la queue et disparaît bientôt à son tour dans le sous-bois, enivré, presque nerveux, vous en jureriez.)~
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// Entrée dans le journal
+@2000 = ~ Les Chroniques de Severian - Livre 2 : Les fantômes du passé
+
+L'escapade d'Onyx
+
+Onyx nous a faussé compagnie après le rituel, expliquant que sa truffe était très sensible à certaines effluves émanant du sous-bois proche. Mais il ne semble y avoir aucun danger : ce n'est là qu'une escapade de notre ami loup. Je me demande quand nous le reverrons et s'il nous rapportera de quoi faire un bon civet de lapin ?~
+
+
+// CHAPITRE 2
+// MINI QUETE : L'ESCAPADE DE Onyx
+
+@139 = ~(Vos recherches dans les bois vous ont menés à une clairière reculée en bordure d'une falaise. Et c'est dans l'ombre des arbres que vous découvrez une silhouette au pelage blanc comme la neige : c'est une louve qui, assise sur son arrière-train, semble écouter Onyx avec la plus grande attention, un Onyx noir comme la suie. Le contraste des couleurs est surprenant mais le couple n'en est pas moins bien assorti. Voici donc ce qui occupait le loup durant tout ce temps....)~
+@140 = ~*Et moi vois-tu ma belle, je suis un Loup de l'Ombre et je parcours Toril en quête d'aventure et de fortune. Et voici que mes dernières aventures m'ont menées jusqu'à toi...Ce ne peut être une coïncidence : nous sommes faits l'un pour l'autre, ma mie !*~
+@141 = ~(La louve émet quelques jappements incompréhensibles pour vous.)~
+@142 = ~*Suis-moi et à nous deux, nous conquérions le monde. Enfin, toi, moi et Severian, bien sûr. Il est malin et futé, et c'est une bonne lame.*~
+@14200 = ~(Vous éclatez de rire.) Le dicton prétend que tel maître, tel chien. Je crois que cela s'applique à ton loup aussi, non ? Regarde-le, ce beau parleur, à conter fleurette à Dame Louve !~
+@14201 = ~(Vous ronchonnez.) Quoi ? On a fait tout ce chemin pour voir Onyx se vanter ?~ 
+@143 = ~(Severian sort habilement une pomme de sa cape, cherchant à se donner une contenance. Il la fait tournoyer sur le bout de son index, faussement indifférent tandis que vous épiez les deux loups.)~
+@144 = ~Je ne lui connaissais pas ce bagou de séducteur...~
+@145 = ~(Severian s’assoit sur une grosse pierre et entame le fruit, le front soudain soucieux.) Tu sais, <CHARNAME>...Parfois, j'aimerais avoir une conscience plus aiguë des êtres et des choses.~
+@14500 = ~Que veux-tu dire ?~
+@14501 = ~Tu veux me faire croire que c'est un loup comme les autres ? Tout bien considéré, quand je le vois comme ça...Tu as raison.~
+@146 = ~Jusqu'ici, je n'avais pas réalisé qu'Onyx était, dans le fond, un loup comme les autres. Qu'il avait des besoins comme tout être vivant. Je le connaissais gourmand mais cela n'a rien à voir avec un loup comptant fleurette.~
+@147 = ~(Il considère sa chevalière comme de coutume présente à son doigt et, alors que vous vous attendiez à ce qu'il poursuive dans cette voie, le voici qui se lève et qui pénètre dans la clairière. Il s'accroupit devant son familier et cette scène amplifie en vous l'amertume réveillée par Severian.)~
+@148 = ~Salut, mon vieux.~
+@149 = ~(Le loup ne se montre pas surpris le moins du monde : il jappe même de joie.) *Je savais que tu viendrais.*~
+@150 = ~(La louve lâche un grondement tout en opérant un mouvement de fuite mais Onyx la rassure de quelques gémissements de gorge. La femelle n'en reste pas moins méfiante et vous regarde vous et votre groupe, de ses yeux rosâtres. C'est une vision intense entre vous et la bête et vous ne pouvez vous empêcher de vous sentir un peu mal à l'aise à l'idée de rompre la magie de cette rencontre entre les deux animaux.)~
+@151 = ~(C'est également le cas de Severian qui a du mal à trouver ses mots.) Je...me suis inquiété pour toi, camarade.~
+@152 = ~*Je me débrouille toujours. Est-ce le moment de partir ?*~
+@153 = ~Non. Maintenant que je sais que tu es...en bonne compagnie, je retourne au village avec <CHARNAME>. Tu connais le chemin de ma chambre hein, grosse carpette ? (Severian le grattouille entre ses oreilles.) Lorsque l'envie t'en prendra de venir voir ton copain, tu me trouveras probablement dans les parages. N'oublie quand même pas que tu es invité au mariage, hein ?~
+@154 = ~(Onyx ne répond pas, tournant la tête d'un côté pour mieux considérer son ami, réalisant le malaise de l'halfshade.) *Je ressens un malaise en toi, Severian. Je reviendrai, ne te blesse pas inutilement. Tu es mon ami. Le meilleur. Nous avons fait la route ensemble jusqu'ici et nous la finirons ensemble.*~
+@155 = ~Mais la route est encore longue...~
+@156 = ~*Je reviendrai dans quelques jours : tu me trouveras sur ton lit à t'attendre, tu sais comme il est confortable ! Et je compte sur toi pour profiter toi aussi de chaque instant en cet endroit, mon vieux* (Le loup le regarde intensément.)~
+@157 = ~(Severian flatte les flancs de l'animal.) A bientôt, sac à puces. Je suivrai ton conseil, sois-en sûr.~
+@158 = ~(Onyx le gratifie d'un coup de langue enthousiaste, remuant de la queue avec frénésie. Vous devinez qu'ils se disent adieu pour un temps. Et lorsque Severian revient vers vous, le visage indéchiffrable, les deux loups ont déjà disparu dans les fourrés.)~
+@159 = ~(Désormais s'ouvrent à vous de paisibles jours dans le val, et qui sait ce à quoi donneront-ils naissance ? Pour l'heure, vous avancez sur le chemin, Severian vous suivant comme votre ombre...Et vous avez le sentiment que son regard pèse sur vous....)~
+
+// CHAPITRE 2
+// LE RETOUR DE Onyx
+
+@200 = ~(Une forme sombre et éthérée a pénétré dans la chambre, coupant court à votre tendre moment. Onyx se matérialise sous vos yeux, bien campé sur le lit, langue pendante, yeux brillants, et visiblement très fier de son petit effet.)~
+@201 = ~Onyx ! Espèce de sac à puces !~
+@202 = ~*Je t'avais dit que je reviendrai. Et ton lit est bien plus confortable que cette grotte...* 
+(Le loup commence à se rouler dans les draps en grognant de plaisir.)~
+@203 = ~Et voilà que tu me sabotes tout...Fidèle à toi-même, mon vieux. C'est bon de te revoir...~
+
+
+
+
+

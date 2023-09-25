@@ -1,0 +1,11 @@
+IF
+  InParty("#Severian")
+  AreaCheck("AR0509")
+  !StateCheck("#Severian",STATE_SLEEPING)
+  Global("#SFiveFlagon","AR0509",0)
+THEN
+  RESPONSE #100
+    SetGlobal("#SFiveFlagon","AR0509",1)
+    ActionOverride("#Severian",StartDialogueNoSet(Player1))
+END
+

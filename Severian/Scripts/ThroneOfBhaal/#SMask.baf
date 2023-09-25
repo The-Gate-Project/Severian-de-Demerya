@@ -1,0 +1,11 @@
+IF
+ InParty("#Severian")
+ Range("#Severian",20)
+ Global("#SeverianMask","GLOBAL",1)
+THEN
+ RESPONSE #100
+PlaySong(0)
+PlaySound("#SMus25B")
+SetGlobal("#SeverianMask","GLOBAL",2)
+StartDialogueNoSet(Player1)
+END

@@ -1,0 +1,10 @@
+IF
+  IsOverMe("#Severian")
+  InParty("#Severian")
+  IsValidForPartyDialog("#Severian")
+  !StateCheck("#Severian",STATE_SLEEPING)
+  Global("#SeverQuest1","GLOBAL",100)
+THEN
+  RESPONSE #100
+    ActionOverride("#Severian",StartDialogueNoSet(Player1))
+END

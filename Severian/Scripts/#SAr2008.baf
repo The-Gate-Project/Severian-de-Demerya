@@ -1,0 +1,101 @@
+IF
+  Global("#SeverChapDeux","GLOBAL",6)
+  Global("#SMaelysExists","MYAREA",0)
+  Global("#SRasthExists","MYAREA",0)
+  Global("#SVesthExists","MYAREA",0)
+THEN
+  RESPONSE #100
+    SetGlobal("#SeverChapDeux","GLOBAL",7)
+    SetGlobal("#SMaelysExists","MYAREA",1)
+    SetGlobal("#SRasthExists","MYAREA",1)
+    SetGlobal("#SVesthExists","MYAREA",1)
+    CreateCreature("#SMaelys",[937.832],14)
+    CreateCreature("#SRasth",[886.905],13)
+    CreateCreature("#SVesth",[1025.861],14)
+END
+
+IF
+  Global("#SeverChapDeux","GLOBAL",7)
+THEN
+  RESPONSE #100
+    PlaySong(0)
+    PlaySound("#SMusicK")
+    SetGlobal("#SeverChapDeux","GLOBAL",8)
+    ActionOverride("#SVesth",StartDialogueNoSet(Player1))
+END
+
+IF
+  Global("#SeverChapDeux","GLOBAL",9)
+THEN
+  RESPONSE #100
+    SetGlobal("#SeverChapDeux","GLOBAL",10)
+    ActionOverride("#SVesth",StartDialogueNoSet(Player1))
+END
+
+
+IF
+  Dead("#SRasth")
+  Dead("#SVesth")
+  !Dead("#Severian")
+  Global("#RasthVesthMort","GLOBAL",0)
+THEN
+  RESPONSE #100
+  SetGlobal("#RasthVesthMort","GLOBAL",1)
+  SetGlobal("#SeverChapDeux","GLOBAL",16)
+  SetGlobal("#SeverEnterrement","GLOBAL",1)
+END
+
+IF
+ Global("#SeverEnterrement","GLOBAL",2)
+THEN
+  RESPONSE #100
+  SetGlobal("#SeverEnterrement","GLOBAL",3)
+  ActionOverride("#SMaelys",StartDialogueNoSet(Player1))
+END
+
+IF
+  Global("#SeverEnterrement","GLOBAL",5)
+THEN
+  RESPONSE #100
+  SetGlobal("#SeverEnterrement","GLOBAL",6)
+  ActionOverride("#SMaelys",StartDialogueNoSet(Player1))
+END
+
+
+IF
+ Global("#SeverEnterrement","GLOBAL",7)
+THEN
+  RESPONSE #100
+    SetGlobal("#SeverEnterrement","GLOBAL",8)
+    ActionOverride("#SMaelys",DestroySelf())
+    ActionOverride("#Severian",CreateItem("#SMaBody",0,0,0))
+    ActionOverride("#Severian",CreateItem("#SYaman1",0,0,0))
+END
+
+IF
+  Global("#SeverYaman","GLOBAL",0)
+  PartyHasItem("#SMaBody")
+  PartyHasItem("#SYaman1")
+THEN
+  RESPONSE #100
+    SetGlobal("#SeverYaman","GLOBAL",1)
+    ActionOverride("#Severian",StartDialogueNoSet(Player1))
+END
+
+IF
+ Dead("#SRasth")
+ Global("#SExperienceRasth","GLOBAL",0)
+THEN
+  RESPONSE #100
+ AddexperienceParty(7500)
+ SetGlobal("#SExperienceRasth","GLOBAL",1)
+END
+
+IF
+ Dead("#SVesth")
+ Global("#SExperienceVestha","GLOBAL",0)
+THEN
+  RESPONSE #100
+ AddexperienceParty(7500)
+ SetGlobal("#SExperienceVestha","GLOBAL",1)
+END

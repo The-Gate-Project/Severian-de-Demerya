@@ -1,0 +1,22 @@
+IF
+  True()
+THEN
+  RESPONSE #100
+    CutSceneId(Player1)
+    SetGlobal("#SCimetiere", "GLOBAL", 3)
+    SetGlobal("#Scut800","AR0800", -1)
+    FadeToColor([20.0],0)
+    Wait(1)
+    ActionOverride("#SBlaidd",JumpToPoint([2426.1953]))
+    JumpToPoint([2359.1949])
+    ActionOverride(Player2,JumpToPoint([2360.1914]))
+    ActionOverride(Player3,JumpToPoint([2312.1914]))
+    ActionOverride(Player4,JumpToPoint([2312.1878]))
+    ActionOverride(Player5,JumpToPoint([2264.1890]))
+    ActionOverride(Player6,JumpToPoint([2264.1854]))
+    MoveViewObject(Myself,INSTANT)
+    Wait(1)
+    FadeFromColor([20.0],0)
+    ActionOverride("#SBlaidd",StartDialogueNoSet(Player1))
+    EndCutSceneMode()
+END

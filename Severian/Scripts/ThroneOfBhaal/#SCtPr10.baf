@@ -1,0 +1,17 @@
+
+IF
+  True()
+THEN
+  RESPONSE #100
+    CutSceneId(Player1)
+    Wait(1)
+    SetGlobal("#SQuatriemeMiroirAme","GLOBAL",13)
+    ActionOverride("#Severian",MoveToPoint([868.2830]))
+    Wait(1)
+    PlaySong(0)
+    PlaySound("#SMus25B")
+    Wait(1)
+    ActionOverride("#SReflet",StartDialogueNoSet(Player1))
+    EndCutSceneMode()
+END
+

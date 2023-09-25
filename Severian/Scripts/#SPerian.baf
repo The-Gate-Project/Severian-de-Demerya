@@ -1,0 +1,95 @@
+IF
+See([PC])
+Global("#SBlaiddTrophee","GLOBAL",0)
+THEN
+RESPONSE #100
+Dialogue(Nearest([PC]))
+END
+
+IF
+Global("#BlaiddTrophee","GLOBAL",2)
+See([PC])
+THEN
+RESPONSE #100
+Dialogue(Nearest([PC]))
+END
+
+IF
+Global("#SeverianMailikki","GLOBAL",2)
+See([PC])
+THEN
+RESPONSE #100
+Dialogue(Nearest([PC]))
+END
+
+
+IF
+ Global("#SeverianMailikki","GLOBAL",23)
+ See([PC])
+THEN
+  RESPONSE #100
+   ActionOverride("#SPerian",StartDialogueNoSet(Player1))
+END
+
+// ROMANCE FINAL
+
+IF
+Global("#SFinalRomance","GLOBAL",1)
+THEN
+ RESPONSE #100
+  Dialog(Player1)
+END
+
+IF
+AreaCheck("Ar1100")
+!See("#SPeyr")
+See(Player1)
+!Range(Player1,5)
+Global("#SPypDuorok","GLOBAL",1)
+Global("#SCombatSarvaj","GLOBAL",0)
+Global("#SFinalRomanceSuivantsMailikki","GLOBAL",0)
+THEN RESPONSE #100
+MoveToObject(Player1)
+END
+
+IF
+AreaCheck("Ar1100")
+!See("#SPeyr")
+!See(Player1)
+Global("#SPypDuorok","GLOBAL",1)
+Global("#SCombatSarvaj","GLOBAL",0)
+Global("#SFinalRomanceSuivantsMailikki","GLOBAL",0)
+THEN RESPONSE #100
+MoveToObject(Player1)
+END
+
+
+IF
+AreaCheck("Ar1100")
+See("#SPeyr")
+Global("#SPypDuorok","GLOBAL",1)
+Global("#SCombatSarvaj","GLOBAL",0)
+Global("#SFinalRomanceSuivantsMailikki","GLOBAL",0)
+THEN RESPONSE #100
+SetGlobal("#SCombatSarvaj","GLOBAL",1)
+END
+
+IF
+AreaCheck("Ar1100")
+Global("#SPypDuorok","GLOBAL",1)
+Global("#SCombatSarvaj","GLOBAL",1)
+Global("#SFinalRomanceSuivantsMailikki","GLOBAL",0)
+!See("#SPeyr")
+THEN RESPONSE #100
+SetGlobal("#SCombatSarvaj","GLOBAL",0)
+END
+
+// Script Combat
+
+IF
+Global("#SCombatSarvaj","GLOBAL",1)
+THEN RESPONSE #100
+Attack("#SPeyr")
+END
+
+

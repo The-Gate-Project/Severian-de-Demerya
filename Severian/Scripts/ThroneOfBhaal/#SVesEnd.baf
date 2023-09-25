@@ -1,0 +1,58 @@
+IF
+Global("#SCombatFinalMod","GLOBAL",1)
+Global("#SBuffering","GLOBAL",0)
+Allegiance(Myself,ENEMY)
+THEN
+  RESPONSE #100
+    SetGlobal("#SBuffering","GLOBAL",1)
+    ReallyForceSpell(Myself,WIZARD_TRUE_SIGHT)
+    ReallyForceSpell(Myself,WIZARD_FIRE_SHIELD_RED)
+    ReallyForceSpell(Myself,WIZARD_FIRE_SHIELD_BLUE)
+    ReallyForceSpell(Myself,WIZARD_MIRROR_IMAGE)
+    ReallyForceSpell(Myself,WIZARD_PROTECTION_FROM_NORMAL_MISSILES)
+    ReallyForceSpell(Myself,WIZARD_IMPROVED_INVISIBILITY)
+    ReallyForceSpell(Myself,WIZARD_GLOBE_OF_INVULNERABILITY)
+END
+
+IF
+Global("#SBuffering","GLOBAL",1)
+THEN
+  RESPONSE #100
+  SetGlobal("#SBuffering","GLOBAL",2)
+  ForceSpell(NearestEnemyOf(Myself),WIZARD_IMPRISONMENT)
+END
+
+IF
+Global("#SBuffering","GLOBAL",2)
+THEN
+  RESPONSE #100
+  SetGlobal("#SBuffering","GLOBAL",3)
+  ForceSpell(NearestEnemyOf(Myself),WIZARD_RUBY_RAY_OF_REVERSAL)
+END
+
+IF
+Global("#SBuffering","GLOBAL",3)
+THEN
+  RESPONSE #100
+  SetGlobal("#SBuffering","GLOBAL",4)
+  ForceSpell(NearestEnemyOf(Myself),WIZARD_DISINTEGRATE)
+END
+
+IF
+Global("#SBuffering","GLOBAL",4)
+THEN
+  RESPONSE #100
+  SetGlobal("#SBuffering","GLOBAL",5)
+  ForceSpell(NearestEnemyOf(Myself),WIZARD_SYMBOL_FEAR)
+END 
+
+IF
+Global("#SBuffering","GLOBAL",5)
+THEN
+  RESPONSE #100
+  SetGlobal("#SBuffering","GLOBAL",6)
+  ForceSpell(NearestEnemyOf(Myself),WIZARD_CHAOS)
+END 
+
+
+

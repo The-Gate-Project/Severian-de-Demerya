@@ -1,0 +1,28 @@
+IF
+ True()
+THEN
+  RESPONSE #100
+    CutSceneId("#Severian")
+    Wait(1)
+    FadeToColor([20.0],0)
+    Wait(1)
+    ActionOverride("#SBlaidd",DestroySelf())
+    ActionOverride("#SLouve",DestroySelf())
+    LeaveAreaLUA("AR1105","",[546.457],5)
+    ActionOverride(Player1,LeaveAreaLUA("AR1105","",[469.447],13))
+    SetGlobal("#SBlaiddQuete","GLOBAL",4)
+    SetGlobal("#SeverianMailikki","GLOBAL",19)
+    Wait(1)
+    FadeFromColor([20.0],0)
+    Wait(1)
+    DisplayStringHead(Myself,@1020)
+    Wait(4)
+    DisplayStringHead(Myself,@1023)
+    Wait(10)
+    DisplayStringHead(Myself,@1021)
+    Wait(10)
+    DisplayStringHead(Myself,@1022)
+    Wait(10)
+    SetDialog("#SeverR")
+    StartCutScene("#SCtLou2")
+END

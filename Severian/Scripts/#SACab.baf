@@ -1,0 +1,60 @@
+IF
+  OnCreation()
+	Global("#SRevealACab","MYAREA",0)
+THEN
+	RESPONSE #100
+		Explore()
+		SetGlobal("#SRevealACab","MYAREA",0)
+		Continue()
+END
+
+// LE CHOIX DE CHARNAME
+// SI CHARNAME LAISSE SEVERIAN LIBRE
+
+IF
+ Global("#SRomanceFinalCouronne","GLOBAL",27)
+ THEN
+  RESPONSE #100
+  Deactivate("#Severian")
+  SetGlobal("#SRomanceFinalCouronne","GLOBAL",28)
+END
+  
+// LE CHOIX DE CHARNAME
+// SI CHARNAME VEUT RETROUVER SEVERIAN
+
+IF
+ Global("#SRomanceFinalCouronne","GLOBAL",29)
+ THEN
+  RESPONSE #100
+  Deactivate("#Severian")
+  CreateCreatureImpassable("#SevRess",[552.288], 0)
+  SetGlobal("#SRomanceFinalCouronne","GLOBAL",30)
+END
+   
+IF
+Global("#SRomanceFinalCouronne","GLOBAL",32)
+THEN
+  RESPONSE #100
+  Activate("#Severian")
+  ActionOverride("#Severian",Rest())
+  ActionOverride("#SevRess",DestroySelf())
+  SetGlobal("#SRomanceFinalCouronne","GLOBAL",33)
+  ActionOverride("#Severian",JoinParty())
+  SetDialog("#SeverR")
+  ActionOverride("#Severian",Dialog(Player1))
+END
+
+
+// ROMANCE FINAL
+// L'HEURE DU DEPART
+// APRES NUIT D'AMOUR
+
+IF
+  Global("#SRomanceFinalDerniereNuit","GLOBAL",2)
+THEN
+  RESPONSE #100
+  SetGlobal("#SRomanceFinalDerniereNuit","GLOBAL",3)
+  Wait(2)
+  SetDialog("#SeverR")
+  ActionOverride("#Severian",Dialog(Player1))
+END

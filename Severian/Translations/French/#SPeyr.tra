@@ -1,0 +1,37 @@
+
+// ROMANCE FINAL
+// SARVAJ
+
+
+@0 = ~(Alors que vous approchez du campement, vous pouvez voir Sarvaj entouré de ses sbires, debout près d'un feu. Votre présence n'a pas échappé au Zhent.)~ 
+@1 = ~(Vous êtes désormais face à Sarvaj, celui dont l'ombre a longtemps plané sur votre histoire...L'homme vous dépasse de deux bonnes têtes et son arsenal magique est plutôt impressionnant. Vous avez affaire à un guerrier-mage adepte de l'entropie, et à un Zenth de surcroît.)~
+@2 = ~Comme on se retrouve, Severian...Et je vois que tu as su te trouver une alliée, une Enfant de Bhaal de surcroît. Mais comme tu peux le constater, le Réseau Noir ne lâche jamais ses proies. Il m'a été facile de vous suivre : il suffisait de suivre les cadavres dans votre sillage. Mais en fin de compte, pourquoi se fatiguer alors qu'il suffit de menacer ce village pour que ton cœur se révolte et te fasse accourir ici ?~
+@3 = ~(Severian se contient avec peine ; ses traits sont tendus, sa main est étroitement serrée autour de la garde de son épée.) Sarvaj, si tu ne t'en vas pas ici tout de suite...~
+@4 = ~Quel est le rapport entre la Rune Pourpre et le Réseau Noir ? Tout ceci ne rime absolument à rien !~
+@5 = ~Je commence à en avoir ras le bol de ton baratin ! Tu finiras comme tous les autres qui ont eu le tort de me défier : en descente de lit !~
+@6 = ~Au contraire, cela rime parfaitement : il se prépare des choses insoupçonnables sur Toril. Insoupçonnables pour la majorité des mortels, mais pas pour le Zhentarim. L'organisation que vous connaissez sous le nom de la Rune Pourpre n'est qu'une façade pour dissimuler l'émergence de la Légion Ombreuse sur Toril.~
+@7 = ~(L'halfshade recule d'un pas, horrifié.) Tu es un adepte de Cyric : pourquoi croirais-je tes mensonges ? Et...Et cependant, bien peu sont ceux qui connaissent l'existence de la Légion Ombreuse...~
+@8 = ~(Sarvaj se met à rire de façon sinistre.) Je t'aurais cru plus malin que ça, halfshade ! Laissez-moi vous expliquer avant de vous envoyer tous deux dans les Neuf Enfers. La Rune Pourpre n'est qu'une ramification de la Légion Ombreuse ; et le Zentharim n'acceptera jamais qu'elle vienne marcher sur ses plate-bandes. Je suis venu de Château-Zenthil sur l'ordre de Fzoul Chembryl pour infiltrer la Rune Pourpre en tant qu'espion : découvrir leurs véritables intentions, et le cas échéant, donner la chasse à certaines de leurs recrues gênantes.~
+@9 = ~Il n'était pas facile de t'atteindre dans cette ville contrôlée par les Mages Cagoulés : il m'a fallu déployer des trésors d'habileté pour te piéger sans compromettre ma position ; même ce lâche d'Ilkar n'y a vu que du feu. Mais ce pleutre a mal fait son travail et me voilà aujourd'hui, contraint de jouer les traqueurs d'halfshade tout en mettant en danger ma position privilégiée au sein de la Rune Pourpre. Peu importe, car la guerre entre la Légion Ombreuse et le Zentharim est proche : je m'en retournerai à Château-Zenthil après t'avoir occis, toi et tes amis. Tu seras un des quelques halfshades que j'aurais réussi à faire tomber avant que le Réseau Noir ne mette définitivement à bas ton engeance.~
+@10 = ~Tu n'es que de la vermine, Severian ! Chaque créature dans ton genre doit être rayée jusqu'à la dernière de la surface de Toril ! Tu ne te prétends peut-être pas de la Légion Ombreuse mais tôt ou tard, elle saura te rattraper et t'enrôlera de gré ou de force pour participer à l'invasion de Toril. Le Zentharim ne permettra pas cela : nous conserverons notre suprématie sur les Royaumes !~
+@11 = ~Tu devrais me remercier de prolonger ta misérable vie de quelques minutes ! ça suffit : votre existence pitoyable s'achève ici, pour la plus grande gloire du Zentharim.~
+@12 = ~Une seconde ! Quel est le rapport entre la Rune Pourpre et le Réseau Noir ? Serais-tu un espion à la solde du Zentharim ?~
+@13 = ~(Sarvaj tourne ses yeux acérés vers Severian.) Il se prépare des choses insoupçonnables sur Toril. Insoupçonnables pour la majorité des mortels, mais pas pour le Zhentarim. L'organisation que vous connaissez sous le nom de la Rune Pourpre n'est qu'une façade pour dissimuler l'émergence de la Légion Ombreuse sur Toril.~
+@14 = ~Ah, voilà enfin le mot de la fin ! Je commençais à m'impatienter. On peut enfin commencer ?~
+@15 = ~Alors, c'est ça ? Tout ça pour une stupide guerre d'intérêts entre sociétés secrètes ? Vous me donnez envie de vomir !~
+@16 = ~Cela va commencer bien assez tôt, Enfant de Bhaal...~
+@17 = ~Vous allez faire honneur aux pouvoirs que Cyric m'a accordées. A moi, mes illusions ! Au nom du Zentharim !~ 
+@18 = ~Sssssssss....~ 
+@19 = ~ça suffit : vous me faites perdre mon temps. Battez-vous et périssez !~ 
+ 
+
+
+// TRANSFORMATION DRAGON
+
+@30 = ~Il suffit ! Vous allez disparaître une fois pour toutes !~
+@31 = ~Plus d'entropie !~
+@32 = ~Je...Je suis Un dragon ? Cette fois, vous êtes perdus!~
+@33 = ~Ahahahahah !~
+
+
+@50 = ~Hiatus entropique~

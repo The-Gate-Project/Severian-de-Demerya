@@ -1,0 +1,22 @@
+IF
+  True()
+THEN
+  RESPONSE #100
+    CutSceneId(Player1)
+    MoveViewPoint([702.1706],VERY_FAST)
+    FadeToColor([20.0],0)
+    Wait(1)
+    JumpToPoint([464.1753])
+    Face(11)
+    FadeFromColor([20.0],0)
+    DisplayStringHead(Myself,@2000)
+    Wait(15)
+    DisplayStringHead(Myself,@2001)
+    Wait(10)
+    DisplayStringHead(Myself,@2002)
+    Wait(10)
+    DisplayStringHead(Myself,@2003)
+    Wait(10)
+    SetGlobal("#SRomanceFinalCouronne","GLOBAL",22)
+    EndCutSceneMode()
+END

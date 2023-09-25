@@ -1,0 +1,28 @@
+IF
+  True()
+THEN
+  RESPONSE #100
+    CutSceneId("#Severian")
+    MoveViewPoint([702.1706],VERY_FAST)
+    Wait(1)
+    DisplayStringHead("#Severian",@1492)
+    Wait(1)
+    CreateVisualEffectObject("SPHOLMIG","#Severian")
+    SmallWait(10)
+    CreateVisualEffectObject("SPHOLYWD","#Severian")
+    SmallWait(10)
+    CreateVisualEffectObject("SPMELBD1","#Severian")
+    SmallWait(13)
+    CreateVisualEffectObject("SPMELBD1","#Severian")
+    SmallWait(13)
+    CreateVisualEffectObject("SPMELBD1","#Severian")
+    SmallWait(13)
+    ReallyForceSpell(Myself,WIZARD_IMPROVED_INVISIBILITY)
+    Wait(1)
+    CreateVisualEffectObject("SMOKE","#Severian")
+    SmallWait(1)
+    CreateVisualEffectObject("SMOKE","#SPeyr")
+    Wait(2)
+    SetGlobal("#SRomanceFinalCouronne","GLOBAL",19)
+    EndCutSceneMode()
+END

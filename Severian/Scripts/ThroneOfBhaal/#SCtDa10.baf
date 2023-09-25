@@ -1,0 +1,16 @@
+IF
+ True()
+THEN
+ RESPONSE #100
+CutSceneId(Player1)
+SetGlobal("#SDeadSeverian","GLOBAL",3)
+Wait(1)
+MoveViewObject("#SValy3",INSTANT)
+Wait(2)
+ReallyForceSpell("#Severian",CLERIC_RESURRECTION)
+Wait(1)
+ActionOverride("#Severian",Face(4))
+Wait(1)
+ActionOverride("#Severian",StartDialogueNoSet(Player1))
+EndCutSceneMode()
+END

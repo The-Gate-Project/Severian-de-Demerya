@@ -1,0 +1,56 @@
+IF
+ Allegiance(Myself,ENEMY)
+ Global("#SProtectionsDilyn","GLOBAL",0)
+THEN
+ RESPONSE #100
+SetGlobal("#SProtectionsDilyn","GLOBAL",1)
+ReallyForceSpell(Myself,CLERIC_PROTECTION_FROM_EVIL_10_FOOT)
+ReallyForceSpell(Myself,CLERIC_DEFENSIVE_HARMONY)
+ReallyForceSpell(Myself,CLERIC_SHIELD_OF_THE_ARCHONS)
+ReallyForceSpell(Myself,NPC_BLADE_BARRIER)
+END
+
+IF 
+ Global("#SProtectionsDilyn","GLOBAL",1)
+ Global("#SFleauDinsecte","GLOBAL",0)
+THEN
+ RESPONSE #100
+SetGlobal("#SFleauDinsecte","GLOBAL",1)
+ForceSpell(NearestEnemyOf(Myself),CLERIC_SUMMON_INSECTS)
+END
+
+IF
+ Global("#SFleauDinsecte","GLOBAL",1)
+ Global("#SForceDeChampion","GLOBAL",0)
+THEN
+ RESPONSE #100
+SetGlobal("#SForceDeChampion","GLOBAL",1)
+ForceSpell("#SPeyr",CLERIC_CHAMPIONS_STRENGTH)
+END
+
+IF
+ Global("#SForceDeChampions","GLOBAL",1)
+ Global("#SEarthQuake","GLOBAL",0)
+THEN
+ RESPONSE #100
+SetGlobal("#SEarthQuake","GLOBAL",1)
+ForceSpell(NearestEnemyOf(Myself),CLERIC_EARTHQUAKE)
+END
+
+IF 
+ Global("#SEarthQuake","GLOBAL",1)
+ Global("#SMassCure","GLOBAL",0)
+THEN
+ RESPONSE #100
+SetGlobal("#SMassCure","GLOBAL",1)
+ForceSpell("#SPeyr",CLERIC_MASS_CURE)
+END
+
+IF 
+ Global("#SMassCure","GLOBAL",1)
+ Global("#SRegeneration","GLOBAL",0)
+THEN
+ RESPONSE #100
+SetGlobal("#SRegeneration","GLOBAL",1)
+ForceSpell("#SPeyr",CLERIC_REGENERATE)
+END

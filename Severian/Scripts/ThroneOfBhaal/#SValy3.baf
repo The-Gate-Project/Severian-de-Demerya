@@ -1,0 +1,21 @@
+IF
+Global("#SValyriaTeleportation","GLOBAL",1)
+Global("#SDeadSeverian","GLOBAL",1)
+Detect(Player1)
+AreaCheck("AR4500")
+THEN
+ RESPONSE #100
+SetGlobal("#SDeadSeverian","GLOBAL",2)
+StartDialogueNoSet(Player1)
+END
+
+IF
+Global("#SValyriaTeleportation","GLOBAL",1)
+Global("#SDeadDarkhan","GLOBAL",1)
+Detect(Player1)
+AreaCheck("AR4500")
+THEN
+ RESPONSE #100
+SetGlobal("#SDeadDarkhan","GLOBAL",2)
+StartDialogueNoSet(Player1)
+END

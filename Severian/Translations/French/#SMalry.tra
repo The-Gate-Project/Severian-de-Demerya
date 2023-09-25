@@ -1,0 +1,75 @@
+// CHAPITRE 3
+// DEVANT L'AUBERGE D'IMNESVALE
+// L'INVITATION DE MARIAGE
+
+@30 = ~(A l'approche de l'auberge, vous découvrez une silhouette bien connue sous le auvent, celle d'une petite fille et de sa poupée dont elle s'emploie à brosser vigoureusement les cheveux.)~
+@31 = ~Oooh, mais c'est <CHARNAME> ! Et Severian ! Comme je suis contente de vous voir ! Papy Lloyd m'a demandé de guetter votre arrivée mais personne ne savait si vous alliez rester ici. Je commençais à m'ennuyer un peu, même avec Wendy. Elle n'est pas très bavarde, vous savez.~
+@32 = ~(La petite arbore une mine dépitée en désignant sa poupée de chiffon, puis son attention semble attirée par le bras en écharpe de Severian.)~
+@33 = ~Oooh, mais tu es blessé ! Est-ce la méchante femme en rouge ?~
+@34 = ~(Le jeune homme s'approche de la petite et s'accroupit à son niveau pour lui flatter l'épaule.) Elle ne reviendra plus jamais par ici, tu peux être tranquille.~
+@35 = ~J'aurais aimé la combattre avec toi et ta fiancée. Je ne l'ai jamais aimée !~
+@36 = ~(Severian vous tourne le dos, mais vous pouvez voir que son profil est tourné vers vous, indécis et...un peu troublé.)~
+@360 = ~(Vous tentez de rattraper la méprise de Mallory.) Hem...Nous ne somme pas fiancés ma petite, juste...bons amis. Mais n'aurais-tu pas quelque chose pour nous ?~
+@361 = ~(Vous ne faites rien pour démentir les propos de Mallory.) N'aurais-tu pas quelque chose pour nous, mignonne ?~
+
+
+@37 = ~Ah oui, c'est vrai ! Alors attendez, je dois les avoir mises par ici...(La fillette fouille dans les poches de son tablier avant d'en extirper une liasse de parchemins soigneusement scellés par un cachet de cire, la marque du maire Lloyd.)~
+@38 = ~(Elle les tend fièrement à Severian qui vous les tend à son tour et vous constatez que chacun de ces parchemins est une invitation personnelle au nom de chacun de vos compagnons, calligraphiée avec soin et décorée avec goût. Vous en entamez la distribution.)~
+@39 = ~Un mariage ? J'adore les mariages ! Figurez-vous qu'une fois, mon cousin Albert Long-Tarin, qui était laid à en effrayer les enfants, a décidé que le moment était enfin venu de se marier mais naturellement, aucune femme n'a voulu de lui. Le hasard a voulu qu'il croise une ogresse sur sa route tandis qu'il voyageait entre Athkatla et Franc-Marché. Albert a dû croire qu'il lui plaisait parce qu'on raconte qu'il s'est jeté dans ses bras, criant désespérément "Epouse-moi !". Aujourd'hui, Cousin Albert n'approche plus une seule femme et j'ai même entendu dire qu'il vivait en colocation avec un ver charognard.~
+@40 = ~Une invitation à un MARIAGE ? (L'elfe noir ouvre des yeux ronds avant de s'assombrir.) <CHARNAME>, dois-je vraiment supporter cet écœurant étalage de bons sentiments ?~
+@41 = ~Ohh, un mariage ! Bouh a toujours adoré les mariages : il aime creuser des galeries dans le gâteau nuptial ! Hein, que tu aimes les mariages, ma boule de poils ? *Couinements joyeux*~
+@42 = ~Ah oui, ça peut être intéressant : observer les us et coutumes de Féérune. Si je revois Kara-Tur un jour, cela me fera de belles histoires à raconter.~
+@43 = ~Cette pause est bienvenue pour le groupe et je suis heureuse de voir qu'en ces temps troublés, le peuple n'a rien perdu de sa joie de vivre. Mais rappelle-toi que le danger rôde toujours là où on l'attend le moins, <CHARNAME>. Je compte sur ta sagesse.~
+@44 = ~Par Torm, c'est bien la première fois que je suis invité à un autre mariage que le mien. Je dois bien avoir des atours digne d'un tel évènement parmi mes affaires...~
+@45 = ~Eh bien, mon Corbeau, te voici convive d'un mariage, dis-moi. Qui l'eût cru dans la situation actuelle ? Si tu fais en sorte d'y accomplir quelque exploit, peut-être en composerai-je un lai, qui sait ?~
+@46 = ~J'adore les mariages ! Tu te souviens, <CHARNAME>, celui de Winthrop ? Quand Vieille Nan l'herboriste a décidé que le bougre était à son goût ? Quoique je suis toujours persuadée aujourd'hui qu'elle l'a préféré pour ses picaillons : c'est vraiment un gros plein de soupe, hein ! (elle vous adresse un clin d’œil malicieux.)~
+@47 = ~Un mariage ! Oh, c'est tellement beau ! Je ferai en sorte que tu sois aussi présente à mon mariage, <CHARNAME>. Mais je crains que ce ne soit pas pour tout de suite, hélas...~
+@48 = ~La Nature est vivante en ces lieux et elle bénira ce mariage, j'en suis certain.~
+@49 = ~Je suis heureuse d'assister à pareil évènement mais trouver une robe à ma taille chez le tisserand va être une véritable gageure !~
+@50 = ~Un mariage ? ! (Mais qu'est-ce que je fais encore là, moi ? Un simple sort de téléportation et je suis loin de ces primates dégénérés....) <CHARNAME>, si tu comptes voir un mage de mon acabit parmi ces gueux, il faudra me payer, je te préviens !~
+@51 = ~Je suppose qu'il va me falloir trouver autre chose que cette impressionnante armure pour me présenter à la cérémonie. Mais fais-moi confiance, <CHARNAME> : je trouverai une tenue digne d'un prince et ne te ferai point honte. Par Helm, je le jure.~
+@52 = ~Ahhh, que vas-tu encore nous attirer comme ennuis, <CHARNAME> ? Éparpille donc cette paperasse aux quatre vents et foutons le camp de ce trou perdu !~
+@53 = ~Je serai enchantée de me mêler au peuple d'Imnesvale. Peut-être certains auront-ils besoin de mon aide, qui sait ?~
+@54 = ~Je connais bien les habitants de la région et je t'assure que ce sera une fête réussie, <CHARNAME>. Tu es décidément très aimée par ici.~
+@55 = ~Chouette, un faire-part de mariage  ! L'occasion de célébrer l'amour de deux êtres, comme c'est romantique...Rien de tel pour se changer les idées.~
+@57 = ~Maintenant que j'ai rempli ma mission, je dois encore retrouver Moustache : Maman dit qu'il n'est pas rentré cette nuit.~
+@58 = ~(La petite s'approche de Severian qu'elle semble décidément avoir pris en sympathie : impressionnée, attendrie, les deux sans doute....)~
+@59 = ~On se revoit au mariage, hein ? Tu me le promets ?~ 
+@60 = ~Je te le promets.~
+@61 = ~(L'enfant sourit et s'éloigne sans plus de façon, sautillant entre les flaques comme elle a coutume de le faire.)~
+
+
+// DEPART DU VAL
+
+@62 = ~Severian ! Je n'ai pas envie que tu t'en ailles !~ 
+@63 = ~(Surgit des buissons, alors que vous vous apprêtez à prendre congé, une gamine que vous connaissez bien, un chat sur ses talons.)~
+@64 = ~Pourquoi tu ne restes pas ici avec <CHARNAME> et tes amis ? S'il te plaît !~
+@65 = ~(Severian s'accroupit, souriant.) Quand ce périple sera fini, je reviendrai à Imnesvale. Je ne t'oublie pas, ma petite princesse.~
+@66 = ~(Mallory vous regarde vous, d'un air boudeur.) Tu as trouvé une autre princesse, maintenant. Tu es amoureux.~
+@67 = ~Toi aussi, tu trouveras ton prince un jour. Guette à la fenêtre et tu me verras un jour au bout du chemin. Au revoir Mallory, sois sage compris ? Pas d'aventures dans la grotte d'Umar, hein ?~
+@68 = ~Si tu dois t'en aller, alors prends Wendy avec toi. Elle te portera chance, j'en suis certaine. Et puis, elle adore voyager.~
+@69 = ~(La fillette renifle, une larme roule sur sa joue.) Sniff !~
+@70 = ~Merci Mallory, je suis sûr que Wendy va bien s'amuser. Et moi j'ai aussi quelque chose pour toi.~
+@71 = ~(Severian exhibe la pièce d'argent de sa poche.) C'est un talisman de Tymora, la Dame Chance. Cette pièce te protégera mais ce n'est pas une excuse pour faire des folies, hein ?~
+@72 = ~Woaw ! C'est un vrai ? Mais si tu t'en sépares, qui te protégera toi alors ? Tu sais, Wendy ce n'est qu'une poupée de chiffon dans le fond.~
+@73 = ~(Severian vous adresse un clin d’œil.) <CHARNAME>, bien sûr ! Allez, file manger ta soupe !~
+@74 = ~(La fillette acquiesce joyeusement, sa tristesse balayée. Mallory n'est désormais plus qu'une image disparue à l'angle d'une maison et vous espérez de tout cœur que la promesse de Severian se réalisera.)~
+
+
+// ROMANCE FINAL
+// APRES MORT DE SARVAJ
+
+@80 = ~Severian ! Et <CHARNAME> ! Je savais que vous reviendrez pour sauver le village !~
+@81 = ~(Vous vous retournez pour apercevoir une frimousse blonde émerger des fourrés proches. La fillette saute au cou de Severian.) Mon prince a chassé le méchant du val !~
+@82 = ~(Le jeune homme sourit tant bien que mal tandis que Mallory l'étrangle à moitié de ses bras.) Argh...Sar..Sarvaj ne reviendra plus jamais par ici, tu...tu peux en être sûre. (Il finit par la reposer pour reprendre sa respiration.)~
+@83 = ~(L'expression de Mallory devient soudain boudeuse.) Vous allez repartir, n'est-ce pas ? Vous allez nous laisser, encore une fois ?~
+@84 = ~Je suis désolée, Mallory. Mais j'ai moi aussi un grand méchant à tuer.~
+@85 = ~Tu ne crois tout de même pas que nous allons rester bayer aux corneilles ici rien que pour te faire plaisir ?~
+@86 = ~(L'halfshade vous regarde de travers avant de se tourner vers Mallory.) <CHARNAME> a elle aussi un grand méchant à tuer et je dois l'y aider. Mais nous reviendrons, Mallory : je te le promets. Et j'ai toujours ta poupée, regarde.(Severian exhibe Wendy de son pourpoint.)~
+@87 = ~(La fillette contemple sa poupée avec ravissement.) La dernière fois, tu avais aussi promis. Et tu es revenu, alors je te crois.~
+@88 = ~Je vais rentrer maintenant ou Maman va me gronder : elle ne sait pas encore que le méchant est mort. J'attendrai votre retour avec Moustache. Hein, Moustache ?~
+@89 = ~Miaaww !~
+@90 = ~Faites...Faites attention à vous, hein ? (Mallory esquisse un dernier sourire triste avant de s'en aller en sautillant, comme de coutume, dans les flaques d'eau, son chat sur les talons.)~
+@91 = ~Oui, et je dois l'y aider. Mais nous reviendrons, Mallory : je te le promets. Et j'ai toujours ta poupée, regarde.(Severian exhibe Wendy de son pourpoint.)~ 
+
+

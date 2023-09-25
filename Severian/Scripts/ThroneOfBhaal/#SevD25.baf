@@ -1,0 +1,566 @@
+
+
+// ROMANCE DIALOGUE INITIAL
+
+IF 
+ Global("Chapter","GLOBAL",8)
+ InParty("#Severian")
+ Gender(Protagonist,FEMALE)
+ !StateCheck(Player1,CD_STATE_NOTVALID)
+ !StateCheck("#Severian",CD_STATE_NOTVALID)
+ CombatCounter(0)
+ Global("#SeverRomanceActive","GLOBAL",2)
+ Global("#SeverianThroneOfBhaal","GLOBAL",1)
+ Global("#Sev25LoveTlk","GLOBAL",0)
+ Global("HeadsSave","AR4000",3)
+THEN 
+   RESPONSE #100
+ SetGlobal("#Sev25LoveTlk","GLOBAL",2)
+END
+
+IF 
+Global("#Sev25LoveTlk","GLOBAL",2)
+THEN
+  RESPONSE #100
+ PlaySong(0)
+ PlaySound("#SMus25A")
+ SetDialog("#Sev25R")
+ Dialog(Player1)
+END
+
+
+// SCRIPTS SPECIAUX
+
+
+
+// APRES DEPART DU MASK A SARADUSH
+
+IF
+ InParty("#Severian")
+ Global("#SeverRomanceActive","GLOBAL",2)
+ !InMyArea("#SMask")
+ !StateCheck(Player1,CD_STATE_NOTVALID)
+ !StateCheck("#Severian",CD_STATE_NOTVALID)
+ Global("#SeverianTalkMask","GLOBAL",0)
+ Global("#SeverianMask","GLOBAL",3)
+THEN
+ RESPONSE #100
+ PlaySong(0)
+ PlaySound("#SMus25B")
+SetGlobal("#SeverianMask","GLOBAL",4)
+SetGlobal("#SeverianTalkMask","GLOBAL",1)
+END
+
+IF 
+Global("#SeverianMask","GLOBAL",4)
+Global("#SeverianTalkMask","GLOBAL",1)
+THEN 
+ RESPONSE #100
+SetDialog("#Sev25R")
+Dialog(Player1)
+END
+
+// ROMANCE DIALOGUE 2
+
+IF
+ InParty("#Severian")
+ Gender(Protagonist,FEMALE)
+ AreaCheck("AR4500")
+ CombatCounter(0)
+ !StateCheck(Player1,CD_STATE_NOTVALID)
+ !StateCheck("#Severian",CD_STATE_NOTVALID)
+ Global("#SeverRomanceActive","GLOBAL",2)
+ Global("#Sev25LoveTlk","GLOBAL",3)
+ Global("Mel01GromnirDeath","GLOBAL",1)
+ Global("#SActiveMusicDialogue2","GLOBAL",0)
+ Global("#SJolentaSeverian","GLOBAL",7)
+THEN
+   RESPONSE #100
+ PlaySong(0)
+ PlaySound("#SMus25A")
+ SetGlobal("#Sev25LoveTlk","GLOBAL",4)
+ SetGlobal("#SActiveMusicDialogue2","GLOBAL",1)
+END
+
+IF
+ InParty("#Severian")
+ Gender(Protagonist,FEMALE)
+ AreaCheck("AR4500")
+ CombatCounter(0)
+ !StateCheck(Player1,CD_STATE_NOTVALID)
+ !StateCheck("#Severian",CD_STATE_NOTVALID)
+ Global("#SeverRomanceActive","GLOBAL",2)
+ Global("#Sev25LoveTlk","GLOBAL",3)
+ Global("Mel01GromnirDeath","GLOBAL",1)
+ Global("#SActiveMusicDialogue2","GLOBAL",0)
+ !Global("#SJolentaSeverian","GLOBAL",7)
+ Global("#SeverianMask","GLOBAL",5)
+THEN
+   RESPONSE #100
+ PlaySong(0)
+ PlaySound("#SMus25A")
+ SetGlobal("#Sev25LoveTlk","GLOBAL",4)
+ SetGlobal("#SActiveMusicDialogue2","GLOBAL",1)
+END
+
+
+IF
+ Global("#Sev25LoveTlk","GLOBAL",4)
+THEN 
+ RESPONSE #100
+ SetDialog("#Sev25R")
+ Dialog(Player1)
+END
+
+// SCRIPTS SPECIAUX
+
+// APRES MIROIR DE L'AME 1
+
+IF
+ InParty("#Severian")
+ Global("#SeverRomanceActive","GLOBAL",2)
+ AreaCheck("AR4500")
+ !StateCheck(Player1,CD_STATE_NOTVALID)
+ !StateCheck("#Severian",CD_STATE_NOTVALID)
+ Global("#SeverMiroirAme","GLOBAL",2)
+ Global("#SActiveMusicMiroirAme1","GLOBAL",0)
+THEN
+ RESPONSE #100
+SetGlobal("#SActiveMusicMiroirAme1","GLOBAL",1)
+SetGlobal("#SeverMiroirAme","GLOBAL",3)
+END
+
+IF 
+Global("#SeverMiroirAme","GLOBAL",3)
+THEN
+ RESPONSE #100
+PlaySong(0)
+PlaySound("#SMus25B")
+SetDialog("#Sev25R")
+Dialog(Player1)
+END
+
+// ROMANCE DIALOGUE 3
+
+IF
+ InParty("#Severian")
+ Gender(Protagonist,FEMALE) 
+ AreaCheck("AR6400")
+ !StateCheck(Player1,CD_STATE_NOTVALID)
+ !StateCheck("#Severian",CD_STATE_NOTVALID)
+ Global("#SeverRomanceActive","GLOBAL",2)
+ Global("#Sev25LoveTlk","GLOBAL",5)
+ Global("#SeverYohnLeBronze","GLOBAL",0)
+ Global("#SActiveMusiqueForet","GLOBAL",0)
+THEN 
+   RESPONSE #100
+ PlaySong(0)
+ PlaySound("#SMus25M")
+ SetGlobal("#SeverYohnLeBronze","GLOBAL",1)
+ SetGlobal("#Sev25LoveTlk","GLOBAL",6)
+ SetGlobal("#SActiveMusiqueForet","GLOBAL",1)
+END
+
+IF
+ Global("#SeverYohnLeBronze","GLOBAL",1)
+ Global("#Sev25LoveTlk","GLOBAL",6)
+THEN 
+ RESPONSE #100
+ SetDialog("#Sev25R")
+ Dialog(Player1)
+END
+
+// SCRIPTS SPECIAUX
+
+// DANS LE CAMP DES BANDITS
+
+IF
+ Global("#SeverYohnLeBronze","GLOBAL",10)
+THEN 
+   RESPONSE #100
+ PlaySong(0)
+ PlaySound("#SMus25M")
+ SetGlobal("#SeverYohnLeBronze","GLOBAL",11)
+END
+
+IF 
+Global("#SeverYohnLeBronze","GLOBAL",11)
+THEN
+ RESPONSE #100
+ SetDialog("#Sev25R")
+ Dialog(Player1)
+END
+
+// ROMANCE DIALOGUE 4
+
+IF
+ InParty("#Severian")
+ Gender(Protagonist,FEMALE) 
+ AreaCheck("#SCamp")
+ Global("#SeverRomanceActive","GLOBAL",2)
+ Global("#SJonLittle","GLOBAL",1)
+ Global("#SecondMiroirAme","GLOBAL",0)
+ RealGlobalTimerExpired("#SeverianRomanceTob","GLOBAL")
+THEN 
+   RESPONSE #100
+ PlaySong(0)
+ PlaySound("#SMus25M")
+ SetGlobal("#SecondMiroirAme","GLOBAL",1)
+END
+
+IF
+ Global("#SecondMiroirAme","GLOBAL",1)
+THEN
+ RESPONSE #100
+ SetDialog("#Sev25R")
+ Dialog(Player1)
+END
+
+// MIROIR 2
+
+IF
+ Global("#SecondMiroirAme","GLOBAL",13)
+THEN 
+  RESPONSE #100
+ SetGlobal("#SecondMiroirAme","GLOBAL",14)
+ StartCutSceneMode()
+ StartCutScene("#SCtEnf6")
+END
+
+IF
+ Global("#SecondMiroirAme","GLOBAL",17)
+ AreaCheck("#SCamp")
+THEN
+ RESPONSE #100
+ SetGlobal("#SecondMiroirAme","GLOBAL",18)
+ SetDialog("#Sev25R")
+ Dialog(Player1)
+END
+
+
+// APRES LA MORT DE YAGA-SHURA
+
+// PETIT LOUP
+
+IF
+ InParty("#Severian")
+ Gender(Protagonist,FEMALE) 
+ Global("SaradushSacked","GLOBAL",1)
+ Global("#SYagaShuraKill","GLOBAL",1)
+ Global("#SeverRomanceActive","GLOBAL",2)
+THEN 
+   RESPONSE #100
+ SetGlobal("#SYagaShuraKill","GLOBAL",2)
+END
+
+IF
+Global("#SYagaShuraKill","GLOBAL",2)
+THEN
+ RESPONSE #100
+  StartCutSceneMode()
+  StartCutScene("#SCutYag")
+END
+
+// JON
+
+IF
+Global("#SYagaShuraKill","GLOBAL",4)
+InParty("#Severian")
+Gender(Protagonist,FEMALE)
+AreaCheck("AR5203")
+!InMyArea("#SPetit2")
+CombatCounter(0)
+!StateCheck(Player1,CD_STATE_NOTVALID)
+!StateCheck("#Severian",CD_STATE_NOTVALID)
+Global("#SeverRomanceActive","GLOBAL",2)
+THEN
+   RESPONSE #100
+ SetGlobal("#SYagaShuraKill","GLOBAL",5)
+END
+
+IF
+ Global("#SYagaShuraKill","GLOBAL",5)
+THEN
+ RESPONSE #100
+StartCutSceneMode()
+StartCutScene("#SCutYa1")
+END
+
+
+// APRES PETIT LOUP 
+
+
+IF
+ InParty("#Severian")
+ Gender(Protagonist,FEMALE)
+ AreaCheck("AR5203")
+ !InMyArea("#SPetit2")
+ CombatCounter(0)
+ !StateCheck(Player1,CD_STATE_NOTVALID)
+ !StateCheck("#Severian",CD_STATE_NOTVALID)
+ Global("#SeverRomanceActive","GLOBAL",2)
+ Global("#SYagaShuraKill","GLOBAL",7)
+THEN
+   RESPONSE #100
+ PlaySong(0)
+ PlaySound("#SMus25B")
+ SetGlobal("#SYagaShuraKill","GLOBAL",8)
+END
+
+IF
+ Global("#SYagaShuraKill","GLOBAL",8)
+THEN
+ RESPONSE #100
+ SetDialog("#Sev25R")
+ Dialog(Player1)
+END
+
+
+
+// RAPPEL PETIT-LOUP ET CAMP BANDITS
+// SI MAP SANCTUAIRE
+
+IF
+ InParty("#Severian")
+ Gender(Protagonist,FEMALE) 
+ AreaCheck("AR4500")
+ Global("SaradushSacked","GLOBAL",1)
+ Global("#SYagaShuraKill","GLOBAL",3)
+ Global("#SeverRomanceActive","GLOBAL",2)
+ Global("#SRappelPetitLoup","GLOBAL",0)
+THEN 
+   RESPONSE #100
+ SetGlobal("#SRappelPetitLoup","GLOBAL",1)
+ SetDialog("#Sev25R")
+ Dialog(Player1)
+END
+
+// RAPPEL PETIT-LOUP ET CAMP BANDITS
+// SI MAP SANCTUAIRE
+
+IF
+ InParty("#Severian")
+ Gender(Protagonist,FEMALE) 
+ AreaCheck("AR6400")
+ Global("#SJonLittle","GLOBAL",4)
+ Global("#SeverRomanceActive","GLOBAL",2)
+THEN 
+   RESPONSE #100
+ PlaySong(0)
+ PlaySound("#SMus25A")
+ SetGlobal("#SJonLittle","GLOBAL",5)
+ SetGlobal("#STroisiemeMiroirAme","GLOBAL",1)
+END
+
+IF 
+ Global("#SJonLittle","GLOBAL",5)
+ Global("#STroisiemeMiroirAme","GLOBAL",1)
+THEN
+ RESPONSE #100
+ SetDialog("#Sev25R")
+ Dialog(Player1)
+END
+
+// APRES MIROIR DE L'AME 3
+
+IF
+ InParty("#Severian")
+ Gender(Protagonist,FEMALE) 
+ AreaCheck("AR5203")
+ Global("#STroisiemeMiroirAme","GLOBAL",11) 
+ Global("#SeverRomanceActive","GLOBAL",2)
+THEN 
+   RESPONSE #100
+ PlaySong(0)
+ PlaySound("#SMus25B")
+ SetGlobal("#STroisiemeMiroirAme","GLOBAL",12) 
+END
+
+IF
+ Global("#STroisiemeMiroirAme","GLOBAL",12) 
+THEN
+ RESPONSE #100
+ SetDialog("#Sev25R")
+ Dialog(Player1)
+END
+
+// SEQUENCE AMKETHRAN
+// ENTREE DANS AMKETHRAN
+
+
+
+IF
+ InParty("#Severian")
+ Gender(Protagonist,FEMALE) 
+ AreaCheck("AR5500")
+ Global("#SeverRomanceActive","GLOBAL",2)
+ Global("#STroisiemeMiroirAme","GLOBAL",13)
+ Global("#SFeuDeCamp","GLOBAL",10)
+THEN 
+   RESPONSE #100
+ SetGlobal("#SFeuDeCamp","GLOBAL",11)
+ SetDialog("#Sev25R")
+ Dialog(Player1)
+END
+
+// MIROIR 4
+
+IF
+ Global("#SQuatriemeMiroirAme","GLOBAL",11)
+THEN 
+  RESPONSE #100
+ SetGlobal("#SQuatriemeMiroirAme","GLOBAL",12)
+ StartCutSceneMode()
+ StartCutScene("#SCtPr10")
+END
+
+// SEQUENCE AMKETHRAN
+// MAPS ABAZIGAL OU SENDAI
+
+IF
+ OR(2)
+ AreaCheck("AR6000")
+ AreaCheck("AR6100")
+ Global("Enclave","GLOBAL",1)
+ InParty("#Severian")
+ Gender(Protagonist,FEMALE)
+ Global("#SeverRomanceActive","GLOBAL",2)
+ Global("#SQuatriemeMiroirAme","GLOBAL",17)
+THEN
+   RESPONSE #100
+ SetGlobal("#SQuatriemeMiroirAme","GLOBAL",18)
+ SetGlobal("#SequenceAmkethran","GLOBAL",1)
+END
+
+IF
+ Global("#SQuatriemeMiroirAme","GLOBAL",18)
+ Global("#SequenceAmkethran","GLOBAL",1)
+THEN
+ RESPONSE #100
+ PlaySong(0)
+ PlaySound("#SMus25P")
+ SetDialog("#Sev25R")
+ Dialog(Player1)
+END
+
+// FIN THRONE OF BHAAL
+
+IF
+ AreaCheck("AR4500")
+ InParty("#Severian")
+ Gender(Protagonist,FEMALE)
+ Global("#SeverRomanceActive","GLOBAL",2)
+ Global("#SequenceAmkethran","GLOBAL",2)
+ Global("ChallengesDone","GLOBAL",1)
+THEN
+   RESPONSE #100
+ SetGlobal("#SDernierMiroirAme","GLOBAL",1)
+ SetGlobal("#SequenceAmkethran","GLOBAL",3)
+ RealSetGlobalTimer("#SequenceFinTob","GLOBAL",8)
+END
+
+IF
+ RealGlobalTimerExpired("#SequenceFinTob","GLOBAL")
+ Global("#SDernierMiroirAme","GLOBAL",1)
+THEN
+ RESPONSE #100
+SetGlobal("#SDernierMiroirAme","GLOBAL",2)
+StartCutSceneMode()
+StartCutScene("#SCutFi1")
+END
+
+// MIROIR DE L'AME
+// AVEC CHARNAME
+
+
+IF
+Global("#SDernierMiroirAme","GLOBAL",7)
+THEN
+ RESPONSE #100
+ SetGlobal("#SDernierMiroirAme","GLOBAL",8)
+ SetDialog("#Sev25R")
+ Dialog(Player1)
+END
+
+
+// AUBERGE DE SARADUSH
+
+IF
+ Global("#SAfficheMiseAPrix","GLOBAL",1)
+ AreaCheck("AR5003")
+THEN
+ RESPONSE #100
+ PlaySong(0)
+ PlaySound("#SMus25H")
+ SetGlobal("#SAfficheMiseAPrix","GLOBAL",2)
+END
+
+IF
+ Global("#SAfficheMiseAPrix","GLOBAL",2)
+THEN
+ RESPONSE #100
+ SetDialog("#Sev25R")
+ Dialog(Player1)
+END
+
+// ARRIVEE A SARADUSH
+// APRES MELISSANNE
+
+IF
+InParty("#Severian")
+Global("#SeverRomanceActive","GLOBAL",2)
+Global("MelissanJob","GLOBAL",1)
+Global("#SArriveeSaradush","GLOBAL",0)
+THEN
+ RESPONSE #100
+ PlaySong(0)
+ PlaySound("#SMus25A")
+SetGlobal("#SArriveeSaradush","GLOBAL",1)
+END
+
+IF
+ Global("#SArriveeSaradush","GLOBAL",1)
+THEN
+ RESPONSE #100
+ SetDialog("#Sev25R")
+ Dialog(Player1)
+END
+
+// APRES DARKHAN
+// SI SEVERIAN EST MORT
+
+IF
+Global("#SDeadSeverian","GLOBAL",3)
+AreaCheck("AR4500")
+THEN
+ RESPONSE #100
+SetGlobal("#SDeadSeverian","GLOBAL",4)
+END
+
+IF
+ Global("#SDeadSeverian","GLOBAL",4)
+THEN
+ RESPONSE #100
+ SetDialog("#Sev25R")
+ Dialog(Player1)
+END
+
+
+
+// APRES VALYRIA
+
+IF
+Global("#SDeadDarkhan","GLOBAL",3)
+THEN
+ RESPONSE #100
+SetGlobal("#SDeadDarkhan","GLOBAL",4)
+END
+
+IF
+Global("#SDeadDarkhan","GLOBAL",4)
+THEN
+ RESPONSE #100
+StartCutSceneMode()
+StartCutScene("#SCtDar8")
+END
+

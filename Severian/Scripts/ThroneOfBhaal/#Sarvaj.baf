@@ -1,0 +1,135 @@
+IF 
+ Global("#SCombatFinalMod","GLOBAL",1)
+ Global("#SarvajShow","GLOBAL",0)
+THEN
+ RESPONSE #100
+SetGlobal("#SarvajShow","GLOBAL",1)
+ReallyForceSpell(Myself,WIZARD_FIRE_SHIELD_RED)
+ReallyForceSpell(Myself,WIZARD_FIRE_SHIELD_BLUE)
+ReallyForceSpell(Myself,WIZARD_MANTLE)
+ReallyForceSpell(Myself,WIZARD_RESIST_FEAR)
+ReallyForceSpell(Myself,WIZARD_SPELL_SHIELD)
+ReallyForceSpell(Myself,CLERIC_IRONSKIN)
+END
+
+IF
+Global("#SarvajShow","GLOBAL",1)
+THEN
+ RESPONSE #100
+SetGlobal("#SarvajShow","GLOBAL",2)
+ForceSpell(NearestEnemyOf(Myself),WIZARD_CHAOS)
+END
+
+IF
+Global("#SarvajShow","GLOBAL",2)
+THEN
+RESPONSE #100
+SetGlobal("#SarvajShow","GLOBAL",3)
+ForceSpell(NearestEnemyOf(Myself),WIZARD_INCENDIARY_CLOUD)
+END
+
+IF
+ Global("#SarvajShow","GLOBAL",3)
+ Global("#STobAleatoire","GLOBAL",0)
+THEN
+ RESPONSE #100
+SetGlobal("#SarvajShow","GLOBAL",4)
+SetGlobal("#STobAleatoire","GLOBAL",1)
+ForceSpell(NearestEnemyOf(Myself),WIZARD_TELEPORT_FIELD)
+ RESPONSE #100
+SetGlobal("#SarvajShow","GLOBAL",4)
+SetGlobal("#STobAleatoire","GLOBAL",1)
+ForceSpell(NearestEnemyOf(Myself),WIZARD_RUBY_RAY_OF_REVERSAL)
+RESPONSE #100
+SetGlobal("#SarvajShow","GLOBAL",4)
+SetGlobal("#STobAleatoire","GLOBAL",1)
+ForceSpell(NearestEnemyOf(Myself),CLERIC_DEFENSIVE_HARMONY)
+RESPONSE #100
+SetGlobal("#SarvajShow","GLOBAL",4)
+SetGlobal("#STobAleatoire","GLOBAL",1)
+ForceSpell(NearestEnemyOf(Myself),CLERIC_EARTHQUAKE)
+RESPONSE #100
+SetGlobal("#SarvajShow","GLOBAL",4)
+SetGlobal("#STobAleatoire","GLOBAL",1)
+ForceSpell(NearestEnemyOf(Myself),CLERIC_MASS_CURE)
+END
+
+IF
+Global("#SarvajShow","GLOBAL",4)
+THEN
+ RESPONSE #100
+SetGlobal("#SarvajShow","GLOBAL",5)
+ForceSpell(NearestEnemyOf(Myself),WIZARD_BIGBYS_CLENCHED_FIST)
+END
+
+IF
+Global("#SarvajShow","GLOBAL",5)
+THEN
+ RESPONSE #100
+ SetGlobal("#SarvajShow","GLOBAL",6)
+ ReallyForceSpell(Myself,WIZARD_TRUE_SIGHT)
+ ReallyForceSpell(Myself,WIZARD_FIRE_SHIELD_RED)
+ ReallyForceSpell(Myself,WIZARD_FIRE_SHIELD_BLUE)
+ ReallyForceSpell(Myself,WIZARD_MANTLE)
+ ReallyForceSpell(Myself,WIZARD_RESIST_FEAR)
+ ReallyForceSpell(Myself,CLERIC_PROTECT_FROM_EVIL)
+ ReallyForceSpell(Myself,WIZARD_SPELL_SHIELD)
+ ReallyForceSpell(Myself,CLERIC_IRONSKIN)
+ ForceSpell(NearestEnemyOf(Myself),WIZARD_SPIRIT_ARMOR)
+END
+
+IF 
+ Global("#SarvajShow","GLOBAL",6)
+THEN
+ RESPONSE #100
+SetGlobal("#SarvajShow","GLOBAL",7)
+ForceSpell(NearestEnemyOf(Myself),WIZARD_WAIL_OF_THE_BANSHEE)
+END
+
+IF 
+Global("#SarvajShow","GLOBAL",7)
+THEN
+ RESPONSE #100
+SetGlobal("#SarvajShow","GLOBAL",8)
+ForceSpell(NearestEnemyOf(Myself),WIZARD_METEOR_SWARM)
+END
+
+IF 
+Global("#SarvajShow","GLOBAL",8)
+THEN
+ RESPONSE #100
+SetGlobal("#SarvajShow","GLOBAL",9)
+ForceSpell(NearestEnemyOf(Myself),WIZARD_TELEPORT_FIELD)
+ RESPONSE #100
+SetGlobal("#SarvajShow","GLOBAL",9)
+ForceSpell(NearestEnemyOf(Myself),WIZARD_RUBY_RAY_OF_REVERSAL)
+RESPONSE #100 
+SetGlobal("#SarvajShow","GLOBAL",9)
+ForceSpell(NearestEnemyOf(Myself),CLERIC_DEFENSIVE_HARMONY)
+RESPONSE #100
+SetGlobal("#SarvajShow","GLOBAL",9)
+ForceSpell(NearestEnemyOf(Myself),CLERIC_EARTHQUAKE)
+RESPONSE #100
+SetGlobal("#SarvajShow","GLOBAL",9)
+ForceSpell(NearestEnemyOf(Myself),CLERIC_MASS_CURE)
+END
+
+
+IF 
+ Global("#SarvajShow","GLOBAL",9)
+THEN
+ RESPONSE #100
+SetGlobal("#SarvajShow","GLOBAL",10)
+ReallyForceSpell(Myself,CLERIC_IRONSKIN)
+END
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,22 @@
+IF
+  True()
+THEN
+  RESPONSE #100
+    CutSceneId("#Severian")
+    Weather(RAIN)
+    Wait(4)
+    DisplayStringHead(Myself,@543)
+    Wait(15)
+    DisplayStringHead(Myself,@544)
+    Wait(7)
+    SetGlobal("#SDecisifImnesvale","AR1100",7)
+    MoveToPoint([1754.3501])
+    MoveViewPoint([1821.3500],VERY_FAST)
+    ActionOverride(Player1,MoveToPoint([1821.3500]))
+    Wait(2)
+    Face(12)
+    ActionOverride(Player1,Face(4))
+    Wait(1)
+    ActionOverride("#Severian",Dialog(Player1))
+    EndCutSceneMode()
+END

@@ -1,0 +1,20 @@
+// APPARITION LORD DARKHAN
+
+IF
+  True()
+THEN
+  RESPONSE #100
+    CutSceneId(Player1)
+    Wait(3)
+    SetGlobal("#SDernierMiroirAme","GLOBAL",6)
+    CreateCreature("#SMask",[2003.1302],14)
+    CreateVisualEffectObject("SPCLOUD2","#SMask")
+    Wait(2)
+    ActionOverride("#SMask",Attack("#SValy25")
+    Wait(1)
+    CreateVisualEffectObject("SPFDEATH","#SValy25")
+    ActionOverride("#SValy25",DestroySelf())
+    Wait(2)
+    ActionOverride("#SMask",StartDialogueNoSet(Player1))
+    EndCutSceneMode()
+END

@@ -1,0 +1,44 @@
+
+/////////////////// A L'ATTENTION DE XICLOING \\\\\\\\\\\\\\\\\\\\
+/////////////////// NE PAS TRADUIRE \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+
+// ROMANCE FINAL
+// CABANE DE MERELLA
+// SEVERIAN EST RESSUCITE, ALLONGE SUR LE LIT
+
+@0 = ~(Votre amour est là, sur le lit. Affaibli plus que jamais, endormi dans un sommeil réparateur...Il n'est pas encore trop tard pour faire marche arrière, Enfant de Bhaal...Le laisser libre à jamais, tourner les talons sans qu'il n'aie jamais rien su de votre présence.)~
+@1 = ~(Votre choix est le bon, vous en êtes intimement persuadée. Votre cœur ne vous dicte rien d'autre que d'avancer vers Severian. Ensemble, vous parviendrez à surmonter toutes les épreuves : celle ci n'est qu'une parmi d'autres.)~ // @5
+@2 = ~(La raison le dispute à votre cœur. Mais c'est elle qui l'emporte. Le jeune homme a bien assez souffert.)~
+@3 = ~(Sans un bruit, sans une parole, vous taisez l'émotion qui vous taraude et c'est avec toute la force que vous avez toujours su rassembler en de pareils instants que vous vous éloignez. C'est la dernière fois que vous le verrez et vous savez que Mailikki, ainsi que vous l'a promis Valyria, saura le guider vers un nouvel avenir, moins sombre que celui que vous lui promettiez jusque lors.)~
+@4 = ~(Une page se tourne : il est temps de reprendre votre quête.)~
+
+@5 = ~(En douceur, vos pas vous guident vers sa couche. Vous le veillerez jusqu'à son réveil.)~
+
+// ROMANCE FINAL
+// CABANE DE MERELLA
+// SEVERIAN EST RESSUCITE, ALLONGE SUR LE LIT 
+// L'OMBRE S'EST REVELEE
+
+@6 = ~<CHARNAME> ?~ [#SMusicI]
+@7 = ~Que...~
+@8 = ~(La voix de Severian vous tire du sommeil dans lequel vous aviez plongé vous aussi malgré tous vos efforts pour demeurée éveillée.) <CHARNAME>, que m'est-il arrivé ? Que faisons-nous ici ?~
+@9 = ~(Il tente de se lever mais vous êtes aussitôt à son chevet. Sa tête lui tourne, il se la prend à deux mains. Les souvenirs affluent dans sa mémoire, le taraudant comme autant de coups de fouet.)~
+@10 = ~Je me souviens...vaguement...Nonn ! Ces flammes...Cette magie intense...J'ai étouffé...<CHARNAME>, dis-moi je t'en prie, ce qui s'est passé ! Il y avait la Rune Pourpre à la Couronne de Cuivre...Sarvaj t'a agressé et je suis venu...Il s'est changé en dragon...~
+@11 = ~(Sans que vous n'ayez besoin de lui dire la vérité, il retrace seul les évènements qui ont précédé sa mort, et c'est pour vous un supplice. Valyria vous aura mis en garde contre les conséquences d'un tel retour dans le monde des vivants.)~
+@12 = ~Je...Je me rappelle avoir déchaîné une puissance que je n'ai jamais connu jusqu'alors...L'Ombre en moi s'est révélée...Jamais cela n'aurait dû arriver !~
+@13 = ~Je...Je suis désolée, Severian...Je n'ai pas voulu ce qui t'est arrivé, je...~
+@14 = ~Severian, calme-toi, je t'en prie. Si tu ne te calmes pas je m'en vais, c'est aussi simple que ça.~
+@15 = ~Je suis venue te dire que je m'en vais, Severian. Je n'ai pas eu le cœur de partir sans te dire adieu. C'était trop dur.~
+ 
+// ROMANCE FINAL 
+// CABANE DE MERELLA
+// DERNIERE NUIT D'AMOUR AVANT LA BATAILLE
+// FIN DE LA ROMANCE
+
+@20 = ~(Severian vous a pris dans ses bras, couvrant votre peau de baisers tendres et passionnés. Les ondes du désir vous parcourent tous deux tandis que le lit vous accueille, pour un dernier moment volé à votre destin.)~
+@21 = ~(Le jeune homme glisse une main dans vos cheveux et sa chaleur vous inonde tandis qu'il vous prend dans ses bras, assis sur le lit. Vous souhaiteriez que ce moment soit éternel et tandis que vous entourez son dos de vos mains, lui dispensant mille caresses, Severian délace lentement votre corsage.)~
+@22 = ~(Alors qu'il glisse sa main depuis votre jambe jusqu'au galbe de votre cuisse, vous parcourez fébrilement sa chevelure de vos mains, murmurant à son oreille des mots dictés par vos seuls sens.)~
+@23 = ~(Le temps s'est arrêté : l'illusion de l'éternité vous gagne tous deux, emportés dans la ferveur des corps unis dans le bonheur.)~
+@24 = ~(Le feu dans la cheminée sera le seul témoin de votre passion, éclairant vos corps d'une lumière mordorée, soulignant vos efforts.)~
+@25 = ~(La nuit, la journée passeront sans que vous n'ayez plus aucune notion du temps. Vous vous laissez emporter dans le tourbillon de votre union....)~

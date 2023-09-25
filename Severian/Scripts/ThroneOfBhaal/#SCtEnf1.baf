@@ -1,0 +1,24 @@
+// L'ENFANCE DE SEVERIAN
+// CABANE D'ELVAAR
+
+
+IF
+  True()
+THEN
+  RESPONSE #100
+    CutSceneId("#Severian")
+    Wait(1)
+    FadeToColor([20.0],0)
+    Wait(1)
+    LeaveAreaLUA("#SArAn","",[75.979],2)
+    MoveViewPoint([746.1196],INSTANT)
+    SetGlobal("#SecondMiroirAme","GLOBAL",5)
+    CreateCreature("#SGarc25",[701.1107],14)
+    CreateCreature("#SChien",[748.1102],2)
+    DayNight(20)
+    Wait(1)
+    FadeFromColor([20.0],0)
+    Wait(2)
+    ActionOverride("#SGarc25",StartDialogueNoSet("#SChien"))
+    EndCutSceneMode()
+END

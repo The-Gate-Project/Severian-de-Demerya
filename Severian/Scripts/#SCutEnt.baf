@@ -1,0 +1,17 @@
+IF
+  True()
+THEN
+  RESPONSE #100
+    CutSceneId(Player1)
+    FadeToColor([20.0],0)
+    SetGlobal("#SeverEnterrement","GLOBAL",10)
+    Wait(1)
+    MoveViewPoint([2062.3245],INSTANT)
+    JumpToPoint([2062.3245])
+    Face(14)
+    ActionOverride("#Severian",JumpToPoint([2106.3307]))
+    Face(14)
+    Wait(1)
+    FadeFromColor([20.0],0)   
+    EndCutSceneMode()
+END

@@ -1,0 +1,45 @@
+// SEVERIAN A TIRASLYN
+// CAPTIVITE A FORT-TERREUR
+
+
+IF
+  True()
+THEN
+  RESPONSE #100
+    CutSceneId("#Severian")
+    Wait(1)
+    FadeToColor([20.0],0)
+    Wait(1)
+    MoveViewPoint([809.419],INSTANT)
+    ActionOverride("#SevPri",JumpToPoint([753.413])
+    ActionOverride("#SevPri",Face(13))
+    SetGlobal("#SQuatriemeMiroirAme","GLOBAL",6)
+    OpenDoor("Door01")
+    OpenDoor("Door02")
+    OpenDoor("Door03")
+    OpenDoor("Door04")
+    OpenDoor("Door05")
+    OpenDoor("Door06")
+    OpenDoor("Door07")
+    OpenDoor("Door08")
+    OpenDoor("Door09")
+    OpenDoor("Door10")
+    OpenDoor("Door11")
+    OpenDoor("Door12")
+    OpenDoor("Door13")
+    OpenDoor("Door14")
+    OpenDoor("Door15")
+    CreateCreature("#SInq2",[882.515],7)
+    CreateCreature("#SInq1",[903.497],7)
+    Wait(1)
+    FadeFromColor([20.0],0)
+    Wait(2)
+    ActionOverride("#SInq2",MoveToPoint([808.420]))
+    ActionOverride("#SInq1",MoveToPoint([824.397]))
+    Wait(2)
+    PlaySong(0)
+    PlaySound("#SMus25O")
+    Wait(1)
+    ActionOverride("#SInq1",StartDialogueNoSet("#SevPri"))
+    EndCutSceneMode()
+END

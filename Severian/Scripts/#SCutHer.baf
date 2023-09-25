@@ -1,0 +1,17 @@
+
+IF
+  True()
+THEN
+  RESPONSE #100
+    CutSceneId("#Severian")
+    Wait(1)
+    MoveViewObject(Myself,INSTANT)
+    DisplayStringHead("#Severian",@710016)
+    Hide()
+    Wait(2)
+    JumpToPoint([1882.957])
+    Wait(1)
+    SetGlobal("#SRomanceFinalCouronne","GLOBAL",5)
+    SetDialog("#SeverJ")
+    EndCutSceneMode()
+END

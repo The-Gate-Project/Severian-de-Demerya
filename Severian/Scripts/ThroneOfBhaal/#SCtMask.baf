@@ -1,0 +1,11 @@
+IF
+ True()
+THEN
+ RESPONSE #100
+CutSceneId(Player1)
+Wait(1)
+SetGlobal("#SeverianMask","GLOBAL",3)
+ActionOverride("#SMask",EscapeArea())
+Wait(6)
+EndCutSceneMode()
+END

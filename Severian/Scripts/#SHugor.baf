@@ -1,0 +1,33 @@
+
+
+IF
+  OR(6)
+    AttackedBy(Player1,DEFAULT)
+    AttackedBy(Player2,DEFAULT)
+    AttackedBy(Player3,DEFAULT)
+    AttackedBy(Player4,DEFAULT)
+    AttackedBy(Player5,DEFAULT)
+    AttackedBy(Player6,DEFAULT)
+THEN
+  RESPONSE #100
+     SetGlobal("#SHugorCreation","AR0704",-1)
+    ClearActions("#SMerc1")
+    ActionOverride("#SMerc1", Enemy())
+    ClearActions("#SMerc2")
+    ActionOverride("#SMerc2", Enemy())
+    ClearActions(Myself)
+    Enemy()
+END
+
+
+
+IF
+   Dead("#Severian")
+   Allegiance(Myself, NEUTRAL)
+THEN
+  RESPONSE #100
+     SetGlobal("#SHugorCreation","AR0704",-1)
+    EscapeArea()
+END
+
+

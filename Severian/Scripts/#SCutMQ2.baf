@@ -1,0 +1,12 @@
+IF
+ See(Player1)
+THEN
+  RESPONSE #100
+   CutSceneId("#SMichel")
+   SetGlobal("#SMalloQuete","GLOBAL",7)
+   CreateCreature("#SMallo",[3029.1965],0)
+   StartDialogueNoSet(Player1)
+   EndCutSceneMode()
+END
+
+

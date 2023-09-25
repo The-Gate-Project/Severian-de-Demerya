@@ -1,0 +1,133 @@
+// MORT D'AEGIS
+
+IF
+HPLT(Myself,10)
+Dead("#Severian")
+Global("#SDeadDarkhan","GLOBAL",0)
+THEN
+ RESPONSE #100
+ClearAllActions()
+StartCutSceneMode()
+StartCutScene("#SCtDea1")
+END
+
+IF
+HPLT(Myself,10)
+!Dead("#Severian")
+Global("#SDeadDarkhan","GLOBAL",0)
+THEN
+ RESPONSE #100
+ClearAllActions()
+StartCutSceneMode()
+StartCutScene("#SCtDea2")
+END
+
+IF
+Global("#SCombatFinalMod","GLOBAL",1)
+Global("#SJugementDernier","GLOBAL",0)
+HPGT(Myself,10)
+THEN
+ RESPONSE #100
+SetGlobal("#SJugementDernier","GLOBAL",1)
+ReallyForceSpell(Myself,CLERIC_ARMOR_OF_FAITH)
+ReallyForceSpell(Myself,WIZARD_MISLEAD)
+ReallyForceSpell(Myself,WIZARD_ARMOR)
+ReallyForceSpell(Myself,WIZARD_NON_DETECTION)
+ReallyForceSpell(Myself,WIZARD_IMPROVED_INVISIBILITY)
+ReallyForceSpell(Myself,WIZARD_TRUE_SIGHT)
+ReallyForceSpell(Myself,WIZARD_IMPROVED_MANTLE)
+ReallyForceSpell(Myself,CLERIC_BLADE_BARRIER)
+ReallyForceSpell(Myself,WIZARD_PROTECTION_FROM_MAGIC_WEAPONS)
+ReallyForceSpell(Myself,WIZARD_SPELL_DEFLECTION)
+ReallyForceSpell(Myself,WIZARD_MIRROR_IMAGE)
+ReallyForceSpell(Myself,WIZARD_ABSOLUTE_IMMUNITY)
+END
+
+IF
+Global("#SJugementDernier","GLOBAL",1)
+HPGT(Myself,10)
+THEN
+ RESPONSE #100
+SetGlobal("#SJugementDernier","GLOBAL",2)
+ForceSpell("#SIren",CLERIC_SHIELD_OF_THE_ARCHONS)
+END
+
+IF
+Global("#SJugementDernier","GLOBAL",2)
+HPGT(Myself,10)
+THEN
+ RESPONSE #100
+SetGlobal("#SJugementDernier","GLOBAL",3)
+ForceSpell(NearestEnemyOf(Myself),WIZARD_ENERGY_DRAIN)
+END
+
+IF
+Global("#SJugementDernier","GLOBAL",3)
+HPGT(Myself,10)
+THEN
+ RESPONSE #100
+SetGlobal("#SJugementDernier","GLOBAL",4)
+ForceSpell(NearestEnemyOf(Myself),WIZARD_DOMINATION)
+END
+
+IF
+Global("#SJugementDernier","GLOBAL",4)
+HPGT(Myself,10)
+THEN
+ RESPONSE #100
+SetGlobal("#SJugementDernier","GLOBAL",5)
+ForceSpell(NearestEnemyOf(Myself),WIZARD_ENERGY_DRAIN)
+END
+
+IF
+Global("#SJugementDernier","GLOBAL",5)
+HPGT(Myself,10)
+THEN
+ RESPONSE #100
+SetGlobal("#SJugementDernier","GLOBAL",6)
+ForceSpell(NearestEnemyOf(Myself),WIZARD_TIME_STOP)
+END
+
+IF
+Global("#SJugementDernier","GLOBAL",6)
+HPGT(Myself,10)
+THEN
+ RESPONSE #100
+SetGlobal("#SJugementDernier","GLOBAL",7)
+ForceSpell(NearestEnemyOf(Myself),WIZARD_DOMINATION)
+END
+
+IF
+Global("#SJugementDernier","GLOBAL",7)
+HPGT(Myself,10)
+THEN
+ RESPONSE #100
+SetGlobal("#SJugementDernier","GLOBAL",8)
+ForceSpell(NearestEnemyOf(Myself),WIZARD_SPELL_STRIKE)
+END
+
+IF
+Global("#SJugementDernier","GLOBAL",8)
+HPGT(Myself,10)
+THEN
+ RESPONSE #100
+SetGlobal("#SJugementDernier","GLOBAL",9)
+ForceSpell(NearestEnemyOf(Myself),WIZARD_SPELL_STRIKE)
+END
+
+
+IF
+Global("#SJugementDernier","GLOBAL",9)
+HPGT(Myself,10)
+THEN
+ RESPONSE #100
+SetGlobal("#SJugementDernier","GLOBAL",10)
+ForceSpell(Myself,CLERIC_STRENGTH_OF_ONE)
+END
+
+
+
+
+
+
+

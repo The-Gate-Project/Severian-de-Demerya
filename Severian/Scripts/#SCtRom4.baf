@@ -1,0 +1,20 @@
+IF
+  True()
+THEN
+  RESPONSE #100
+    CutSceneId("#Severian")
+    FadeToColor([20.0],0)
+    Wait(1)
+    ActionOverride("wcust02",JumpToPoint([629.323]) // Déplacement de Débutante Alicia qui SINON se trouverait en Chaename et Severian
+    JumpToPoint([567.387])
+    ActionOverride(Player1,JumpToPoint([506.387]))
+    FaceObject(Player1)
+    ActionOverride(Player1,FaceObject("#Severian")
+    MoveViewObject(Myself,INSTANT)
+    Wait(1)
+    FadeFromColor([20.0],0)
+    SetGlobal("#SRomanceRepasMithrest","AR0704",3)
+    PlaySong(0)
+    PlaySound("#SMusicD")
+    EndCutSceneMode()
+END

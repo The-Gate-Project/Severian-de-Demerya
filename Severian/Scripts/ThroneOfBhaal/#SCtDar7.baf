@@ -1,0 +1,14 @@
+IF
+ True()
+THEN
+ RESPONSE #100
+CutSceneId(Player1)
+SetGlobal("#SDeadDarkhan","GLOBAL",3)
+MoveViewObject("#SValy3",VERY_FAST)
+Wait(2)
+CreateVisualEffectObject("SPCLOUD2","#SValy3")
+Wait(2)
+ActionOverride("#SValy3",DestroySelf())
+Wait(1)
+EndCutSceneMode()
+END

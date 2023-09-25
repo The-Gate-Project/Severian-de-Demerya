@@ -1,0 +1,21 @@
+IF
+See([PC])
+Global("#SPremiereRencontre","GLOBAL",0)
+THEN
+RESPONSE #100
+SetGlobal("#SPremiereRencontre","GLOBAL",1)
+Dialogue(Nearest([PC]))
+END
+
+IF
+See([PC])
+Global("#SeverianMailikki","GLOBAL",5)
+THEN
+RESPONSE #100
+Dialogue(Nearest([PC]))
+END
+
+
+
+
+

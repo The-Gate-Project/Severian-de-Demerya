@@ -1,0 +1,13 @@
+IF
+  True()
+THEN
+  RESPONSE #100
+    CutSceneId("#Severian")
+    SetGlobal("#SJolentaSeverian","GLOBAL",2)
+    Wait(1)
+    CreateCreature("#SFahmi",[704.662],0)
+    CreateCreature("#SJolent",[751.671],0)
+    Wait(2)
+    ActionOverride("#SJolent",StartDialogueNoSet("#Severian"))
+    EndCutSceneMode()
+END

@@ -1,0 +1,40 @@
+// MEETING
+// GRUTT LE DEMI OGRE
+
+// INTRO
+
+@0  = ~(La porte de l'auberge vient littéralement de voler en éclats, livrant passage à une créature grotesque. Vous reconnaissez la silhouette patibulaire d'un demi-ogre tandis que les yeux injectés de sang de l'intrus fouillent l'auberge du regard, indifférent à la panique qui s'est emparée de l'endroit. Il fulmine, ses crocs saillants dégouttant des filets de bave, vociférant à pleine gorge.)~
+@1  = ~L'auberge est fermée ! Grutt et sa bande cherchent l'Halfshade ! Où es-tu, misérable charogne, que je t'écorche vif !~
+@2  = ~(Avec désarroi, vous assistez à l'évacuation de l'auberge. C'est la débandade: les clients tombent les uns les autres dans la panique la plus complète. Certains d'entre eux, dont l'aubergiste, recèlent assez de courage pour simplement reculer près des cuisines. Près de vous, le rôdeur a tressailli et sous sa cape, vous devinez son épée prête à donner la réplique. Non loin, vos compagnons ne vous quittent pas des yeux : vous savez que, quoi que vous décidiez, ils vous suivront.)~
+@200 = ~Il ne manquait plus que ça...(L'inconnu serre les dents sous sa capuche, pressant la garde de son épée.)~
+@201 = ~C'est cet Ilkar qui l'envoie, n'est-ce-pas ? Si je t'aide à abattre cette brute, m'aideras-tu à mon tour ? Réfléchis bien : seul contre trois, tu n'as aucune chance.~
+@202 = ~Ainsi, je me retrouve mêlé à tes sombres affaires malgré moi. Comme si je n'avais pas déjà assez d'ennuis...Donne-moi une seule bonne raison de t'aider à sauver ta peau !~ // @3
+@3 = ~Je ne t'ai rien demandé, que je sache ! Si tu veux décamper, libre à toi : j'en fais mon affaire (Le rôdeur reste de marbre mais vous devinez les lames prêtes à jaillir des pans de sa cape.)~
+@4 = ~(Le rôdeur reste de marbre mais vous devinez les lames prêtes à jaillir des pans de sa cape.) ça peut se négocier mais tu as encore le temps de décamper. Ilkar est tenace et ses sbires sont à son image.~
+
+// LE CHOIX DE CHARNAME
+
+
+@5  = ~(Le demi-ogre s'approche de vous, renversant les tables, envoyant valser les quelques clients imprudents restés pour jouir du spectacle : Grutt vous a manifestement repérés tous les deux mais il n'est pas encore trop tard pour reculer et laisser le rôdeur régler ses comptes seul.)~
+@6  = ~(La brute bardée de métal lève sa large épée dans votre direction, les crocs luisants et les yeux emplis de jubilation.) Toi, l'homme à la capuche ! Les indications d'Ilkar correspondent : un carquois, un sombre manteau et cette habitude à fréquenter ce tripot ! Mais t'as trouvé des alliés, on dirait ! (Le monstrueux personnage se tourne vers vous, reniflant.) Tu pues l'aventurier à cent toises ! Ilkar veut la peau de Valarym, alors Grutt va lui rapporter sa tête. Mais il va p'têt aussi lui rapporter ta carcasse. Alors, qu'est ce que t'en penses ? Profite que Grutt soit magnanime et tire-toi, demi-portion.~ ~(La brute bardée de métal lève sa large épée dans votre direction, les crocs luisants et les yeux emplis de jubilation.) Toi, l'homme à la capuche ! Les indications d'Ilkar correspondent : un carquois, un sombre manteau et cette habitude à fréquenter ce tripot ! Mais t'as trouvé des alliés, on dirait ! (Le monstrueux personnage se tourne vers vous, reniflant.) Tu pues l'aventurière à cent toises ! Ilkar veut la peau de Valarym, alors Grutt va lui rapporter sa tête. Mais il va p'têt aussi lui rapporter ta carcasse. Alors, qu'est ce que t'en penses ? Profite que Grutt-la-Montagne soit magnanime et tire-toi, demi-portion.~
+@7  = ~(Celui que Grutt a nommé Valarym dégaine ses lames, exécutant des moulinets avec ses poings.) Ta mère ne t'a jamais enseigné à ne pas baver en public ? ça t'ôte toute crédibilité, Grutty (le rôdeur profite de l'hébétude momentanée du demi ogre pour s'adresser à vous dans un souffle.) Il est encore temps de foutre le camp mais si tu me prêtes main forte, je sens que nous pourrons parler affaires tous les deux.~ // Si Player 1 MALE
+@8  = ~(Celui que Grutt a nommé Valarym dégaine ses lames, exécutant des moulinets avec ses poings.) Ce n'est pas très galant de s'adresser ainsi à une femme, Grutty (le rôdeur profite de l'hébétude momentanée du demi-ogre pour s'adresser à vous dans un souffle.) Il est encore temps de foutre le camp, mais si tu me prêtes main forte, je sens que nous pourrons parler affaires tous les deux.~ // Si Player 1 FEMALE
+@9 = ~(Avant que n'ayez pu avoir une quelconque réaction, le jeune homme met à profit la surprise de Grutt et d'un bond de chamois sur la table la plus proche, il décoche un formidable coup de pied dans la poitrine du mercenaire qu'il envoie valdinguer parmi le mobilier. Le craquement est sinistre mais vous devinez que cette masse étalée sur le plancher n'en aura pas pour longtemps à se relever, et lorsqu'elle le fera, sa colère sera terrible. C'est le moment de choisir de quel côté sera votre lame tandis que le rôdeur, sautant de table en table, évite avec brio les carreaux d'arbalète qui fondent sur lui.)~ 
+@10 = ~Bon sang, tu m'as mis dans un sacré pétrin ! Mais ce demi-ogre m'a traité de demi-portion et ce n'est pas pour me plaire. Je vais t'aider, Valarym, et nous le bouterons hors de cette auberge, c'est moi qui te le dis ! Tiens seulement ta promesse, c'est tout ce que je te demande.~
+@11 = ~(Vous soupirez, dégainant vos armes à votre tour.) Bon. Un combat de plus ou de moins, après tout...Mais tu as intérêt à tenir ta promesse, Valarym.~
+@12 = ~Quels que soient les services que tu pourrais me rendre, tu es bien trop suicidaire à mon goût. Et je suis certain que tu ne tiendras pas ta promesse. Je refuse de t'aider : débrouille-toi seul, Valarym. Après tout, si tu en es là, c'est que tu l'as probablement mérité.~ ~Quels que soient les services que tu pourrais m'apporter, tu es bien trop suicidaire à mon goût. Et je suis certaine que tu ne tiendras pas ta promesse. Je refuse de t'aider : débrouille-toi seul, Valarym. Après tout, si tu en es là, c'est que tu tu l'as probablement mérité.~
+
+// LA PROMESSE DE VALARHYM
+
+@13 = ~Je n'ai qu'une parole, l'ami ! Mais ça commence à sentir le roussi par ici alors bouge-toi !~ ~Je n'ai qu'une parole, l'amie ! Mais ça commence à sentir le roussi par ici alors bouge-toi !~
+@16 = ~(Le temps de votre échange, Grutt-la-Montagne a redressé son imposante masse et hurle à ses mercenaires, hors de lui.) Je vais me faire un collier avec leurs têtes ! Abattez-les tous, sauf Valarym ! Ce chien est à moi ! (Le mercenaire se lance à la poursuite du jeune homme, fou de rage, mais ce dernier est trop rapide pour lui et le nargue tout en continuant ses bonds de chamois. La scène eut été cocasse dans d'autres circonstances....)~ 
+
+@14 = ~Soit ! Je me vois mal argumenter en pareil moment ! Grutt, de toi à moi tu n'as jamais été très malin. Ilkar ne pourra pas échapper longtemps à la Rune Pourpre : transmets-lui mes amitiés...Au plaisir !~
+@15 = ~(Le temps de votre échange, Grutt-la-Montagne a redressé son imposante masse et hurle à ses mercenaires, hors de lui.) Vous deux ! Ne le laissez pas filer, Ilkar veut sa peau ! Mais...Où est-il ? Diable d'halfshade ! Retrouvons-le ! Bougez-vous, bande de pleutres !~ // Grutt et mercenaires quittent zone
+
+
+// DISPLAYSTRING HEAD
+
+@300 = ~(Valarym disparaît dans les ombres....)~
+
+

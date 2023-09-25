@@ -1,0 +1,25 @@
+IF
+See([PC])
+!StateCheck("#Severian",CD_STATE_NOTVALID)
+Global("#SeverEnterrement","GLOBAL",3)
+THEN
+RESPONSE #100
+Dialogue(Nearest([PC]))
+END
+
+IF
+See([PC])
+Global("#SeverEnterrement","GLOBAL",6)
+THEN
+RESPONSE #100
+Dialogue(Nearest([PC]))
+END
+
+IF
+  Global("#SeverEnterrement","GLOBAL",1)
+  !Detect([ENEMY])
+THEN
+  RESPONSE #100
+  SetGlobal("#SeverEnterrement","GLOBAL",2)
+  Dialogue(Nearest([PC]))
+END

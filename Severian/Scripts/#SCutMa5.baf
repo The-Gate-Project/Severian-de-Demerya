@@ -1,0 +1,19 @@
+IF
+  Global("#SeverianMailikki","GLOBAL",6)
+THEN
+  RESPONSE #100
+     CutSceneId("#SValyria")
+     SetGlobal("#SeverianMailikki","GLOBAL",7)
+     ActionOverride("#SValyria",EscapeArea())
+     ActionOverride("#SDuorok",EscapeArea())
+     
+ActionOverride("#SNaenia",EscapeArea())
+     
+ActionOverride("#SKalas",EscapeArea())
+     
+ActionOverride("#SPerian",EscapeArea())
+     
+ActionOverride("#SDorrana",EscapeArea())
+     ActionOverride("#Severian",CreateItem("#SBroche",0,0,0))
+     EndCutSceneMode()
+END

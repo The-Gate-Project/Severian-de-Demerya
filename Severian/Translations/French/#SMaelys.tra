@@ -1,0 +1,22 @@
+
+
+// CHAPITRE 2
+// TEMPLE DE WAUKYNE
+// MORT DE MAELYS
+
+@0 = ~(Le combat est fini. Les halfshades auront lutté jusqu'à leur mort, aveuglés par la cruauté et la noirceur de leurs cœurs. Tandis que vous reprenez votre souffle, haletante, vous voyez Severian se précipiter vers Hariel, ignorant de la blessure infligée par Sorkailen qui lui a déchiré l'épaule.)~ [#SMusicJ]
+@1 = ~(L'elfe est morte : son visage exsangue est figé, froid et blanc comme ce marbre que vous foulez. Il vous semble, de l'endroit où vous vous trouvez, qu'une larme a coulé sur la joue de Severian.)~
+@2 = ~Hariel...~
+@3 = ~...~
+@4 = ~Je n'ai pas su...~
+@5 = ~...~
+@6 = ~(Le jeune homme se redresse, déchirant sa manche pour se bander sommairement l'épaule puis il prend l'elfe dans ses bras et se tourne vers vous.)~
+@7 = ~<CHARNAME>, je dois enterrer Hariel...Cette blessure attendra. Allons à Imnesvale, s'il te plaît.~
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// Entrée dans le journal
+@300 = ~Les Chroniques de Severian - Livre 2 : Les fantômes du passé
+
+Les funérailles d'Hariel
+
+C'est un bien funeste jour. Hariel est morte, assassinée par Sorkailen. Severian en était très proche...A tel point qu'il m'a semblé le voir, l'espace d'un furtif instant, versé une larme. Je dois maintenant l'accompagner au village d'Imnesvale, dans les Collines d'Umar, où il espère donner à la jeune elfe des funérailles décentes. La mort des deux halfshades est une bien piètre consolation mais là où ils sont, ils ne feront désormais plus de mal à personne. Hariel fut leur dernière victime et Severian a failli figurer sur la liste de leurs crimes à en juger par cette vilaine blessure qui lui a déchiré l'épaule. Il va falloir que je lui soigne ça.~

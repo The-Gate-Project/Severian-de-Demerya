@@ -1,0 +1,25 @@
+IF
+  True()
+THEN
+  RESPONSE #100
+    CutSceneId(Player1)
+    Wait(1)
+    FadeToColor([20.0],0)
+    Wait(1)
+    JumpToPoint([436.451])
+    Face(12)
+    ActionOverride("#Severian",JumpToPoint([456.427])
+    ActionOverride("#Severian",Face(14))
+    ActionOverride("#SBlaidd",JumpToPoint([556.440]))
+    ActionOverride("#SBlaidd",Face(4))
+    ActionOverride("#SPerian",JumpToPoint([504.459]))
+    ActionOverride("#SPerian",Face(5))
+    SetGlobal("#SBlaiddTrophee","GLOBAL",2)
+    CloseDoor("Door01")
+    Wait(1)
+    FadeFromColor([20.0],0)
+    Wait(1)
+    ActionOverride("#SPerian",StartDialogueNoSet(Player1))
+    EndCutSceneMode()
+END
+    

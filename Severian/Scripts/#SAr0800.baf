@@ -1,0 +1,44 @@
+// Spawn Cimetière
+IF
+  Global("#SCimetiere", "GLOBAL", 1)
+  Global("#SBlaiddExists","AR0800",0)
+  GlobalTimerNotExpired("#STmCimetiere","GLOBAL")
+THEN
+  RESPONSE #100
+    SetGlobal("#SBlaiddExists","AR0800",1)
+    SetGlobal("#SCimetiere", "GLOBAL", 2)
+    CreateCreature("#SBlaidd",[1859.1778],2)
+    ActionOverride("#SBlaidd",Dialogue(Player1))
+END
+
+IF
+  Global("#Scut800","AR0800", 1)
+THEN
+  RESPONSE #100
+    StartCutSceneMode()
+    StartCutScene("#SCut800")
+END
+
+IF
+  Global("#SCimetiere", "GLOBAL", 4)
+THEN
+  RESPONSE #100
+    OpenDoor("Door0811")
+    ActionOverride("#SBlaidd",MoveToPoint([2408.1870])
+    Wait(1)
+    ActionOverride("#SBlaidd",LeaveAreaLUA("AR0811","",[440.410],12))
+    ActionOverride("#SBlaidd",DestroySelf())
+    SetGlobal("#SCimetiere", "GLOBAL", 5)
+END
+
+IF
+  Global("#SCimetiere", "GLOBAL", 10)
+THEN
+  RESPONSE #100
+    OpenDoor("Door0811")
+    ActionOverride("#SBlaidd",MoveToPoint([2408.1870])
+    Wait(1)
+    ActionOverride("#SBlaidd",DestroySelf())
+    CloseDoor("Door0811")
+    SetGlobal("#SCimetiere", "GLOBAL", -1)
+END

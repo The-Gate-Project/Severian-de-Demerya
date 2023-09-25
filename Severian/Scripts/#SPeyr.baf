@@ -1,0 +1,296 @@
+IF
+Detect(Player1)
+Detect("#Severian")
+!StateCheck("#Severian",CD_STATE_NOTVALID)
+Global("#SFinalRomance","GLOBAL",5)
+THEN
+RESPONSE #100
+PlaySong(0)
+PlaySound("#SMusicR")
+SetGlobal("#SFinalRomance","GLOBAL",6)
+Dialogue(Nearest(Player1))
+END
+
+// Script Combat Forme Humaine
+
+IF
+ HPGT(Myself,300)
+ Global("#SFinalRomance","GLOBAL",7)
+THEN
+ RESPONSE #100
+SetGlobal("#SFinalRomance","GLOBAL",8)
+ ReallyForceSpell(Myself,WIZARD_TRUE_SIGHT)
+ ReallyForceSpell(Myself,WIZARD_FIRE_SHIELD_RED)
+ ReallyForceSpell(Myself,WIZARD_FIRE_SHIELD_BLUE)
+ ReallyForceSpell(Myself,WIZARD_MANTLE)
+ ReallyForceSpell(Myself,WIZARD_RESIST_FEAR)
+ ReallyForceSpell(Myself,WIZARD_SPELL_SHIELD)
+ ReallyForceSpell(Myself,CLERIC_IRONSKIN)
+END
+
+IF
+ HPGT(Myself,300)
+Global("#SFinalRomance","GLOBAL",8)
+Global("#SFlecheAcideMelf","LOCALS",0)
+THEN
+  RESPONSE #100
+  ForceSpell(NearestEnemyOf(Myself),WIZARD_TIME_STOP)
+  SetGlobal("#SFlecheAcideMelf","LOCALS",1)
+  SetGlobal("#SFinalRomance","GLOBAL",9)
+END
+
+IF
+ HPGT(Myself,300)
+Global("#SFinalRomance","GLOBAL",9)
+Global("#SChaos","LOCALS",0)
+THEN
+  RESPONSE #100
+  ForceSpell(NearestEnemyOf(Myself),WIZARD_CHAOS)
+  SetGlobal("#SChaos","LOCALS",1)
+  SetGlobal("#SFinalRomance","GLOBAL",10)
+END
+
+IF
+ HPGT(Myself,300)
+Global("#SFinalRomance","GLOBAL",10)
+Global("#SCacoFielon","LOCALS",0)
+THEN
+  RESPONSE #100
+  ForceSpell(NearestEnemyOf(Myself),WIZARD_CACOFIEND)
+  SetGlobal("#SCacoFielon","LOCALS",1)
+  SetGlobal("#SFinalRomance","GLOBAL",11)
+END
+
+IF
+ HPGT(Myself,300)
+Global("#SFinalRomance","GLOBAL",11)
+Global("#SNuageIncendiaire","LOCALS",0)
+THEN
+  RESPONSE #100
+  ForceSpell(NearestEnemyOf(Myself),WIZARD_INCENDIARY_CLOUD)
+  SetGlobal("#SNuageIncendiaire","LOCALS",1)
+  SetGlobal("#SFinalRomance","GLOBAL",12)
+END
+
+
+IF
+ Global("#SFinalRomance","GLOBAL",12)
+ Global("#SAleatoire","GLOBAL",0)
+THEN
+ RESPONSE #100
+SetGlobal("#SFinalRomance","GLOBAL",13)
+SetGlobal("#SAleatoire","GLOBAL",1)
+DisplayStringHead("#SPeyr",@50)
+ForceSpell(NearestEnemyOf(Myself),WIZARD_TELEPORT_FIELD)
+ RESPONSE #100
+SetGlobal("#SFinalRomance","GLOBAL",13)
+SetGlobal("#SAleatoire","GLOBAL",1)
+DisplayStringHead("#SPeyr",@50)
+ForceSpell(NearestEnemyOf(Myself),WIZARD_RUBY_RAY_OF_REVERSAL)
+RESPONSE #100
+SetGlobal("#SFinalRomance","GLOBAL",13)
+SetGlobal("#SAleatoire","GLOBAL",1)
+DisplayStringHead("#SPeyr",@50)
+ForceSpell(NearestEnemyOf(Myself),CLERIC_DEFENSIVE_HARMONY)
+RESPONSE #100
+SetGlobal("#SFinalRomance","GLOBAL",13)
+SetGlobal("#SAleatoire","GLOBAL",1)
+DisplayStringHead("#SPeyr",@50)
+ForceSpell(NearestEnemyOf(Myself),CLERIC_EARTHQUAKE)
+RESPONSE #100
+SetGlobal("#SFinalRomance","GLOBAL",13)
+SetGlobal("#SAleatoire","GLOBAL",1)
+DisplayStringHead("#SPeyr",@50)
+ForceSpell(NearestEnemyOf(Myself),CLERIC_MASS_CURE)
+END
+
+IF
+ HPGT(Myself,300)
+Global("#SFinalRomance","GLOBAL",13)
+Global("#SAbiDalzim","LOCALS",0)
+THEN
+  RESPONSE #100
+  ForceSpell(NearestEnemyOf(Myself),WIZARD_ABI_DALZIMS_HORRID_WILTING)
+  SetGlobal("#SAbiDalzim","LOCALS",1)
+  SetGlobal("#SFinalRomance","GLOBAL",14)
+END
+
+
+IF
+ HPGT(Myself,300)
+Global("#SFinalRomance","GLOBAL",14)
+Global("#SPoingBigby","LOCALS",0)
+THEN
+  RESPONSE #100
+  ForceSpell(NearestEnemyOf(Myself),WIZARD_BIGBYS_CLENCHED_FIST)
+  SetGlobal("#SPoingBigby","LOCALS",1)
+  SetGlobal("#SFinalRomance","GLOBAL",15)
+END
+
+
+
+// TRANSFORMATION DRAGON
+
+IF
+ HPLT(Myself,301)
+ Global("#STransfoDragon","GLOBAL",0)
+THEN 
+ RESPONSE #100
+ SetGlobal("#SFinalRomance","GLOBAL",16)
+ SetGlobal("#STransfoDragon","GLOBAL",1)
+ Kill("#SZhorin")
+ Kill("#SDilyn")
+ Kill("#SAlyo")
+ Kill("#SThor")
+ StartDialogueNoSet(Player1) 
+END
+
+IF
+ Global("#SFinalRomance","GLOBAL",18)
+ Global("#SDragoNWingBuffet","GLOBAL",0)
+THEN
+ RESPONSE #100
+SetGlobal("#SFinalRomance","GLOBAL",19)
+SetGlobal("#SDragoNWingBuffet","GLOBAL",1)
+ForceSpell(NearestEnemyOf(Myself),DRAGON_WING_BUFFET)
+ForceSpell(NearestEnemyOf(Myself),WIZARD_TIME_STOP)
+ReallyForceSpell(Myself,WIZARD_MANTLE)
+END
+
+IF 
+ Global("#SFinalRomance","GLOBAL",19)
+ Global("#SProtectionsMagiques","GLOBAL",0)
+THEN
+ RESPONSE #100
+SetGlobal("#SFinalRomance","GLOBAL",20)
+SetGlobal("#SProtectionsMagiques","GLOBAL",0)
+ ReallyForceSpell(Myself,WIZARD_TRUE_SIGHT)
+ ReallyForceSpell(Myself,WIZARD_FIRE_SHIELD_RED)
+ ReallyForceSpell(Myself,WIZARD_FIRE_SHIELD_BLUE)
+ ReallyForceSpell(Myself,WIZARD_MANTLE)
+ ReallyForceSpell(Myself,WIZARD_RESIST_FEAR)
+ ReallyForceSpell(Myself,CLERIC_PROTECT_FROM_EVIL)
+ ReallyForceSpell(Myself,WIZARD_SPELL_SHIELD)
+ ReallyForceSpell(Myself,CLERIC_IRONSKIN)
+ DisplayStringHead("#SPeyr",@50)
+ ForceSpell(NearestEnemyOf(Myself),WIZARD_SPIRIT_ARMOR)
+END
+
+IF 
+ Global("#SFinalRomance","GLOBAL",20)
+ Global("#SBanshee","GLOBAL",0)
+THEN
+ RESPONSE #100
+SetGlobal("#SFinalRomance","GLOBAL",21)
+SetGlobal("#SBanshee","GLOBAL",1)
+ForceSpell(NearestEnemyOf(Myself),WIZARD_WAIL_OF_THE_BANSHEE)
+END
+
+IF 
+ Global("#SFinalRomance","GLOBAL",21)
+ Global("#SPluieMeteores","GLOBAL",0)
+THEN
+ RESPONSE #100
+SetGlobal("#SFinalRomance","GLOBAL",22)
+SetGlobal("#SPluieMeteores","GLOBAL",1)
+ForceSpell(NearestEnemyOf(Myself),WIZARD_METEOR_SWARM)
+END
+
+IF 
+ Global("#SFinalRomance","GLOBAL",22)
+ Global("#SAleatoire","GLOBAL",0)
+THEN
+ RESPONSE #100
+DisplayStringHead("#SPeyr",@50)
+SetGlobal("#SFinalRomance","GLOBAL",23)
+SetGlobal("#SAleatoire","GLOBAL",1)
+DisplayStringHead("#SPeyr",@50)
+ForceSpell(NearestEnemyOf(Myself),WIZARD_TELEPORT_FIELD)
+ RESPONSE #100
+SetGlobal("#SFinalRomance","GLOBAL",23)
+SetGlobal("#SAleatoire","GLOBAL",1)
+DisplayStringHead("#SPeyr",@50)
+ForceSpell(NearestEnemyOf(Myself),WIZARD_RUBY_RAY_OF_REVERSAL)
+RESPONSE #100 
+SetGlobal("#SFinalRomance","GLOBAL",23)
+SetGlobal("#SAleatoire","GLOBAL",1)
+DisplayStringHead("#SPeyr",@50)
+ForceSpell(NearestEnemyOf(Myself),CLERIC_DEFENSIVE_HARMONY)
+RESPONSE #100
+SetGlobal("#SFinalRomance","GLOBAL",23)
+SetGlobal("#SAleatoire","GLOBAL",1)
+DisplayStringHead("#SPeyr",@50)
+ForceSpell(NearestEnemyOf(Myself),CLERIC_EARTHQUAKE)
+RESPONSE #100
+SetGlobal("#SFinalRomance","GLOBAL",23)
+SetGlobal("#SAleatoire","GLOBAL",1)
+DisplayStringHead("#SPeyr",@50)
+ForceSpell(NearestEnemyOf(Myself),CLERIC_MASS_CURE)
+END
+
+
+IF 
+ Global("#SFinalRomance","GLOBAL",23)
+ Global("#SPeauDeFer","GLOBAL",0)
+THEN
+ RESPONSE #100
+SetGlobal("#SFinalRomance","GLOBAL",24)
+SetGlobal("#SPeauxDeFer","GLOBAL",1)
+ReallyForceSpell(Myself,CLERIC_IRONSKIN)
+END
+
+IF 
+ Global("#SFinalRomance","GLOBAL",24)
+ Global("#SDrainEnergie","GLOBAL",0)
+THEN
+ RESPONSE #100
+SetGlobal("#SFinalRomance","GLOBAL",25)
+SetGlobal("#SDrainEnergie","GLOBAL",1)
+ForceSpell(NearestEnemyOf(Myself),WIZARD_ENERGY_DRAIN)
+END
+
+IF
+ Global("#SFinalRomance","GLOBAL",25)
+ Global("#SouffleDragon","GLOBAL",0)
+THEN
+ RESPONSE #100
+SetGlobal("#SFinalRomance","GLOBAL",26)
+SetGlobal("#SouffleDragon","GLOBAL",1)
+ForceSpell(NearestEnemyOf(Myself),WIZARD_DRAGONS_BREATH)
+END
+
+IF
+ Global("#SFinalRomance","GLOBAL",26)
+ Global("#SDragoNWingBuffet","GLOBAL",1)
+THEN
+ RESPONSE #100
+SetGlobal("#SFinalRomance","GLOBAL",27)
+SetGlobal("#SDragoNWingBuffet","GLOBAL",2)
+ForceSpell(NearestEnemyOf(Myself),DRAGON_WING_BUFFET)
+END
+
+IF 
+ Global("#SFinalRomance","GLOBAL",27)
+ Global("#SPeauxDeFer2","GLOBAL",0)
+THEN
+ RESPONSE #100
+SetGlobal("#SFinalRomance","GLOBAL",28)
+SetGlobal("#SPeauxDeFer2","GLOBAL",1)
+ReallyForceSpell(Myself,CLERIC_IRONSKIN)
+END
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,20 @@
+
+IF
+ Global("#SDuoPypEnter","GLOBAL",1)
+THEN
+  RESPONSE #100
+   SetGlobal("#SDuoPypEnter","GLOBAL",2)
+   CreateCreature("#SPerian",[744.539],0)
+   CreateCreature("#SDuorok",[739.596],9)
+END
+
+IF
+ PartyHasItem("#SPants")
+ PartyHasItem("#SBiere")
+ Global("#SDuoPypEnter","GLOBAL",3)
+THEN
+  RESPONSE #100
+   SetGlobal("#SPinkieQuete","GLOBAL",6)
+END
+
+

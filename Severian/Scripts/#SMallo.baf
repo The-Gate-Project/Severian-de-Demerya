@@ -1,0 +1,10 @@
+IF
+See([PC])
+NumTimesTalkedTo(0)
+THEN
+RESPONSE #100
+PlaySong(0)
+PlaySound("#SMusicW")
+Dialogue(Nearest([PC]))
+END
+

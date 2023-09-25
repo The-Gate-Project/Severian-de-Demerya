@@ -1,0 +1,12 @@
+IF
+ True()
+THEN
+  RESPONSE #100
+   CutSceneId("#Severian")
+   Wait(1)
+   CreateCreatureImpassable("#SBlaidd",[497.387],1)
+   SetGlobal("#SeverianMailikki","GLOBAL",21)
+   Wait(1)
+   ActionOverride("#SBlaidd",StartDialogueNoSet(Player1))
+   EndCutSceneMode()
+END

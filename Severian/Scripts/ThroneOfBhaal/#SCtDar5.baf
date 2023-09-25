@@ -1,0 +1,21 @@
+IF
+ True()
+THEN
+ RESPONSE #100
+CutSceneId(Player1)
+Wait(1)
+SetGlobal("#SValyriaTeleportation","GLOBAL",1)
+TakeItemReplace("#SNoImun","#SImun","#SMask2")
+CreateVisualEffectObject("SPFDEATH","#SMask2")
+ActionOverride("#SMask2",DestroySelf())
+Wait(2)
+MoveViewObject(Player1,INSTANT)
+ScreenShake([200.200],30)
+Wait(3)
+DisPlayStringHead(Player1,@203210)
+Wait(2)
+CreateCreatureObjectEffect("#SValy25","SPCLOUD2",Player1)
+Wait(1)
+ActionOverride("#SValy25",StartDialogueNoSet(Player1))
+EndCutSceneMode()
+END

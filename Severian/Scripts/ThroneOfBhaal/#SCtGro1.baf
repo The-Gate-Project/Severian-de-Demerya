@@ -1,0 +1,17 @@
+IF 
+ True()
+THEN
+ RESPONSE #100
+CutSceneId(Player1)
+SetGlobal("#SJolentaSeverian","GLOBAL",4)
+Wait(1)
+CreateCreature("#SGarde1",[1085.668],0)
+CreateCreature("#SGarde2",[1091.697],4)
+Wait(1)
+PlaySong(0)
+PlaySound("#SMus25G")
+Wait(1)
+ActionOverride("#SGarde1",StartDialogueNoSet("#SGarde2"))
+EndCutSceneMode()
+END
+

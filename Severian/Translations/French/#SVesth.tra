@@ -1,0 +1,117 @@
+
+
+// CHAPITRE 2 - FACE A FACE
+// PARTIE 2 - TEMPLE DE WAUKYNE
+// SCENE 1 - SORKAILEN ET VESTHARA, LES HALFSHADES
+
+
+ 
+@0 = ~Une fois de plus, Sorka, tu as laissé libre cours à ton impatience...~ 
+@50 = ~Et si Severian ne venait pas ? Cette fille devait bien nous servir d'otage, non ?~
+@1 = ~Il viendra, ma chère sœur et...Le voilà, justement.~
+@2 = ~(Dans le temple où vous venez de pénétrer, tout n'est que chaos: meubles, ornements, tout a été saccagé, vestiges d'un affrontement passé. Et au centre, un corps, celui d'une jeune femme à l'ondoyante chevelure blonde dont le sang s'écoule en filets pourpres sur la mosaïque à l'effigie de Waukyne.)~
+@3 = ~(Il vous est impossible à présent de reconnaître en Severian le jeune homme plein de gouaille et d'aplomb que vous avez connu. Pâle comme la mort, il n'est plus que chagrin et rage, tandis que ses yeux hypnotisés par le corps d'Hariel ne peuvent s'en détacher. Sa main est crispée sur le pommeau de son arme, sa poitrine se soulève sous le coup de l'émotion, et les mots que vous devinez innombrables au bord de ses lèvres entrouvertes, ne peuvent en sortir.)~
+@4 = ~Voici que nous arrivons enfin au dernier acte de cette pièce absurde et grandiose...Le grand maître bouffon Alarius Dythar lui-même n'aurait écrit mieux : voici que son ancien amour vient à son secours...Bien trop tard, hélas !~
+@5 = ~(Vous évaluez rapidement la situation, prête à brandir votre arme au moindre mouvement de leur part. La femme est vêtue de soies rouges vaporeuses, à ce point fines qu'elles laissent par endroits deviner le galbe de ses cuisses, sous la tunique. A ses mains, des bracelets à grelots, que vous avez déjà parfois vus aux poignets des bouffons qui distraient seigneurs et gens du peuple les jours de fêtes. Des tatouages en forme d'arabesques marquent sa poitrine et son visage encadré d'une longue chevelure violette, et ses yeux sont rosâtres, brillants sous la lumière sacrée du temple. Deux lames exsudant la puissance magique constituent là ses seules armes visibles.)~
+@6 = ~(L'homme quant à lui arbore armure noire luisante et cheveux platine sur un visage jeune aux prunelles translucides. Sa main gauche tient la plus grande épée que vous ayez jamais vu, elle aussi irradiant la magie. L'albinos toise Severian d'un air appuyé, un pli ironique au coin des lèvres.)~
+@7 = ~Vestha, tu as toujours eu le goût de la pantalonnade...Mais accueillons Severian : c'est là un acteur des plus précieux dans notre petite mise en scène.~
+@8 = ~(Avant que vous n'ayez eu le temps de l'en empêcher, Severian s'est précipité au centre de la salle.) Hariel ! Monstres, je vais vous tuer !~
+
+// CUTSCENE CUTRV1
+
+@9 = ~(L'espace de l'altercation, la rouge Vesthara a disparu à vos yeux. Vous la cherchez en vain dans les ombres du temple quand elle surgit près de Severian.)~ 
+@52 = ~(Vous la voyez promener ses mains aux ongles rouges et effilés sur les épaules du jeune homme, semblant l'humer comme elle sentirait un parfum capiteux.)~
+@51 = ~(Sorkailen lui aussi a réagi : il pointe son épée vers Severian, menaçant. Son œil brille encore du meurtre récemment commis.) Je ne crois pas, non. Tu vas rester bien sagement à ta place et écouter ce que nous avons à dire : ton amie est morte mais tu sais ce que nous pouvons faire à ceux qui se tiennent derrière toi. Et nous pouvons aussi choisir de les laisser partir, puisque les dés sont jetés. Cela ne dépendra que de toi.~
+
+@10 = ~Aucun doute, Sorkailen : c'est bien lui...(Le visage de la femme se fait rêveur, sa voix, lointaine.) Je sens la colère qui boue en lui : c'est comme une tempête, comme une marée destructrice...(Sa voix se fait chantante tandis qu'elle bouge autour de lui d'un pas svelte.) Il est plein de promesses !~
+@1003 = ~(A présent et bien que vous ne puissiez voir que son profil, vous sentez le désespoir de Severian, dont l'arme est retombée mollement le long de sa cuisse. Il ne semble plus avoir conscience des caresses de Vesthara, alors qu'il contemple Hariel baignant dans son sang.)~
+@1000 = ~Ne comptez pas sur moi pour vous laisser le menacer ainsi. Savez-vous seulement à qui vous avez affaire ?~ // Affaire
+@1001 = ~Je te conseille d'ôter tes sales pattes de là, espèce de traînée, ou tu vas passer un sale quart d'heure !~ // Bas les pattes
+@1002 = ~Tout ceci ne rime à rien. Rouvrez les portes du temple et nous partirons sans demander notre reste.~ // Portes
+
+// Portes
+
+@11 = ~(Sorkailen hausse un sourcil tandis que Vesthara pouffe de rire.)~
+@12 = ~J'ignorais que Severian faisait équipe avec des lâches ! Qui l'eût cru ?~
+@13 = ~Vous ne sortirez pas. Je ne tiens pas à ce que ce bel endroit soit pris d'assaut parce que vous aurez été prévenir les autorités. Vous partirez...ou pas, quand je l'aurais décidé. Tout dépend de votre bonne conduite à tous.~  // Commun
+
+// Bas les pattes
+
+@14 = ~*gloussement* Tu as des goûts sûrs en matière d'hommes, garce. Je laisserais volontiers mon frère à ta couche, mais un destin grandiose l'attend sur Demerya.~ // Commun
+
+// Affaire
+
+@15 = ~*gloussement* Tu es très distrayante, garce. Mais tu devras te contenter du second rôle dans cette pièce.~ // Commun
+
+// Commun
+
+@16 = ~Eh bien, voici venu le moment de tomber les masques Sorka, tu ne crois pas ? (Elle s'éloigne, prend place sur le socle d'une statue, ses longues jambes nonchalamment croisées, les grelots à ses bracelets tintant à chaque mouvement. Son sourire a quelque chose de sinistre qui vous glace les sangs.)~
+
+
+// TOMBER MASQUES
+
+@17 = ~(Vous jetez un coup d’œil insistant à Severian, mais il n'a plus aucune réaction. Vous avez l'impression que son esprit s'en est allé, bien qu'il regardât à présent Sorkailen et Vesthara, prisonnier de cette grotesque comédie.)~
+
+
+@18 = ~Tu apprécierais, Severian, d'en savoir un peu plus sur ton passé, n'est-ce pas ? J'en suis sûr : nous en avons tous eu l'envie, bâtards d'ombre et d'humain que nous sommes. Vesthara et moi, avons obtenu les réponses quand Père est venu nous trouver.~ 
+@19 = ~Elvaar était mon seul père, et vous l'avez tué...Ce jour-là, je m'en rappelle...Et j'ai fui, impuissant face à cette violence...Je n'ai jamais cessé de fuir à cause de vous.~
+@20 = ~*Rires* C'est la fin de la fuite, Severian. Ta famille est venue te ramener à Père. Lord Darkhan sera ravi de voir que son fils va rentrer au foyer.~
+@21 = ~Notre père est descendu de son royaume ombreux jusque dans les chambres de nos mères...Nous sommes ses lieutenants, Severian ! Entre Ombre et Lumière, nous avons déjà entrepris de dominer les humains de Demerya. Lord Darkhan sait que tu as un grand potentiel pour le servir et nous te suivons depuis cinq années, chaque fois sûrs de te rattraper, toujours découvrant une couche vide là où tu étais quelques instants auparavant.~
+@22 = ~(Le bouffon penche sa tête sur le côté, souriante.) Et tes petits stratagèmes n'y ont rien fait : Ryuuken ou Valarym, pour nous tu es toujours Severian.~ 
+@23 = ~Et quand nous avons été proches de te rattraper, il a fallu que tu te lies avec cette garce de Lathandre (Sorkailen désigne Hariel de la pointe de son épée.)~
+@24 = ~L’ombre a fané sous son toit
+Le soleil a imposé sa loi !~
+@25 = ~*Ricanements* Cette nuit-là, Severian, t'en souvient-il ? Celle où tu fus accusé du vol de l'idole de Lathandre...Il m'a fallu du courage pour pénétrer dans le temple de ce dieu détestable...Remercie-moi : sans cela, tu serais encore à te vautrer dans l'amour aveugle et béat.~
+@26 = ~(Severian écoute, et vous avez l'impression que ces paroles venimeuses se sont frayées un chemin dans son cœur. Vous ne savez qui de sa raison, ou de cette attraction que vous ressentez vous-même envers ces deux charismatiques créatures, est en cause mais il vous faut agir.)~
+@27 = ~La puissance est à portée de ta main, mon frère. Bien autre chose que ce rôle de chien de garde que tu tiens auprès d'elle (Le chevalier noir vous désigne.) Père saura sublimer ton potentiel et faire de toi autre chose qu'un vulgaire vagabond rampant à ses pieds !~
+
+// Agir
+
+@2700 = ~Severian, ces créatures n'ont rien en commun avec toi, quelle que soit leur filiation ! Ne les écoute pas : Regarde ce qu'ils ont fait à Hariel !~ // Vainqueur
+@2701 = ~Plus je vous écoute tous les deux, plus j'ai envie de tailler du steak. Avancez si vous l'osez, que je vous montre la puissance d'une Enfant de Bhaal !~ // Vainqueur
+@2702 = ~Tout ceci ne me concerne pas. Si tel doit être son destin, alors emmenez-le et bien le bonsoir. Ouvrez donc ces portes : on suffoque ici.~ // Abandonne
+
+// Abandonne
+
+@28 = ~Tu m'abandonnes, <CHARNAME> ? Je ne peux pas croire que tu me trahisses...Non ! Je ne me laisserai pas emmener...Je me battrai jusqu'à mon dernier souffle !~
+@29 = ~Nous saurons te rattraper, où que tu ailles ! Il ne sert à rien de fuir, Severian !~
+@30 = ~*Soupir* Et la chasse recommence...~
+
+// Vainqueur
+
+@31 = ~Le rôle du vainqueur est déjà pris alors fais silence si tu veux pas le regretter dans la douleur !~
+@32 = ~Comment acceptes tu de te laisser dominer par cette chienne, mon frère ? Elle t'a domestiqué et tu vaux bien mieux que cela !~
+
+
+
+@3200 = ~C'en est trop : Severian, réveille-toi !~
+@3201 = ~Si vous avez quelque chose à dire, dites-le maintenant. Après, je ne me priverai plus pour vous étriper comme il se doit !~
+
+// Combat
+
+@33 = ~(Du haut de son perchoir, Vestha affûte ses lames, un rire moqueur aux lèvres.)~
+@34 = ~(Le son de vos paroles a réveillé Severian. Il vous regarde, légèrement sonné, comme émergeant d'un rêve, et vous voyez sa main se raffermir sur son arme.)~ 
+@35 = ~Vous avez tué Hariel et Elvaar, vous m'avez traqué comme une bête...Vous avez fait de ma vie un enfer et vous espériez que ma colère serait à votre avantage ? Peu importe que nous soyons du même sang : vous n'aurez jamais d'emprise sur moi.~
+@36 = ~(Severian vous considère.) <CHARNAME>, c'est le moment de montrer tes talents...Si je meurs, sache...que j'aurais apprécié d'avoir fait équipe avec toi.~ 
+@37 = ~(Dans un bel ensemble, vous avez brandi vos armes. A cet instant, vous avez le sentiment d'une parfaite communion avec le rôdeur tandis que vos cœurs battent à l'unisson. Aujourd'hui, vous vous apprêtez à vivre un moment unique.)~
+@38 = ~(Le Maître Bouffon a sauté de son perchoir, épées en main. Dans ses yeux brillent désormais folie et meurtre, de même qu'une exaltation malsaine.) La dernière scène du dernier acte prend place maintenant, mesdames et messieurs ! Que le rideau se lève sur la plus tragique des pièces qui verra la mort des deux amants !~
+@39 = ~(Sorkailen fait rageusement tournoyer sa gigantesque épée.) Quel affront ! Vous n'avez aucune idée de ce que vous venez de provoquer ! Nous t'avons offert la chance de ta vie, de devenir autre chose que ce minable pendu aux basques de cette chienne ! Tant pis pour toi ! Comprenez votre erreur au moment de mourir, imbéciles !~ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

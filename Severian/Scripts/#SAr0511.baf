@@ -1,0 +1,54 @@
+// Spawns Auberge des Cinq Chopes
+
+IF
+  InParty("#Severian")
+  Global("#SMekhrExists","AR0511",0)
+THEN
+  RESPONSE #100
+    SetGlobal("#SMekhrExists","AR0511",1)
+    CreateCreature("#SMekhr",[148.799],15)
+    CreateCreatureImpassable("#SIsab",[182.724], 0)
+    CreateCreatureImpassable("#SIsaRat",[192.740], 0)
+    ActionOverride("#Severian",StartDialogNoSet(Player1))
+END
+
+IF
+  PartyHasItem("#SArmor")
+  OR(2)
+    Global("#SeverQuest1","GLOBAL", 5)
+    Global("#SeverQuest1","GLOBAL", 14)
+THEN
+  RESPONSE #100
+    TakePartyItem("#SArmor")
+    DestroyItem("#SArmor")
+    GiveItemCreate("#SArmor","#Severian",0,0,0)
+    SetGlobal("#SeverQuest1","GLOBAL", 6)
+    ActionOverride("#Severian",StartDialogNoSet(Player1))
+END
+
+IF
+  Global("#SMekhrQuit","AR0511",1)
+THEN
+  RESPONSE #100
+    SetGlobal("#SMekhrQuit","AR0511",2)
+    StartCutSceneMode()
+    StartCutScene("#SCut511")
+END
+
+IF
+  Global("#SeverQuest1","GLOBAL",12)
+THEN
+  RESPONSE #100
+    SetGlobal("#SeverQuest1","GLOBAL",13)
+     ActionOverride("#IsaRat",DestroySelf())
+     ActionOverride("#Severian",StartDialogNoSet(Player1))
+END
+
+IF
+ Dead("#SMekhr")
+ Global("#SExperienceMekhr","GLOBAL",0)
+THEN
+  RESPONSE #100
+ AddexperienceParty(5000)
+ SetGlobal("#SExperienceMekhr","GLOBAL",1)
+END

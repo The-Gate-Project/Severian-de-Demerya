@@ -1,0 +1,9 @@
+
+IF
+  Global("#SMalloQuete","GLOBAL",1)
+THEN
+ RESPONSE #100
+   SetGlobal("#SMalloQuete","GLOBAL",2)
+   CreateCreature("#SMallo",[571.1008],0)
+   CreateCreature("#SMoust",[588.1019],4)
+END

@@ -1,0 +1,26 @@
+IF
+ True()
+THEN
+  RESPONSE #100
+    CutSceneId(Player1)
+    Wait(1)
+    FadeToColor([20.0],0)
+    ActionOverride("#SPerian",DestroySelf())
+    ActionOverride("#SBlaidd",DestroySelf())
+    Wait(1)
+    LeaveAreaLUA("AR1100","",[4503.3107],4)
+    ActionOverride(Player2,LeaveAreaLUA("AR1100","",[4577.3129],14))
+    ActionOverride(Player3,LeaveAreaLUA("AR1100","",[4575.3127],2))
+    ActionOverride(Player4,LeaveAreaLUA("AR1100","",[4427.3012],2))
+    ActionOverride(Player5,LeaveAreaLUA("AR1100","",[4387.3017],2))
+    ActionOverride(Player6,LeaveAreaLUA("AR1100","",[4260.3207],2))
+    ActionOverride("#Severian",JumpToPoint([4208.3131])
+    ActionOverride("#Severian",Face(14))
+    MoveViewObject(Myself,INSTANT)
+    DayNight(2)
+    Weather(NOWEATHER)
+    Wait(1)
+    FadeFromColor([20.0],0)
+    Wait(1)
+    EndCutSceneMode()
+END

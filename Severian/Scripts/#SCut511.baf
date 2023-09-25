@@ -1,0 +1,15 @@
+IF
+  True()
+THEN
+  RESPONSE #100
+    CutSceneId("#SMekhr")
+    ActionOverride("Container2",CreateItem("#SArmor",0,0,0))
+    MoveToPoint([156.768])
+    ActionOverride("#SIsab",DestroySelf())
+    EscapeArea()
+    SetGlobal("#SeverQuest1","GLOBAL", 4)
+    ActionOverride("#Severian",StartDialogNoSet(Player1))
+    ActionOverride("#SIsaRat", DestroySelf())
+    DestroySelf()
+    EndCutSceneMode()
+END

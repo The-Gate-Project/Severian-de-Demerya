@@ -1,0 +1,13 @@
+IF
+  True()
+THEN
+  RESPONSE #100
+    CutSceneId("#Severian")
+    SetGlobal("#SDecisifImnesvale","AR1100",6)
+    MoveViewPoint([1526.3560],VERY_FAST)
+    MoveToPoint([1526.3560])
+    ActionOverride(Player1,MoveToPoint([1559.3535]))
+    Wait(3)
+    ActionOverride("#Severian",Dialog(Player1))
+    EndCutSceneMode()
+END

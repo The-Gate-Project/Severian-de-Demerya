@@ -1,0 +1,14 @@
+IF 
+ True()
+THEN
+ RESPONSE #100
+CutSceneId(Player1)
+Wait(1)
+SetGlobal("#SDernierMiroirAme","GLOBAL",14)
+CreateVisualEffectObject("SPCLOUD2","#SMask2")
+TakeItemReplace("#Skin2","#Skin3","#SMask2")
+ActionOverride("#SMask2",SetName(@205003))
+Wait(1)
+ActionOverride("#SMask2",StartDialogueNoSet(Player1))
+EndCutSceneMode()
+END

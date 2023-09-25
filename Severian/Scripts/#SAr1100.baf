@@ -1,0 +1,482 @@
+
+// PREMIERE ARRIVEE IMNESVALE
+
+IF
+ Global("#SUmarVisited","GLOBAL",0)
+THEN
+  RESPONSE #100
+ SetGlobal("#SUmarVisited","GLOBAL",1)
+END
+
+// SI QUETE DU TEMPLE PAS FAITE
+
+IF
+  OR(2)
+   Global("#SUmarVisited","GLOBAL",0)
+   Global("#SUmarVisited","GLOBAL",1)
+  Global("VillageSaved","GLOBAL",0)
+  Global("#SRomanceHuit","GLOBAL",1)
+  Global("#SeverDisplayStrinHead","GLOBAL",0)
+THEN
+  RESPONSE #100
+  SetGlobal("#SUmarVisited","GLOBAL",1)
+  SetGlobal("#SeverDisplayStrinHead","GLOBAL",1)
+  Wait(1)
+  DisPlayStringHead("#Severian",@46500)
+  Wait(7)
+  AddJournalEntry(@46501,INFO)
+END
+
+
+IF
+  Global("VillageSaved","GLOBAL",1)
+  Global("#SDecisifImnesvale","AR1100",1)
+  !TimeOfDay(DAY)
+THEN
+  RESPONSE #100
+    DayNight(12)
+    Continue()
+END
+
+IF
+  Global("VillageSaved","GLOBAL",1)
+  Global("#SDecisifImnesvale","AR1100",1)
+  TimeOfDay(DAY)
+THEN
+  RESPONSE #100
+    SetGlobal("#SDecisifImnesvale","AR1100",2)
+    SetDialog("#SeverR")
+    ActionOverride("#Severian",Dialog(Player1))
+END
+
+IF
+  Global("#SDecisifImnesvale","AR1100",3)
+THEN
+  RESPONSE #100
+    StartCutSceneMode()
+    StartCutScene("#SCutR81")
+END
+
+// CHAPITRE 2
+// PARTIE 1 - SCENE 1
+// MALLORY
+
+IF
+  Global("#SeverChapDeux","GLOBAL",1)
+  Global("#SMalloExists","AR1100",0)
+THEN
+  RESPONSE #100
+    SetGlobal("#SeverChapDeux","GLOBAL",2)
+    SetGlobal("#SMalloExists","AR1100",1)
+    CreateCreature("#SMallo",[3852.2954],8)
+END
+
+
+
+
+// CHAPITRE 2
+// PARTIE 3 - SCENE 1
+// L'ENTERREMENT D'HARIEL
+
+IF
+  Global("#SeverEnterrement","GLOBAL",8)
+THEN
+  RESPONSE #100
+    SetGlobal("#SeverEnterrement","GLOBAL",9)
+END
+
+IF
+  Global("#SeverEnterrement","GLOBAL",9)
+  OR(2)
+   TimeOfDay(DAY)
+   !TimeOfDay(DAY)
+THEN
+  RESPONSe #100
+  DayNight(21)
+  Continue()
+END
+
+IF
+  Global("#SeverEnterrement","GLOBAL",9)
+THEN
+  RESPONSE #100
+    StartCutSceneMode()
+    StartCutScene("#SCutEnt")
+END
+
+// CHAPITRE 3
+// CREATION #SYAMAN2
+
+IF
+ Global("#SYaman2Creation","GLOBAL",1)
+THEN
+  RESPONSE #100
+     ActionOverride("#Severian",CreateItem("#SYaman2",0,0,0))
+     SetGlobal("#SYaman2Creation","GLOBAL",2)
+END
+
+// CHAPITRE 3
+// RENCONTRE AVEC LES ADEPTES DE MAILIKKI
+
+IF
+  Global("#SeverianMailikki","GLOBAL",1)
+  !TimeOfDay(DAY)
+THEN
+  RESPONSE #100
+    DayNight(12)
+    Continue()
+END
+
+IF
+  Global("#SeverianMailikki","GLOBAL",1)
+  Global("#SValyExists","AR1100",0)
+  Global("#SPerianExists","AR1100",0)
+  Global("#SKalasExists","AR1100",0)
+  Global("#SNaeniaExists","AR1100",0)
+  Global("#SBlaiddExists","AR1100",0)
+  Global("#SDuorokExists","AR1100",0)
+  Global("#SDorraExists","AR1100",0)
+THEN
+  RESPONSE #100
+  SetGlobal("#SeverianMailikki","GLOBAL",2)
+  SetGlobal("#SValyExists","AR1100",1)
+  SetGlobal("#SPerianExists","AR1100",1)
+  SetGlobal("#SKalasExists","AR1100",1)
+  SetGlobal("#SNaeniaExists","AR1100",1)
+  SetGlobal("#SBlaiddExists","AR1100",1)
+  SetGlobal("#SDuorokExists","AR1100",1)
+  SetGlobal("#SDorraExists","AR1100",1)
+  CreateCreature("#SBlaidd",[1522.1683],7)
+  CreateCreature("#SValy",[1363.1561],15)
+  CreateCreature("#SKalas",[1449.1531],15)
+  CreateCreature("#SNaenia",[1325.1539],15)
+  CreateCreature("#SPerian",[1328.1644],15)
+  CreateCreature("#SDuorok",[1304.1648],15)
+  CreateCreature("#SDorra",[1266.1594],15)
+  ActionOverride("#SPerian",StartDialogueNoSet(Player1))
+END
+
+// LA CONVALESCENCE DE SEVERIAN
+
+IF
+ Global("#SeverianMailikki","GLOBAL",7)
+THEN
+  RESPONSE #100
+  SetGlobal("#SeverianMailikki","GLOBAL",8)
+  SetDialog("#SeverR")
+  ActionOverride("#Severian",Dialog(Player1))
+END
+
+// CHAPITRE 3
+// LA CONVALESCENCE DE SEVERIAN
+
+
+IF
+ Global("#SeverianMailikki","GLOBAL",7)
+THEN
+  RESPONSE #100
+   SetGlobal("#SeverianMailikki","GLOBAL",8)
+END
+
+
+
+IF
+  Global("#SeverianMailikki","GLOBAL",12)
+  !InMyArea("#SPerian")
+  !InMyArea("#SDuorok")
+THEN
+  RESPONSE #100
+    SetGlobal("#SeverianMailikki","GLOBAL",13)
+    ActionOverride("#SBlaidd",StartDialogNoSet(Player1)
+END
+
+IF
+ Global("#SeverianMailikki","GLOBAL",14)
+ Global("#SMalry","GLOBAL",0)
+THEN
+ RESPONSE #100
+   SetGlobal("#SeverianMailikki","GLOBAL",15)
+   SetGlobal("#SMalry","GLOBAL",1)
+   CreateCreature("#SMalry",[3718.2799],14)
+END
+
+IF
+ Global("#SeverianMailikki","GLOBAL",16)
+ !InMyArea("#SMalry")
+THEN
+ RESPONSE #100
+   SetGlobal("#SeverianMailikki","GLOBAL",17)
+   CreateCreature("#SPerian",[3641.2911],8)
+   CreateCreature("#SDuorok",[3651.2878],0)
+   SetDialog("#SeverR")
+   ActionOverride("#Severian",Dialog(Player1))
+END
+
+IF
+ Global("#SeverianMailikki","GLOBAL",18)
+THEN
+ RESPONSE #100
+   SetGlobal("#SeverianMailikki","GLOBAL",19)
+   ActionOverride("#SPerian",StartDialogueNoSet(Player1))
+END
+
+IF
+  Global("#SPinkieQuete","GLOBAL",1)
+THEN
+ RESPONSE #100
+   SetGlobal("#SeverianMailikki","GLOBAL",21)
+   SetGlobal("#SPinkieQuete","GLOBAL",2)
+   CreateCreature("#SPinkie",[285.465],0)
+END
+
+IF
+  Global("#SMalloQuete","GLOBAL",4)
+  Global("#SMichelExists","GLOBAL",0)
+THEN
+ RESPONSE #100
+   SetGlobal("#SMalloQuete","GLOBAL",5)
+   SetGlobal("#SMichelExists","GLOBAL",1)
+   CreateCreature("#SMichel",[3031.1967],0)
+END
+
+
+IF
+ Global("#SBlaiddQuete","GLOBAL",1)
+THEN
+ RESPONSE #100
+    SetGlobal("#SBlaiddQuete","GLOBAL",2)
+    CreateCreature("#SBlaidd",[387.3259],2)
+    CreateCreature("#SLouve",[341.3321],10)
+END
+
+IF
+  Global("#SeverianMailikki","GLOBAL",24)
+THEN
+ RESPONSE #100
+  SetGlobal("#SeverianMailikki","GLOBAL",25)
+  SetGlobal("#SConvivesAppear","GLOBAL",1)
+END
+
+IF
+  Global("#SConvivesAppear","GLOBAL",1)
+THEN
+  RESPONSE #100
+    SetGlobal("#SOricExists","AR1100",1)
+    SetGlobal("#STethysExists","AR1100",1)
+    SetGlobal("#SBoyExists","AR1100",1)
+    SetGlobal("#SMay01Exists","AR1100",1)
+    SetGlobal("#Sfem01Exists","AR1100",1)
+    SetGlobal("#SMalloryExists","AR1100",1)
+    SetGlobal("#Sgirl01Exists","AR1100",1)
+    SetGlobal("#SPinkExists","AR1100",1)
+    SetGlobal("#SMoustacheExists","AR1100",1)
+    SetGlobal("#SLouv1Exists","AR1100",1)
+    SetGlobal("#SBlaidd1Exists","AR1100",1)
+    SetGlobal("#SMeremicheleExists","AR1100",1)
+    SetGlobal("#Smfar01Exists","AR1100",1)
+    SetGlobal("#Smfar021Exists","AR1100",1)
+    SetGlobal("#Skid01Exists","AR1100",1)
+    SetGlobal("#Skid02Exists","AR1100",1)
+    SetGlobal("#Skid03Exists","AR1100",1)
+    SetGlobal("#Smer01Exists","AR1100",1)
+    SetGlobal("#Smer021Exists","AR1100",1)
+    SetGlobal("#Smer03Exists","AR1100",1)
+    SetGlobal("#SValy1Exists","AR1100",1)
+    SetGlobal("#SKalas1Exists","AR1100",1)
+    SetGlobal("#SDuorok1Exists","AR1100",1)
+    SetGlobal("#SPerian1Exists","AR1100",1)
+    SetGlobal("#SDorrana1Exists","AR1100",1)
+    SetGlobal("#SNaenia1Exists","AR1100",1)
+    SetGlobal("#SMenes1Exists","AR1100",1)
+    SetGlobal("#SMenes2Exists","AR1100",1)
+    SetGlobal("#SMenes3Exists","AR1100",1)
+    CreateCreature("#SOric",[4251.3048],12)
+    CreateCreature("#STethys",[4282.3046],4)
+    CreateCreature("#SBoy",[4514.2988],15)
+    CreateCreature("#SMay01",[4084.3006],12)
+    CreateCreature("#Sfem01",[4103.2997],2)
+    CreateCreature("#SMallo",[4521.3027],10)
+    CreateCreature("#Sgirl01",[4571.3029],6)
+    CreateCreature("#SPinkie",[4398.2993],15)
+    CreateCreature("#SMoust",[4485.3012],15)
+    CreateCreature("#SLouve",[4686.3083],6)
+    CreateCreature("#SBlaidd",[4590.3057],12)
+    CreateCreature("#SMichele",[4046.3239],15)
+    CreateCreature("#Smfar01",[4090.3227],15)
+    CreateCreature("#Smfar02",[4069.3263],8)
+    CreateCreature("#Skid01",[4321.3306],7)
+    CreateCreature("#Skid02",[4321.3255],15)
+    CreateCreature("#Skid03",[4294.3278],15)
+    CreateCreature("#Smer01",[4348.2977],15)
+    CreateCreature("#Smer02",[4379.2957],15)
+    CreateCreature("#Smer03",[4421.2982],3)
+    CreateCreature("#SValy",[4192.2994],12)
+    CreateCreature("#SKalas",[4224.2989],4)
+    CreateCreature("#SDorra",[4240.3244],4)
+    CreateCreature("#SPerian",[4173.3250],12)
+    CreateCreature("#SNaenia",[4217.3214],15)
+    CreateCreature("#SDuorok",[4170.3225],15)
+    CreateCreature("#SMenes1",[4065.3125],15)
+    CreateCreature("#SMenes2",[4118.3098],15)
+    CreateCreature("#SMenes3",[4091.3107],15)
+    SetGlobal("#SConvivesAppear","GLOBAL",2)
+END
+
+
+
+IF
+  Global("#SConvivesAppear","GLOBAL",11)
+THEN
+ RESPONSE #100
+  SetGlobal("#SConvivesAppear","GLOBAL",12)
+  SetDialog("#SeverR")
+  ActionOverride("#Severian",Dialog(Player1))
+END
+
+IF
+  Global("#SConvivesAppear","GLOBAL",15)
+  !InMyArea("#SDorrana")
+  !InMyArea("#SValy")
+  !InMyArea("#SKalas")
+  !InMyArea("#SNaenia")
+THEN
+  RESPONSE #100
+    SetGlobal("#SConvivesAppear","GLOBAL",16)
+    ActionOverride("#SPerian",StartDialogueNoSet(Player1))
+END
+
+IF
+  Global("#SConvivesAppear","GLOBAL",17)
+  !InMyArea("#SPerian")
+  !InMyArea("#SDuorok")
+THEN
+ RESPONSE #100
+  SetGlobal("#SConvivesAppear","GLOBAL",18)
+  CreateCreature("#SMalry",[4403.2688],15)
+  CreateCreature("#SMoust",[4400.2686],15)
+  ActionOverride("#SMalry",StartDialogueNoSet(Player1))
+END
+
+IF
+ Global("#SConvivesAppear","GLOBAL",19)
+ !InMyArea("#SMalry")
+ !InMyArea("#SMoust")
+THEN
+  RESPONSE #100
+   SetGlobal("#SConvivesAppear","GLOBAL",20)
+   SetDialog("#SeverR")
+   ActionOverride("#Severian",Dialog(Player1))
+END
+
+
+// CABANE DE MERELLA
+// IMPLANTATION SUIVANTS DE MAILIKKI
+// LE CHOIX DE CHARNAME
+
+IF
+  Global("#SRomanceFinalCouronne","GLOBAL",25)
+THEN
+  RESPONSE #100
+  SetGlobal("#SRomanceFinalCouronne","GLOBAL",26)
+  CreateCreature("#SPerian",[581.3162],9)
+  CreateCreature("#SDuorok",[492.3162],9)
+  CreateCreature("#SDorra",[687.3089],15)
+  CreateCreature("#SValy",[557.3088],1)
+  CreateCreature("#SNaenia",[645.3075],1)
+  CreateCreature("#SKalas",[502.3060],1)
+  Wait(1)
+END
+
+// FINAL ROMANCE
+// SARVAJ
+
+IF
+ Global("#SFinalRomance","GLOBAL",2)
+THEN
+ RESPONSE #100
+ SetGlobal("#SFinalRomance","GLOBAL",3)
+ CreateCreatureObjectEffect("#SPerian","SPDIMDR1",Player1)
+ CreateCreatureObjectEffect("#SDuorok","SPDIMDR1",Player1)
+ CreateCreatureObjectEffect("#SValy","SPDIMDR1",Player1)
+ CreateCreatureObjectEffect("#SDorra","SPDIMDR1",Player1)
+ CreateCreatureObjectEffect("#SNaenia","SPDIMDR1",Player1)
+ CreateCreatureObjectEffect("#SKalas","SPDIMDR1",Player1)
+ ActionOverride("#SValy",StartDialogNoSet(Player1))
+END
+
+IF
+ Global("#SFinalRomance","GLOBAL",4)
+THEN
+ RESPONSE #100
+SetGlobal("#SFinalRomance","GLOBAL",5)
+CreateCreature("#SPeyr",[1421.2850],15)
+CreateCreature("#SThor",[1447.2808],15)
+CreateCreature("#SDilyn",[1361.2840],15)
+CreateCreature("#SZhorin",[1452.2748],15)
+CreateCreature("#SAlyo",[1312.2810],15)
+END
+
+// Après mort de Sarvaj 
+
+IF 
+Global("#SFinalRomanceSuivantsMailikki","GLOBAL",0)
+Dead("#SPeyr")
+THEN
+ RESPONSE #100
+AddexperienceParty(50000)
+SetGlobal("#SFinalRomanceSuivantsMailikki","GLOBAL",1)
+ActionOverride("#SPerian",StartDialogueNoSet(Player1))
+END
+
+// FINAL ROMANCE
+// LES SUIVANTS DE MAILIKKI
+// Après mort de Sarvaj
+
+IF
+ Global("#SFinalRomanceSuivantsMailikki","GLOBAL",2)
+THEN
+ RESPONSE #100
+  SetGlobal("#SFinalRomanceSuivantsMailikki","GLOBAL",3)
+  CreateCreature("#SPerian",[3809.3056],0)
+  CreateCreature("#SDuorok",[3843.3080],0)
+  CreateCreature("#SDorra",[3613.3029],0)
+  CreateCreature("#SValy",[3713.3032],0)
+  CreateCreature("#SNaenia",[3657.3000],0)
+  CreateCreature("#SKalas",[3752.2997],0)
+END
+
+IF
+Global("#SFinalRomanceSuivantsMailikki","GLOBAL",4)
+!InMyArea("#SDuorok")
+!InMyArea("#SPerian")
+!InMyArea("#SDorrana")
+!InMyArea("#SValy")
+!InMyArea("#SKalas")
+!InMyArea("#SNaenia")
+THEN
+ RESPONSE #100
+SetGlobal("#SFinalRomanceSuivantsMailikki","GLOBAL",5)
+ActionOverride("#Severian",Dialog(Player1))
+END
+
+IF
+Global("#SFinalRomanceSuivantsMailikki","GLOBAL",6)
+THEN
+ RESPONSE #100
+SetGlobal("#SFinalRomanceSuivantsMailikki","GLOBAL",7)
+CreateCreature("#SMalry",[3972.2994],0)
+CreateCreature("#SMoust",[3973.2963],0)
+ActionOverride("#SMalry",Dialog(Player1))
+ActionOverride("#SMoust",Dialog(Player1))
+END
+
+IF
+Global("#SFinalRomanceSuivantsMailikki","GLOBAL",8)
+!InMyArea("#SMalry")
+!InMyArea("#SMoust")
+
+THEN
+ RESPONSE #100
+SetGlobal("#SFinalRomanceSuivantsMailikki","GLOBAL",9)
+ActionOverride("#Severian",Dialog(Player1))
+END

@@ -1,0 +1,976 @@
+@9001 = ~[Uu]tilisable[ %tab%]+[Uu]niquement[ %tab%]+[Pp]ar[ %tab%]*:~
+@9002 = ~\([Nn]on[ %tab%]+\|[Ii]n\)[Uu]tilisable[ %tab%]+[Pp]ar[ %tab%]*:~
+
+@0 = ~SEVERIAN DE DEMERYA V.02A
+
+Auteur : Coyote
+Website : http://www.coyotestudios.fr/
+Contact : http://www.coyotestudios.fr/contact_5043.htm
+Livre d'or : http://www.coyotestudios.fr/livre_d_or__5035.htm
+Installation ToB requise!
+Consultez le ReadMe!
+Important : l'installation prealable du BG2Fixpack (Correctifs Principaux uniquement !) est vivement recommandee et ce, quel que soit le mod. Consultez le chapitre Conditions d'Installation de la rubrique Telechargement sur le site !
+
+Copyright COYOTE STUDIOS 2010~
+
+@10 = ~Valarym~
+@11 = ~Onyx~
+@12 = ~Du peu que vous en avez appris, vous savez que Severian exerce l'activité discutable de tueur à gages, sous contrat avec de puissantes organisations occultes telles que la Rune Pourpre. Le jeune homme dit être venu d'un autre plan nommé Demerya il y a cinq ans de cela, sévissant un temps au sein de bandes de hors-la-loi de Kara-Tur, du Téthyr et de Calimshan avant de s'installer à Athkatla. Il dit également appartenir à la race des Halfshades de Demerya, le fruit de l'union contre-nature d'une Ombre et d'une Humaine, ce qui lui confère certaines affinités avec le plan éthéré. Plein de gouaille, il ne semble pas avoir froid aux yeux mais son caractère est tempéré par son activité qui lui impose la discrétion. L'halfshade ne semble pas avoir de meilleur compagnon qu'Onyx, un loup d'Ombre invoqué par sa chevalière avec qui il entretient d'étroits liens télépathiques.
+Sa loyauté à votre égard se dispute à une certaine méfiance et il reste volontairement réservé quant à ces révélations. Il ne sera sans doute pas facile de le percer à jour mais nul doute cependant que ses talents vous seront bien utiles dans les épreuves qui vous attendent.~
+
+@20 = ~Grutt-la-Montagne~
+@21 = ~Mercenaire~
+@22 = ~Ilkar~
+@23 = ~Isabel~
+@24 = ~Mallory~
+@25 = ~Sorkailen~
+@26 = ~Hariel~
+@27 = ~Vesthara~
+@29 = ~Novice Darion~
+@30 = ~Pyp Soucolline~
+@31 = ~Naenia de Narfell~
+@32 = ~Valyria, Prêtresse de Mailikki~
+@33 = ~Severian~
+@34 = ~Kalas, le elfes noirs~
+@35 = ~Duorok Gutrash~
+@36 = ~Dorrane, la demi-orc~
+@37 = ~Pinkie Tourtrompette~
+@38 = ~Moustache, le chat~
+@39 = ~La Mère Michèle~
+@40 = ~Louve~
+@41 = ~Aïcha~
+@42 = ~Illusion~
+@43 = ~Sarvaj l'Entropiste~
+@44 = ~Mercenaire de la Rune Pourpre~
+@45 = ~Severian~
+@46 = ~<CHARNAME>~
+@100 = ~Kit : Hors-la-loi~
+@101 = ~Hors-la-loi~
+@102 = ~Hors-la-loi~
+@103 = ~HORS-LA-LOI :
+Si les Rôdeurs ont toujours la réputation d’être tournés vers le Bien, il n'en est pas de même pour certains d'entre eux : c'est le cas du Hors-la-loi, bandit de grand chemin sévissant dans les forêts et les déserts comme aux abords des villes et des routes commerciales. Ses aptitudes martiales étant étroitement liées à sa survie, le Hors-la-loi développe de ce fait des capacités de combat accrues, ce qui fait de lui un ennemi de taille pour les convois de marchandises et la noblesse en voyage.
+La précarité de son existence fait toutefois du Hors-la-loi un homme de foi, vénérant bien souvent Tymora, la déesse de la Chance, ou Silvanus, le Père de la Forêt. Par vous ne savez quel avatar du destin, Severian ne semble pas suivre cette voie : il ne vénère aucun dieu de Toril et travaille pour des commanditaires qui font de lui un tueur à gages pistant habilement ses victimes aussi bien en ville qu'en forêt, qui sont autant de terrains de chasse pour le rôdeur. Peut-être cela est-il dû à sa nature de Planaire.
+
+Avantages de Classe :
+Tendre des embuscades est une activité qui demande souplesse,discrétion et rapidité ainsi qu'une excellente maîtrise du combat. Severian a privilégié le maniement de l'arme blanche, dans la logique propre à sa nature d'Halfshade qui lui permet de fondre sur l'ennemi depuis les ombres.
+- +20% en Furtivité et Camouflage dans l'ombre
+- 5 points autorisés dans toutes les armes de type Armes Blanches (épée bâtarde, dague, cimeterre, katana, etc) .
+- Peut effectuer des attaques sournoises (x2 au niveau 20.)
+
+Avantages de Race:
+En tant qu'Halfshade, Severian possède un panel de capacités spéciales parfaitement adapté à son statut de Hors-la-loi:
+- +20% en Furtivité et Camouflage dans l'ombre
+- Au niveau 8 puis tous les 2 Niveaux jusqu'au niveau 34, peut lancer "Invisibilité majeure" une fois par jour.
+- Au niveau 14 puis tous les 6 Niveaux, peut lancer "Vision Véritable" une fois par jour.
+- Au niveau 20, bénéficie de la "Non-Détection".
+- +3 aux touchers et dégâts contre les Ombres.
+
+Inconvénients :
+- Ne peut utiliser aucune armure supérieure à la cotte de maille.
+- Ne peut se spécialiser dans aucune arme autre que Épée, ni même dans le style "Épée et Bouclier".
+- Un seul point de compétence autorisé en Armes à projectiles.
+- N'a accès à AUCUN sort de Druide/Clerc.
+- Ne peut se multiclasser.
+- Malus de -4 appliqué à toutes ses Caractéristiques, aux heures diurnes et quelle que soit la zone, si l'armure "Don de Syvane" n'est pas équipée.~
+
+@104 = ~Toucher de l'Halfshade~
+
+
+@500 = ~Chevalière du Loup~
+@501 = ~C'est une chevalière de facture élégante dont le chaton, une fois pressé, invoque Onyx, le fidèle compagnon de Severian. Forgé en ombracier des îles d'Eté, sur Demerya, il semble qu'il s'agisse d'un cadeau destiné à combler la solitude d'un être que la nature d'halfshade vouait à l'isolement. La chevalière ne semble pas posséder d'autres vertus magiques que celle que vous lui connaissez. C'est non seulement un bijou d'une grande beauté, mais aussi un objet chargé d'une forte valeur affective. Severian y tient comme à la prunelle de ses yeux.                  
+ONYX, LE LOUP DE L'OMBRE : offert à Severian dès son plus jeune âge, Onyx est son compagnon le plus fidèle, utile à la fois en tant que combattant, éclaireur et messager. C'est une belle bête de taille impressionnante, à l'œil et à la queue cerclés de blanc sur un pelage noir où folâtrent lumière et ombre mêlées. Il émane d'Onyx une aura surnaturelle qui vous pénètre et vous enveloppe lorsque vous vous en approchez, telle une brume invisible.   
+CAPACITES SPECIALES: Invisibilité majeure 3 fois/jour (N'évolue pas avec les niveaux.)    
+INFORMATION SUR LE LEVELING: Onyx se synchronise sur Severian à chaque niveau gagné par celui-ci.~
+@502 = ~Convocation d'Onyx~
+
+
+@510 = ~Armure-miroir +5 : " Don de Syvane "~
+@511 = ~Il s'agit de l'armure personnelle de Severian, adaptée à sa morphologie : nul autre sur Toril ne peut la porter. Forgée dans un subtil alliage d'électrum et de rayons de lune capturés par procédé magique, elle est légère et permet une grande souplesse dans les mouvements, tout en n'entravant pas la furtivité. C'est une maille sombre parcourue de reflets nacrés dissimulée sous le pourpoint de Severian qui demeurera invisible à un œil non exercé. Séparer Severian de cette armure lui serait néfaste sinon fatal, "Don de Syvane" protégeant l'halfshade de la lumière du soleil en la reflétant tel un miroir.
+ Cette cotte de maille est l'unique témoignage d'une ancienne affiliation de Severian avec une divinité : Syvane, déesse de la nature sur Demerya. C'est une œuvre d'art de toute beauté, un objet mystique mais dont l'intérêt ne peut guère dépasser la curiosité du commun, de la caste thaumaturge et des collectionneurs : elle résiste à toute analyse magique, et n'est vraisemblablement utile qu'à son porteur.
+
+PARAMETRES :
+
+Capacité d'équipement : annule le malus à -4 subi par Severian en cas de forte luminosité naturelle.
+
+Classe d'Armure : 0
+Poids : 5
+Utilisable uniquement par :
+ Severian~
+
+
+@522 = ~Epée à deux mains +4 : "Reine Rouge"~
+@523 = ~Forgée dans les flammes du volcan Ysmar sur Demerya, il s'agit de la terrifiante épée de Sorkailen, Garde Noir de la Légion Ombreuse et demi-frère de Severian. L'halfshade l'a reçue lors de son entrée au service de son père le Seigneur Ombre Darkhan, en tant que garde du corps et fidèle lieutenant. Taillée pour satisfaire aux caprices d'un fils fantasque, cette splendide épée est pourvue d'un mécanisme sophistiqué qui permet de libérer des flammes par simple pression sur la garde. Des années passées entre les mains de l'halfshade l'ont également imprégnée d'une soif d'énergie vitale presque semblable à celle de son maître. Ce que vous tenez entre vos mains forme ainsi un subtil mariage entre magie et technologie, ce qui en fait une arme unique sur Toril mais son poids en fait également une épée difficile à manier, accessible seulement aux plus aguerris.
+
+PARAMETRES :
+
+Capacités de charge :
+Bouclier de flamme rouge 1 fois/jour
+
+Capacités de combat :
+10 % de chance de drainer un niveau à la cible à chaque coup porté
+
+Dégâts : 1d10+4 (+1d4 de feu.)
+Type de dégâts : Tranchant
+Poids : 20
+Facteur de vitesse : 10
+Nécessite: 14 de Force
+Type de compétence : Épée à deux mains
+Type d'arme : à deux mains
+Non utilisable par:
+Clerc, Mage, Voleur, Druide~
+
+@524 = ~Ninja-to +3 : "Uzaka"~
+@525 = ~Cette lame, récupérée sur le corps du Maître Bouffon Vesthara, est à l'évidence de facture Kara-turienne, et bien que ce type d'épée se rencontre peu à Féérune, vous savez qu'elle est en usage chez les yakuzas. Ce ninja-to est d'aspect peu commun, présentant une lame couleur d'obsidienne sur laquelle folâtrent des irisiations violettes, révélatrices d'une énergie magique renfermée en son sein. Uzaka présente en outre sous sa garde une série de runes Kara-turiennes qui l'identifient comme la propriété de Severian. Par vous ne savez quelles circonstances, le ninja-to s'est retrouvé entre les mains de Vesthara, le Maître Bouffon étant parvenu à briser le sceau magique qui le liait à Severian. Peut-être celui-ci vous en dira-t-il plus à ce sujet ; toujours est-il que seule la main de l'halfshade peut s'en emparer : Uzaka ne se reconnaît pas d'autre maître.
+
+PARAMETRES :
+
+Capacité d'équipement :
+Augmente la vitesse de 2
+
+Capacité de combat :
+Poison : 30 % des points de vie actuels moins de 20 secondes après contact, sauf jet de sauvegarde contre mort réussi
+
+Dégâts : 1d8+3
+Type de dégâts : Tranchant
+Poids : 5
+Facteur de vitesse : 4
+Type de compétence : Cimeterre/ Wakizashi/ Ninja-to
+Type d'arme : à une main
+Utilisable par : Severian uniquement~
+
+@526 = ~Epée bâtarde +3 : "Divine Comédie"~
+@527 = ~La lame personnelle du Maître Bouffon Vesthara, lieutenant en second du Seigneur Ombre Darkhan et demi-sœur de Severian. Le goût de Vesthara pour la comédie grotesque s'exprime sur la garde finement ciselée où se dessine une gravure représentant un bouffon ricanant, vraisemblablement son sceau personnel. Vesthara a également mis toute sa cruauté dans la confection de cette épée, adjoignant à la garde une lame acérée et ondulante propre à découper même la chair la plus coriace. L'épée semble avoir capté l'essence maléfique de l'halfshade : elle est assoiffée d'énergie vitale. Aussi fantaisiste qu'elle paraisse, "Divine Comédie" est une épée redoutable à ne pas placer entre toutes les mains.
+
+PARAMETRES :
+
+Capacités d'équipement :
+Grande Hâte 1 fois/jour
+
+Capacités de combat:
+10 % de chance de drainer un niveau à la cible à chaque coup porté
+
+Dégâts : 2d4+3
+Type de dégâts : Tranchant
+Poids : 10
+Facteur de vitesse : 8
+Nécessite: 11 de Force
+Type de compétence : Épée bâtarde
+Type d'arme : à une main
+Non utilisable par :
+Clerc, Mage, Druide, Voleur~
+
+@528 = ~Corps d'Hariel~
+@529 = ~Il s'agit d'Hariel dont l'énergie vitale a été aspirée par Sorkailen, à tel point qu'il est impossible de la ressusciter. Severian la garde contre son cœur et veille sur sa dépouille comme sur son âme. Il vous faut vous rendre à Imnesvale pour offrir des funérailles décentes à la jeune elfe.~
+
+@530 = ~Gage d'amour~
+@531 = ~Cette amulette vous a été donnée par Severian en gage de son amour. Vous savez qu'il la tient de sa mère, Dame Alys Stark, et qu'elle demeure l'unique trace de celle qui l'a mis au monde. Severian l'a faite imprégner de puissants enchantements à votre intention mais au delà de son rôle protecteur, c'est avant tout un symbole fort. Il vous appartient de respecter ce présent en égard au sacrifice qu'a fait le jeune homme en s'en séparant.
+
+PARAMETRES :
+
+Capacités d'équipement :
++5 aux Jets de sauvegarde contre la mort
++1 à la Classe d'Armure
+Protection contre le Plan Négatif
+
+Poids : 3
+Type d'objet : Amulette
+Utilisable par : <CHARNAME> uniquement.~
+
+@532 = ~Symbole Sacré de Mailikki~
+@533 = ~Le symbole de la reconnaissance de Mailikki envers son enfant égaré. Porté au revers de son pourpoint, il identifie Severian comme un des serviteurs de Mailikki et lui confère une résistance considérable contre certains types d'attaque. Le porter pour la première fois est comme l'équivalent d'un sacre pour l'halfshade et il est difficile de l'imaginer s'en séparer.
+
+PARAMETRES :
+
+Capacités d'équipement:
++1 à la Classe d'Armure
++5 aux Jets de Sauvegarde contre les sorts
+Résistance de 100 % contre le feu
+
+Poids : 3
+Type d'objet : Amulette
+Utilisable par : Severian uniquement.~
+
+@600 = ~L'arme personnelle de Severian qui a survécu à son poison virulent lors du "Sakazuki", la cérémonie d'intronisation au sein des yakuzas de Saitama visant à tester sa loyauté et sa résistance. Uzaka présente sous sa garde une série de runes l'identifiant comme la possession exclusive de Severian et l'éclair magique folâtrant depuis la garde jusqu'à la pointe trahit une forte charge empoisonnée.
+
+PARAMETRES :
+
+Capacité d'équipement :
+Augmente la vitesse de 2
+
+Capacité de combat :
+Poison : 30 % des points de vie actuels moins de 20 secondes après contact, sauf jet de sauvegarde contre mort réussi
+
+Dégâts : 1d8+3
+Type de dégâts : Tranchant
+Poids : 5
+Facteur de vitesse : 4
+Type de compétence : Cimeterre/ Wakizashi/ Ninja-to
+Type d'arme : à une main
+Utilisable par : Severian uniquement~
+@536 = ~Bénédiction de Mailikki : Récupération des sorts de Rôdeur~
+@537 = ~Severian : Changement d'alignement~
+@538 = ~Severian : Obtention de l'Insigne de Mailikki~
+
+
+@539 = ~Faire-part de mariage~
+
+@540 = ~Ceci est une invitation qui vous a été remise par les petites mains de Mallory. Ce serait un grand honneur pour le Maire Lloyd si vous acceptiez d'assister au mariage de sa fille Téthys, qui se déroulera dans une semaine à compter de ce jour, ici même au village d'Imnesvale. Chacun de vos compagnons a reçu une invitation similaire, ce qui révèle une certaine considération de la part de la population.~
+@541 = ~Ceci est une invitation adressée tout spécialement à Severian, le conviant au mariage de Téthys qui aura lieu dans une semaine, jour pour jour. Le Rôdeur est désormais très aimé dans le val, en témoignent ces quelques lignes : "Toi qui suis désormais Mailikki, accepte notre humble invitation à te mêler à la liesse générale en ce jour béni où je marie ma fille Téthys. Ce sera pour nous un grand honneur que de te voir prendre part à la fête. Que Mailikki te protège, Severian Stark. Signé : Le Maire Lloyd"~
+@542 = ~Il s'agit de l'invitation personnelle de votre compagnon, le conviant au mariage de la fille du Maire Lloyd.~
+
+@543 = ~Poupée de Mallory~
+@544 = ~Mallory a oublié sa poupée Wendy sur le banc. Severian souhaite la lui rendre mais vous ignorez où est passée la fillette. Sans doute la trouverez-vous au village ou dans les proches alentours ?~
+@545 = ~Obtention Poupée de Mallory~
+@546 = ~Obtention Faire-parts de mariage~
+
+@547 = ~Cuvée de Grand-Père Gimli~
+@548 = ~Ceci est un tonneau de bière rebondi contenant la bière de Duorok Gutrash.
+
+"PUBLICITE : Fatigué de porter une hache pesante toute la journée ? Ras le bol de tailler dans l'orc et le gobelin ? La Cuvée de Grand-Père Gimli est ce qu'il vous faut ! Soulagez votre mal de crâne en vous rinçant la glotte avec cette cuvée divine digne des plus grandes tables naines !" ~
+
+@549 = ~Culottes rose fuchsia~
+@550 = ~Les improbables culottes sans lesquelles Pyp ne pourra se présenter au mariage. Sa couleur fuchsia est une insulte au bon goût et l'étiquette du vêtement ne vous indique rien d'autre que :
+
+ " 100% coton. Attention : laver à froid !
+ Fabrication : Maison de couture 'A la belle pelote', Port-Ponant"~
+
+@551 = ~La Reine Mallory et son escorte, le héros Severian~
+@552 = ~Mallory a pris place sur les épaules de Severian et semble s'amuser comme une folle. Ramenez-la vite à sa mère, nom de dieu...~
+
+@553 = ~Moustache, le matou~
+@554 = ~Moustache est un chat tout ce qu'il y a de plus banal si on excepte son embonpoint prononcé à force d'être bourré de gâteaux.~
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// Entrée dans le journal
+@4000 = ~ Severian de Demerya - Livre 2 : Les fantômes du passé
+
+Nous avons retrouvé Mallory
+
+Nous avons retrouvé Mallory dans la grotte d'Umar où il ne fait pas bon traîner. Je suis surprise de constater qu'une petite fille de son âge n'a pas peur de s'aventurer dans des endroits pareils pour chercher son chat. Quoiqu'il en soit, Severian a usé de son ascendant sur la fillette pour la prendre dans ses bras et la ramener au village. Mallory prétend que sa mère travaille au poulailler d'Hendrick. Peut-être qu'en suivant les fientes de poulet...~
+
+@560 = ~Bâton +2 : Magisterium~
+@561 = ~Magisterium a appartenu à feu l'archimage Ilkar ainsi qu'en témoignent les runes magiques qui courent sur toute sa longueur. Il fut l'un des disciples les plus accomplis de l'archimage Ilius Darrotar et l'a reçu des mains de son maître lorsque son enseignement fut terminé, au sein du magisterium de Suzail en Cormyr. Ilkar l'a vraisemblablement nommé ainsi en souvenir de ses vertes années auprès de son maître et c'est une arme de grande puissance que peu de magiciens peuvent se flatter de posséder.
+
+PARAMETRES :
+
+Capacités (20 charges.) :
+ Globe d'invulnérabilité
+  Durée : 1 round par niveau
+  Portée : l'utilisateur
+  Zone d'effet : sphère de 3 mètres de diamètre
+  Immunise aux sorts du premier au quatrième niveau
+
+ Eclair magique paralysant
+  Dégâts : 10D6
+  Portée : 45 mètres
+  Jet de sauvegarde : pour la moitié des dégâts
+  La cible est aussi étourdie (pas de jet de sauvegarde.) pendant cinq rounds
+
+Classe d'armure : bonus de 2
+Jets de sauvegarde : bonus de 2
+TAC0 : +2
+Dégâts : 1D6 +2
+Type de dégât : contondant
+Poids : 3
+Facteur de vitesse : 1
+Type de compétence : bâton
+Type : arme à 2 mains
+Force nécessaire : 5
+Utilisable uniquement par : Mage~
+
+@562 = ~Journal de l'archimage Ilkar~
+@563 = ~Il s'agit du journal de l'archimage Ilkar contenant de précieuses indications sur la Rune Pourpre. Le magicien a rassemblé en ces pages ses sentiments vis-à-vis de la Rune Pourpre et de Sarvaj en particulier, qui semble être parmi les plus puissants. Vous en feuilletez les pages pour vous arrêter sur quelques passages particulièrement intéressants : 
+
+" 2 Alturiak 1369 :
+
+J'ai consulté les prêtres d'Oghma aujourd'hui : ils m'ont appris que seuls les livres de la bibliothèque sacrée d'Evéreska pourraient me révéler le remède au mal qui terrasse ma petite Isabel. Mais sans argent, il est impossible d'y avoir accès : les gardiens de la bibliothèque font payer un droit d'entrée exorbitant...Que faire ? Allons-nous devoir rester prisonniers de cette maudite cité jusqu'à ce qu'Isabel trépasse ?"
+
+
+" 10 Alturiak 1369 :
+
+Un homme s'est présenté à moi aujourd'hui : il disait s'appeler Sarvaj et prétendait parler au nom d'une société inconnue du nom de la Rune Pourpre. Ils réclament mon savoir d'archimage pour exécuter quelques sombres missions en leur nom et en échange, je serai bien rétribué. Je ferai tout ce qu'ils veulent si cela peut me permettre de sauver ma petite Isabel..."
+
+
+" 14 Chesse 1369 :
+
+J'ai presque rassemblé la somme requise pour accéder à la bibliothèque d'Evéreska mais je paye un lourd tribut : mes nuits sont peuplées de cauchemars dans lesquels évolue Sarvaj, massacrant tout sur son passage...et moi dans son sillage, l'imitant. Je suis perdu si je continue ces exactions au nom de cette maudite Rune Pourpre mais ses ramifications sont immenses. Seul, il est impossible de songer à entreprendre quoi que ce soit contre eux..."
+
+
+Une autre page attire votre attention:
+
+" 27 Tarsakh 1369 :
+
+Mon cœur saigne à me rappeler le massacre de la nuit dernière. J'ai refusé la prochaine mission de Sarvaj et l'entropiste a engagé un tueur à gages pour m'éliminer. Qu'il franchisse seulement le seuil de cette maison et il sera accueilli comme il se doit...J'ai besoin d'argent ! La connaissance a un prix...Nous sommes coincés ici !"
+
+
+Vous trouvez à la fin du journal une série de formules magiques sensées guérir Isabel, vraisemblablement griffonnées par une main désespérée. Le journal s'achève sur ces lignes :
+
+" La Rune Pourpre ne doit pas être prise à la légère : je ne dois pas l'oublier...Nous devons partir..."~
+
+@565 = ~Besantine +2~
+@566 = ~Une armure assez commune imprégnée d'un enchantement mineur renforçant sa résistance. Vraisemblablement acquise pas Severian pour pallier la perte de son armure-miroir.
+
+PARAMETRES :
+
+Classe d'armure : 5
+
+Poids : 8
+Force nécessaire : 6~
+
+
+@580 = ~Fléau +5 : "Tyran"~
+@581 = ~En tant que membre du Zentharim, Sarvaj l'Entropiste bénéficie d'un équipement à la hauteur des sombres besognes qui lui sont confiées. Ce fléau à deux têtes de grande puissance fut forgé à Château-Zenthil et l'accompagna durant toutes ses missions pour le compte du Réseau Noir. Il accroît la résistance du porteur face aux attaques physiques et magiques tout en lui conférant une plus grande vélocité. 
+
+PARAMETRES :
+
+TAC0 : +5
+Dégâts : 1D6 +5
+Capacités d'équipement :
++2 à la Classe d'Armure
++2 aux Jets de sauvegarde contre les Sorts
++2 en Force
++2 au THAC0
+Augmente la vitesse de 2
+Type de dégâts : Contondant 
+Poids : 11
+Facteur de Vitesse : 4
+Compétence : Fléau/Étoile du matin
+Type d'arme : à 1 main
+Force nécessaire : 13
+Inutilisable par :
+Druides
+Mages
+Voleurs~
+
+@582 = ~Bouclier +3 : "Bouclier des Gémeaux"~
+@583 = ~En tant que membre du Zentharim, Sarvaj l'Entropiste bénéficie d'un équipement à la hauteur des sombres besognes qui lui sont confiées. Ce bouclier a été conçu par Sarvaj lui-même et lui permet de faire appel à l'illusion pour mieux tromper son adversaire. C'est un bouclier de grande valeur, que tout aventurier se flatterait de posséder.
+
+PARAMETRES :
+
+Capacités d'équipement :
++4 à la Classe d'Armure
+Spécial :
+1 fois/jour, peut lancer le sort "Illusions" combinant :
+- Simulacre
+- Invisibilité majeure
+- Image-Miroir
+Poids : 10
+Non utilisable par :
+Druide, Mage, Barde, Voleur~
+
+
+////// THRONE OF BHAAL \\\\\\
+
+// PERSONNAGES
+
+@200000 = ~Chien Noir~
+@200001 = ~Reflet~
+@200002 = ~Wilos l'Ecarlate~
+@200004 = ~Petit-Loup~
+@200005 = ~Maryane~
+@200006 = ~Azeem Le Grand~
+@200007 = ~Frère Thock~
+@200008 = ~Jon Little~
+@200010 = ~Onyx~
+@200011 = ~Severian~
+@200012 = ~Elvaar~
+@200013 = ~Alys Stark~
+@200014 = ~Onyx~
+@200015 = ~Volo~
+@200016 = ~Garde~
+@200017 = ~Maître Inquisiteur Mordred~
+@200018 = ~Adrastar~
+@200019 = ~Bourreau~
+@200020 = ~Lord Stannis Darkhan~
+@200021 = ~Fahmiya~
+@200022 = ~Jolenta~
+@200023 = ~Severina~
+@200024 = ~Soldat d'Il-Khan~
+@200025 = ~Mage de combat d'Il-Khan~
+
+
+// ITEMS MAGASIN DES HORS LA LOI DU TETHYR
+
+@300000 = ~Lance +5 : "Lance des Amants"~
+@300001 = ~Belial était un rôdeur très épris de la belle Hylanne, héritière de la grande famille téthyrienne des Atrides. Celle-ci, partageant son amour, lui rendait fréquemment visite dans la forêt au mépris de l'autorité de son père tyrannique, Melkar. Ulcéré, celui-ci finit par engager un sorcier qui la transforma en licorne tandis que Belial, non moins fautif, était condamné à pleurer à jamais son amour perdu. Les deux amants maudits vécurent ainsi dans la forêt durant plusieurs années, Belial s'efforçant d'apprivoiser la licorne qui sans cesse, l'évitait farouchement. Une traque rituelle d'adeptes de Malar finit par mettre fin à leur tragédie : Hylanne fut tuée et Belial, désormais libéré du sortilège, jura de venger son amour perdu. Il récupéra la corne de l'animal fabuleux pour en faire la pointe de sa lance. Imprégnée des pouvoirs de la licorne, l'arme finit par trouver le cœur de Melkar puis Belial la retourna contre lui-même, désireux de rejoindre enfin sa bien-aimée dans les cieux. L'histoire d'Hylanne et de Bélial, les deux amants maudits, fait partie du folklore téthyrien et la lance des Amants est considérée comme l'un des plus fabuleux trésors que ce royaume ait compté.
+
+
+PARAMETRES :
+
+TAC0 : +5
+Dégâts : 1D6 +5, +10 de dégâts perforants
+Capacités d'équipement :
+Charisme porté à 18
+40 % de résistance magique
+Immunité aux sorts de Charme et Domination
+3 fois/jour, peut lancer le sort :
+Aura de feu
+Type de dégât : perforant
+Poids : 3
+Facteur de vitesse : 2
+Type de compétence : lance
+Type : arme à 2 mains
+Inutilisable par :
+Clerc
+Mage
+Voleur~
+
+@300002 = ~Arc +5 : "Septentrion"~
+@300003 = ~Septentrion compte sans conteste parmi les armes les plus puissantes jamais conçues. Cet arc fait d'un bois d'un blanc très pur et rehaussé de sculptures fut conçu par le maître forgeron Arius Danghor, qui vivait à Kuldahar, au Valbise. La légende raconte que ce dernier conçut Septentrion lors d'une nuit où sévissait une effroyable tempête de neige et qu'il rassembla toute la colère d'Aurile dans ce chef d'œuvre de conception martiale. Si l'arme fabuleuse fut l'objet de sa fierté, elle fut aussi celui de sa perte, attirant les plus terribles convoitises : on retrouva le maître forgeron assassiné dans sa forge ; Septention, quant à lui, avait disparu dans la nature. De nombreux aventuriers se sont depuis lancés à sa recherche, peine perdue...
+
+PARAMETRES :
+
+TAC0 : +5
+Dégâts : 1D6 +5, +5 de dégâts perforants, +1D8 de dégâts de froid
+Capacités d'équipement :
+100 % de Résistance au Froid
+Spécial : Septentrion ne nécessite pas de flèches
+Type de dégât : perforant
+Poids : 2
+Facteur de vitesse : 3
+Type de compétence : arc long
+Type : arme à 2 mains
+Inutilisable par :
+Clerc
+Barde
+Mage
+Voleur
+Druide~
+
+
+
+@300010 = ~Marteau de guerre +5 : "Apocalypse "~
+@300011 = ~Néphara Mordakar était un Chevalier Dragon Pourpre du Cormyr, respectée pour son courage au combat et sa droiture sans faille. Marchant dans les traces de son père, lui-même Chevalier Dragon Pourpre, elle reçut en héritage "Apocalypse", le terrible marteau de guerre de Sire Mordakar. Cavalière émérite, la jeune femme en fit usage sur les champs de bataille, infligeant des coups d'une violence inouïe lors de ses charges montées sur le champ de bataille. On raconte que ses ennemis fuyaient à son approche, terrorisés par le spectacle de cette cavalière vêtue de rouge, redoutant son marteau à la puissance meurtrière. De succès en succès, auréolée de gloire, la chevalière entra dans les bonnes grâces de la royauté cormyrienne. Mais, grisée par ce qu'elle prenait pour de l'invulnérabilité, Néphara finit par défier en combat singulier Harl Poing-d'Acier, le chef de la horde Tuigan, lors de la Bataille des Plaines Célestes (1254 CV), un géant à qui la rumeur prêtait une force incommensurable. Elle paya là son arrogance et la horde Tuigan récupéra le marteau de la championne du Cormyr pour mieux humilier le royaume qu'ils assiégeaient. Avec le temps, Apocalypse devint le symbole de la perdition mais une main habile et avisée pourrait bien lui rendre son sens premier : celui de la victoire.        
+
+PARAMETRES :
+
+TAC0 : +5
+Dégâts : 2D4 +5
+Capacités d'équipement :
+20 % de chance de générer un Buffet
+Type de dégât : écrasant
+Poids : 5
+Facteur de vitesse : 1
+Type de compétence : Marteau
+Type : arme à 1 main
+Force nécessaire : 12
+Inutilisable par :
+Druide
+Clerc
+Mage
+Voleur~
+
+
+// SEVERIAN - EPILOGUES THRONE OF BHAAL 
+
+// ROMANCE AVEC SEVERIAN - CHOIX DIVIN
+
+@400001 = ~L'accession de <CHARNAME> au panthéon des divinités fut source de grande douleur pour Severian mais il refusa de sombrer dans le chagrin. Devenu Maître Rôdeur, il s'établit à Imnesvale, ce village de l'Amn demeuré dans son cœur, et en devint le protecteur. Il prit sous son égide la petite Mallory, lui enseignant tout ce qu'il savait. Devenue une jeune fille intrépide et volontaire, cette dernière l'accompagna dans ses aventures aux côtés des Suivants de Mailikki, jusqu'aux Dix-Cités et même dans le désert de l'Anauroch, mais jamais son maître ne consentit à revenir en Téthyr, source de bien trop de passions. Severian finit par perdre la vie après quinze ans de lutte pour un idéal de paix et de prospérité, alors qu'il traquait les derniers membres de la Rune Pourpre, déstabilisée par la mort de leur maître suprême, lord Darkhan. Le Maître Rôdeur repose désormais à Imnesvale où s'érige aujourd'hui une statue à sa mémoire. On dit que deux loups, l'un blanc et l'autre noir, descendent parfois des collines pour rôder autour de la sépulture...Et Mallory, me direz-vous ? La rôdeuse devint à l'instar de son mentor une grande figure des Royaumes, éradiquant les vestiges de la Rune Pourpre et s'en prenant au Zentharim, continuant de chérir le nom de son maître afin de faire connaître au monde celui qui fut le grand amour de <CHARNAME>, l'Enfant de Bhaal. Pour que jamais ne meurt la légende... 
+
+
+________________________________________
+
+                     ==== CREDITS ====
+
+
+
+                 SEVERIAN DE DEMERYA   
+                                V.02
+
+                      Auteur : Coyote
+
+
+                Avec la participation de la 
+
+                      SEVERIAN TEAM :
+
+
+             Phoeunix : soundset, tests
+
+             Deratiseur : programmation kit,  
+                                tests
+
+             Aylon, Anouchka, 
+             Nowaru, Ael : tests
+
+             Zranoff & Akadis : consultants
+
+             Armand : consultant 
+                             tests
+ 
+
+
+             
+
+              http://www.coyotestudios.fr/
+
+
+
+
+
+                         COYOTE              ~ [#Sevepil]
+
+// ROMANCE AVEC SEVERIAN - CHOIX MORTEL
+
+@400003 = ~La destruction du Trône de Bhaal permit à <CHARNAME> et à Severian de vivre de longues années de bonheur durant lesquelles ils parcoururent Toril, depuis l'Epine Dorsale du Monde jusqu'aux Jungles de Chult, parfois en compagnie des Suivants de Mailikki. Devenue une adolescente intrépide et volontaire, Mallory, que Severian avait pris sous son égide, participa également à ces voyages avant de retourner s'établir à Imnesvale en tant que rôdeuse protectrice du village, forte de la science héritée de son maître. Ces années prospères dans la vie de <CHARNAME> et Severian furent marquées par la naissance de leur petite fille Alys, alors qu'ils se trouvaient installés dans une paisible retraite à Imnesvale. Mais les manigances du Zentharim qui ne l'avait pas oublié assombrirent ce tableau idyllique et Severian n'eut d'autre choix que de finir par disparaître aux yeux du monde pour protéger les êtres qui lui étaient chers. Certains prétendent que lors de nuits sans lune, on peut apercevoir la silhouette furtive d'un homme s'introduire dans la maison de <CHARNAME> ; d'autres affirment que Severian est retourné sur Demerya pour annihiler ce qui reste de la Légion des Ombres, déjà affaiblie par la mort de leur maître suprême. D'aucuns avancent enfin qu'il a perdu la vie en voulant protéger <CHARNAME> et sa fille contre des zenthilars. Quant à Onyx, son loup fidèle, il vient se poster tous les matins à l'entrée du village, accompagné d'une louve blanche, attendant son ancien maître dans le gris de l'aube.
+
+
+
+________________________________________
+
+                     ==== CREDITS ====
+
+
+
+                 SEVERIAN DE DEMERYA   
+                                V.02
+
+                      Auteur : Coyote
+
+
+                Avec la participation de la 
+
+                      SEVERIAN TEAM :
+
+
+             Phoeunix : soundset, tests
+
+             Deratiseur : programmation kit,  
+                                tests
+
+             Aylon, Anouchka, 
+             Nowaru, Ael : tests
+
+             Zranoff & Akadis : consultants
+
+             Armand : consultant 
+                             tests
+ 
+
+
+             
+
+              http://www.coyotestudios.fr/
+
+
+
+
+
+                         COYOTE              ~ [#Sevepil]
+
+// ROMANCE ECHOUEE - SEVERIAN CN OU LM
+
+@400004 = ~Severian n'oublia jamais le temps passé aux côtés de <CHARNAME>, dont il ne cessa jamais d'admirer le courage et la destinée hors du commun. Désormais libre de tout engagement, le hors-la-loi voyagea jusqu'aux confins de Toril pour mieux connaître cette nouvelle terre d'asile avant de reprendre ses activités peu recommandables. Certains prétendent qu'il est retourné parmi les hors-la-loi du Téthyr où il avait passé une partie de son existence et qu'il en est devenu le meneur. Les marchands savent bien, lorsqu'ils empruntent la route commerciale reliant l'Amn au Téthyr, qu'ils risquent de rencontrer le célèbre Severian Stark, ancien compagnon de <CHARNAME> et nouveau roi des forêts, aussi les traversent-ils avec crainte. Mais s'il en est un qui n'hésite pas à braver le danger, c'est bien l'illustre barde Volothamp Geddarm, qui ambitionne d'écrire un livre autour de sa légende qui désormais, rayonne à travers les Royaumes aux côtés de celle du plus grand de tous les Enfants de Bhaal, <CHARNAME>.
+
+
+
+________________________________________
+
+                     ==== CREDITS ====
+
+
+
+                 SEVERIAN DE DEMERYA   
+                                V.02
+
+                      Auteur : Coyote
+
+
+                Avec la participation de la 
+
+                      SEVERIAN TEAM :
+
+
+             Phoeunix : soundset, tests
+
+             Deratiseur : programmation kit,  
+                                tests
+
+             Aylon, Anouchka, 
+             Nowaru, Ael : tests
+
+             Zranoff & Akadis : consultants
+
+             Armand : consultant 
+                             tests
+ 
+
+
+             
+
+              http://www.coyotestudios.fr/
+
+
+
+
+
+                         COYOTE              ~ [#Sevepil]
+
+
+// ROMANCE ECHOUEE - SEVERIAN CB
+
+@400005 = ~Severian n'oublia jamais le temps passé aux côtés de <CHARNAME>, dont il ne cessa jamais d'admirer le courage et la destinée hors du commun. Désormais libre de tout engagement, le hors-la-loi voyagea jusqu'aux confins de Toril pour mieux connaître cette nouvelle terre d'asile avant de revenir en Téthyr et participer à sa reconstruction. Certains prétendent qu'il est retourné parmi les hors-la-loi de la forêt où il avait passé une partie de son existence et qu'il en est devenu le meneur, non pas en tant que brigand mais en tant que justicier, volant aux riches pour donner aux pauvres. Les riches marchands et seigneurs savent bien, lorsqu'ils empruntent la route commerciale reliant l'Amn au Téthyr, qu'ils risquent de rencontrer le célèbre Severian Stark, ancien compagnon de <CHARNAME> et nouveau roi des forêts, aussi les traversent-ils avec crainte. Mais s'il en est qui n'hésite pas à braver le danger, c'est bien l'illustre barde Volothamp Geddarm, qui ambitionne d'écrire un livre autour de sa légende qui désormais, rayonne à travers les Royaumes aux côtés de celle du plus grand de tous les Enfants de Bhaal.
+
+
+
+________________________________________
+
+                     ==== CREDITS ====
+
+
+
+                 SEVERIAN DE DEMERYA   
+                                V.02
+
+                      Auteur : Coyote
+
+
+                Avec la participation de la 
+
+                      SEVERIAN TEAM :
+
+
+             Phoeunix : soundset, tests
+
+             Deratiseur : programmation kit,  
+                                tests
+
+             Aylon, Anouchka, 
+             Nowaru, Ael : tests
+
+             Zranoff & Akadis : consultants
+
+             Armand : consultant 
+                             tests
+ 
+
+
+             
+
+              http://www.coyotestudios.fr/
+
+
+
+
+
+                         COYOTE              ~ [#Sevepil]
+
+
+
+// PNJ BIOWARE - EPILOGUES THRONE OF BHAAL
+
+@400007 = ~Aerie continua sa vie aventureuse après avoir quitté <CHARNAME>, se posant comme une féroce adversaire de toute forme d'esclavage. Un sentiment de vengeance altéra toutefois sa compassion, au point qu'elle aurait pu perdre la raison si elle n'avait rencontré un groupe d'Avariels ailés retenus prisonniers au Cormyr. Ils la persuadèrent de rejoindre Faenya-Dail, sa patrie, où elle apprit beaucoup, notamment qu'elle ne serait jamais plus une Avariel. Elle cessa donc de se lamenter et de tenter de récupérer ses ailes, sachant que c'était désormais inutile. Elle devint une grande prêtresse à Pierrebasse, un village gnome dont lui avait parlé Quayle, son tuteur. Il avait été sa seule famille, et c'est parmi les siens qu'elle trouva enfin la paix.~ [#SEpilog]
+@400008 = ~Aerie et <CHARNAME> furent inséparables, mettant de côté leur vie aventureuse pour se consacrer à l'éducation de leur fils, puis de leur fille. Ces dernières années furent troublées par la folie d'Aerie, qui ne se remettait pas de la perte de ses ailes, consécutive à sa période d'esclavage. Ils partirent donc tous deux vers Faenya-Dail, patrie des Avariels, d'où Aerie était originaire. Ils y retrouvèrent son peuple, mais surtout ses parents, qui l'avaient cherchée pendant de longues années. Aerie et <CHARNAME> se marièrent peu après, au milieu des nuages. Il se dit que leur union fut bénie par Baervan Ermiterrant et Aerdri'Faenya...~ [#SEpilog]
+@400009 = ~Anomen et <CHARNAME> poursuivirent leurs aventures de longues années, en vrais héros qu'ils étaient. Ils étaient si occupés que la date de leur mariage fut maintes fois repoussée, pour cause de situation de crise ou d'opportunité de récompense...Une date fut finalement fixée qu'ils respectèrent. Les plus grands héros et les plus grandes figures de Féérune se déplacèrent pour assister à la cérémonie. Tous connaissaient les deux héros, au moins de renom, et tous voulaient voir Elminster en personne unir ces deux êtres d'exception au cours de ce qui fut sans doute la plus belle cérémonie de toute l'histoire de la Porte de Baldur. Anomen et <CHARNAME> mirent un terme à leur vie publique peu après, mais la légende raconte que leurs aventures ne connurent jamais vraiment de fin.~ [#SEpilog]
+@400010 = ~Anomen ne se remit jamais vraiment des mois passés aux côtés de <CHARNAME>. Il fut en effet un témoin privilégié de la puissance de l'Enfant de Bhaal et cela le troubla grandement dans sa foi. Sa confiance en Helm ébranlée, il erra sans but véritable jusqu'aux frontières de Maztica. Il se retrouva au beau milieu de la révolte menée par Yamash, un clerc démoniaque à la tête d'une armée de monstres. Il décida alors de porter secours aux soldats assiégés, leur prodiguant conseils et soutien. Il leur apprit la doctrine de Helm et le rôle spirituel du paladin, ce qui leur permit de vaincre Yamash. Les Disciples d'Anomen avaient triomphé, un nouvel Ordre était né dans un nouveau pays...~ [#SEpilog]
+@400011 = ~Nalia développa grandement ses pouvoirs au contact de <CHARNAME>. Elle entreprit alors une vie d'aventures, riches en connaissances et relations influentes, puis retourna au château des de'Arnise. Elle le trouve aux mains du vil Isaea Roenal, qu'elle traîna en justice sur le champ pour malversation. Elle hérita du titre de son père et fut nommée duchesse. Elle fut un dirigeant reconnu et une archimage respectée, siégeant même au Conseil des Six d'Amn. Elle resta une grande figure de la société amnienne durant de longues années, combattant le mal et protégeant les pauvres. Elle devint l'adversaire le plus redouté de nombre de nobles et même des Mages Cagoulés.~ [#SEpilog]
+@400012 = ~Minsc poursuivit son chemin après la fin de ses aventures avec l'enfant de Bhaal. Il retourna en Rashémanie, pressé de relater ses exploits aux membres de la Loge des Berserkers. Il n'eut même pas à se donner cette peine, une véritable légende s'étant constituée autour de sa personne dans toutes les tavernes de Féérune. Chaque barde des Royaumes connaissait au moins une chanson traitant des aventures du plus grand rôdeur de tous les temps, et Minsc devint un vrai héros. Il créa alors le Pied dans la Botte de la Justice, un ordre visant à "botter les fesses du mal", selon sa charte fondatrice. Minsc disparut quelques années plus tard, lors de l'un de ses voyages au-delà des Royaumes. Et Bouh, me direz-vous ? Bouh n'a jamais quitté Minsc, et Minsc n'a jamais quitté Bouh, évidemment. Ils seraient désormais tous deux parmi les étoiles, là où les hamsters sont géants et les hommes des héros de légende.~ [#SEpilog]
+@400013 = ~Cernd quitta <CHARNAME> et retrouva son fils Absdale. Mais son sens du devoir le maintint éloigné de son fils, qui en prit ombrage. Cernd fut nommé quelques années plus tard au poste de Grand Druide, mais il apprit alors que son fils s'adonnait à une magie étrange et menait une armée prête à dévaster la Côte des Épées. Cernd abdiqua immédiatement, déclarant qu'il ne pouvait prétendre à ce poste alors qu'il était incapable de préserver l'harmonie dans sa propre famille. La rencontre du père et du fils se finit dans un bain de sang dont aucun ne sortit vivant. Les deux "étrangers" se retrouvèrent donc dans la tombe, unis pour l'éternité. La légende prétend qu'un magnifique chêne poussa à cet endroit, dont les couleurs changeantes suscitent l'émerveillement des bardes aux changements de saison.~ [#SEpilog]
+@400014 = ~Edwin se fit un nom grâce à <CHARNAME>, qu'il exploita sans vergogne au point d'impressionner des Sorciers Rouges eux-mêmes, qui en firent leur dirigeant. Il s'avéra en être digne pendant au moins quelques heures, laps de temps largement suffisant pour que les membres de la confrérie se reprennent et corrigent leur erreur en le renvoyant sans autre cérémonie. Il en va ainsi à Thay, comme le dit le proverbe. Il refit surface longtemps après et se rendit célèbre en défiant Elminster lui-même, ce qui mit un terme définitif à son existence, et son nom sombra dans l'oubli sans que personne ne songe à s'en plaindre. On vit néanmoins apparaître une certaine Edwina, tenancière d'une taverne des plus glauques à Eau-Profonde. Elle est connue pour son caractère épouvantable et la qualité plus que médiocre des boissons frelatées qu'elle vend (à prix d'or).~ [#SEpilog]
+@400015 = ~Haer'Dalis découvrit les royaumes au cours de ses aventures avec <CHARNAME> et tomba sous le charme de cette étrange contrée. Il en visita les moindres recoins et notamment les villes d'Eau-Profonde, Padhiver et Thay, d'où il dût partir toujours précipitamment, ne pouvant s'empêcher d'être mêlé à de sombres affaires. Il se lia d'amitié à une cambion et l'accompagna dans les Abysses, où son intervention involontaire le mena à la tête d'une révolte contre certains "grands" des Enfers. Il fut longtemps l'être le plus recherché des plans, mais ses ennemis ne purent jamais le capturer. Il échoua dans la ville de Sigil et rejoignit la troupe de Raelis, comme à ses débuts. Il put enfin s'établir durablement à cet endroit...enfin, jusqu'à la prochaine catastrophe, bien sûr.~ [#SEpilog]
+@400016 = ~Et qu'en est-il d'Imoen, l'enfant éternelle? Elle resta longtemps dans l'ombre de <CHARNAME> mais finit enfin par se faire un nom. Elle retourna tout d'abord à Château-suif, où l'extraordinaire magicienne trouva de quoi s'occuper en dévorant littéralement la sublime bibliothèque. Cela ne dura qu'un temps, et elle reprit la route aux côtés du grand Elminster et de Khelben Bâton-Noir. Son influence grandit dans les Royaumes et elle aurait même fondé une guilde de voleurs qui opérait jusqu'à Padhiver. Lorsqu'on lui demande si cette rumeur est fondée, elle affiche un sourire angélique et répond invariablement: "Hé, vous parlez de moi, Imoen ?..."~ [#SEpilog]
+@400017 = ~Les évènements dont Jaheira fut le témoin privilégié l'affectèrent profondément. Elle se devait d'être la garante de l'harmonie, mais elle ne sut pas la conserver et cette pensée la tourmenta de nombreuses années. Elle devint désabusée et acariâtre, se lamentant de longues semaines sur la futilité de la vie et la perte de ses anciens amis. Elle acquit le statut de champion de la Balance, mais plus en récompense de ses prouesses passées que par souci d'efficacité. Ses rapports avec les Ménestrels devinrent aussi tendus qu'aléatoires, d'autant que sa vie n'avait rien de stable. Elle voyagea beaucoup, tentant de ne jamais s'impliquer dans quelque affaire que ce soit. On la vit beaucoup dans toutes les parties des Royaumes, à l'exception du Téthyr et de la Côte des Épées.~ [#SEpilog]
+@400018 = ~Les années qui suivirent la conclusion de la quête de l’enfant de Bhaal furent heureuses pour Jaheira. Mouvementées, mais heureuses, notamment grâce à sa relation avec <CHARNAME>. Comme les vieux couples, ils passèrent leur temps à se chamailler, se séparant parfois pendant de longues années avant de retomber dans les bras l’un de l’autre. Jaheira resta toujours l’image même de la sérénité : après tout, les enfers et les dieux eux-mêmes n’étaient pas parvenus à la séparer de <CHARNAME>, alors qu’étaient quelques lieues ou quelques mois ? Elle vécut longtemps, et heureuse. Pas toujours avec <CHARNAME>, mais jamais très loin non plus...~ [#SEpilog]
+@400019 = ~La vie de Jan Jansen après son association avec <CHARNAME> fit naître bien des histoires, entre demi-vérités et vrais mensonges. Si l'on en croit ses mémoires officielles, "Un Jansen dans chaque port", Jan aurait passé quelque temps en prison pour contrebande de navets, avant de retourner à ses premières amours...la contrebande de navets. L'épisode le plus marquant dans lequel il aurait été impliqué reste encore la Grande Révolte de 72, date à laquelle toutes les récoltes de céréales d'une région entière disparurent comme par enchantement. Affamés, les habitants durent se nourrir de navets pendant de longs mois, navets dont Jan était l'unique fournisseur, bien entendu. Il bâtit ainsi une fortune considérable, qu'il perdit lors du désormais célèbre "krash du brocoli"...Peu de temps après, un voleur de l'Ombre du nom de Vaelag fut assassiné par un gnome à grands coups de navets bouillis. Jan fournit une quantité incroyables d'alibis, le couvrant pour chaque seconde de cette funeste journée...Il fut   tout de même entendu dans cette affaire en tant que témoin, Vaelag étant jusque là soupçonné d'être à l'origine de l'effondrement du cours du brocoli, quelques semaines plus tôt.~ [#SEpilog]
+@400020 = ~Keldorn pensait mettre un terme à sa longue carrière aventureuse à la fin de la saga de l'enfant de Bhaal. Il se retira donc de l'Ordre et passa des jours paisibles auprès de sa famille à Athkatla. Mais l'histoire rattrape toujours les héros, et la ville fut assiégée par une armée de géants. Alors âgé de 60 ans, Keldorn et cinq autres chevaliers mirent au point une stratégie pour retarder d'un jour l'assaut de la ville et ainsi permettre aux renforts amniens d'arriver à leur secours. La bataille qui s'ensuivit fut héroïque, mais sanglante. Les six chevaliers sauvèrent la ville, mais au prix de leur vie. Keldorn mourut donc comme il avait vécu, sur le champ de bataille, mais ne put être enterré avec les honneurs dus à son rang, son corps ayant tout simplement disparu. De nombreux témoins assurèrent avoir vu la main de Torm émerger des nuages et emporter le vaillant chevalier. C'est d'ailleurs toujours ainsi que l'on représente désormais le dieu, avec le spectre de Keldorn à ses côtés.~ [#SEpilog]
+@400021 = ~Korgan reprit ses bonnes habitudes après avoir quitté <CHARNAME>. Il prit ainsi le contrôle d'un clan nain en assassinant son chef et en faisant porter les soupçons sur son second. Il aurait pu profiter sereinement de son immense fortune, mais sa soif de sang et de carnage le poussa jusqu'aux portes d'Ombre-Terre. La folie meurtrière des nains de Korgan prit les elfes noirs de court, mais ils se ressaisirent et balayèrent les envahisseurs, au prix de très lourdes pertes. La dernière image qui restera de Korgan est celle d'un nain recouvert de sang, plantant sa hache dans le crâne d'un prêtre de Lolth, un rictus féroce illuminant son visage. C'est d'ailleurs ainsi qu'on le représente toujours, en sculpture ou en gravure, et son raid suicidaire est devenu une "sainte croisade" avec le temps. Il en va ainsi de l'Histoire, qui préfère se souvenir de héros plutôt que de fous.~ [#SEpilog]
+@400022 = ~Les périls que Mazzy Fentan connut aux côtés de <CHARNAME> ne firent qu'accentuer son goût pour l'aventure. Elle fonda d'ailleurs les Chevaliers de Fentan peu de temps après les évènements du Téthyr, un groupe disparate d'aventuriers, toujours prompts à faire naître des légendes dans les Royaumes. Ils combattirent ainsi une armée de trolls qui menaçait une ville, mirent en déroute des orcs vindicatifs et défirent même un dragon dans son antre pour "faire un peu de ménage" d'après leurs dires. Leur renommée franchit toutes les frontières et Mazzy fut connue comme l'une des plus valeureuses aventurières de tous les temps. Elle passa ses dernières années en paix avec elle-même, fière de tout ce qu'elle avait accompli. Et elle avait de quoi...~ [#SEpilog]
+@400023 = ~Sarevok ne put s'établir nulle part pendant les années qui suivirent sa résurrection par <CHARNAME>. A lui seul, il aurait mis en déroute une armée d'orcs à Berdusk, mais sa puissance et sa férocité terrifièrent autant les habitants que les envahisseurs. Il arriva à Port-Ponant en conquérant, renversant tout sur son passage, avant de mystérieusement disparaître quelques semaines plus tard. Ses actes furent diversement interprétés, mais tous s'accordèrent à dire que Sarevok était une âme torturée, à la limite de la vie et de la mort, incapable de fixer sa volonté sur l'un de ces deux états. La légende prétend qu'il serait alors parti seul à l'assaut des Abysses, à moins qu'il n'ait décidé de mettre un terme à ses souffrances. En vérité il se retira à Kara-Tur pour y enterrer Tamoko la guerrière, le seul amour de sa vie, et il n'en revint jamais... enfin, d'après les légendes.~ [#SEpilog]
+@400024 = ~Valygar continua à parcourir les chemins plusieurs années après avoir quitté l'enfant de Bhaal. Il resta longtemps dans les environs d'Eau-Profonde mais se retira à Athkatla pour y mener une vie de contemplation et enfin trouver la paix intérieure. Il fut pressé de prendre la charge de Prévôt de la ville, une responsabilité qu'il rejeta dans un premier temps. Mais la corruption rampante qui gangrenait la ville eut raison de son inflexibilité, et il accepta le poste. A sa grande surprise, il se révéla être un dirigeant juste et efficace, ce qui lui permit de redorer le blason des Corthala. Il se maria et de son union naquit un fils, qui suivit les traces de son père : il fut nommé quelques années plus tard à la tête des Mages Cagoulés dont il devint un réformateur très apprécié.~ [#SEpilog]
+@400025 = ~Viconia, peu après avoir quitté <CHARNAME>, se retira à Eau-Profonde où elle rejoignit le culte de Shar. Mais la trahison de l'un de ses disciples provoqua la perte de tout son groupe. Shar admonesta vertement Viconia pour cette négligence, ce qui la décida à repartir sur les routes des Royaumes. Sa puissance lui permit de repousser une attaque des Chevaliers du Bouclier sur Calimport ; elle se joignit également à Drizzt Do'Urden pour porter secours à la cité elfe de Suldanessalar, victime d'un complot de la Zhentarim. Les elfes, reconnaissants, l'accueillirent alors et la Reine Ellésime lui accorda les plus grands honneurs de la Seldarine, une récompense jamais octroyée auparavant à un elfe noir. Elle l'accepta sans trahir la moindre émotion et disparut peu après. On reste sans nouvelles d'elle depuis.~ [#SEpilog]
+@400026 = ~<CHARNAME> et Viconia poursuivirent leur vie aventureuse après les évènements du Téthyr. Il devint par la suite une figure importante des Royaumes, grâce aux conseils avisés de Viconia. Elle donna le jour à un enfant peu de temps après, et sa vie en fut bouleversée. Elle se retira de la vie publique pour se consacrer à l'éducation de son fils, lui inculquant les principes des deux cultures, celle des elfes noirs et celle du peuple de <CHARNAME>. Viconia n'eut malheureusement pas le temps de voir grandir son fils : un adepte de Lolth la retrouva et, déterminé à lui faire payer son revirement, l'empoisonna. La légende dit que les derniers mots de Viconia furent pour son aimé, celui pour lequel elle avait décidé de changer le cours de sa vie. 
+<CHARNAME>, écrasé de chagrin, éleva l'enfant seul, à l'écart du monde. Certains prétendent que lui et son fils partirent en croisade contre les elfes noirs, mais tous s'accordent à dire que l'ancien enfant de Bhaal ne se remit jamais de la perte de son amour.~ [#SEpilog]
+
+// PORTRAIT ALTERNATIF POUR SEVERIAN
+
+@400030 = ~Installer le portrait alternatif pour Severian ?
+Consultez le Chapitre III - PORTRAIT ALTERNATIF du Read-Me pour faire votre selection~
+
+// MAGASIN DES HORS-LA-LOI DU TETHYR
+
+@400031 = ~Camp des Hors-la-loi~
+
+// COMBAT FINAL - ILLUSIONS
+
+@400033 = ~Sarevok~
+@400034 = ~Jon Irenicus~
+@400035 = ~Bodhi~
+@400036 = ~Robin de Téthyr~
+
+@400140 = ~Evolution des pouvoirs de l'Halfshade~
+
+// ITEMS MAGASIN DES HORS LA LOI DU TETHYR
+// SUITE
+
+@403000 = ~Bottes Pattes de velours~
+@403001 = ~Ces bottes furent portées par Houdjar Saladim dit 'Pattes de Velours', un voleur de Zakhara qui se tailla rapidement une réputation de cambrioleur hors pair grâce à ses enchantements. Malheureusement pour lui, ses exploits hors du commun dans les maisons nobles de la cité de Sayed attirèrent la jalousie de ses confrères qui s'empressèrent de lui tendre une embuscade, sans que ses bottes n'aient pu l'en soustraire. Il n'est finalement que justice que vous retrouviez cet objet de légende chez des hors-la-loi.
+
+
+PARAMETRES :
+
+Capacités d'équipement :
++ 50 en Chance
++ 50% en Crochetage
++ 50% en Détection de Pièges
+Spécial : Immunisation à l'Attaque Sournoise
+Poids : 4
+Utilisable uniquement par :
+Voleur~
+
+@403002 = ~Cape Tornade~
+@403003 = ~Celui qui porte cette cape peut fondre sur sa proie et ne lui laisser aucun répit, telle une tornade. Elle fut longtemps recherchée par de nombreux aventuriers aux piètres talents martiaux afin de pallier à leurs faiblesses et faire d'eux les plus grands des guerriers. Mais pour ce faire, il fallait déjà s'en emparer sur le dos de celui qui la portait... 
+
+
+PARAMETRES :
+
+Capacités d'équipement :
+Confère 5 attaques/round
+TAC0 : +5
+Poids : 3~
+
+@403004 = ~Dent de Dragon~
+@403005 = ~Ce pendentif orné d'une dent de dragon est d'une rareté sans nom. Pour le concevoir et y enfermer des aptitudes draconiques, il a fallu vaincre un dragon d'améthyste, tâche ô combien plus qu'hasardeuse. En dépit de cet exploit dantesque, le nom du créateur de cette amulette s'est perdu dans les âges et quelque chose vous dit qu'il doit s'en retourner dans sa tombe aujourd'hui.
+
+
+PARAMETRES :
+
+Capacités d'équipement :
+Force portée à 25
++ 15 points de vie
++ 15% de résistance magique
+Poids : 1~
+
+
+@403006 = ~Anneau transcendantal~
+@403007 = ~Cet anneau est une merveille d'ingénierie thaumaturgique transformant n'importe quel adepte de la magie profane en un archimage chevronné. Aussi, nombreuses furent les cruelles déconvenues lorsque l'anneau, objet de toutes les convoitises, venait à être volé à son porteur, le puissant archimage redevenant un magicien de pacotille, quand il ne finissait tout simplement pas à six pieds sous terre en raison du caractère inestimable de l'anneau.
+
+
+PARAMETRES :
+
+Capacités d'équipement :
+Sorts : accorde deux sorts supplémentaires au niveau 9
+Utilisable uniquement par :
+Magicien~
+
+@403008 = ~Bouclier du Tigre Rouge~
+@403009 = ~Ce type de targe est de conception Uthgardt et se trouve fréquemment dans l'Epine Dorsale du Monde. Ce bouclier rond porte le symbole du Tigre Rouge, la tribu dans laquelle il fut fabriqué. Ramenée par le mercenaire Dekaron Julatsa en guise de trophée lors d'une rixe contre les Uthgardts, la targe enchantée lui permit d'aider efficacement à la défense de Targos contre les hordes d'orcs et gobelines qui faisaient pleuvoir sur la ville nombre de projectiles meurtriers. Le bouclier arrêta chaque flèche et carreau d'arbalète sans faillir et Dekaron fut comblé d'honneurs et hissé au rang de héros local avant que la tribu du Tigre Rouge ne décide de récupérer son bien dans le sang. 
+
+
+PARAMETRES :
+
+Capacités d'équipement :
+
+Classe d'armure : bonus de 5
++10 contre les armes de type Missile
+Poids : 3
+Non utilisable par :
+Barde
+Druide
+Mage 
+Voleur~
+
+@403010 = ~Baguette de Poulification~
+@403011 = ~Fruit des expériences loufoques de Météxès, un vieillard archimage acariâtre et saugrenu, cette baguette a le pouvoir de transformer sa cible en...poule enragée. La légende raconte que Météxès s'en serait déjà servi pour se cuisiner des poules au pot, choisissant pour victimes ses deux premiers apprentis et un malheureux colporteur de passage. Le troisième apprenti quant à lui, aurait été transformé en feu follet lors d'une autre expérience mais ce n'est pas le sujet de l'histoire. En tout cas si vous avez faim, la poule au pot est désormais à votre portée ! Enfin, si vous arrivez à éviter les coups de bec des volatiles enragés...
+
+
+PARAMETRES :
+
+Capacités d'équipement :
+
+Effet : métamorphose en poule enragée, sauf réussite d'un jet de sauvegarde contre les baguettes
+Portée : 5 mètres
+Zone : 1 créature
+Durée : permanente jusqu'à dissipation
+Charges : 3 fois/jour
+Poids : 1
+Non utilisable par :
+Guerrier
+Clerc
+Druide
+Voleur~
+
+
+@403012 = ~Ceinturon prismatique~
+@403013 = ~Cette ceinture a été pourvue d'un rubyon, un rubis de conception magique destiné à recevoir divers enchantements. Son dernier porteur, une femme du nom de Myra Hatna, résista à un assaut de givre, d'acide et de feu lors d'une attaque de la ville de Port Ponant par les dragons avant qu'un vulgaire voleur à la tire ne la poignarde au détour d'une ruelle, purement et simplement. 
+
+
+PARAMETRES :
+
+Capacités d'équipement :
+
++30 % de résistance à toute attaque élémentale (givre, feu, électricité, acide)
+Poids : 2~
+
+@403014 = ~L'Aventure pour les Noobs~
+@403015 = ~Marre de vous débrouiller comme un manche ? Alors ce livre est fait pour vous ! Après sa lecture, c'est certain, vous ne serez plus ce petit noob innocent que chaque mauvaise rencontre laisse mourant sur le bas côté de la route, les boyaux à l'air ! 
+
+Découvrez sans attendre tous les trucs et astuces de cette édition spéciale limitée à travers ses nombreux chapitres : 
+
+ - Prophéties : pourquoi vous serez toujours le pigeon de l'histoire
+ - Romances I : Comment conjuguer plan à trois et harmonie dans le groupe  
+ - Romances II : Comment se remettre de la gifle retentissante et rattraper le coup en cas d'échec de Romances I
+ - 1001 façons de vaincre un ennemi désarmé, mourant et à terre
+ - Les courtisanes : bons plans, adresses, tarifs, arnaques
+ - Savoir jouer au lèche botte et en tirer profit
+ - De l'utilisation du fouet : dans les romances 
+ - De l'utilisation du fouet : dans les bastons
+ - Savoir écraser et s'enfuir quand cela s'impose
+ - Savoir déboyauter ses ennemis et les planter sur une pique quand cela s'impose
+ - Petit lexique de l'aventurier débutant : Qu'est ce qu'un PNJ ? Qu'est ce qu'un item ? Pourquoi fuir un Jansen ?
+ - Les elfes noirs : non, ils ne sont pas peints en noir
+ - Drizzt Do'Urden : info ou intox ?
+ - Compagnons : "Je viens avec toi." "Pourquoi ?" "Parce que !"
+ - Quêtes : va chercher ci, ramène moi ça ! Et fissa !
+ - Objets maudits : vous pourrez toujours chercher la clé de cette ceinture de chasteté
+ - La chambre à coucher de Lady Delcia Caan : y pénétrer, c'est se condamner
+ - Comment se procurer sa mousse à raser en pleine brousse
+ - Comment conserver son sex appeal après deux semaines de galère dans des marais
+ - De l'utilité d'un porte clé dans un donjon
+ - Archimages : fous dangereux ou indécrottables égocentriques ?
+ - Les Farces de l'Oncle Scratchy : 101 blagues à faire à vos compagnons
+ - "Les Liaisons Dangereuses" : toute la correspondance érotique entre Ellésime et Irenicus compilée
+ 
+... et plus de 80 autres chapitres traitant de tous les aspects de la vie d'aventurier, de la collecte des trésors à l'utilisation des sorts en passant par les vertus du courage, de la lâcheté, de la drague, de la soupe aux navets et du poil à gratter.
+
+PARAMETRES :
+
+Spécial :
+Le lecteur gagne 50 000 points d'expérience.
+Disparaît après la lecture.
+Poids : 8~
+
+
+@403016 = ~Mise à prix~
+@403017 = ~Il s'agit d'un avis condamnant Severian à la peine capitale et invitant la population à le livrer aux autorités en échange d'une forte prime. Le hors-la-loi le conserve sur lui avec cynisme. Vous pouvez lire :
+
+
+___________________________________
+
+                    MISE A PRIX
+
+
+
+                    On recherche
+                    MORT OU VIF :
+
+
+
+                      VALARYM
+
+
+
+         Condamné à la peine capitale par 
+                La Couronne du Téthyr
+
+
+             Pour les crimes suivants :
+
+                       
+               Meurtres, brigandage
+              subversion, corruption
+
+ 
+
+       15 000 pièces d'or de récompense
+
+
+___________________________________~
+                                         
+                                           
+
+
+// WeiDU prompts
+@-1000= "Le mod %TP2_FILE_NAME% contient"
+@-1001= "composants optionnels distincts.
+Pour gagner du temps, vous pouvez choisir ce que vous souhaitez faire d'eux
+au niveau general plutot que de repondre aux questions pour chacun.
+"
+@-1002= "Que faut-il faire de tous les composants qui NE sont PAS ENCORE installes ?
+Les [I]nstaller, les [S]auter, dem[A]nder pour chacun ? "
+@-1003= "Que faut-il faire de tous les composants qui sont DEJA installes ?
+Les [R]einstaller, les s[U]pprimer, les [S]auter, dem[A]nder pour chacun ? "
+
+@-1004= "S'IL VOUS PLAIT, envoyez par e-mail le fichier"
+@-1005= "a"
+
+@-1006= "Installer le composant ["
+@-1007= "] ?
+[R]einstaller, co[N]server, s[U]pprimer ou [Q]uitter ? "
+@-1008= "] ?
+[I]nstaller, [N]e pas installer ou [Q]uitter ? "
+
+@-1009= "Entrez une partie du nom du module : "
+
+@-1010= "Reinstallation du composant ["
+@-1011= "] "
+@-1012= "Reinstallation dans la langue"
+
+@-1013= "Suppression de l'ancienne installation de ["
+@-1014= "] au prealable..."
+@-1015= "SUPPRESSION REUSSIE DE L'ANCIEN"
+
+@-1016= "Installation en cours"
+@-1017= "ERREUR pendant l'installation de ["
+@-1018= "], retour a l'etat anterieur"
+@-1019= "INSTALLATION REUSSIE"
+@-1020= "Saute"
+@-1021= "Suppression de ["
+@-1022= "] (composant #"
+@-1023= ")"
+@-1024= "SUPPRESSION REUSSIE DE ["
+
+@-1025= "] ?
+[R]einstaller, co[N]server, s[U]pprimer, [Q]uitter ou choisir un parmi :"
+@-1026= "] ?
+[N]e pas installer, [Q]uitter ou choisir un parmi :"
+@-1027= " (installe actuellement)"
+
+@-1028= "Souhaitez-vous afficher les composants de ["
+@-1029= "] ?
+[Y]Oui, [N]on ? "
+
+@-1030= "] ?
+choisir un parmi :"
+@-1031= "] ?
+[R]einstaller, co[N]server, [Q]uitter ou choisir un parmi :"
+@-1032= "INSTALLATION ECHOUEE A CAUSE D'ERREURS"
+@-1033= "INSTALLATION AVEC DES ALERTES"
+@-1034= "Souhaitez-vous afficher les instructions (ReadMe) ? [Y]Oui [N]on"
+@-1035= "Dans la langue"
+
+@-1036= "Saute le GROUPE ["
+@-1037= "] pour cause d'absence des pre-requis."
+
+@-1038= "dem[A]nder pour chaque composant, tout [S]auter, ou choisir une selection pre-definie :"
+@-1039= "dem[A]nder pour chaque composant, [R]einstaller la configuration courante, tout s[U]pprimer, tout [S]auter, ou choisir une selection pre-definie :"
+
+@-1040= "
+Veuillez choisir la langue dans laquelle vous souhaitez jouer au jeu.
+Si par la suite vous desirez jouer au jeu dans une langue differente, il vous
+faudra editer le fichier weidu.conf et reinstaller vos mods.
+"
+@-1041= "Tcheque"
+@-1042= "Allemand"
+@-1043= "Anglais"
+@-1044= "Espagnol"
+@-1045= "Francais"
+@-1046= "Italien"
+@-1047= "Polonais"
+@-1048= "Portugais"
+@-1049= "Turc"
+@-1050= "Japonais"
+@-1051= "Coreen"
+@-1052= "Chinois simplifie"
+@-1053= "Russe"
+@-1054= "Ukrainien"
+
+@-1060= "
+Ce jeu est disponible en plusieurs langues mais WeiDU ne sait pas laquelle a ete choisie quand ce mod a ete installe.
+
+Veuillez indiquer quelle langue du jeu a ete utilisee quand vous avez installe ce mod. Votre choix servira jusqu'a ce que WeiDU s'arrete mais ne sera pas memorise.
+"
+@-1061= "
+Utilisation de"
+@-1062= " et "
+

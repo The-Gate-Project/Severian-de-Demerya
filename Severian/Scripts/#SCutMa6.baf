@@ -1,0 +1,21 @@
+
+IF
+ True()
+THEN
+  RESPONSE #100
+    CutSceneId("#Severian")
+    SetGlobal("#SeverianMailikki","GLOBAL",11)
+    DisplayString(Myself,@537)
+    DisplayString(Myself,@538)
+    CreateCreature("#SPerian",[1070.1633],12)
+    CreateCreature("#SDuorok",[1073.1663],12)
+    ActionOverride("#SPerian",MoveToPoint([1365.1651]))
+    ActionOverride("#SPerian",Face(15))
+    ActionOverride("#SDuorok",MoveToPoint([1336.1686]))
+    ActionOverride("#SDuorok",Face(15))
+    ActionOverride("#SPerian",StartDialogueNoSet(Player1))
+    EndCutSceneMode()
+END
+
+
+    

@@ -1,0 +1,15 @@
+IF
+  Range(Player1,10)
+  !InMyArea("#SBlaidd")
+THEN
+  RESPONSE #100
+    CutSceneId("#Severian")
+    ForceSpellRES("#SRingB",Myself)
+    Wait(4)
+    FaceObject("#SBlaidd")
+    ActionOverride(Player1,FaceObject("#SBlaidd"))
+    ActionOverride("#SBlaidd",FaceObject("#Severian"))
+    SetGlobal("#SDialRomance10","GLOBAL",2)
+    SetDialog("#SeverR")
+    ActionOverride("#Severian",Dialog(Player1))
+END

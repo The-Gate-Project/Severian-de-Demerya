@@ -1,0 +1,25 @@
+IF
+  Allegiance(Myself, NEUTRAL)
+  OR(6)
+    AttackedBy(Player1,DEFAULT)
+    AttackedBy(Player2,DEFAULT)
+    AttackedBy(Player3,DEFAULT)
+    AttackedBy(Player4,DEFAULT)
+    AttackedBy(Player5,DEFAULT)
+    AttackedBy(Player6,DEFAULT)
+THEN
+  RESPONSE #100
+    ClearActions("#SMerc1")
+    ActionOverride("#SMerc1", Enemy())
+    ClearActions("#SMerc2")
+    ActionOverride("#SMerc2", Enemy())
+    ClearActions("#SHugor")
+    ActionOverride("#SHugor", Enemy())
+END
+IF
+   Dead("#Severian")
+   Allegiance(Myself, NEUTRAL)
+THEN
+  RESPONSE #100
+    EscapeArea()
+END

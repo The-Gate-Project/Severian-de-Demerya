@@ -1,0 +1,23 @@
+IF
+  True()
+THEN
+  RESPONSE #100
+    CutSceneId(Player1)
+    Wait(1)
+    FadeToColor([20.0],0)
+    Wait(1)
+    ActionOverride("#SPerian",DestroySelf())
+    ActionOverride("#SBlaidd",DestroySelf())
+    LeaveAreaLUA("AR1100","",[1445.1762],7)
+    ActionOverride(Player2,LeaveAreaLUA("AR1100","",[1477.1696],7))
+    ActionOverride(Player3,LeaveAreaLUA("AR1100","",[1448.1857],7))
+    ActionOverride(Player4,LeaveAreaLUA("AR1100","",[1512.1852],7))
+    ActionOverride(Player5,LeaveAreaLUA("AR1100","",[1557.1822],7))
+    ActionOverride(Player6,LeaveAreaLUA("AR1100","",[1587.1754],7))
+    SetGlobal("#SeverianMailikki","GLOBAL",1)
+    Wait(1)
+    FadeFromColor([20.0],0)
+    Wait(1)
+    ActionOverride("#SPerian",StartDialogueNoSet(Player1))
+    EndCutSceneMode()
+END

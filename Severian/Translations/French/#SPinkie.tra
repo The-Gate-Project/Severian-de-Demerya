@@ -1,0 +1,57 @@
+
+
+// CHAPITRE 2
+// MINI QUETE : LA BIERE DE DUOROK, LES CULOTTES DE PERIAN
+// RENCONTRE AVEC PINKIE TOURTROMPETTE
+
+
+@1 = ~Je ne pensais pas rencontrer âme qui vive aussi loin du village, hou ! Mais alors, vous allez pouvoir m'aider n'est-ce pas ? Voilà que mon charriot s'est embourbé dans cette maudite boue...C'est vraiment quelque chose de voyager de nos jours, c'est un scandale !~
+@100 = ~Euh...Vous êtes bien Pinkie Tourtrompette, le camelot ?~ // Aller au @7
+@101 = ~"Scandale" ? Mais qu'est-ce que vous avez tous à sortir ce mot, aujourd'hui ?~ // Aller au @2
+@2 = ~Parfaitement ! C'est un scandale que cette route-ci ne soit pas pavée ! Oh, et en plus, je me suis cassé un ongle...~
+@200 = ~Eh bien, euh...Que diriez-vous si je vous donnais un coup de main, messire Pinkie ? C'est que l'on commence à s'inquiéter à Imnesvale.~ // Aller au @6
+@201 = ~Oui, c'est sans doute un scandale pour vous mais je m'en moque : je suis venue chercher une cargaison de bière et des braies fuchsia pour des amis.~ // Aller au @3
+@3 = ~Comment osez-vous vous adresser ainsi au plus célèbre OR-GA-NI-SA-TEUR (Pinkie prend un ton particulièrement aigu.) de mariages de tout Féérune ? Je suis un artiste, moi madame, pas un de ces vulgaires fripiers ambulants ! Et j'exige que vous me tiriez de là, sinon eh bien je ne vous donnerai RIEN !~
+@4 = ~Nous devrions l'aider, <CHARNAME>. Je ne me vois pas le brutaliser et puis, le village a besoin de ses services. C'est bien pour lui que nous sommes là,non ?~
+@5 = ~Ah, je vois que ce jeune homme a un peu plus de plomb dans la cervelle que les autres. Allez donc roturière, me sortir cette charrette de là avec vos serviteurs pendant que je me referai une beauté : je ne peux pas me présenter ainsi au village.~
+@6 = ~C'est très aimable à vous jeune fille. Allons, pressez-vous, nous devrions déjà être au village. Sortez-moi donc cette charrette de là avec vos serviteurs pendant que je me refais une beauté : je ne peux pas me présenter ainsi au village.~
+@7 = ~"Camelot" ? Je vous prie de ne pas confondre le GRAND OR-GA-NI-SA-TEUR DE MARIAGES Pinkie Tourtrompette, venu tout spécialement d'Eauprofonde et renommé dans tout Féérune, avec un vulgaire fripier ambulant !~
+@700 = ~D'accord, d'accord, monsieur le Grand Organisateur de Mariages réputé dans tout Féérune. Je vois que vous êtes dans une situation plutôt critique. Que diriez-vous si je vous arrangeais ça ?~ // Aller au @6
+@701 = ~Je me fiche bien de votre identité : que vous soyez un empereur Kara-Turien ou un Grand Duc de la Porte de Baldur ne change rien au fait que vous détenez des objets qui m'intéressent et que je suis venue chercher.~
+@8 = ~Vous oseriez me brutaliser ? Je suis plus redoutable que j'en ai l'air ! Sortez-moi de ce bourbier ou vous le regretterez (le nobliau tape du pied, rouge de colère.)~ // Aller au @4
+
+// CHAPITRE 3
+// RETOUR AU VILLAGE
+
+@10 = ~Hou, enfin ! Mais...Quel est cet endroit ? Aurais-je fait toute cette route pour arriver chez des bouseux ? !~
+@11 = ~(Pinkie porte une main à son front, très pâle.) Oh par les dieux, je vais m'évanouir !~
+@110 = ~Hep là ! Avant que vous ne tombiez dans les choux, j'aimerais récupérer certains objets que vous avez apportés à savoir une "Cuvée de Grand-Père Gimli" et des "Culottes fuchsia".~
+@12 = ~*Gémissements* Vous ne pouvez pas comprendre, vous ! Ce n'est pas mon milieu, ici ! Toutes ces poules, cette boue, cette crasse...~
+@120 = ~Par les Neuf Enfers, vous allez me donner ce que je demande, oui ? !~
+@121 = ~J'ai de la patience mais elle fond à vue d'œil.~
+@13 = ~Oh, d'accord, d'accord. Après tout, vous m'avez aidé. Voilà ce que vous avez demandé mais il vous en coûtera deux cent pièces d'or.~
+@14 = ~Tant que ça ? !~
+@15 = ~Parce que vous croyez que des culottes comme celles-ci poussent sur des arbres ? A voir vos oripeaux crasseux, je ne suis de toute façon pas surpris.~
+@16 = ~Je vous salue, manants. Si vous êtes invités au mariage de Dame Téthys, vous m'y verrez assurément. Après tout, c'est moi le Grand OR-GA-NI-SA-TEUR !~
+@17 = ~C'est cela, au revoir. On ne vous retient pas.~
+@18 = ~(Vous vous jetez à la gorge de Pinkie, prête à l'étrangler.) Mais il va se taire, oui ? !~
+@19 = ~Ahhhh !~
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// Entrée dans le journal
+@4000 = ~ Les Chroniques de Severian - Livre 2 : Les fantômes du passé
+
+J'ai retrouvé le Grand OR-GA-NI-SA-TEUR Pinkie Tourtrompette
+
+Après avoir dû supporter le farfelu et orgueilleux OR-GA-NI-SA-TEUR de mariages Pinkie Tourtrompette, me voici enfin en possession des culottes de Pyp et de la Cuvée de Duorok. Espérons qu'avec ceci, nos deux amis seront moins moroses. Il ne me reste plus qu'à les leur apporter à l'auberge où ils noient leur déprime dans le vin.~
+
+
+@30 = ~Hola, vous ! Savez-vous qu'il est très impoli d'arriver en retard au bal des mariés ? Et regardez donc votre coiffure, ma chère ! On dirait qu'un ouragan vous est passé dessus ! Enfin, j'espère au moins que vous avez votre invitation. Montrez-la moi, je vous prie.~
+@31 = ~(Vous prenez un air sincèrement contrit.) Je suis vraiment navrée...J'ai mis plein de taches sur ma robe en mangeant du gâteau. J'ai dû aller me changer.~
+@32 = ~Encore vous ! Cette fois, je ne vais pas vous rater ! (Vous saisissez l'importun à pleine gorge et le secouez comme un prunier.) Mais vous allez me laisser tranquille, espèce de casse-pieds !~
+@33 = ~*Gargl* A moi, au secours ! (Pinkie s'enfuit, trouvant refuge dans les buissons qui jouxtent la place. Vous n'êtes pas prête de le revoir et il ne vous reste plus qu'à vous diriger vers cette silhouette familière qui vous attend sur les marches, parmi les couples virevoltant sous les étoiles au gré de la musique.)~
+@34 = ~Je vois. Eh bien, vous auriez pu en profiter pour vous donner un coup de peigne, aussi. Ces gens sont d'un négligé dans ce trou boueux...Alors, cette invitation ?~
+@35 = ~(Vous maugréez.) La voilà, ton invitation, et va voir ailleurs si j'y suis maintenant !~
+@36 = ~(Vous lui tendez gracieusement l'invitation, tout sourires.)~
+@37 = ~Je vous sais gré de votre complaisance. La soirée est à vous. Et il me semble que votre ami vous attend sur les marches (Pinkie vous considère, atterré.) Tâchez tout de même de ne pas lui marcher sur les pieds, à ce garçon...Oh, je me suis encore cassé un ongle...Décidément, on ne me reprendra plus à venir dans pareil endroit...~
+@38 = ~Quelle malotrue ! Vous mériteriez la bastonnade et plus encore ! (Pinkie Tourtrompette arrache l'invitation de vos mains et s'éloigne, vexé. Vous avez désormais le champ libre, et déjà, vous apercevez une silhouette familière sur les marches, parmi les couples virevoltant sous les étoiles au gré de la musique.)~

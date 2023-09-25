@@ -1,0 +1,19 @@
+IF
+  True()
+THEN
+  RESPONSE #100
+    CutSceneId(Player1)
+    ActionOverride("#Severian",LeaveParty())
+    Wait(1)
+    ActionOverride("#Severian",MakeUnselectable(50000))
+    ActionOverride("Sarevok",MakeUnselectable(50000))
+    ActionOverride("#Severian",Attack("Sarevok"))
+    ActionOverride("Sarevok",Attack("#Severian"))
+    Wait(5)
+    Kill("#Severian")
+    Wait(1)
+    ActionOverride("Sarevok",MakeUnselectable(0))
+    Wait(1)
+    ActionOverride("Sarevok",Dialog(Player1))
+    EndCutSceneMode()
+END

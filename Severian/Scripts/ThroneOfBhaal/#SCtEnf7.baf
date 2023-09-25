@@ -1,0 +1,20 @@
+IF
+  True()
+THEN
+  RESPONSE #100
+    CutSceneId(Player1)
+    Wait(1)
+    FadeToColor([20.0],0)
+    Wait(1) 
+    SetGlobal("#SecondMiroirAme","GLOBAL",17)
+    RestorePartyLocations()
+    ActionOverride(Player2,MakeUnselectable(0))
+    ActionOverride(Player3,MakeUnselectable(0))
+    ActionOverride(Player4,MakeUnselectable(0))
+    ActionOverride(Player5,MakeUnselectable(0))
+    ActionOverride(Player6,MakeUnselectable(0))
+    Wait(1)
+    FadeFromColor([20.0],0)
+    Wait(1)
+    EndCutSceneMode()
+END

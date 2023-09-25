@@ -1,0 +1,22 @@
+// RAPPEL MARCHE
+
+IF
+  True()
+THEN
+  RESPONSE #100
+    CutSceneId(Player1)
+    Wait(1)
+    FadeToColor([20.0],0)
+    Wait(1)
+    LeaveAreaLUA("AR6400","",[2104.656],8)
+    ActionOverride(Player2,LeaveAreaLUA("AR6400","",[2057.653],8))
+    ActionOverride(Player3,LeaveAreaLUA("AR6400","",[2128.686],8))
+    ActionOverride(Player4,LeaveAreaLUA("AR6400","",[2091.710],8))
+    ActionOverride(Player5,LeaveAreaLUA("AR6400","",[2045.692],8))
+    ActionOverride(Player6,LeaveAreaLUA("AR6400","",[2036.661],8))
+    MoveViewPoint([2104.656],INSTANT)
+    SetGlobal("#SRappelPetitLoup","GLOBAL",3)
+    Wait(1)
+    FadeFromColor([20.0],0)
+    EndCutSceneMode()
+END

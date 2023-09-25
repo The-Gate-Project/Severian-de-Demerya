@@ -1,0 +1,13 @@
+IF
+ True()
+THEN
+  RESPONSE #100
+   CutSceneId("#Severian")
+   Wait(1)
+   CreateCreature("#SPerian",[704.543],9)
+   SetGlobal("#SeverianMailikki","GLOBAL",23)
+   OpenDoor("Door01")
+   ActionOverride("#SPerian",MoveToPoint([574.487]))
+   Face(14)
+   EndCutSceneMode()
+END

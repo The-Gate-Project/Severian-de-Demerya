@@ -1,0 +1,43 @@
+// ROMANCE FINAL 
+// CABANE DE MERELLA
+// DERNIERE NUIT D'AMOUR AVANT LA BATAILLE
+// FIN DE LA ROMANCE
+
+
+IF
+ True()
+THEN
+  RESPONSE #100
+  CutSceneId("#Severian")
+  Wait(2)
+  FadeToColor([20.0],0)
+  Wait(2)
+  SetGlobal("#SRomanceFinalDerniereNuit","GLOBAL",2)
+  CreateCreatureImpassable("#SevRess",[552.269], 12)
+  CreateCreatureImpassable("#SCharna",[592.284], 4)
+  JumpToPoint([1111.644])
+  ActionOverride(Player1,JumpToPoint([1077.669]))
+  ForceSpellRES("#SGivSpl","#Severian")
+  MoveViewObject("#SevRess",INSTANT)
+  Wait(2)
+  FadeFromColor([20.0],0)
+  Wait(2)
+  DisplayStringHead("#SevRess",@20)
+  Wait(10)
+  DisplayStringHead("#SevRess",@21)
+  Wait(10)
+  DisplayStringHead("#SevRess",@22)
+  Wait(10)
+  DisplayStringHead("#SevRess",@23)
+  Wait(10)
+  DisplayStringHead("#SevRess",@24)
+  Wait(10)
+  DisplayStringHead("#SevRess",@25)
+  Wait(10)
+  FadeToColor([20.0],0)
+  RestParty()
+  MoveViewObject("#Severian",INSTANT)
+  EndCutSceneMode()
+END
+
+

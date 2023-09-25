@@ -1,0 +1,18 @@
+IF
+ True()
+THEN
+  RESPONSE #100
+ CutSceneId(Player1)
+ Wait(1)
+ FadeToColor([20.0],0)
+ Wait(1)
+ LeaveAreaLUA("AR5203","",[2202.1374],4)
+ ActionOverride("#Severian",LeaveAreaLUA("AR5203","",[2148.1397],12))
+ MoveViewPoint([2148.1397],INSTANT)
+ SetGlobal("#STroisiemeMiroirAme","GLOBAL",11)   
+ Wait(1)
+ FadeFromColor([20.0],0)
+ Wait(1)
+ EndCutSceneMode()
+END
+

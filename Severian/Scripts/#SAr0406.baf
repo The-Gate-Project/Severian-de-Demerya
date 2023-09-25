@@ -1,0 +1,38 @@
+
+// CREATION COURTISANES
+
+IF 
+  Global("#SRomanceFinalCouronne","GLOBAL",1)
+THEN
+  RESPONSE #100
+  SetGlobal("#SRomanceFinalCouronne","GLOBAL",2)
+  CreateCreatureObject("#SAicha","#Severian")
+  CreateCreatureObject("#SAnnae","#Severian")
+END
+
+// CREATION MERCENAIRES RUNE POURPRE
+
+IF
+ Global("#SRomanceFinalCouronne","GLOBAL",5)
+THEN
+  RESPONSE #100
+   SetGlobal("#SRomanceFinalCouronne","GLOBAL",6)
+   Wait(1)
+   CreateCreatureObjectEffect("#SPeyr","SPFLESHS",Player1)
+   CreateCreatureObjectEffect("#SRune1","SPFLESHS",Player1)
+   CreateCreatureObjectEffect("#SRune2","SPFLESHS",Player1)
+   Wait(1)
+END
+
+// TELEPORTATION PERIAN ET DUOROK
+
+IF
+   Global("#SRomanceFinalCouronne","GLOBAL",22)
+THEN
+  RESPONSE #100
+    SetGlobal("#SRomanceFinalCouronne","GLOBAL",23)
+    Wait(3)
+    CreateCreatureObjectEffect("#SDuorok","SPDIMDR1",Player1)
+    CreateCreatureObjectEffect("#SPerian","SPDIMDR1",Player1)
+    Wait(3)
+END

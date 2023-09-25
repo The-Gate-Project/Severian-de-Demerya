@@ -1,0 +1,21 @@
+IF
+See([PC])
+NumTimesTalkedTo(0)
+THEN
+RESPONSE #100
+Dialogue(Nearest([PC]))
+END
+
+IF
+Global("#SRomanceFinalCouronne","GLOBAL",30)
+THEN
+RESPONSE #100
+Dialogue(Nearest([PC]))
+END
+
+IF
+Global("#SRomanceFinalCouronne","GLOBAL",31)
+THEN
+RESPONSE #100
+Dialogue(Nearest([PC]))
+END

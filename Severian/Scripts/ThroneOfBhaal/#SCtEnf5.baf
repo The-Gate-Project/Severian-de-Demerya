@@ -1,0 +1,21 @@
+// L'ENFANCE DE SEVERIAN
+
+// RETOUR AU MIROIR DE L'AME
+
+IF
+  True()
+THEN
+  RESPONSE #100
+    CutSceneId("#Severian")
+    Wait(1)
+    FadeToColor([20.0],0)
+    Wait(1)
+    LeaveAreaLUA("#SArmi","",[866.2834],8)
+    MoveViewPoint([849.2897],INSTANT)
+    SetGlobal("#SecondMiroirAme","GLOBAL",13)
+    Wait(1)
+    FadeFromColor([20.0],0)
+    Wait(1)
+    EndCutSceneMode()
+END
+

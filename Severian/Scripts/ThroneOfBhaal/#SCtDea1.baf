@@ -1,0 +1,23 @@
+IF
+ Global("#SDeadSeverian","GLOBAL",0)
+THEN
+ RESPONSE #100
+CutSceneId(Player1)
+SetGlobal("#SDeadSeverian","GLOBAL",1)
+MoveViewObject("#SMask2",VERY_FAST)
+ActionOverride("#Sarvaj",DestroySelf())
+CreateVisualEffectObject("SPFDEATH","#Sarvaj")
+ActionOverride("#Sarev",DestroySelf())
+CreateVisualEffectObject("SPFDEATH","#Sarev")
+ActionOverride("#SBodhi",DestroySelf())
+CreateVisualEffectObject("SPFDEATH","#SBodhi")
+ActionOverride("#SIren",DestroySelf())
+CreateVisualEffectObject("SPFDEATH","#SIren")
+ActionOverride("#SRasEnd",DestroySelf())
+CreateVisualEffectObject("SPFDEATH","#SRasEnd")
+ActionOverride("#SVesEnd",DestroySelf())
+CreateVisualEffectObject("SPFDEATH","#SVesEnd")
+Wait(1)
+ActionOverride("#SMask2",StartDialogueNoSet(Player1))
+EndCutSceneMode()
+END

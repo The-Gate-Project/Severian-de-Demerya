@@ -1,0 +1,26 @@
+IF
+  OR(2)
+    !InMyArea("#Severian")
+    Global("#SUnSumBlaidd","GLOBAL",1)
+THEN
+  RESPONSE #100
+    SetGlobal("#SUnSumBlaidd","GLOBAL",0)
+    ForceSpellRES("#SUnSumB",Myself)
+END
+
+IF
+  Global("#Summon1","GLOBAL",0)
+THEN
+  RESPONSE #100
+    SetGlobal("#Summon1","GLOBAL",1)
+    StartDialogNoSet(Player1)
+END
+
+IF
+  Global("#SBlaiddQuete","GLOBAL",2)
+  See([PC])
+THEN
+  RESPONSE #100
+     StartDialogueNoSet(Player1)
+END
+     

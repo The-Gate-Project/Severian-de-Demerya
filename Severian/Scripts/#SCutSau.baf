@@ -1,0 +1,11 @@
+IF
+  True()
+THEN
+  RESPONSE #100
+    CutSceneId("#Severian")
+    Wait(1)
+    JumpToPoint([1324.1580])
+    Wait(1)
+    SetGlobal("#SRomanceFinalCouronne","GLOBAL",8)
+    EndCutSceneMode()
+END

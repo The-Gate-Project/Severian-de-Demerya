@@ -1,0 +1,15 @@
+IF
+ True()
+THEN
+  RESPONSE #100 
+  CutSceneId("#Severian")
+  MoveViewPoint([689.329],INSTANT)
+  CreateCreature("#SRas25",[684.459],8)
+  CreateVisualEffectObject("SPDIMDR1","#SRas25")
+  CreateCreature("#SVes25",[725.458],8)
+  CreateVisualEffectObject("SPDIMDR1","#SVes25")
+  SetGlobal("#STroisiemeMiroirAme","GLOBAL",7) 
+  Wait(2)
+  ActionOverride("#SElva25",StartDialogueNoSet("#SRas25"))
+  EndCutSceneMode()
+END

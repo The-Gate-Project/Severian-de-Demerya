@@ -1,0 +1,191 @@
+// CHAPITRE 3
+// AU cœur DU VAL
+// LA BENEDICTION DE MAILIKKI
+
+// PRESENTATIONS
+
+@83 = ~(Et c'est une belle jeune femme vêtue de vert et à la chevelure parsemée de feuilles qui s'adresse à vous à présent.)~ 
+@84 = ~Bienvenue, Severian. Bienvenue à toi aussi, <CHARNAME>, toi et tes compagnons.~
+@85 = ~Nous avons entendu parler de tes exploits, <CHARNAME>. Une si sombre destinée pour un si noble cœur. Mais bien que tu sois une fascinante personne et que tes actes soient à même de changer à jamais le visage des Royaumes, nous nous adresserons à un de tes compagnons. Celui qui se nomme Severian Stark mais que l'on connaît sous d'autres noms, dans d'autres contrées.~
+@86 = ~*gloussements* Alors hein, tu as vu ça, Duorok ? Tu ne me croyais pas capable de le ramener, n'est-ce pas ? Allez, envoie la monnaie ! (Sous votre nez, Pyp tend insolemment une main vers son compère nain.)~
+@87 = ~Voilà tes deniers, Rase-motte, mais tu me dois toujours une chopine pour la fois où j'ai sauvé ton derrière des foudres de Jermien !~
+@88 = ~Eh bien, en ce qui concerne mon derrière...(Pyp montre au nain les lambeaux de ses belles culottes, tout ce qu'il reste de l’œuvre de Mémé Gisel allègrement sabotée par Onyx.)~
+@89 = ~Oooh, silence vous deux, quand Valyria parle.~
+@90 = ~Comment t'appellerons-nous aujourd'hui ? Sera-ce Ryuuken ? Ou bien Valarym, peut-être comme ici dans le Val ?~
+@91 = ~Ces noms ne signifient plus rien pour moi, belle dame. Ils ne sont que les vestiges d'un passé aujourd'hui révolu. Je me demande comment tu peux en savoir autant sur moi ?~
+@92 = ~Nous savons que tu as changé, Severian : Pyp t'a vu jeter cette épée maléfique dans la rivière.~
+@93 = ~Uzaka...n'avait plus lieu d'être entre mes mains. Mais qu'attends-tu de moi, Valyria ? Testerais-tu ma détermination à rester sur cette nouvelle voie ?~
+@94 = ~Nous ne te testons point, Severian...Nous avons déjà la preuve que ton cœur n'aspire plus qu'à la pureté et <CHARNAME> n'est d'ailleurs pas étrangère à cette décision, je me trompe ?~
+@95 = ~La Dame des Forêts t'observe depuis ton arrivée sur Toril, Severian...Mailikki nous a soufflé tout ce que fut ta vie dès lors que tu as franchi le portail et c'est en tant que messagers que nous venons à toi aujourd'hui.~
+@96 = ~Mailikki ? Tu veux dire qu'une déesse...a posé ses yeux sur moi ?~
+@97 = ~(Cette allégation a laissé Severian troublé. Plus que troublé, le jeune homme est touché jusqu'au fond de son âme et vous vous en apercevez à l'inhabituelle brillance dans ses yeux gris.)~ 
+@98 = ~Il est troublé, comme de juste.~
+@99 = ~N'importe qui le serait...~
+@100 = ~La Dame des Forêts sait que tu as rompu le lien avec ta déesse en quittant Demerya. Nous savons combien la vie ne t'a pas épargné, Severian. Accepte sa main et rejoins son giron. Fais désormais de ce monde ta nouvelle patrie : tu es aimé, Severian, sache-le.~
+@101 = ~(Severian reste muet, incapable de formuler une réponse mais vous devinez, à l'expression décidée de ses yeux qu'il a déjà fait son choix..)~
+@102 = ~Prêtresse, j'ai longtemps erré sur Toril, croyant détenir la vérité sur les choses et le monde, m'emparant sans scrupules de la vie et des biens d'autrui. Ma vie a longtemps été placée sous le signe de l'arrogance et de la vilenie, en tant que Ryuuken, en tant que Valarym et en tant que Severian, aussi.~
+@103 = ~Mais j'ai rencontré <CHARNAME> dont tu mesures toi aussi la grandeur, belle dame. C'est à elle que je dois cette nouvelle vie.~
+@104 = ~(Severian marque un silence.)~
+@105 = ~J'accepte la bénédiction de Mailikki car je suis devenu un homme nouveau à son contact. Si la déesse désire m'honorer de sa bienveillance alors je serai son suivant.~ 
+@106 = ~(Valyria sourit avec sérénité.) Ta décision, Severian, enchante nos cœurs. Que Mailikki te bénisse car nous t'accueillons désormais parmi les fidèles de la Dame de la Forêt. Fais un pas en avant, Enfant de la nuit, et reçoit la lumière de Mailikki. Tu n'es plus seul, à présent.~
+
+
+// DON DE LA BROCHE
+
+@1000 = ~(Dans une colonne de lumière divine, Mailikki a exprimé sa volonté. Le rôdeur est désormais dans ses grâces, pleinement réinvesti de son lien avec la Nature.)~ 
+@10220 = ~(Un nouveau souffle pour Severian autrefois sans attaches et votre cœur est heureux d'y assister.)~
+@1001 = ~La Dame de la Forêt prend toujours soin de ses enfants, d'où qu'ils viennent, quelles que soient leurs origines. Kalas ?~
+@1002 = ~(L'elfe noir hoche la tête et s'avance silencieusement vers Valyria, tenant dans le creux de ses mains un objet dont vous ne pouvez rien discerner depuis votre place.)~
+@1003 = ~*Grognement étouffé* Mais pourquoi les honneurs reviennent toujours aux Oreilles-Pointues ?~
+@1004 = ~*Rires étouffés* A mon avis, c'est parce que tu es trop petit pour donner la babiole à notre nouvel ami, tu ne crois pas ? A moins que ce soit ton nez en forme de patate qui gâche tout ? Avoue que toi et moi avons déjà moins d'allure que ce grand dadais d'elfe...~
+@1005 = ~Oh grands dieux, tout ceci est sérieux...~
+@1006 = ~(Cérémonieusement, Valyria a pris l'objet des mains de Kalas et de ses mains délicates, l'a fixé au pourpoint de Severian.)~
+@1007 = ~Nous l'avons crée ensemble selon la volonté de Mailikki. Toi seul pourra la porter, Severian. Cette broche te protégera et je te laisse en découvrir sa puissante magie.~
+@1008 = ~Severian a fière allure à présent, tu ne trouves pas, Dorrane ?~
+@1009 = ~Il est terriblement sexy !~
+@10230 = ~Oh ! Toi aussi, tu t'y mets ? !~
+@1010 = ~*Effectue quelques pas de danse* Il est des nôtres !~
+@1011 = ~Je crois que ça s'arrose !~
+@1012 = ~Je chérirai ce présent et le garderai près de mon cœur, Valyria. Mais si je suis désormais des vôtres, la route m'attend car j'accompagne <CHARNAME>.~ 
+@1013 = ~Nous savons que <CHARNAME> doit accomplir son destin. Elle a et aura besoin de toi jusqu'à la fin Severian, mais tu lui as déjà prouvé ta loyauté au bord de cette rivière. Tu as encore du chemin à parcourir pour vaincre tes démons mais je ne doute pas que tu y parviendras. Soyez forts dans la tempête, tous les deux. Nous prierons Mailikki afin qu'elle vous protège.~
+@1014 = ~Avec un bras blessé, tu n'iras pas loin, Halfshade.~
+@1015 = ~Kalas a raison. Pourquoi ne pas profiter de la douceur de ces lieux pour guérir promptement ?~
+@1016 = ~Nous allons nous quitter à présent mais peut-être nous reverrons-nous si <CHARNAME> décide de séjourner ici quelques temps. Imnesvale est un lieu où nous apprécions de demeurer entre deux voyages.~
+@1017 = ~*Chuchotements* Quoi, déjà ? Mais on vient à peine de commencer !~
+@1018 = ~*Chuchotements* C'est toujours pareil : à chaque fois, Valy fait son speech puis on disparaît comme des voleurs. Adieu, le tonnelet de bière...~
+@1019 = ~(Kalas se rapproche des deux énergumènes.) Vous deux, je vous ai déjà dit de ne pas l'appeler Valy !~
+@1020 = ~Hiiii, l'elfe noir s'énerve !~
+@1021 = ~Foutons le camp !~
+
+// DEPART D'IMNESVALE
+
+@1022 = ~(C'est tard dans la matinée que tout le village s'est rassemblé pour saluer le départ de ses héros. Des poignées de main, des sourires reconnaissants...Ne restent plus à présent que Valyria et ses amis, à qui reviennent les derniers honneurs du départ.)~
+@1023 = ~Ainsi, l'heure est venue de nous dire au revoir...Juste conclusion de notre rencontre. Nous regretterons ton absence au sein de notre compagnie Severian mais le cœur de l'Enfant de Bhaal est bon. Elle saura te baigner de sa lumière comme nous l'aurions fait pour toi.~
+@1024 = ~Mais je vois que Mailikki a su réunir deux âmes solitaires et opposées. Qu'elle vous comble de ses bienfaits et vous apporte protection, à jamais. Adieu mes amis, peut-être nous reverrons-nous un jour.~
+@1025 = ~Ils forment un beau couple, hein Naenia ?~
+@10250 = ~Assurément.~
+@1026 = ~Comme c'est romantique !~
+@10260 = ~Reprenez-vous, ma chère. Ce n'est pas le moment de tourner de l’œil !~
+@1027 = ~Bonne chance à vous. Vous en aurez besoin.~
+
+// ROMANCE FINAL
+
+@1050 = ~<CHARNAME>, Severian...Je déplore que nous nous retrouvions dans des circonstances si sombres. Il semblerait que le Zentharim ait investi Imnesvale : on voit ci et là des gens d'armes portant les symboles de Cyric et de Baine, aller et venir dans le village tandis que leur maître interroge les habitants.~ [#SMusicJ]
+@1051 = ~Ils recherchent Valarym. Ce n'est qu'une question de temps avant qu'ils ne commencent leurs tortures. Tu ne peux pas faire payer à ce village le prix de tes fautes passées.~
+@1052 = ~Et je n'en ai pas l'intention. Qu'il soit du Réseau Noir ou de la Rune Pourpre, il est temps pour moi de tourner définitivement cette page.~
+@1053 = ~Nous n'en savons pas plus à ce sujet : le Zentharim est réputé pour ses espions, peut-être faut-il chercher de ce côté. Sachez maintenant ceci : Sarvaj est un puissant entropiste et son emprise est telle sur nous qu'elle a paralysé notre magie. Nous sommes impuissants mais il ignore encore votre présence en ces lieux et sa magie, bien que puissance, peut se montrer assez capricieuse. C'est votre chance.~
+@2000 = ~Dites un peu...J'ai horreur de me battre contre ce que je ne connais pas. C'est quoi, ce Zentharim ?~
+@2001 = ~Je connais le Zentharim et leur présence ici ne peut signifier que des ennuis. Ils n'auront pas le temps d'agir qu'ils seront déjà morts.~
+@2002 = ~C'est une dangereuse société qui possède des ramifications dans une large part de Féérune mais nous n'avons pas le temps de développer davantage. Prends ceci, <CHARNAME> : ce livre t'en apprendra davantage sur le Réseau Noir.~
+@1062 = ~Nous resterons ici pour protéger le village jusqu'à votre retour.~
+@1054 = ~Foi de nain, il ne sera pas dit qu'on s'amusera sans moi! Nous les aiderons, Dame Valyria : Ma hache est toujours disponible lorsqu'il s'agit de donner des baffes !~
+@1055 = ~"Nous" ? Qui ça, "Nous" ?~
+@1056 = ~*Bock* Toi et moi, bougre d'âne !~
+@1057 = ~Aïe ! Désolé mais je n'étais pas au courant que c'était prévu dans le scénario !~
+@1058 = ~Soit : Pyp et Duorok vous assisteront tandis que nous veillerons sur les habitants du village, du mieux que nous le pourrons. Trouvez leur campement dans les collines. Si Mailikki le veut, vous survivrez. Revenez-nous, nous le souhaitons de tout notre cœur.~
+@1059 = ~Nous reviendrons, belle dame.~
+@1063 = ~(Le jeune homme s'approche de Pyp et Duorok ; il ébouriffe les cheveux du semi-homme, pose la main sur l'épaule du vieux nain.) Merci mes amis. Nous n'en attendions pas moins de vous.~
+@1060 = ~Traquez-le dans les collines, et par les dieux, ne le sous-estimez pas, il en va de votre salut.~
+@1061 = ~Bonne chance. Nous vous attendrons au village.~
+@1064 = ~(Severian vous adresse un dernier regard plein de confiance et d'amour. Il est temps de commencer la traque.)~ 
+
+// Après mort de Sarvaj 
+
+@4000 = ~La Dame des Forêts soit louée : vous voici de retour. Pyp et Duorok nous ont raconté comment vous avez occis Sarvaj. Cet homme-là ne causera plus de mal à Imnesvale : nous vous en remercions.~ [#SMusicS]
+@4001 = ~*Danse* Il est mort ! Il est mort !~
+@4002 = ~*Bock !* On a compris, pas la peine d'en rajouter !~
+@4003 = ~Oh, silence vous deux !~
+@4004 = ~Sarvaj est mort mais la situation reste grave. La Légion Ombreuse a franchi les portails pour venir sur Toril : c'est probablement le cas dans d'autres plans. Jusqu'ici, je n'ai vu que deux gens de ma race : mon...frère et ma sœur. Sarvaj a dit vrai et il est probable qu'il n'est pas le seul traqueur d'halfshade parmi les agents du Zentharim.~
+@4005 = ~Sarvaj a dit que la guerre entre le Zentharim et la Légion Ombreuse était proche. Si je comprends bien, nous voici pris entre deux feux.~
+@4006 = ~Peu m'importe que le Zentharim cherche des noises à la Légion Ombreuse. Ce n'est pas mon problème : je dois retrouver Irenicus, je vous le rappelle. Et cela restera ma priorité.~ // @4027
+@4007 = ~Je commence à en avoir par-dessus la tête de ces querelles imbéciles ! Que le Zentharim et la Légion Ombreuse s'entredéchirent, ce n'est plus mon problème ! Allez, allons-nous en d'ici, j'en ai assez vu.~ // @4027
+@4008 = ~Il est peu probable qu'ils laissent Severian en paix, si Sarvaj a tenu régulièrement Château-Zenthil au courant de ses activités.~
+@4009 = ~Nous ne pouvons envisager de nous mesurer au Réseau Noir, <CHARNAME>. Pas maintenant. Il nous faut partir. Retrouvons Irenicus, faisons-le payer et fuyons, en attendant de trouver un plan pour les contrer.~
+@4010 = ~Severian, tu crois que...~
+@4011 = ~Il n'en est pas question. Severian, nous allons...~
+@4012 = ~(Kalas tourne ses yeux perçants vers vous.) Votre ami a raison, Enfant de Bhaal. L'heure n'est pas encore venue d'affronter une organisation telle que le Zentharim. Vous n'êtes pas prêts.~
+@4013 = ~Accomplissez votre destin, <CHARNAME>. Nous surveillerons le Zentharim pour vous : sous peu, nous nous rendrons à Château-Zenthil pour tâcher de recueillir des informations.~
+@4014 = ~(Pyp tremble sur ses jambes.) "Nous"? ça veut dire...moi aussi ?~
+@4015 = ~(Le nain donne une bourrade au petit-homme.) Bien sûr que tu viens aussi ! A moins que tu ne comptes traîner dans les pattes de <CHARNAME> et de Severian ?~
+@4016 = ~C'est d'accord. Je réglerai mes comptes avec Irenicus et j'attendrai de vos nouvelles.~
+@4017 = ~Je ne marche pas. Je refuse d'avoir encore des dérangés sur les talons. Je crois que finalement, la meilleure solution est que nous nous séparions, Severian.~ // @4028
+@4018 = ~Pyp et Duorok seront nos messagers. Nous vous souhaitons bonne chance, les amis : que Mailikki veille toujours sur vous.~
+@4019 = ~(Severian s'avance vers Valyria, reconnaissant.) Soyez prudents, tous. Je ne sais quoi dire pour vous remercier.~
+@4020 = ~(Valyria sourit calmement à Severian, avant de se tourner vers vous.) Vous êtes pleine de courage, jeune dame. Peut-être aurais-je un jour l'honneur de vous revoir dans des circonstances plus sereines. Adieu.~
+@4021 = ~En avant : nous partons pour Château-Zenthil.~
+@4022 = ~(Pyp donne un coup de coude geignard à Duorok.) Duorok, je n'ai pas envie d'y aller ! Dis quelque chose, n'importe quoi ! Trouve une excuse !~
+@4023 = ~(Le nain se gratte la tête.) Hein...Euh...Quoi ?! Déjà ?! Mais...On n'a même pas eu le temps de boire un coup !~
+@4024 = ~C'est...C'est peut-être la dernière fois que je te vois, Severian. Je...Il faut que je te dise...~
+@4025 = ~Quoi ? Reprenez-vous ma chère, c'est tout à fait malséant !~
+@4026 = ~En route. Nous partons. Adieu, mes amis.~
+@4027 = ~J'ai du mal à croire que cela ne soit pas ton problème, si Severian reste à tes côtés. si Sarvaj a tenu régulièrement Château-Zenthil au courant de ses activités, vous aurez le Zentharim sur le dos, quoi qu'il arrive.~
+@4028 = ~(Le jeune homme vous regarde avec intensité tandis qu'un silence pesant se fait autour de vous.) Alors, c'est ainsi que tu affrontes les épreuves, <CHARNAME> ? (Son visage arbore désormais une expression blessée.) Est-ce vraiment ce que tu veux ? Je conçois que cela puisse être égoïste de te demander encore une fois de partager mes ennuis, mais je t'aime.~
+@4029 = ~(Pyp sautille sur place.) Si <CHARNAME> ne veut plus aider Severian, ça veut dire qu'il pourrait venir avec nous !~
+@4030 = ~(Valyria ne dit rien, se contentant de vous toiser avec peine.)~
+@4031 = ~J'ai pris ma décision : j'affronterai le Zentharim, la Légion Ombreuse et toutes les puissances infernales de Toril s'il le faut ! Tu as raison, Severian : rien ne doit se mettre entre nous. Allons-y, pour le meilleur et pour le pire. Pardonne-moi.~
+@4032 = ~Rien à faire : rien ne pourra me convaincre de risquer encore ma vie pour des choses qui ne me concernent pas.~
+@4033 = ~(Severian se détourne, mi-colère, mi-chagrin.) Je me suis trompé à ton sujet, <CHARNAME>. Tu n'es plus la belle âme que j'ai connue. A moins que ce ne soit les épreuves qui t'aient rendue ainsi. Je partirai avec Valyria : je ne peux pas laisser la situation empirer de la sorte.~
+@4034 = ~Nous ne nous reverrons plus mais je garderai toujours ces tendres souvenirs dans mon cœur...Valyria ?~
+@4035 = ~Tu es le bienvenu parmi nous, Severian.~
+@4036 = ~(Pyp saute de joie.) Severian vient avec nous !~
+@4037 = ~*Bock !* Tu es le semi-homme le plus bête de Toril, tu le sais ça ?~
+@4038 = ~(Severian vous adresse un dernier regard empli de tristesse avant de disparaître avec ses nouveaux compagnons de route. La dernière image que vous conservez de lui est celle de sa cape battant doucement ses mollets au gré de la brise.)~
+@4039 = ~Tu as raison, mon amour. Irenicus reste la priorité. Retrouvons-le et faisons le payer : il sera bien temps ensuite de nous occuper du Zentharim et de la Légion Ombreuse.~
+
+
+
+/////////////////// A L'ATTENTION DE XICLOING \\\\\\\\\\\\\\\\\\\\
+/////////////////// NE PAS TRADUIRE \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+// CABANE DE MERELLA
+// IMPLANTATION SUIVANTS DE MAILIKKI
+// LE CHOIX DE CHARNAME
+
+@1030 = ~Je te salue, Enfant de Bhaal.~ [#SMusicS]
+@1031 = ~(Les suivants de Mailikki se tiennent devant vous, silencieux. Pas un ne manque à l'appel...excepté Severian. Et où que portent vos regards, nulle trace de votre amour. Votre cœur se serre dans votre poitrine mais l'espoir est encore en vous.)~
+@1032 = ~Severian se trouve dans cette maison, que tu vois là derrière. Je ne veux pas te faire languir plus longtemps <CHARNAME>, mais j'aimerais que tu réfléchisses bien avant de franchir le pas de cette porte...~
+@1033 = ~Dans sa grande sagesse, Mailikki l'a emporté et ressuscité pour nous le confier alors qu'il périssait dans le déluge magique. Le sacrifice qu'il a fait pour toi est un acte d'amour des plus purs : son cœur ne lui a pas laissé d'autre choix.~
+@1034 = ~Mais à présent, Enfant de Bhaal, c'est toi qui as le choix : celui d'épargner à Severian d'autres souffrances en renonçant à sa présence à tes côtés et à son amour, chérissant dans ton cœur les tendres images des moments partagés avec lui. Le laissant libre de mener une nouvelle vie dans le giron de Mailikki, à nos côtés. Dans cette sérénité qu'il a toujours recherché.~
+@1035 = ~L'autre choix, tu le connais déjà : franchir cette porte et aller à sa rencontre. L'aimer avec toute la passion qui te caractérise, demi-déesse. Mais accepter le fait que sa présence à tes côtés l'exposera aux griffes de la mort, une nouvelle fois.~
+@1036 = ~C'est un dilemme difficile mais inévitable. Malgré tout, sache que quel que soit le choix que tu feras <CHARNAME>, ce sera au final à Severian de décider. Mailikki l'a plongé dans un sommeil magique qui se dissipera dans quelques heures et nous n'avons pas pu lui parler pour le moment.~
+@103600 = ~C'est une décision cruelle mais tu as raison : c'est inévitable et je dois en passer par là. Je sais que Severian m'aime. Si la mort n'a pas semé le doute dans son âme, alors je vais le rejoindre. Je fais confiance à notre amour.~ // @1041
+@103601 = ~Tu me demandes de choisir entre ma conscience et mes sentiments...Si je dois trancher, alors je choisis de laisser partir Severian. J'ai le cœur brisé mais ce qui est arrivé ne doit plus se reproduire. Je refuse de le laisser finir entre quatre planches au nom de ma cause. Dame Valyria, je t'en prie, abrège ma douleur et emmène-le loin d'ici...~
+@1037 = ~Sage décision, Enfant de Bhaal. Ton sacrifice t'honore autant que le sien envers toi. Nous ne resterons pas plus longtemps ici : sans doute ne nous reverrons-nous jamais. Tu offres un nouveau souffle à Severian, sois louée.~
+@1038 = ~La Dame de la Forêt veille sur toi, mon enfant.~
+@1039 = ~Nous prendrons soin de lui, mon amie...Bonne chance dans ta quête.~
+@1040 = ~Tu vas nous manquer, <CHARNAME> ! Adieu et prends soin de toi, surtout !~
+
+@1041 = ~Tu as choisi la voie des sentiments plutôt que de la raison. C'est une réaction tout à fait humaine et personne ne peut t'en blâmer. Ainsi, tel est ton choix et je te souhaite qu'il le partage. Si cela n'est pas le cas, la déesse saura le guider vers nous.~
+@1042 = ~Va, Enfant de Bhaal, retrouver ton amour. Mailikki veillera toujours sur vous.~
+@1043 = ~ça veut dire que Severian ne nous accompagne pas ? C'est idiot, j'avais dans l'idée de faire une ballade au festival de Nashkell un de ces jours, pour sûr qu'on aurait bien rigolé ensemble !~
+@1044 = ~*Bock !* Tu ne comprendras jamais rien à rien, petit homme ! C'est l'amour, tu peux pas comprendre...Allez, on fout le camp avant que Kalas ne nous rabatte le caquet pour non-respect du protocole !~
+@1045 = ~Aïe ! (Pyp se frotte la tête, mécontent, avant de retrouver sa gaieté coutumière.) Cette fois <CHARNAME>, je ne suis pas certain qu'on se revoit avant un bout de temps...Plein de bonheur, et toutes ces choses, quelle que soit la réponse de ton seigneur !~
+
+
+/////////////////// A L'ATTENTION DE XICLOING \\\\\\\\\\\\\\\\\\\\
+/////////////////// FIN DU PASSAGE A NE PAS TRADUIRE \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+
+
+// JOURNAL
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// Entrée dans le journal
+
+@3000 = ~ Les Chroniques de Severian - Livre 3 : Les Ombres de Toril
+
+La traque de Sarvaj
+
+Nous avons retrouvé les Suivants de Mailikki au village d'Imnesvale. Nos amis ont repéré le campement de Sarvaj dans les collines mais la magie entropique de ce dernier est à ce point puissante qu'elle les paralyse complètement. Nous devons profiter de l'effet de surprise et de la nature capricieuse de ses talents pour prendre l'avantage. Valyria pense que Sarvaj est un espion au service du Zentharim, ayant infiltré la Rune Pourpre dans les dieux savent quel obscur dessein. Il nous appartient de le découvrir, et surtout de lui faire payer.~
+
+
+
+
+
+
+
+
+
+
+
+

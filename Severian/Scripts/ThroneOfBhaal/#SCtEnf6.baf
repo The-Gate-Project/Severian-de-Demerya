@@ -1,0 +1,11 @@
+IF
+  True()
+THEN
+  RESPONSE #100
+    CutSceneId(Player1)
+    Wait(1) 
+    SetGlobal("#SecondMiroirAme","GLOBAL",15) 
+    Wait(1)
+    ActionOverride("#SReflet",StartDialogueNoSet("#Severian"))
+    EndCutSceneMode()
+END

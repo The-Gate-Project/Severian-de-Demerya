@@ -1,0 +1,49 @@
+
+// CHAPITRE 3
+// LA BLESSURE DE SEVERIAN
+// SI CHARNAME N'EST PAS PRETRE
+// SI VARIABLE ROMANCE A 2
+
+@0 = ~(Vous avez regagné l'auberge et vous êtes au chevet de Severian dont l'état, sans être critique, n'en nécessite pas moins des soins urgents. Un coup d'épée adroit lui a transpercé l'épaule et ce qu'il qualifie d'égratignure est en fait une plaie rouge du sang qu'elle laisse encore s'échapper en sillons le long de son bras malgré le bandage sommaire qu'il s'est appliqué après la bataille.)~ 
+@1 = ~(Pour l'heure, le jeune homme vous tourne le dos, dépouillé de son pourpoint, de sa maille et de sa chemise, laissant à vos bons soins son épaule meurtrie. Et tandis que vous trempez un linge propre dans le broc d'eau devant vous, vous ne pouvez vous retenir d'admirer ce corps modelé dans la lutte et le vagabondage, musculeux et souple à la fois dans la lumière mordorée d'une bougie.)~
+@2 = ~(Il ne semble pas éprouver la moindre gêne devant votre silencieux et discret examen qu'il peut ressentir même en vous tournant le dos, et vous adresse la parole en serrant les dents lorsque vous appliquez le linge mouillé sur sa blessure.)~
+@3 = ~Aïe ! Tu manques vraiment de délicatesse, <CHARNAME> ! Tu sais, je peux très bien le faire moi-même.~
+@300 = ~(Vous riez.) Le courageux Severian serait-il douillet ? Et ça m'étonnerait que tu y arrives tout seul, vu l'endroit où Sorkailen t'a touché. Cette ordure ne t'a pas raté, tu sais.~ // Aller au @8
+@301 = ~Vraiment ? Je te conseille de ne pas rechigner ou je vais appuyer encore plus fort !~
+@4 = ~D'accord, d'accord...Je m'en remets à tes mains expertes mais...Aïe !~
+@5 = ~(Severian se redresse sur sa couche, vous prend le linge des mains et éponge lui-même le sang qui coule encore de la blessure, muet de douleur. Vous n'avez visiblement pour lui rien d'une infirmière.)~
+@6 = ~Je crois que je me passerai de tes "soins", <CHARNAME>. Tu ne peux pas être douée en tout, n'est-ce pas ? Passe-moi le cataplasme de gentiane et...laisse-moi seul, s'il te plaît. Je réglerai ça moi-même.~
+@600 = ~(Vous le considérez, éberlué.) Quoi ? Tu en es sûr ? Je ne suis peut-être pas douée mais tu n'es pas un malade très facile non plus, tu sais !...~ // Aller au @7
+@601 = ~Très bien, après tout ce n'est pas de ma faute si tu es incapable de supporter une petite douleur de rien du tout ! (Vous vous retournez néanmoins pour voir Severian tenter péniblement d'atteindre sa blessure derrière l'épaule.)~ 
+@700 = ~Peste ! C'est plus compliqué que je ne croyais...Désolé <CHARNAME>, je suis un peu...tendu. Recommence mais sois douce, je t'en conjure. Cette blessure ne m'est rien : j'ai vu bien pire mais elle me fait tout de même un mal de chien (Vous reprenez vos soins, prenant garde cette fois-ci de lui arracher le moindre cri de douleur.)~ // Aller au @9
+@7 = ~Désolé, je suis un peu...tendu. Recommence mais sois douce, je t'en conjure. Cette blessure ne m'est rien : j'ai vu bien pire mais elle me fait tout de même un mal de chien (Vous reprenez vos soins, prenant garde cette fois-ci de lui arracher le moindre cri de douleur.)~ // Aller au @9
+
+// DOUILLET
+
+@8 = ~Et je n'aurais jamais cru qu'une belle femme comme toi ait autant de délicatesse qu'un hobgobelin...(Et tandis qu'il se plaint, vous laissez courir le linge doux sur sa blessure avec une infinie douceur, soucieuse de sa douleur.)~
+@9 = ~(Severian enfouit son visage dans l'oreiller, soudain paisible.) <CHARNAME>...~
+@10 = ~Je retire tout ce que j'ai dit: tu as des mains de soie (Vous poursuivez vos délicats mouvements, observant ses yeux fermés qui ne laissent rien voir de son ressenti, sous des mèches de cheveux bruns mouillées par de récentes ablutions. Petit à petit, vous voyez ses muscles se détendre, son visage devenir serein. Vos caresses lui sont visiblement un soulagement qui l'empêche pour un temps de ressentir la cuisante morsure de l'épée de Sorkailen.)~
+@11 = ~Jamais femme n'aura été plus douce que toi, <CHARNAME> (Tout ceci vous évoque immanquablement Hariel et vous songez que Severian a été plutôt vague sur la nature du lien qui les unissait. Oserez-vous, après ce qui s'est passé ?.)~ 
+@1100 = ~Severian...Que représentait Hariel pour toi ?...Les halfshades ont dit que vous étiez amants...~ // Amants
+@1101 = ~Tu oublies un peu vite Hariel, je trouve. Il y a encore combien de femmes comme celles-ci dans ta vie, Severian ?~ // Jalousie
+@1102 = ~(Il serait malvenu d'aborder ce sujet dans ce moment de peine. Vous continuez vos soins.)~
+
+// Malvenu
+
+@17 = ~Tu sais <CHARNAME>, Vesthara s'est trompée : je n'ai jamais eu aucun sentiment pour Hariel. En fait, je n'en ai jamais eu pour personne. Elle était ma sœur de cœur même si j'ai pris conscience aujourd'hui que j'étais bien plus qu'un frère pour elle. S'il y a eu de l'amour, ce ne fut pas de moi qu'il vint. Je me souviens, lors du soir où Vesthara a volé l'idole...Hariel avait insisté pour que je la raccompagne jusqu'à sa chambre...Je crois que ce soir-là, elle voulait me dire quelque chose.~
+
+// Jalousie
+
+@1201 = ~Me ferais-tu une crise de jalousie, <CHARNAME> ? Alors rassure-toi : Hariel était ma sœur de cœur même si j'ai pris conscience aujourd'hui que j'étais bien plus qu'un frère pour elle. S'il y a eu de l'amour, ce ne fut pas de moi qu'il vint : les halfshades se sont trompés. Je me souviens, lors du soir où Vesthara a volé l'idole...Hariel avait insisté pour que je la raccompagne jusqu'à sa chambre...Je crois que ce soir-là, elle voulait me dire quelque chose.~
+
+// Amants
+
+@12 = ~(Severian ne cille pas à l'évocation de la jeune elfe tandis que vous continuez vos soins. En revanche, les mots se font attendre.) Hariel était ma sœur de cœur même si j'ai pris conscience aujourd'hui que j'étais bien plus qu'un frère pour elle. S'il y a eu de l'amour, ce ne fut pas de moi qu'il vint : les halfshades se sont trompés. Je me souviens, lors du soir où Vesthara a volé l'idole...Hariel avait insisté pour que je la raccompagne jusqu'à sa chambre...Je crois que ce soir-là, elle voulait me dire quelque chose.~
+
+@1200 = ~Qu'elle...t'aimait ? (Vous terminez le lavage de sa blessure et saisissez le cataplasme de gentiane que Severian a préparé pour apaiser sa douleur et cicatriser les chairs. Vous lui bandez ensuite le bras à l'aide d'une écharpe de chanvre.)~
+@13 = ~(Severian se redresse, retire le cataplasme de vos mains et l'applique lui-même sur sa blessure, réprimant une grimace tandis que ses chairs protestent.) Tu sembles considérer que quelqu'un comme moi mérite d'être aimé. Alors, dis-moi, <CHARNAME>...~
+@14 = ~(Le jeune homme vous saisit une main et il est si près de vous que vous sentez l'odeur de cuir et de sous-bois émanant de ses vêtements. Vous vous noyez dans ses yeux gris d'une surprenante et infinie douceur.)~
+@15 = ~Me croirais-tu si je te disais qu'un vaurien comme moi...~
+@16 = ~(Le jeune homme ne peut finir sa phrase car dans le couloir, vous entendez des protestations et des cris. Severian passe rapidement sa chemise sans prendre le temps de la boutonner et dégaine tandis que vous ouvrez la porte, inquiète.)~ 
+
+

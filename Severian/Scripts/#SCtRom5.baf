@@ -1,0 +1,13 @@
+IF
+  True()
+THEN
+  RESPONSE #100
+    CutSceneId("#Severian")
+    ForceSpellRES("#SRingB",Myself)
+    Wait(4)
+    FaceObject("#SBlaidd")
+    ActionOverride(Player1,FaceObject("#SBlaidd"))
+    ActionOverride("#SBlaidd",FaceObject("#Severian"))
+    SetDialog("#SeverR")
+    Dialog(Player1)
+END

@@ -1,0 +1,33 @@
+IF
+Global("#SecondMiroirAme","GLOBAL",19)
+Global("#SPetitLoup","GLOBAL",1)
+Global("#STeleportation","GLOBAL",0)
+Range(Player1,8)
+THEN
+ RESPONSE #100
+PlaySong(0)
+PlaySound("#SMus25M")
+SetGlobal("#STeleportation","GLOBAL",1)
+Dialogue(Nearest([PC]))
+END
+
+IF
+ Global("#SeverYohnLeBronze","GLOBAL",8)
+ Detect("#Severian")
+THEN
+ RESPONSE #100
+PlaySong(0)
+PlaySound("#SMus25M")
+SetGlobal("#SeverYohnLeBronze","GLOBAL",9)
+StartDialogueNoSet(Player1)
+END
+
+IF 
+Global("#SYagaShuraKill","GLOBAL",3)
+Global("#SVariablePatchPetitLoup","GLOBAL",0)
+Range(Player1,20)
+THEN
+ RESPONSE #100
+SetGlobal("#SVariablePatchPetitLoup","GLOBAL",1)
+StartDialogueNoSet(Player1)
+END

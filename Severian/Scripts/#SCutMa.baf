@@ -1,0 +1,26 @@
+IF
+  Global("#SPerianExists","GLOBAL",0)
+THEN
+  RESPONSE #100
+    CutSceneId(Player1)
+    Wait(1)
+    FadeToColor([20.0],0)
+    Wait(1)
+    ActionOverride("#SevBles",DestroySelf())
+    JumpToPoint([618.547])
+    Face(12)
+    ActionOverride("#Severian",JumpToPoint([645.528])
+    ActionOverride("#Severian",Face(12))
+    CreateCreature("#SBlaidd",[733.520],4)
+    CreateCreature("#SPerian",[708.529],5)
+    SetGlobal("#SPerianExists","GLOBAL",1)
+    SetGlobal("#SBlaiddTrophee","GLOBAL",0)
+    SetGlobal("#SBlaiddAubergeImnesvale","GLOBAL",1)
+    Wait(1)
+    FadeFromColor([20.0],0)
+    Wait(1)
+    OpenDoor("Door01")
+    ActionOverride("#SBlaidd",StartDialogueNoSet(Player1))
+    EndCutSceneMode()
+END
+    

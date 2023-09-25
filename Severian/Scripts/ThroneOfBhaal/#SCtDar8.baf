@@ -1,0 +1,23 @@
+IF
+ True()
+THEN
+ RESPONSE #100
+CutSceneId(Player1)
+SetGlobal("#SDeadDarkhan","GLOBAL",5)
+Wait(1)
+MoveToPoint([1986.1145])
+Face(12)
+ActionOverride("#Severian",MoveToPoint([2025.1146]))
+ActionOverride("#Severian",Face(4))
+MoveViewPoint([2025.1146],FAST)
+Wait(1)
+DisPlayStringHead(Player1,@203250)
+Wait(2)
+ActionOverride("#Severian",StartDialogueNoSet(Player1))
+EndCutSceneMode()
+END
+
+
+
+
+

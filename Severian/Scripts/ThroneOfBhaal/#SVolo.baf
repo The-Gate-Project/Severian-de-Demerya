@@ -1,0 +1,11 @@
+IF
+Detect(Player1)
+Detect("#Severian")
+Global("#SFeuDeCamp","GLOBAL",1)
+THEN 
+ RESPONSE #100
+PlaySong(0)
+PlaySound("#SMus25I")
+SetGlobal("#SFeuDeCamp","GLOBAL",2)
+ActionOverride("#SVolo",StartDialogueNoset(Player1))
+END

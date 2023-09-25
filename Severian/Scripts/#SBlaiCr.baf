@@ -1,0 +1,7 @@
+IF
+  !InMyArea("#Severian")
+THEN
+  RESPONSE #100
+    ForceSpellRES("#SUnSumB",Myself)
+END
+

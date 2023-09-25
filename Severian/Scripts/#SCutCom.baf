@@ -1,0 +1,27 @@
+IF
+  True()
+THEN
+  RESPONSE #100
+    CutSceneId("#Severian")
+    Wait(1)
+    FadeToColor([20.0],0)
+    Wait(1)
+    JumpToPoint([464.1753])
+    Face(11)
+    ActionOverride("#SPeyr",JumpToPoint([660.1708])
+    ActionOverride("#SPeyr",Face(3))
+    ActionOverride(Player1,JumpToPoint([896.1703]))
+    ActionOverride(Player1,Face(3))
+    ActionOverride("#SRune1",JumpToPoint([874.1676]))
+    ActionOverride("#SRune1",Face(3))
+    ActionOverride("#SRune2",JumpToPoint([887.1736]))
+    ActionOverride("#SRune2",Face(3))
+    MoveViewPoint([702.1706],VERY_FAST)
+    Wait(1)
+    FadeFromColor([20.0],0)
+    Wait(1)
+    SetGlobal("#SRomanceFinalCouronne","GLOBAL",12)
+    SetDialog("#SeverJ")
+    EndCutSceneMode()
+END
+    

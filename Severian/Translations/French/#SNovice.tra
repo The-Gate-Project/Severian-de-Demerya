@@ -1,0 +1,29 @@
+
+@0 = ~Vous, quoi que vous ayez l'intention de faire au temple, fuyez ! De mauvaises créatures l'ont investi !~
+@1 = ~Ils...Ils retiennent l'Overgold Renwellyn à l'intérieur, et cette jeune elfe aussi ! J'ai réussi à m'enfuir mais je sens encore leurs rires sur mon échine...Je dois prévenir le Haut Marchand !~
+@2 = ~Du calme ! Dis-moi tout ce que tu sais sur ce qui se passe là-dedans, tout de suite !~
+@3 = ~Je...je dois partir ! Avant qu'ils n'arrivent ! Lâchez-moi !~
+@4 = ~Je te lâcherai quand tu auras répondu à mes questions, prêtre ! Cette elfe, à quoi ressemble-t-elle ? Tu la connais ?~
+@5 = ~C'est une jeune fille blonde et menue, comme beaucoup d'elfes ! Que voulez-vous que je vous dise ? C'est une prêtresse de Mailikki qui a fait un long voyage depuis les Vaux. Nous avons accepté de l'héberger au temple car l'auberge n'avait plus de chambre...Elle cherchait un homme, un certain Valarym et...et puis ces créatures sont arrivées...D'apparence, ils semblent humains, mais par les dieux, sans même l'ombre d'une incantation, les voilà qui se volatilisent dans les airs !~
+@6 = ~N'entrez pas : c'est la mort qui vous attend à l'intérieur !~
+@7 = ~Écarte-toi, car nous allons entrer malgré tout. L'heure est venu de faire face aux fantômes du passé.~
+@8 = ~Vous êtes fous, et on ne pourra pas dire que je ne vous aurais pas prévenu ! Même Renwellyn n'a rien pu faire contre eux, alors que peuvent des aventuriers mal fagotés comme vous ?~
+@9 = ~<CHARNAME>...Une fois poussée cette porte, tu ne pourras plus reculer. Tu le sais n'est-ce pas ? Ceux qui guettent à l'intérieur n'ont rien de plaisantins.~
+@900 = ~Et moi non plus. Mais on dirait que tu les connais bien. A quoi dois-je m'attendre ?~
+@10 = ~Je ne saurais exactement le dire...La seule chose dont je suis sûr, c'est qu'ils m'ont suivi à travers les portails lorsque j'ai quitté Demerya. Notre seule arme sera notre confiance mutuelle, le moment venu. Sans toi, je n'y arriverai pas. J'ai besoin de ta force, de ton courage, de ta volonté.~
+@1000 = ~Je t'ai suivi jusqu'ici, ce n'est pas pour reculer. Ces qualités que tu cites s'ajouteront à ta hardiesse et ta valeur au combat.~ // Entree temple
+@1001 = ~Severian...Quoi qu'il se passe à l'intérieur...Sache que je tiens à toi.~ // Promesse
+@1002 = ~Tout bien considéré, à entendre ce prêtre dégoiser ses avertissements, je suis pratiquement sûre de ressortir de là les pieds devant.~
+@11 = ~(Severian vous prend par les épaules.) Si je t'ai suivi jusque là, <CHARNAME>, ce n'est pas par simple reconversion. J'admire ta force et ton courage : tu n'as jamais reculé devant l'ennemi, quel qu'il soit. Mais je ne peux pas te demander non plus de te sacrifier dans des problèmes qui ne regardent que moi. Si tu me tournes le dos, alors j'entrerai seul. Et si je dois perdre la vie, souviens-toi...de ces bons moments passés ensemble.~
+@1100 = ~(Vous considérez la porte du temple, déridée.) J'espère bien qu'il y en aura d'autres, de ces bons moments. Alors je te suis : nos vies sont liées.~ // Entrée temple
+@1101 = ~Nos routes se séparent ici, Severian. Je dois sauver Imoen et si je meurs, qui le fera ?~
+@12 = ~(Severian sort ses lames.) Très bien, <CHARNAME>. Je me souviendrai de toi comme une forte et belle jeune femme qui a réussi à ravir mon cœur lorsque je n'étais qu'un vaurien sans illusions. Adieu.~
+@13 = ~(Le jeune homme pousse la porte du temple sans plus vous regarder. C'est la dernière image que vous conserverez de lui.)~
+
+// Promesse
+
+@14 = ~(Severian vous prend par les épaules.) Je ne laisserai personne poser la main sur toi. Allons-y : finissons-en une fois pour toutes.~
+
+// Entree temple
+
+@16 = ~Des fous ! Vite, je dois m'en aller...Prévenir le Haut Marchand !~

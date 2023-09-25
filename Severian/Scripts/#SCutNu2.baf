@@ -1,0 +1,26 @@
+IF
+ True()
+THEN
+  RESPONSE #100
+    CutSceneId(Player1)
+    SetGlobal("#SConvivesAppear","GLOBAL",14)
+    Wait(1)
+    FadeToColor([20.0],0)
+    JumpToPoint([4418.2756])
+    ActionOverride(Player2,JumpToPoint([4384.2772]))
+    ActionOverride(Player3,JumpToPoint([4395.2840]))
+    ActionOverride(Player4,JumpToPoint([4433.2843]))
+    ActionOverride(Player5,JumpToPoint([4457.2824]))
+    ActionOverride(Player6,JumpToPoint([4486.2805]))
+    CreateCreature("#SValy",[4379.2718],15)
+    CreateCreature("#SKalas",[4403.2688],15)
+    CreateCreature("#SNaenia",[4460.2651],15)
+    CreateCreature("#SPerian",[4333.2698],15)
+    CreateCreature("#SDuorok",[4304.2712],15)
+    CreateCreature("#SDorra",[4425.2663],15)
+    Wait(1)
+    FadeFromColor([20.0],0)
+    MoveViewPoint([4418.2756],INSTANT)
+    ActionOverride("#SValy",StartDialogueNoSet(Player1))
+    EndCutSceneMode()
+END

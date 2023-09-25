@@ -1,0 +1,95 @@
+IF
+See([PC])
+NumTimesTalkedTo(0)
+THEN
+RESPONSE #100
+Dialogue(Nearest([PC]))
+END
+
+IF
+See([PC])
+Global("#SeverChapDeux","GLOBAL",7)
+THEN
+RESPONSE #100
+Dialogue(Nearest([PC]))
+END
+
+IF
+See([PC])
+Global("#SeverChapDeux","GLOBAL",10)
+THEN
+RESPONSE #100
+Dialogue(Nearest([PC]))
+END
+
+IF
+Global("#SeverChapDeux","GLOBAL",13)
+Allegiance(Myself,ENEMY)
+THEN
+  RESPONSE #100
+    SetGlobal("#SeverChapDeux","GLOBAL",14)
+    ReallyForceSpell(Myself,WIZARD_TRUE_SIGHT)
+    ReallyForceSpell(Myself,WIZARD_FIRE_SHIELD_RED)
+    ReallyForceSpell(Myself,WIZARD_FIRE_SHIELD_BLUE)
+    ReallyForceSpell(Myself,WIZARD_MIRROR_IMAGE)
+    ReallyForceSpell(Myself,WIZARD_PROTECTION_FROM_NORMAL_MISSILES)
+    ReallyForceSpell(Myself,WIZARD_HASTE)
+    ReallyForceSpell(Myself,WIZARD_IMPROVED_INVISIBILITY)
+    ReallyForceSpell(Myself,WIZARD_GLOBE_OF_INVULNERABILITY)
+END
+
+IF
+Global("#SeverChapDeux","GLOBAL",14)
+Global("#SHorrFletrissure","LOCALS",0)
+THEN
+  RESPONSE #100
+  ForceSpell(NearestEnemyOf(Myself),WIZARD_ABI_DALZIMS_HORRID_WILTING)
+  SetGlobal("#HorrFletrissure","LOCALS",1)
+  SetGlobal("#SeverChapDeux","GLOBAL",15)
+END
+
+IF
+Global("#SeverChapDeux","GLOBAL",15)
+Global("#SChaos","LOCALS",0)
+THEN
+  RESPONSE #100
+  ForceSpell(NearestEnemyOf(Myself),WIZARD_CHAOS)
+  SetGlobal("#SChaos","LOCALS",1)
+END
+
+IF
+Global("#SeverChapDeux","GLOBAL",15)
+Global("#SChaineEclair","LOCALS",0)
+THEN
+  RESPONSE #100
+  ForceSpell(NearestEnemyOf(Myself),WIZARD_CHAIN_LIGHTNING)
+  SetGlobal("#SChaineEclair","LOCALS",1)
+END
+
+IF
+Global("#SeverChapDeux","GLOBAL",15)
+Global("#SDissipMagie","LOCALS",0)
+THEN
+  RESPONSE #100
+  ForceSpell(NearestEnemyOf(Myself),WIZARD_DISPEL_MAGIC)
+  SetGlobal("#SDissipMagie","LOCALS",1)
+END 
+
+IF
+Global("#SeverChapDeux","GLOBAL",15)
+Global("#SDoigtMort","LOCALS",0)
+THEN
+  RESPONSE #100
+  ForceSpell(NearestEnemyOf(Myself),WIZARD_FINGER_OF_DEATH)
+  SetGlobal("#SDoigtMort","LOCALS",1)
+END 
+
+IF
+Global("#SeverChapDeux","GLOBAL",15)
+Global("#SMislead","LOCALS",0)
+THEN
+  RESPONSE #100
+  ForceSpell(Myself,WIZARD_MISLEAD)
+  SetGlobal("#SMislead","LOCALS",1)
+END
+

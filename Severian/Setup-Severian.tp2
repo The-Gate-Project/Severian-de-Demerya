@@ -1,0 +1,1777 @@
+BACKUP ~Severian/backup~
+AUTHOR ~Coyote
+        Website : http://www.coyotestudios.fr/
+        Contact : http://www.coyotestudios.fr/contact_5043.htm
+        Livre d'or : http://www.coyotestudios.fr/livre_d_or__5035.htm 
+        Installation ToB requise!
+        Important : consultez le Read-Me !
+        Important : sur oBG2 ou BGT, l'installation préalable du BG2Fixpack (Correctifs Principaux uniquement !) est vivement recommandée et ce, quel que soit le mod. Consultez le chapitre Conditions d'Installation de la rubrique Téléchargement sur le site !~
+README ~Severian/Readme-Severian.html~
+
+ALWAYS
+	ACTION_DEFINE_ARRAY S#_reload BEGIN
+	"Setup"
+	END
+	ACTION_DEFINE_ARRAY S#_noconvert BEGIN END
+	LAF HANDLE_CHARSETS
+		INT_VAR
+		infer_charset = 1
+		STR_VAR
+		tra_path = EVAL ~%MOD_FOLDER%/Translations~
+		noconvert_array = S#_noconvert
+		reload_array = S#_reload
+	END
+		ACTION_IF NOT VARIABLE_IS_SET bg2_chapter BEGIN
+	ACTION_IF GAME_IS ~eet~ BEGIN
+		OUTER_SET bg2_chapter = 12
+	END ELSE BEGIN
+		OUTER_SET bg2_chapter = 0
+	END
+	OUTER_FOR (i=1; i<=10; i=i+1) BEGIN
+		OUTER_SET bg2_chapter = bg2_chapter + 1
+		OUTER_SPRINT name_source ~bg2_chapter_%i%~
+		OUTER_SET EVAL ~%name_source%~ = bg2_chapter
+	END
+	END
+END
+
+LANGUAGE ~Francais~
+	 ~french~
+	 ~Severian/Translations/French/Setup.tra~
+
+BEGIN @0
+
+REQUIRE_FILE ~data/25dialog.bif~ ~Le programme ne détecte pas Throne Of Bhaal. L'expansion Throne Of Bhaal doit être installé pour permettre l'installation de Severian de Demerya.~
+REQUIRE_FILE ~data/25scripts.bif~ ~Le programme ne détecte pas Throne Of Bhaal. Throne Of Bhaal doit être installé pour permettre l'installation de Severian de Demerya.~
+
+// READ-ME
+
+// Ouverture du Read-Me à l'installation
+
+/*AT_INTERACTIVE_NOW ~VIEW Severian/Readme-Severian.html~*/
+
+// AJOUT DU CD_STATE_NOTVALID 
+
+APPEND ~STATE.IDS~ ~0x80101FEF CD_STATE_NOTVALID~
+UNLESS ~CD_STATE_NOTVALID~
+
+// INSTALLATION DES CORRECTIFS  DU BG2 FIX PACK
+
+// Timers
+
+APPEND ~GTIMES.IDS~    ~5 ONE_MINUTE~         UNLESS ~ONE_MINUTE~
+APPEND ~GTIMES.IDS~   ~10 TWO_MINUTES~        UNLESS ~TWO_MINUTES~
+APPEND ~GTIMES.IDS~   ~15 THREE_MINUTES~      UNLESS ~THREE_MINUTES~
+APPEND ~GTIMES.IDS~   ~20 FOUR_MINUTES~       UNLESS ~FOUR_MINUTES~
+APPEND ~GTIMES.IDS~   ~25 FIVE_MINUTES~       UNLESS ~FIVE_MINUTES~
+APPEND ~GTIMES.IDS~   ~30 SIX_MINUTES~        UNLESS ~SIX_MINUTES~
+APPEND ~GTIMES.IDS~   ~35 SEVEN_MINUTES~      UNLESS ~SEVEN_MINUTES~
+APPEND ~GTIMES.IDS~   ~40 EIGHT_MINUTES~      UNLESS ~EIGHT_MINUTES~
+APPEND ~GTIMES.IDS~   ~45 NINE_MINUTES~       UNLESS ~NINE_MINUTES~
+APPEND ~GTIMES.IDS~   ~50 TEN_MINUTES~        UNLESS ~TEN_MINUTES~
+APPEND ~GTIMES.IDS~   ~55 ELEVEN_MINUTES~     UNLESS ~ELEVEN_MINUTES~
+APPEND ~GTIMES.IDS~   ~60 TWELVE_MINUTES~     UNLESS ~TWELVE_MINUTES~
+APPEND ~GTIMES.IDS~   ~65 THIRTEEN_MINUTES~   UNLESS ~THIRTEEN_MINUTES~
+APPEND ~GTIMES.IDS~   ~70 FOURTEEN_MINUTES~   UNLESS ~FOURTEEN_MINUTES~
+APPEND ~GTIMES.IDS~   ~75 FIFTEEN_MINUTES~    UNLESS ~FIFTEEN_MINUTES~
+APPEND ~GTIMES.IDS~   ~80 SIXTEEN_MINUTES~    UNLESS ~SIXTEEN_MINUTES~
+APPEND ~GTIMES.IDS~   ~85 SEVENTEEN_MINUTES~  UNLESS ~SEVENTEEN_MINUTES~
+APPEND ~GTIMES.IDS~   ~90 EIGHTEEN_MINUTES~   UNLESS ~EIGHTEEN_MINUTES~
+APPEND ~GTIMES.IDS~   ~95 NINETEEN_MINUTES~   UNLESS ~NINETEEN_MINUTES~
+APPEND ~GTIMES.IDS~  ~100 TWENTY_MINUTES~     UNLESS ~TWENTY_MINUTES~
+APPEND ~GTIMES.IDS~  ~150 THIRTY_MINUTES~     UNLESS ~THIRTY_MINUTES~
+APPEND ~GTIMES.IDS~  ~200 FORTY_MINUTES~      UNLESS ~FORTY_MINUTES~
+APPEND ~GTIMES.IDS~  ~250 FIFTY_MINUTES~      UNLESS ~FIFTY_MINUTES~
+APPEND ~GTIMES.IDS~  ~300 ONE_HOUR~           UNLESS ~ONE_HOUR~
+APPEND ~GTIMES.IDS~  ~600 TWO_HOURS~          UNLESS ~TWO_HOURS~
+APPEND ~GTIMES.IDS~  ~900 THREE_HOURS~        UNLESS ~THREE_HOURS~
+APPEND ~GTIMES.IDS~ ~1200 FOUR_HOURS~         UNLESS ~FOUR_HOURS~
+APPEND ~GTIMES.IDS~ ~1500 FIVE_HOURS~         UNLESS ~FIVE_HOURS~
+APPEND ~GTIMES.IDS~ ~1800 SIX_HOURS~          UNLESS ~SIX_HOURS~
+APPEND ~GTIMES.IDS~ ~2100 SEVEN_HOURS~        UNLESS ~SEVEN_HOURS~
+APPEND ~GTIMES.IDS~ ~2400 EIGHT_HOURS~        UNLESS ~EIGHT_HOURS~
+APPEND ~GTIMES.IDS~ ~2700 NINE_HOURS~         UNLESS ~NINE_HOURS~
+APPEND ~GTIMES.IDS~ ~3000 TEN_HOURS~          UNLESS ~TEN_HOURS~
+APPEND ~GTIMES.IDS~ ~3300 ELEVEN_HOURS~       UNLESS ~ELEVEN_HOURS~
+APPEND ~GTIMES.IDS~ ~3600 TWELVE_HOURS~       UNLESS ~TWELVE_HOURS~
+APPEND ~GTIMES.IDS~ ~3900 THIRTEEN_HOURS~     UNLESS ~THIRTEEN_HOURS~
+APPEND ~GTIMES.IDS~ ~4200 FOURTEEN_HOURS~     UNLESS ~FOURTEEN_HOURS~
+APPEND ~GTIMES.IDS~ ~4500 FIFTEEN_HOURS~      UNLESS ~FIFTEEN_HOURS~
+APPEND ~GTIMES.IDS~ ~4800 SIXTEEN_HOURS~      UNLESS ~SIXTEEN_HOURS~
+APPEND ~GTIMES.IDS~ ~5100 SEVENTEEN_HOURS~    UNLESS ~SEVENTEEN_HOURS~
+APPEND ~GTIMES.IDS~ ~5400 EIGHTEEN_HOURS~     UNLESS ~EIGHTEEN_HOURS~
+APPEND ~GTIMES.IDS~ ~5700 NINETEEN_HOURS~     UNLESS ~NINETEEN_HOURS~
+APPEND ~GTIMES.IDS~ ~6000 TWENTY_HOURS~       UNLESS ~TWENTY_HOURS~
+APPEND ~GTIMES.IDS~ ~6300 TWENTY_ONE_HOURS~   UNLESS ~TWENTY_ONE_HOURS~
+APPEND ~GTIMES.IDS~ ~6600 TWENTY_TWO_HOURS~   UNLESS ~TWENTY_TWO_HOURS~
+APPEND ~GTIMES.IDS~ ~6900 TWENTY_THREE_HOURS~ UNLESS ~TWENTY_THREE_HOURS~
+
+APPEND ~GTIMES.IDS~   ~6 ONE_ROUND~     UNLESS ~ONE_ROUND~
+APPEND ~GTIMES.IDS~  ~12 TWO_ROUNDS~    UNLESS ~TWO_ROUNDS~
+APPEND ~GTIMES.IDS~  ~18 THREE_ROUNDS~  UNLESS ~THREE_ROUNDS~
+APPEND ~GTIMES.IDS~  ~24 FOUR_ROUNDS~   UNLESS ~FOUR_ROUNDS~
+APPEND ~GTIMES.IDS~  ~30 FIVE_ROUNDS~   UNLESS ~FIVE_ROUNDS~
+APPEND ~GTIMES.IDS~  ~36 SIX_ROUNDS~    UNLESS ~SIX_ROUNDS~
+APPEND ~GTIMES.IDS~  ~42 SEVEN_ROUNDS~  UNLESS ~SEVEN_ROUNDS~
+APPEND ~GTIMES.IDS~  ~48 EIGHT_ROUNDS~  UNLESS ~EIGHT_ROUNDS~
+APPEND ~GTIMES.IDS~  ~54 NINE_ROUNDS~   UNLESS ~NINE_ROUNDS~
+APPEND ~GTIMES.IDS~  ~60 TEN_ROUNDS~    UNLESS ~TEN_ROUNDS~
+APPEND ~GTIMES.IDS~  ~60 ONE_TURN~      UNLESS ~ONE_TURN~
+APPEND ~GTIMES.IDS~ ~120 TWO_TURNS~     UNLESS ~TWO_TURNS~
+APPEND ~GTIMES.IDS~ ~180 THREE_TURNS~   UNLESS ~THREE_TURNS~
+APPEND ~GTIMES.IDS~ ~240 FOUR_TURNS~    UNLESS ~FOUR_TURNS~
+APPEND ~GTIMES.IDS~ ~300 FIVE_TURNS~    UNLESS ~FIVE_TURNS~
+APPEND ~GTIMES.IDS~ ~360 SIX_TURNS~     UNLESS ~SIX_TURNS~
+APPEND ~GTIMES.IDS~ ~420 SEVEN_TURNS~   UNLESS ~SEVEN_TURNS~
+APPEND ~GTIMES.IDS~ ~480 EIGHT_TURNS~   UNLESS ~EIGHT_TURNS~
+APPEND ~GTIMES.IDS~ ~540 NINE_TURNS~    UNLESS ~NINE_TURNS~
+APPEND ~GTIMES.IDS~ ~600 TEN_TURNS~     UNLESS ~TEN_TURNS~
+APPEND ~GTIMES.IDS~ ~900 FIFTEEN_TURNS~ UNLESS ~FIFTEEN_TURNS~
+
+// Actions et Triggers de Script de ToB pour SoA.
+
+APPEND ~ACTION.IDS~ ~31 SpellRES(S:RES*,O:Target*)~
+             UNLESS ~31 SpellRES(S:RES/*,O:Target/*)~
+APPEND ~ACTION.IDS~ ~95 SpellPointRES(S:RES*,P:Target*)~
+             UNLESS ~95 SpellPointRES(S:RES/*,P:Target/*)~
+APPEND ~ACTION.IDS~ ~113 ForceSpellRES(S:RES*,O:Target)~
+             UNLESS ~113 ForceSpellRES(S:RES/*,O:Target)~
+APPEND ~ACTION.IDS~ ~114 ForceSpellPointRES(S:RES*,P:Target)~
+             UNLESS ~114 ForceSpellPointRES(S:RES/*,P:Target)~
+APPEND ~ACTION.IDS~ ~147 RemoveSpellRES(S:Spell*)~
+             UNLESS ~147 RemoveSpellRES(S:Spell/*)~
+APPEND ~ACTION.IDS~ ~160 ApplySpellRES(S:RES*,O:Target)~
+             UNLESS ~160 ApplySpellRES(S:RES/*,O:Target)~
+APPEND ~ACTION.IDS~ ~181 ReallyForceSpellRES(S:RES*,O:Target)~
+             UNLESS ~181 ReallyForceSpellRES(S:RES/*,O:Target)~
+APPEND ~ACTION.IDS~ ~191 SpellNoDecRES(S:RES*,O:Target*)~
+             UNLESS ~191 SpellNoDecRES(S:RES/*,O:Target/*)~
+APPEND ~ACTION.IDS~ ~192 SpellPointNoDecRES(S:RES*,P:Target*)~
+             UNLESS ~192 SpellPointNoDecRES(S:RES/*,P:Target/*)~
+APPEND ~ACTION.IDS~ ~240 ReallyForceSpellDeadRES(S:RES*,O:Target)~
+             UNLESS ~240 ReallyForceSpellDeadRES(S:RES/*,O:Target)~
+APPEND ~ACTION.IDS~ ~318 ForceSpellRangeRES(S:RES*,O:Target)~
+             UNLESS ~318 ForceSpellRangeRES(S:RES/*,O:Target)~
+APPEND ~ACTION.IDS~ ~319 ForceSpellPointRangeRES(S:RES*,P:Target)~
+             UNLESS ~319 ForceSpellPointRangeRES(S:RES/*,P:Target)~
+APPEND ~ACTION.IDS~ ~337 ReallyForceSpellPointRES(S:RES*,P:Target*)~
+             UNLESS ~337 ReallyForceSpellPointRES(S:RES/*,P:Target/*)~
+
+APPEND ~TRIGGER.IDS~ ~0x00A1 SpellCastOnMeRES(S:Spell*,O:Caster*)~
+              UNLESS ~0x00A1 SpellCastOnMeRES(S:Spell/*,O:Caster/*)~
+APPEND ~TRIGGER.IDS~ ~0x0091 SpellCastRES(S:Spell*,O:Object*)~
+              UNLESS ~0x0091 SpellCastRES(S:Spell/*,O:Object/*)~
+APPEND ~TRIGGER.IDS~ ~0x00A6 SpellCastPriestRES(S:Spell*,O:Object*)~
+              UNLESS ~0x00A6 SpellCastPriestRES(S:Spell/*,O:Object/*)~
+APPEND ~TRIGGER.IDS~ ~0x00A7 SpellCastInnateRES(S:Spell*,O:Object*)~
+              UNLESS ~0x00A7 SpellCastInnateRES(S:Spell/*,O:Object/*)~
+APPEND ~TRIGGER.IDS~ ~0x4031 HaveSpellRES(S:Spell*)~
+              UNLESS ~0x4031 HaveSpellRES(S:Spell/*)~
+APPEND ~TRIGGER.IDS~ ~0x40D5 ActuallyInCombat()~
+              UNLESS ~0x40D5 ActuallyInCombat()~
+
+
+COPY_EXISTING ~action.ids~ ~override~
+  REPLACE_TEXTUALLY ~^106 Shout(.*$~ ~106 Shout(I:ID*SHOUTIDS)~
+  BUT_ONLY_IF_IT_CHANGES
+
+COPY_EXISTING ~trigger.ids~ ~override~
+  REPLACE_TEXTUALLY ~/bHeard(O:Object/*,I:ID/*)~
+                    ~Heard(O:Object*,I:ID*SHOUTIDS)~
+  BUT_ONLY_IF_IT_CHANGES
+  
+INCLUDE ~Severian/Scripts/GW_BGEE.tpa~
+
+// Assigne un script de zone aux Ar0509, Ar0811.
+
+COPY_EXISTING ~ar0509.are~ ~override~
+              ~ar0811.are~ ~override~
+  PATCH_IF (SOURCE_SIZE > 0x11b) THEN BEGIN // protects against invalid files
+    READ_ASCII 0x94 "script"
+    PATCH_IF (("" STRING_COMPARE_CASE "%script%" = 0) OR ("None" STRING_COMPARE_CASE "%script%" = 0)) BEGIN
+      WRITE_EVALUATED_ASCII 0x94 ~%SOURCE_RES%~
+    END
+  END
+  BUT_ONLY_IF_IT_CHANGES
+
+// Corrige les offsets des notes de map des Ar0511, Ar0704, Ar0811, Ar1105, Ar1106, Ar2008
+
+COPY_EXISTING ~ar0511.are~ ~override~
+              ~ar0704.are~ ~override~
+              ~ar0811.are~ ~override~
+              ~ar1105.are~ ~override~
+              ~ar1106.are~ ~override~
+              ~ar2008.are~ ~override~
+  READ_LONG  0xc0 "rest_off" ELSE 0
+  READ_LONG  0xc4 "note_off" ELSE 0
+  READ_LONG  0xc8 "note_num" ELSE 213
+  PATCH_IF (("%note_num%" = 0) AND ("%note_off%" != ("%rest_off%" + 0xe4))) BEGIN
+    WRITE_LONG 0xc4 ("%rest_off%" + 0xe4)
+  END
+  BUT_ONLY_IF_IT_CHANGES
+
+// FIN AJOUTS CORRECTIFS BG2 FIXPACK
+
+
+// INSTALLATION KIT DE HORS-LA-LOI POUR SEVERIAN
+
+INCLUDE ~Severian/kit/fl#add_kit_ee.tpa~
+
+COPY ~Severian/kit/#SHOMBR1.EFF~ ~override/#SHOMBR1.EFF~
+COPY ~Severian/kit/#SHOMBR2.EFF~ ~override/#SHOMBR2.EFF~
+COPY ~Severian/kit/#SDOMBR1.EFF~ ~override/#SDOMBR1.EFF~
+COPY ~Severian/kit/#SDOMBR2.EFF~ ~override/#SDOMBR2.EFF~
+COPY ~Severian/kit/#simpinv.spl~ ~override/#simpinv.spl~
+COPY ~Severian/kit/#shitdam.spl~ ~override/#shitdam.spl~
+COPY ~Severian/kit/#sinv.spl~ ~override/#sinv.spl~
+COPY ~Severian/kit/#sinv2.spl~ ~override/#sinv2.spl~
+COPY ~Severian/kit/#sinv3.spl~ ~override/#sinv3.spl~
+COPY ~Severian/kit/#sdetect.spl~ ~override/#sdetect.spl~
+COPY ~Severian/kit/#snospel.spl~ ~override/#snospel.spl~
+
+
+ADD_KIT ~PISTEUR~
+// Types d'armes autorisés - CLASWEAP
+~PISTEUR	1	1	0	0	0	0	0	0~
+// Compétences autorisees - WEAPPROF.2da
+~PISTEUR	5 5 1 0 0 0 0 1 5 5 5 0 5 5 5 5 0 0 0 0 0 0 0 1 1 1 1 1 2 0 2 3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0~
+// Scores de caracteristiques minimaux necessaires - ABCLASRQ.2da
+~PISTEUR	0	0	0	0	0	0~
+// Modificateurs des scores de caracteristique - ABCLSMOD.2da
+~PISTEUR	0	0	0	0	0	0~
+// Caractéristiques minimales pour se jumeler VERS le kit - ABDCDSRQ.2da
+~PISTEUR	0	0	0	0	0	0~
+// Caractéristiques minimales pour se jumeler DEPUIS le kit - ABDCSCRQ.2da
+~PISTEUR	0	0	0	0	0	0~
+// Alignements autorisés - ALIGNMNT.2da
+~PISTEUR	1	1	1	1	1	1	1	1	1	1~
+//Possibilites de jumelage - DUALCLAS.2da
+~PISTEUR	0	0	0	0	0	0~
+// Habilités gagnées par niveau - 2da personnel
+~Severian/kit/#Sclpist.2da~
+//Races et classes acceptants le kit - Kittable.d2a
+~~ //~K_R_H K_R_HE K_R_E~
+// Autorisation d'objets - KITLIST.2DA
+~0x40000010 12~
+// Habiletés de Haut niveau - LUABBR.2DA
+~Ra0~
+//equipement au debut de TOB - 25STWEAP.2DA
+~LEAT14 * HELM07 BAG25 RING06 RING31 CLCK02 BOOT01 AMUL19 BRAC16 BELT06 AROM11,80 * * POTN52,5 POTN4,2 POTN14,5 BOW12 SW1H73 STAF24~
+//description du kit
+SAY @101
+SAY @102
+SAY @103
+
+ACTION_IF GAME_IS ~BGEE SOD BG2EE IWDEE EET~ THEN BEGIN
+	LAF fl#add_kit_ee STR_VAR kit_name = PISTEUR END
+END
+
+// SEVERIAN STARK, UN HORS-LA-LOI POUR BALDUR'S GATE 2
+
+// Soundset et fichier créature
+
+COPY ~Severian/Dialogues/#SBlVide.dlg~ ~override/#SBlaidd.dlg~
+
+COPY ~Severian/Creatures/#Sever.cre~ ~override~
+SAY NAME1 @10
+SAY NAME2 @10
+SAY BIO @12
+SAY BATTLE_CRY1 ~~ [#SBattle]
+SAY LEADER ~~ [#SLeader]
+SAY TIRED ~~ [#STired]
+SAY BORED ~~ [#SBored]
+SAY HURT ~~ [#SHurt]
+SAY SELECT_COMMON1 ~~ [#SSel1]
+SAY SELECT_COMMON2 ~~ [#SSel2]
+SAY SELECT_COMMON3 ~~ [#SSel3]
+SAY SELECT_ACTION1 ~~ [#SAct1]
+SAY SELECT_ACTION2 ~~ [#SAct2]
+SAY SELECT_ACTION3 ~~ [#SAct3]
+SAY DAMAGE ~~ [#SDamage]
+SAY DYING ~~ [#SDying]
+//SAY SELECT_ACTION4 ~~ [HOMME4T]
+//SAY SELECT_ACTION5 ~~ [HOMME4U]
+SAY CRITICAL_HIT ~~ [#SCrHit]
+SAY CRITICAL_MISS ~~ [#SCrMiss]
+SAY TARGET_IMMUNE ~~ [#SImmun]
+SAY INVENTORY_FULL ~~ [#SFull]
+SAY HIDDEN_IN_SHADOWS ~~ [#SHidden]
+SAY ATTACK1 ~~ [#SAttak1]
+//SAY ATTACK2 ~~ [HOMME41]
+SAY SPELL_DISRUPTED ~~ [#SSpell]
+//SAY SELECT_RARE1 ~~ [HOMME4X]
+//SAY SELECT_RARE2 ~~ [HOMME4Y]
+SAY INITIAL_MEETING ~~ [#SMeet1]
+//SAY INTERACTION1 ~~ [HOMME4S]
+//SAY INTERACTION2 ~~ [HOMME4V]
+//SAY MISCELLANEOUS ~~ [HOMME4_]
+SAY AREA_DUNGEON ~~ [#SDungeo]
+SAY AREA_FOREST ~~ [#SForest]
+SAY AREA_DAY ~~ [#SDay]
+SAY AREA_NIGHT ~~ [#SNight]
+WRITE_BYTE  0x246 ~%PISTEUR%~
+
+
+// Compilation des fichiers dialogues de Severian (SoA)
+
+COMPILE ~Severian/Dialogues/#Sever.d~
+    USING ~Severian/Translations/French/#Sever.tra~
+
+COMPILE ~Severian/Dialogues/#SeverJ.d~
+    USING ~Severian/Translations/French/#Sever.tra~
+
+COMPILE ~Severian/Dialogues/#SBSever.d~
+    USING ~Severian/Translations/French/#Sever.tra~
+
+COMPILE ~Severian/Dialogues/#SeverR.d~
+    USING ~Severian/Translations/French/#Sever.tra~
+
+//COPY ~Severian/Spells/#SMalus2.spl~ ~override~
+COPY ~Severian/Spells/#SMalus4.spl~ ~override~ SAY NAME1 ~~ SAY NAME2 ~~
+
+COMPILE ~Severian/Scripts/#Sever.baf~
+    USING ~Severian/Translations/French/#Sever.tra~
+
+// Compilation armure personnelle de Severian
+
+//COPY ~Severian/Items/#SScrlBr.itm~ ~override~ SAY NAME1 @505 SAY NAME2 @505 SAY DESC @506
+COPY ~Severian/Items/#SArmor.itm~ ~override~ SAY NAME1 @510 SAY NAME2 @510 SAY DESC @511
+
+
+// COMPILATION CREATURES POUR THRONE OF BHAAL
+
+// Onyx - Monts de la Marche
+
+COPY ~Severian/Creatures/ThroneOfBhaal/#SOnyx25.cre~ ~override~
+SAY NAME1 @200014
+SAY NAME2 @200014
+COMPILE ~Severian/Dialogues/ThroneOfBhaal/#SOnyx25.d~ 
+    USING ~Severian/Translations/French/#Sever25.tra~
+COMPILE ~Severian/Scripts/ThroneOfBhaal/#SOnyx25.baf~
+
+
+// Valyria (ToB)
+
+COPY ~Severian/Creatures/ThroneOfBhaal/#SValy25.cre~ ~override~
+SAY NAME1 @32
+SAY NAME2 @32
+COMPILE ~Severian/Dialogues/ThroneOfBhaal/#SValy25.d~ 
+    USING ~Severian/Translations/French/#Sever25.tra~
+COMPILE ~Severian/Scripts/ThroneOfBhaal/#SValy25.baf~
+
+
+// COMPILATION FICHIERS DIALOGUES DE SEVERIAN POUR THRONE OF BHAAL
+
+COMPILE ~Severian/Dialogues/ThroneOfBhaal/#Sev25J.d~
+    USING ~Severian/Translations/French/#Sever25.tra~
+
+COMPILE ~Severian/Dialogues/ThroneOfBhaal/#SBSev25.d~
+    USING ~Severian/Translations/French/#Sever25.tra~
+
+// Valyria (ToB)
+
+COPY ~Severian/Creatures/ThroneOfBhaal/#SValy3.cre~ ~override~
+SAY NAME1 @32
+SAY NAME2 @32
+COMPILE ~Severian/Dialogues/ThroneOfBhaal/#SValy3.d~ 
+    USING ~Severian/Translations/French/#Sever25.tra~
+COMPILE ~Severian/Scripts/ThroneOfBhaal/#SValy3.baf~
+
+// COMPILATION FICHIERS DIALOGUES DE SEVERIAN POUR THRONE OF BHAAL (SUITE)
+
+COMPILE ~Severian/Dialogues/ThroneOfBhaal/#Sev25R.d~
+    USING ~Severian/Translations/French/#Sever25.tra~
+
+COMPILE ~Severian/Dialogues/ThroneOfBhaal/#Sev25P.d~
+    USING ~Severian/Translations/French/#Sever25.tra~
+
+COMPILE ~Severian/Scripts/ThroneOfBhaal/#SevD25.baf~
+    USING ~Severian/Translations/French/#Sever25.tra~
+
+// COMPILATION CREATURES POUR THRONE OF BHAAL (SUITE)
+
+
+// Chien Noir
+
+COPY ~Severian/Creatures/ThroneOfBhaal/#SMask.cre~ ~override~
+SAY NAME1 @200000
+SAY NAME2 @200000
+COMPILE ~Severian/Dialogues/ThroneOfBhaal/#SMask.d~ 
+    USING ~Severian/Translations/French/#Sever25.tra~
+COMPILE ~Severian/Scripts/ThroneOfBhaal/#SMask.baf~
+
+// Reflet
+
+COPY ~Severian/Creatures/ThroneOfBhaal/#SReflet.cre~ ~override~
+SAY NAME1 @200001
+SAY NAME2 @200001
+COMPILE ~Severian/Dialogues/ThroneOfBhaal/#SReflet.d~ 
+    USING ~Severian/Translations/French/#Sever25.tra~
+COMPILE ~Severian/Scripts/ThroneOfBhaal/#SReflet.baf~
+
+// Les brigands du Téthyr
+
+COPY ~Severian/Creatures/ThroneOfBhaal/#SWilos.cre~ ~override~
+SAY NAME1 @200002
+SAY NAME2 @200002
+COMPILE ~Severian/Dialogues/ThroneOfBhaal/#SWilos.d~ 
+    USING ~Severian/Translations/French/#Sever25.tra~
+COMPILE ~Severian/Scripts/ThroneOfBhaal/#SWilos.baf~
+
+COPY ~Severian/Creatures/ThroneOfBhaal/#SMaryan.cre~ ~override~
+SAY NAME1 @200005
+SAY NAME2 @200005
+COMPILE ~Severian/Dialogues/ThroneOfBhaal/#SMaryan.d~ 
+    USING ~Severian/Translations/French/#Sever25.tra~
+COMPILE ~Severian/Scripts/ThroneOfBhaal/#SMaryan.baf~
+
+COPY ~Severian/Creatures/ThroneOfBhaal/#SLittle.cre~ ~override~
+SAY NAME1 @200008
+SAY NAME2 @200008
+COMPILE ~Severian/Dialogues/ThroneOfBhaal/#SLittle.d~ 
+    USING ~Severian/Translations/French/#Sever25.tra~
+COMPILE ~Severian/Scripts/ThroneOfBhaal/#SLittle.baf~
+
+COPY ~Severian/Creatures/ThroneOfBhaal/#SPetit.cre~ ~override~
+SAY NAME1 @200004
+SAY NAME2 @200004
+COMPILE ~Severian/Dialogues/ThroneOfBhaal/#SPetit.d~ 
+    USING ~Severian/Translations/French/#Sever25.tra~
+COMPILE ~Severian/Scripts/ThroneOfBhaal/#SPetit.baf~
+
+COPY ~Severian/Creatures/ThroneOfBhaal/#SWilos2.cre~ ~override~
+SAY NAME1 @200002
+SAY NAME2 @200002
+COMPILE ~Severian/Dialogues/ThroneOfBhaal/#SWilos2.d~ 
+    USING ~Severian/Translations/French/#Sever25.tra~
+COMPILE ~Severian/Scripts/ThroneOfBhaal/#SWilos2.baf~
+
+COPY ~Severian/Creatures/ThroneOfBhaal/#SMarya2.cre~ ~override~
+SAY NAME1 @200005
+SAY NAME2 @200005
+COMPILE ~Severian/Dialogues/ThroneOfBhaal/#SMarya2.d~
+    USING ~Severian/Translations/French/#Sever25.tra~
+COMPILE ~Severian/Scripts/ThroneOfBhaal/#SMarya2.baf~
+
+COPY ~Severian/Creatures/ThroneOfBhaal/#SPetit2.cre~ ~override~
+SAY NAME1 @400036
+SAY NAME2 @400036
+COMPILE ~Severian/Dialogues/ThroneOfBhaal/#SPetit2.d~ 
+    USING ~Severian/Translations/French/#Sever25.tra~
+COMPILE ~Severian/Scripts/ThroneOfBhaal/#SPetit2.baf~
+
+COPY ~Severian/Creatures/ThroneOfBhaal/#SPetit3.cre~ ~override~
+SAY NAME1 @400036
+SAY NAME2 @400036
+COMPILE ~Severian/Dialogues/ThroneOfBhaal/#SPetit3.d~ 
+    USING ~Severian/Translations/French/#Sever25.tra~
+COMPILE ~Severian/Scripts/ThroneOfBhaal/#SPetit3.baf~
+
+COPY ~Severian/Creatures/ThroneOfBhaal/#SAzeem.cre~ ~override~
+SAY NAME1 @200006
+SAY NAME2 @200006
+COMPILE ~Severian/Dialogues/ThroneOfBhaal/#SAzeem.d~ 
+    USING ~Severian/Translations/French/#Sever25.tra~
+COMPILE ~Severian/Scripts/ThroneOfBhaal/#SAzeem.baf~
+
+COPY ~Severian/Creatures/ThroneOfBhaal/#SFrere.cre~ ~override~
+SAY NAME1 @200007
+SAY NAME2 @200007
+COMPILE ~Severian/Dialogues/ThroneOfBhaal/#SFrere.d~ 
+    USING ~Severian/Translations/French/#Sever25.tra~
+COMPILE ~Severian/Scripts/ThroneOfBhaal/#SFrere.baf~
+
+// Onyx - chiot
+
+COPY ~Severian/Creatures/ThroneOfBhaal/#SChien.cre~ ~override~
+SAY NAME1 @200010
+SAY NAME2 @200010
+COMPILE ~Severian/Dialogues/ThroneOfBhaal/#SChien.d~
+    USING ~Severian/Translations/French/#Sever25.tra~
+COMPILE ~Severian/Scripts/ThroneOfBhaal/#SChien.baf~
+
+// Severian - enfant
+
+COPY ~Severian/Creatures/ThroneOfBhaal/#SGarc25.cre~ ~override~
+SAY NAME1 @200011
+SAY NAME2 @200011
+COMPILE ~Severian/Dialogues/ThroneOfBhaal/#SGarc25.d~ 
+    USING ~Severian/Translations/French/#Sever25.tra~
+COMPILE ~Severian/Scripts/ThroneOfBhaal/#SGarc25.baf~
+
+// Severian - adolescent
+
+COPY ~Severian/Creatures/ThroneOfBhaal/#SAdo25.cre~ ~override~
+SAY NAME1 @200011
+SAY NAME2 @200011
+COMPILE ~Severian/Dialogues/ThroneOfBhaal/#SAdo25.d~ 
+    USING ~Severian/Translations/French/#Sever25.tra~
+COMPILE ~Severian/Scripts/ThroneOfBhaal/#SAdo25.baf~
+
+// Les catins de l'Arbre à chopines
+
+COPY ~Severian/Creatures/ThroneOfBhaal/#SFahmi.cre~ ~override~
+SAY NAME1 @200021
+SAY NAME2 @200021
+COMPILE ~Severian/Dialogues/ThroneOfBhaal/#SFahmi.d~
+    USING ~Severian/Translations/French/#Sever25.tra~
+COMPILE ~Severian/Scripts/ThroneOfBhaal/#SFahmi.baf~
+
+// Gardes - Arbre à Chopines
+
+COPY ~Severian/Creatures/ThroneOfBhaal/#SGarde2.cre~ ~override~
+SAY NAME1 @200024
+SAY NAME2 @200024
+COMPILE ~Severian/Dialogues/ThroneOfBhaal/#SGarde2.d~ 
+    USING ~Severian/Translations/French/#Sever25.tra~
+COMPILE ~Severian/Scripts/ThroneOfBhaal/#SGarde2.baf~
+
+COPY ~Severian/Creatures/ThroneOfBhaal/#SGarde1.cre~ ~override~
+SAY NAME1 @200025
+SAY NAME2 @200025
+COMPILE ~Severian/Dialogues/ThroneOfBhaal/#SGarde1.d~
+    USING ~Severian/Translations/French/#Sever25.tra~
+COMPILE ~Severian/Scripts/ThroneOfBhaal/#SGarde1.baf~
+
+
+// Les catins de l'Arbre à chopines
+
+COPY ~Severian/Creatures/ThroneOfBhaal/#SJolent.cre~ ~override~
+SAY NAME1 @200022
+SAY NAME2 @200022
+COMPILE ~Severian/Dialogues/ThroneOfBhaal/#SJolent.d~ 
+    USING ~Severian/Translations/French/#Sever25.tra~
+COMPILE ~Severian/Scripts/ThroneOfBhaal/#SJolent.baf~
+
+// Sorkailen (ToB)
+
+COPY ~Severian/Creatures/ThroneOfBhaal/#SRas25.cre~ ~override~
+SAY NAME1 @25
+SAY NAME2 @25
+COMPILE ~Severian/Dialogues/ThroneOfBhaal/#SRas25.d~ 
+    USING ~Severian/Translations/French/#Sever25.tra~
+COMPILE ~Severian/Scripts/ThroneOfBhaal/#SRas25.baf~
+
+// Vesthara (ToB)
+
+COPY ~Severian/Creatures/ThroneOfBhaal/#SVes25.cre~ ~override~
+SAY NAME1 @27
+SAY NAME2 @27
+COMPILE ~Severian/Dialogues/ThroneOfBhaal/#SVes25.d~ 
+    USING ~Severian/Translations/French/#Sever25.tra~
+COMPILE ~Severian/Scripts/ThroneOfBhaal/#SVes25.baf~
+
+
+// Elvaar
+
+COPY ~Severian/Creatures/ThroneOfBhaal/#SElva25.cre~ ~override~
+SAY NAME1 @200012
+SAY NAME2 @200012
+COMPILE ~Severian/Dialogues/ThroneOfBhaal/#SElva25.d~ 
+    USING ~Severian/Translations/French/#Sever25.tra~
+COMPILE ~Severian/Scripts/ThroneOfBhaal/#SElva25.baf~
+
+// Alys Stark
+
+COPY ~Severian/Creatures/ThroneOfBhaal/#SAlys.cre~ ~override~
+SAY NAME1 @200013
+SAY NAME2 @200013
+COMPILE ~Severian/Dialogues/ThroneOfBhaal/#SAlys.d~ 
+    USING ~Severian/Translations/French/#Sever25.tra~
+COMPILE ~Severian/Scripts/ThroneOfBhaal/#SAlys.baf~
+
+// Volo
+
+COPY ~Severian/Creatures/ThroneOfBhaal/#SVolo.cre~ ~override~
+SAY NAME1 @200015
+SAY NAME2 @200015
+COMPILE ~Severian/Dialogues/ThroneOfBhaal/#SVolo.d~ 
+    USING ~Severian/Translations/French/#Sever25.tra~
+COMPILE ~Severian/Scripts/ThroneOfBhaal/#SVolo.baf~
+
+// Scène du feu de camp (Amkethran)
+
+COPY ~Severian/Creatures/ThroneOfBhaal/#SChaFeu.cre~ ~override~
+SAY NAME1 @46
+SAY NAME2 @46
+COMPILE ~Severian/Dialogues/ThroneOfBhaal/#SChaFeu.d~ 
+    USING ~Severian/Translations/French/#Sever25.tra~
+COMPILE ~Severian/Scripts/ThroneOfBhaal/#SChaFeu.baf~
+
+COPY ~Severian/Creatures/ThroneOfBhaal/#SevFeu.cre~ ~override~
+SAY NAME1 @45
+SAY NAME2 @45
+COMPILE ~Severian/Dialogues/ThroneOfBhaal/#SevFeu.d~ 
+    USING ~Severian/Translations/French/#Sever25.tra~
+COMPILE ~Severian/Scripts/ThroneOfBhaal/#SevFeu.baf~
+
+// Severian - torture
+
+COPY ~Severian/Creatures/ThroneOfBhaal/#SevTor.cre~ ~override~
+SAY NAME1 @45
+SAY NAME2 @45
+COMPILE ~Severian/Dialogues/ThroneOfBhaal/#SevTor.d~ 
+    USING ~Severian/Translations/French/#Sever25.tra~
+COMPILE ~Severian/Scripts/ThroneOfBhaal/#SevTor.baf~
+
+// Adrastar
+
+COPY ~Severian/Creatures/ThroneOfBhaal/#SRhyad.cre~ ~override~
+SAY NAME1 @200018
+SAY NAME2 @200018
+COMPILE ~Severian/Dialogues/ThroneOfBhaal/#SRhyad.d~ 
+    USING ~Severian/Translations/French/#Sever25.tra~
+COMPILE ~Severian/Scripts/ThroneOfBhaal/#SRhyad.baf~
+
+// Gardes de Fort-Terreur
+
+COPY ~Severian/Creatures/ThroneOfBhaal/#SInq1.cre~ ~override~
+SAY NAME1 @200016
+SAY NAME2 @200016
+COMPILE ~Severian/Dialogues/ThroneOfBhaal/#SInq1.d~ 
+    USING ~Severian/Translations/French/#Sever25.tra~
+COMPILE ~Severian/Scripts/ThroneOfBhaal/#SInq1.baf~
+
+COPY ~Severian/Creatures/ThroneOfBhaal/#SInq2.cre~ ~override~
+SAY NAME1 @200016
+SAY NAME2 @200016
+
+// Severian - prisonnier
+
+COPY ~Severian/Creatures/ThroneOfBhaal/#SevPri.cre~ ~override~
+SAY NAME1 @45
+SAY NAME2 @45
+COMPILE ~Severian/Dialogues/ThroneOfBhaal/#SevPri.d~ 
+    USING ~Severian/Translations/French/#Sever25.tra~
+COMPILE ~Severian/Scripts/ThroneOfBhaal/#SevPri.baf~
+
+// Adrastar - Version Garde 
+
+COPY ~Severian/Creatures/ThroneOfBhaal/#SInq4.cre~ ~override~
+SAY NAME1 @200018
+SAY NAME2 @200018
+COMPILE ~Severian/Dialogues/ThroneOfBhaal/#SInq4.d~ 
+    USING ~Severian/Translations/French/#Sever25.tra~
+COMPILE ~Severian/Scripts/ThroneOfBhaal/#SInq4.baf~
+
+// Grand Inquisiteur Mordred
+
+COPY ~Severian/Creatures/ThroneOfBhaal/#SMord.cre~ ~override~
+SAY NAME1 @200017
+SAY NAME2 @200017
+COMPILE ~Severian/Dialogues/ThroneOfBhaal/#SMord.d~ 
+    USING ~Severian/Translations/French/#Sever25.tra~
+COMPILE ~Severian/Scripts/ThroneOfBhaal/#SMord.baf~
+
+// Bourreau de Fort-Terreur
+
+COPY ~Severian/Creatures/ThroneOfBhaal/#SBourr.cre~ ~override~
+SAY NAME1 @200019
+SAY NAME2 @200019
+COMPILE ~Severian/Dialogues/ThroneOfBhaal/#SBourr.d~ 
+    USING ~Severian/Translations/French/#Sever25.tra~
+COMPILE ~Severian/Scripts/ThroneOfBhaal/#SBourr.baf~
+
+// Garde de Fort-Terreur
+
+COPY ~Severian/Creatures/ThroneOfBhaal/#SInq3.cre~ ~override~
+SAY NAME1 @200016
+SAY NAME2 @200016
+COMPILE ~Severian/Dialogues/ThroneOfBhaal/#SInq3.d~ 
+    USING ~Severian/Translations/French/#Sever25.tra~
+COMPILE ~Severian/Scripts/ThroneOfBhaal/#SInq3.baf~
+
+// Lord Darkhan
+
+COPY ~Severian/Creatures/ThroneOfBhaal/#SMask2.cre~ ~override~
+SAY NAME1 @200020
+SAY NAME2 @200020
+COMPILE ~Severian/Dialogues/ThroneOfBhaal/#SMask2.d~ 
+    USING ~Severian/Translations/French/#Sever25.tra~
+COMPILE ~Severian/Scripts/ThroneOfBhaal/#SMask2.baf~
+
+
+
+// COMBAT FINAL - ILLUSIONS
+
+COPY ~Severian/Creatures/ThroneOfBhaal/#Sarvaj.cre~ ~override~
+SAY NAME1 @43
+SAY NAME2 @43
+COMPILE ~Severian/Dialogues/ThroneOfBhaal/#Sarvaj.d~ 
+    USING ~Severian/Translations/French/#Sever25.tra~
+COMPILE ~Severian/Scripts/ThroneOfBhaal/#Sarvaj.baf~
+
+COPY ~Severian/Creatures/ThroneOfBhaal/#SBodhi.cre~ ~override~
+SAY NAME1 @400035
+SAY NAME2 @400035
+COMPILE ~Severian/Dialogues/ThroneOfBhaal/#SBodhi.d~ 
+    USING ~Severian/Translations/French/#Sever25.tra~
+COMPILE ~Severian/Scripts/ThroneOfBhaal/#SBodhi.baf~
+
+COPY ~Severian/Creatures/ThroneOfBhaal/#SIren.cre~ ~override~
+SAY NAME1 @400034
+SAY NAME2 @400034
+COMPILE ~Severian/Dialogues/ThroneOfBhaal/#SIren.d~ 
+    USING ~Severian/Translations/French/#Sever25.tra~
+COMPILE ~Severian/Scripts/ThroneOfBhaal/#SIren.baf~
+
+COPY ~Severian/Creatures/ThroneOfBhaal/#Sarev.cre~ ~override~
+SAY NAME1 @400033
+SAY NAME2 @400033
+COMPILE ~Severian/Dialogues/ThroneOfBhaal/#Sarev.d~ 
+    USING ~Severian/Translations/French/#Sever25.tra~
+COMPILE ~Severian/Scripts/ThroneOfBhaal/#Sarev.baf~
+
+COPY ~Severian/Creatures/ThroneOfBhaal/#SRasEnd.cre~ ~override~
+SAY NAME1 @25
+SAY NAME2 @25
+COMPILE ~Severian/Dialogues/ThroneOfBhaal/#SRasEnd.d~ 
+    USING ~Severian/Translations/French/#Sever25.tra~
+COMPILE ~Severian/Scripts/ThroneOfBhaal/#SRasEnd.baf~
+
+COPY ~Severian/Creatures/ThroneOfBhaal/#SVesEnd.cre~ ~override~
+SAY NAME1 @27
+SAY NAME2 @27
+COMPILE ~Severian/Dialogues/ThroneOfBhaal/#SVesEnd.d~ 
+    USING ~Severian/Translations/French/#Sever25.tra~
+COMPILE ~Severian/Scripts/ThroneOfBhaal/#SVesEnd.baf~
+
+
+// COMPILATION CREATURES POUR SHADOWS OF AMN
+
+// Le Zentharim 
+
+COPY ~Severian/Creatures/#SZhorin.cre~ ~override~
+SAY NAME1 @42
+SAY NAME2 @42
+COMPILE ~Severian/Dialogues/#SZhorin.d~ 
+    USING ~Severian/Translations/French/#SZhorin.tra~
+COMPILE ~Severian/Scripts/#SZhorin.baf~
+
+COPY ~Severian/Creatures/#SDilyn.cre~ ~override~
+SAY NAME1 @42
+SAY NAME2 @42
+COMPILE ~Severian/Dialogues/#SDilyn.d~ 
+    USING ~Severian/Translations/French/#SDilyn.tra~
+COMPILE ~Severian/Scripts/#SDilyn.baf~
+
+COPY ~Severian/Creatures/#SAlyo.cre~ ~override~
+SAY NAME1 @42
+SAY NAME2 @42
+COMPILE ~Severian/Dialogues/#SAlyo.d~ 
+    USING ~Severian/Translations/French/#SAlyo.tra~
+COMPILE ~Severian/Scripts/#SAlyo.baf~
+
+COPY ~Severian/Creatures/#SThor.cre~ ~override~
+SAY NAME1 @42
+SAY NAME2 @42
+COMPILE ~Severian/Dialogues/#SThor.d~ 
+    USING ~Severian/Translations/French/#SThor.tra~
+COMPILE ~Severian/Scripts/#SThor.baf~
+
+// Sarvaj l'Entropiste
+
+COPY ~Severian/Creatures/#SPeyr.cre~ ~override~
+SAY NAME1 @43
+SAY NAME2 @43
+COMPILE ~Severian/Dialogues/#SPeyr.d~ 
+    USING ~Severian/Translations/French/#SPeyr.tra~
+COMPILE ~Severian/Scripts/#SPeyr.baf~
+USING ~Severian/Translations/French/#SPeyr.tra~
+
+// Louve
+
+COPY ~Severian/Creatures/#SLouve.cre~ ~override~
+SAY NAME1 @40
+SAY NAME2 @40
+COMPILE ~Severian/Dialogues/#SLouve.d~ 
+    USING ~Severian/Translations/French/#SLouve.tra~
+COMPILE ~Severian/Scripts/#SLouve.baf~
+
+
+// Onyx (synchronisation)
+
+COPY ~Severian/Onyx/cre/#SBlai08.cre~ ~override~ SAY NAME1 @11 SAY NAME2 @11
+COPY ~Severian/Onyx/cre/#SBlai09.cre~ ~override~ SAY NAME1 @11 SAY NAME2 @11
+COPY ~Severian/Onyx/cre/#SBlai10.cre~ ~override~ SAY NAME1 @11 SAY NAME2 @11
+COPY ~Severian/Onyx/cre/#SBlai11.cre~ ~override~ SAY NAME1 @11 SAY NAME2 @11
+COPY ~Severian/Onyx/cre/#SBlai12.cre~ ~override~ SAY NAME1 @11 SAY NAME2 @11
+COPY ~Severian/Onyx/cre/#SBlai13.cre~ ~override~ SAY NAME1 @11 SAY NAME2 @11
+COPY ~Severian/Onyx/cre/#SBlai14.cre~ ~override~ SAY NAME1 @11 SAY NAME2 @11
+COPY ~Severian/Onyx/cre/#SBlai15.cre~ ~override~ SAY NAME1 @11 SAY NAME2 @11
+COPY ~Severian/Onyx/cre/#SBlai16.cre~ ~override~ SAY NAME1 @11 SAY NAME2 @11
+COPY ~Severian/Onyx/cre/#SBlai17.cre~ ~override~ SAY NAME1 @11 SAY NAME2 @11
+COPY ~Severian/Onyx/cre/#SBlai18.cre~ ~override~ SAY NAME1 @11 SAY NAME2 @11
+COPY ~Severian/Onyx/cre/#SBlai19.cre~ ~override~ SAY NAME1 @11 SAY NAME2 @11
+COPY ~Severian/Onyx/cre/#SBlai20.cre~ ~override~ SAY NAME1 @11 SAY NAME2 @11
+COPY ~Severian/Onyx/cre/#SBlai21.cre~ ~override~ SAY NAME1 @11 SAY NAME2 @11
+COPY ~Severian/Onyx/cre/#SBlai22.cre~ ~override~ SAY NAME1 @11 SAY NAME2 @11
+COPY ~Severian/Onyx/cre/#SBlai23.cre~ ~override~ SAY NAME1 @11 SAY NAME2 @11
+COPY ~Severian/Onyx/cre/#SBlai24.cre~ ~override~ SAY NAME1 @11 SAY NAME2 @11
+COPY ~Severian/Onyx/cre/#SBlai25.cre~ ~override~ SAY NAME1 @11 SAY NAME2 @11
+COPY ~Severian/Onyx/cre/#SBlai26.cre~ ~override~ SAY NAME1 @11 SAY NAME2 @11
+COPY ~Severian/Onyx/cre/#SBlai27.cre~ ~override~ SAY NAME1 @11 SAY NAME2 @11
+COPY ~Severian/Onyx/cre/#SBlai28.cre~ ~override~ SAY NAME1 @11 SAY NAME2 @11
+COPY ~Severian/Onyx/cre/#SBlai29.cre~ ~override~ SAY NAME1 @11 SAY NAME2 @11
+COPY ~Severian/Onyx/cre/#SBlai30.cre~ ~override~ SAY NAME1 @11 SAY NAME2 @11
+COPY ~Severian/Onyx/cre/#SBlai31.cre~ ~override~ SAY NAME1 @11 SAY NAME2 @11
+COPY ~Severian/Onyx/cre/#SBlai32.cre~ ~override~ SAY NAME1 @11 SAY NAME2 @11
+COPY ~Severian/Onyx/cre/#SBlai33.cre~ ~override~ SAY NAME1 @11 SAY NAME2 @11
+COPY ~Severian/Onyx/cre/#SBlai34.cre~ ~override~ SAY NAME1 @11 SAY NAME2 @11
+COPY ~Severian/Onyx/cre/#SBlai35.cre~ ~override~ SAY NAME1 @11 SAY NAME2 @11
+COPY ~Severian/Onyx/cre/#SBlai36.cre~ ~override~ SAY NAME1 @11 SAY NAME2 @11
+COPY ~Severian/Onyx/cre/#SBlai37.cre~ ~override~ SAY NAME1 @11 SAY NAME2 @11
+COPY ~Severian/Onyx/cre/#SBlai38.cre~ ~override~ SAY NAME1 @11 SAY NAME2 @11
+COPY ~Severian/Onyx/cre/#SBlai39.cre~ ~override~ SAY NAME1 @11 SAY NAME2 @11
+COPY ~Severian/Onyx/cre/#SBlai40.cre~ ~override~ SAY NAME1 @11 SAY NAME2 @11
+COPY ~Severian/Onyx/cre/#SBlaidd.cre~ ~override~ SAY NAME1 @11 SAY NAME2 @11
+COPY ~Severian/Onyx/cre/#SBlaiCr.cre~ ~override~ SAY NAME1 @11 SAY NAME2 @11
+COPY ~Severian/Onyx/eff~ ~override~
+COMPILE ~Severian/Dialogues/#SBlaidd.d~
+    USING ~Severian/Translations/French/#SBlaidd.tra~
+COMPILE ~Severian/Dialogues/#SKikOut.d~
+    USING ~Severian/Translations/French/#SBlaidd.tra~
+COPY ~Severian/Spells/#SUnSumB.spl~ ~override~
+COPY ~Severian/Items/#SBlClaw.itm~ ~override~
+COMPILE ~Severian/Scripts/#SBlaidd.baf~
+COMPILE ~Severian/Scripts/#SBlaiCr.baf~
+
+// Grutt-la-Montagne et ses mercenaires
+
+COPY ~Severian/Creatures/#SHugor.cre~ ~override~
+SAY NAME1 @20
+SAY NAME2 @20
+SAY SELECT_COMMON1 	~~ [OGREM01]
+
+COMPILE ~Severian/Dialogues/#SHugor.d~
+    USING ~Severian/Translations/French/#SHugor.tra~
+COMPILE ~Severian/Dialogues/#SNoName.d~
+    USING ~Severian/Translations/French/#SHugor.tra~
+
+
+COPY ~Severian/Creatures/#SMerc1.cre~ ~override~
+SAY NAME1 @21
+SAY NAME2 @21
+
+COPY ~Severian/Creatures/#SMerc2.cre~ ~override~
+SAY NAME1 @21
+SAY NAME2 @21
+
+COMPILE ~Severian/Scripts/#SMerc.baf~
+COMPILE ~Severian/Scripts/#SHugor.baf~
+
+// Ilkar & Isabel
+
+COPY ~Severian/Creatures/#SIsab.cre~ ~override~
+SAY NAME1 @23
+SAY NAME2 @23
+COPY ~Severian/Creatures/#SIsaRat.cre~ ~override~
+SAY NAME1 @23
+SAY NAME2 @23
+COMPILE ~Severian/Dialogues/#SIsab.d~
+    USING ~Severian/Translations/French/#SIsab.tra~
+COMPILE ~Severian/Scripts/#SIsab.baf~
+
+COPY ~Severian/Creatures/#SMekhr.cre~ ~override~
+SAY NAME1 @22
+SAY NAME2 @22
+COMPILE ~Severian/Dialogues/#SMekhr.d~
+    USING ~Severian/Translations/French/#SMekhr.tra~
+
+// TRANS TRIGGER
+
+// Ajout d'un Trans trigger vers #STran2008 : Temple de Waukyne sans acteur et sans musique d'ambiance
+
+COPY ~Severian/Areas/#SAR2008.are~ ~override~
+COPY_EXISTING ~AR2000.are~ ~override/AR2000.are~      //Area to be modifyed
+
+  //Prepare for the area modification.
+
+//Read info on current numbers of triggers and vertices
+READ_SHORT ~0x05a~ ~#ofTrigg~
+READ_SHORT ~0x080~ ~#ofVerti~
+
+//Read current address marks for all parts that will be shifted by new content
+READ_SHORT ~0x05c~ ~triggOff~
+READ_SHORT ~0x060~ ~spawnOff~
+READ_SHORT ~0x068~ ~entraOff~
+READ_SHORT ~0x070~ ~contaOff~
+READ_SHORT ~0x078~ ~itemsOff~
+READ_SHORT ~0x084~ ~ambiaOff~
+READ_SHORT ~0x0A8~ ~doorsOff~
+READ_SHORT ~0x07c~ ~vertiOff~
+READ_SHORT ~0x0B0~ ~animaOff~
+READ_SHORT ~0x0BC~ ~songsOff~
+READ_SHORT ~0x0C0~ ~restcOff~
+READ_SHORT ~0x0C4~ ~automOff~
+
+//Increase the number of triggers (adding one more)
+WRITE_SHORT 0x05a (~%#ofTrigg%~ + 1)
+
+//Correct address marks for offsets shifted by new trigger
+WRITE_SHORT 0x060 (~%spawnOff%~ + 196)
+WRITE_SHORT 0x068 (~%entraOff%~ + 196)
+WRITE_SHORT 0x070 (~%contaOff%~ + 196)
+WRITE_SHORT 0x078 (~%itemsOff%~ + 196)
+WRITE_SHORT 0x084 (~%ambiaOff%~ + 196)
+WRITE_SHORT 0x0A8 (~%doorsOff%~ + 196)
+WRITE_SHORT 0x07c (~%vertiOff%~ + 196)
+
+//Adding a bunch of blank bytes as a new trigger placeholder
+INSERT_BYTES (~%triggOff%~ + ~%#ofTrigg%~ * 196) 196
+
+//Set up the vertices you'll be adding.
+SET ~newVert~ = 4          //write here number of vertices you're adding
+WRITE_SHORT 0x080 (~%#ofVerti%~ + ~%newVert%~)
+//where last number in argument being the quantity of vertices you're adding
+
+INSERT_BYTES (~%vertiOff%~ + ~%#ofVerti%~ * 4 + 196) (~%newVert%~ * 4)
+//where argument equals four times number of vertices
+
+//Correct address marks for offsets shifted by both new trigger and new vertices
+WRITE_SHORT 0x0B0 (~%animaOff%~ + 196 + (~%newVert%~ * 4))
+WRITE_SHORT 0x0BC (~%songsOff%~ + 196 + (~%newVert%~ * 4))
+WRITE_SHORT 0x0C0 (~%restcOff%~ + 196 + (~%newVert%~ * 4))
+WRITE_SHORT 0x0C4 (~%automOff%~ + 196 + (~%newVert%~ * 4))
+//where last part of argument being 196 (bytes for trigger) plus four times number of added vertices
+
+  //Prep work is done.
+
+  //Now, you can start adding in the actual code for new trigger
+
+//Name
+WRITE_ASCII (~%triggOff%~ + ~%#ofTrigg%~ * 196) ~#STran2008~  //Name of your trigger
+
+//Trigger Type
+WRITE_SHORT (~%triggOff%~ + ~%#ofTrigg%~ * 196 + 32) 2    //where 0 stands for Proximity, 1 for Info Point and 2 for Travel (aka Exit) trigger
+
+//Define bounding box:
+WRITE_LONG (~%triggOff%~ + ~%#ofTrigg%~ * 196 + 34) 803   //Bounding box points:
+WRITE_LONG (~%triggOff%~ + ~%#ofTrigg%~ * 196 + 36) 1981  //Take them from modded in usual way (created in IETME and wieved in NI) area
+WRITE_LONG (~%triggOff%~ + ~%#ofTrigg%~ * 196 + 38) 861   //OR find manually by checking your vertices coords: this 4 entries is organized
+WRITE_LONG (~%triggOff%~ + ~%#ofTrigg%~ * 196 + 40) 2083  //in following order: smallest X, smallest Y, largest X, largest Y of all new vertices
+
+//Set number of vertices for a new trigger.
+WRITE_SHORT (~%triggOff%~ + ~%#ofTrigg%~ * 196 + 42) ~%newVert%~
+
+//Index of first vertex for this info point (no +1 adding because index of first vertex is 0)
+WRITE_LONG (~%triggOff%~ + ~%#ofTrigg%~ * 196 + 44) ~%#ofVerti%~
+
+//Trigger Icon
+WRITE_SHORT (~%triggOff%~ + ~%#ofTrigg%~ * 196 + 52) 30    //where 22 stands for Info Question Mark, 28 for Inside Exit (stair) and 30 for Outside Exit (door)
+//All possible icons could be find in cursors.bam that is the part of GUIbam.bif  file.
+
+//Destination Area RESREF
+WRITE_ASCII  (~%triggOff%~ + ~%#ofTrigg%~ * 196 + 56) ~#SAR2008~  //Resref of the destination area, if this is an exit. Unused for other object types.
+
+//Where we will appear if we pass through this door
+WRITE_ASCII (~%triggOff%~ + ~%#ofTrigg%~ * 196 + 64) ~Exit2000~    //Name of the entrance within the destination area. Only used for "exit" objects.
+
+//Flags:
+WRITE_BYTE (~%triggOff%~ + ~%#ofTrigg%~ * 196 + 96) 04     // Party required
+WRITE_BYTE (~%triggOff%~ + ~%#ofTrigg%~ * 196 + 96 + 1) 02 // Cannot be passed by NPC
+
+//Trigger Text
+WRITE_LONG (~%triggOff%~ + ~%#ofTrigg%~ * 196 + 100) 0xFFFFFFFF   // 0xFFFFFFFF <--> -1. The text associated with this "info point", if this is actually an "info point" (i.e. if type==01).
+//Replace the argument with your chosen dialog string for Info Points.
+//You can use SAY here, just replace "WRITE_LONG" with "SAY" and "5185" with "@#"
+
+WRITE_LONG (~%triggOff%~ + ~%#ofTrigg%~ * 196 + 104) 0    //Trap Detection - % of difficulty
+
+WRITE_LONG (~%triggOff%~ + ~%#ofTrigg%~ * 196 + 106) 0    //Trap Removal - % of difficulty
+
+WRITE_LONG (~%triggOff%~ + ~%#ofTrigg%~ * 196 + 108) 0    //Is Trapped Flag: 00 - No, 01 - Yes
+
+WRITE_LONG (~%triggOff%~ + ~%#ofTrigg%~ * 196 + 110) 0    //Trap Already Detected Flag: 00 - No, 01 - Yes
+
+//Trap spell will be launched from there when the trap is activated:
+WRITE_LONG (~%triggOff%~ + ~%#ofTrigg%~ * 196 + 112) 0    //Launcher X coord
+WRITE_LONG (~%triggOff%~ + ~%#ofTrigg%~ * 196 + 114) 0    //Launcher Y coord
+
+WRITE_ASCII  (~%triggOff%~ + ~%#ofTrigg%~ * 196 + 124) ~None~  //Associated Script - resref without extention
+
+//Now, write the new vertices.
+WRITE_SHORT (~%vertiOff%~ + ~%#ofVerti%~ * 4 + 196) 803       //This is an array of points which are used to create the outlines of trigger/info/exit regions
+WRITE_SHORT (~%vertiOff%~ + ~%#ofVerti%~ * 4 + 196 + 2) 2083  //Format is point 1 X coord, point 1 Y coord, point 2 X coord, point 2 Y coord etc
+WRITE_SHORT (~%vertiOff%~ + ~%#ofVerti%~ * 4 + 196 + 4) 861   //Take them from modded in usual way (created in IETME and wieved in NI) area
+WRITE_SHORT (~%vertiOff%~ + ~%#ofVerti%~ * 4 + 196 + 6) 2043  //OR find manually:
+WRITE_SHORT (~%vertiOff%~ + ~%#ofVerti%~ * 4 + 196 + 8) 861  //by launching game, finding required area manually by setting cursor over
+WRITE_SHORT (~%vertiOff%~ + ~%#ofVerti%~ * 4 + 196 + 10) 1981 //desired point and pressing "x" key
+WRITE_SHORT (~%vertiOff%~ + ~%#ofVerti%~ * 4 + 196 + 12) 803  //Of course, you can change number of vertices to match your trigger
+WRITE_SHORT (~%vertiOff%~ + ~%#ofVerti%~ * 4 + 196 + 14) 2010 //just follow this pattern of increasing offset for each entry for 2 bytes
+// Date 10/05/2008
+// From "Adding a trigger to an existing map via WeiDU" - The Gibberlings Three Forums :
+//http://forums.gibberlings3.net/index.php?showtopic=6031
+
+
+COPY_EXISTING ~AR2000.BCS~ ~override~
+  DECOMPILE_BCS_TO_BAF
+    REPLACE_TEXTUALLY ~IF
+  Global("tannerplot2","GLOBAL",2)~
+      ~IF
+         OnCreation()
+         Global("#STran2008","AR2000",0)
+       THEN
+         RESPONSE #100
+           TriggerActivation("#STran2008",FALSE)
+           SetGlobal("#STran2008","AR2000",1)
+           Explore()
+           Continue()
+       END
+
+      IF
+        Global("tannerplot2","GLOBAL",2)~
+  COMPILE_BAF_TO_BCS
+
+
+// COMPILATION CREATURES POUR SHADOWS OF AMN (SUITE)
+
+// Le chat Moustache
+
+COPY ~Severian/Creatures/#SMoust.cre~ ~override~
+SAY NAME1 @38
+SAY NAME2 @38
+COMPILE ~Severian/Dialogues/#SMoust.d~ 
+    USING ~Severian/Translations/French/#SMoust.tra~
+COMPILE ~Severian/Scripts/#SMoust.baf~
+
+// Mallory
+
+COPY ~Severian/Creatures/#SMallo.cre~ ~override~
+SAY NAME1 @24
+SAY NAME2 @24
+COMPILE ~Severian/Dialogues/#SMallo.d~
+    USING ~Severian/Translations/French/#SMallo.tra~
+COMPILE ~Severian/Scripts/#SMallo.baf~
+
+// Sorkailen
+
+COPY ~Severian/Creatures/#SRasth.cre~ ~override~
+SAY NAME1 @25
+SAY NAME2 @25
+COMPILE ~Severian/Dialogues/#SRasth.d~ 
+    USING ~Severian/Translations/French/#SRasth.tra~
+COMPILE ~Severian/Scripts/#SRasth.baf~
+
+// Hariel
+
+COPY ~Severian/Creatures/#SMaelys.cre~ ~override~
+SAY NAME1 @26
+SAY NAME2 @26
+COMPILE ~Severian/Dialogues/#SMaelys.d~ 
+    USING ~Severian/Translations/French/#SMaelys.tra~
+COMPILE ~Severian/Scripts/#SMaelys.baf~
+
+// Vesthara 
+
+COPY ~Severian/Creatures/#SVesth.cre~ ~override~
+SAY NAME1 @27
+SAY NAME2 @27
+COMPILE ~Severian/Dialogues/#SVesth.d~ 
+    USING ~Severian/Translations/French/#SVesth.tra~
+COMPILE ~Severian/Scripts/#SVesth.baf~
+
+// Novice Darion
+
+COPY ~Severian/Creatures/#SNovice.cre~ ~override~
+SAY NAME1 @29
+SAY NAME2 @29
+COMPILE ~Severian/Dialogues/#SNovice.d~ 
+    USING ~Severian/Translations/French/#SNovice.tra~
+COMPILE ~Severian/Scripts/#SNovice.baf~
+
+// Séquence d'Imnesvale
+
+COPY ~Severian/Creatures/#SNaenia.cre~ ~override~
+SAY NAME1 @31
+SAY NAME2 @31
+COMPILE ~Severian/Dialogues/#SNaenia.d~ 
+    USING ~Severian/Translations/French/#SNaenia.tra~
+COMPILE ~Severian/Scripts/#SNaenia.baf~
+
+COPY ~Severian/Creatures/#SMalry.cre~ ~override~
+SAY NAME1 @24
+SAY NAME2 @24
+COMPILE ~Severian/Dialogues/#SMalry.d~ 
+    USING ~Severian/Translations/French/#SMalry.tra~
+COMPILE ~Severian/Scripts/#SMalry.baf~
+
+COPY ~Severian/Creatures/#SevBles.cre~ ~override~
+SAY NAME1 @33
+SAY NAME2 @33
+COMPILE ~Severian/Dialogues/#SevBles.d~ 
+    USING ~Severian/Translations/French/#SevBles.tra~
+COMPILE ~Severian/Scripts/#SevBles.baf~
+
+COPY ~Severian/Creatures/#SKalas.cre~ ~override~
+SAY NAME1 @34
+SAY NAME2 @34
+COMPILE ~Severian/Dialogues/#SKalas.d~ 
+    USING ~Severian/Translations/French/#SKalas.tra~
+COMPILE ~Severian/Scripts/#SKalas.baf~
+
+COPY ~Severian/Creatures/#SDorra.cre~ ~override~
+SAY NAME1 @36
+SAY NAME2 @36
+COMPILE ~Severian/Dialogues/#SDorra.d~ 
+    USING ~Severian/Translations/French/#SDorra.tra~
+COMPILE ~Severian/Scripts/#SDorra.baf~
+
+COPY ~Severian/Creatures/#SDuorok.cre~ ~override~
+SAY NAME1 @35
+SAY NAME2 @35
+COMPILE ~Severian/Dialogues/#SDuorok.d~ 
+    USING ~Severian/Translations/French/#SDuorok.tra~
+COMPILE ~Severian/Scripts/#SDuorok.baf~
+
+COPY ~Severian/Creatures/#SPerian.cre~ ~override~
+SAY NAME1 @30
+SAY NAME2 @30
+COMPILE ~Severian/Dialogues/#SPerian.d~ 
+    USING ~Severian/Translations/French/#SPerian.tra~
+COMPILE ~Severian/Scripts/#SPerian.baf~
+
+COPY ~Severian/Creatures/#SValy.cre~ ~override~
+SAY NAME1 @32
+SAY NAME2 @32
+COMPILE ~Severian/Dialogues/#SValy.d~ 
+    USING ~Severian/Translations/French/#SValy.tra~
+COMPILE ~Severian/Scripts/#SValy.baf~
+
+COPY ~Severian/Creatures/#SPinkie.cre~ ~override~
+SAY NAME1 @37
+SAY NAME2 @37
+COMPILE ~Severian/Dialogues/#SPinkie.d~ 
+    USING ~Severian/Translations/French/#SPinkie.tra~
+COMPILE ~Severian/Scripts/#SPinkie.baf~
+
+COPY ~Severian/Creatures/#SMichel.cre~ ~override~
+SAY NAME1 @39
+SAY NAME2 @39
+COMPILE ~Severian/Dialogues/#SMichel.d~ 
+    USING ~Severian/Translations/French/#SMichel.tra~
+COMPILE ~Severian/Scripts/#SMichel.baf~
+
+// Charname
+
+COPY ~Severian/Creatures/#SCharna.cre~ ~override~
+SAY NAME1 @46
+SAY NAME2 @46
+COMPILE ~Severian/Dialogues/#SCharna.d~ 
+    USING ~Severian/Translations/French/#SCharna.tra~
+COMPILE ~Severian/Scripts/#SCharna.baf~
+
+// Les convives du mariage
+
+COPY ~Severian/Creatures/#Smfar01.cre~ ~override~
+COPY ~Severian/Creatures/#Smfar02.cre~ ~override~
+COPY ~Severian/Creatures/#Smjeb01.cre~ ~override~
+COPY ~Severian/Creatures/#Sboy.cre~ ~override~
+COPY ~Severian/Creatures/#Sfarm01.cre~ ~override~
+COPY ~Severian/Creatures/#Sfarm02.cre~ ~override~
+COPY ~Severian/Creatures/#Sfarm03.cre~ ~override~
+COPY ~Severian/Creatures/#Sfem01.cre~ ~override~
+COPY ~Severian/Creatures/#Sfem02.cre~ ~override~
+COPY ~Severian/Creatures/#Sgirl01.cre~ ~override~
+COPY ~Severian/Creatures/#Skid01.cre~ ~override~
+COPY ~Severian/Creatures/#Skid02.cre~ ~override~
+COPY ~Severian/Creatures/#Skid03.cre~ ~override~
+COPY ~Severian/Creatures/#Sman01.cre~ ~override~
+COPY ~Severian/Creatures/#Smay01.cre~ ~override~
+COPY ~Severian/Creatures/#Smer01.cre~ ~override~
+COPY ~Severian/Creatures/#Smer02.cre~ ~override~
+COPY ~Severian/Creatures/#Smer03.cre~ ~override~
+COPY ~Severian/Creatures/#STethys.cre~ ~override~
+COPY ~Severian/Creatures/#SOric.cre~ ~override~
+COPY ~Severian/Creatures/#SMenes1.cre~ ~override~
+COPY ~Severian/Creatures/#SMenes2.cre~ ~override~
+COPY ~Severian/Creatures/#SMenes3.cre~ ~override~
+
+// COMPILATION ITEMS POUR SOA
+
+// Items divers
+
+COPY ~Severian/Items/#SRingB.itm~ ~override~ SAY NAME1 @500 SAY NAME2 @500 SAY DESC @501
+COPY ~Severian/Spells/#SRingB.spl~ ~override~ SAY NAME1 @502 SAY NAME2 @502
+COPY ~Severian/Items/#SReine.itm~ ~override~ SAY NAME1 @522 SAY NAME2 @522 LPF ~GW_EE~ STR_VAR GW_desc_to_update = "@523" END
+COPY ~Severian/Items/#SYaman.itm~ ~override~ SAY NAME1 @524 SAY NAME2 @524 SAY DESC @525
+COPY ~Severian/Items/#SYaman1.itm~ ~override~ SAY NAME1 @524 SAY NAME2 @524 SAY DESC @525
+COPY ~Severian/Items/#SArtem.itm~ ~override~ SAY NAME1 @526 SAY NAME2 @526 LPF ~GW_EE~ STR_VAR GW_desc_to_update = "@527" END
+COPY ~Severian/Items/#SMaBody.itm~ ~override~ SAY NAME1 @528 SAY NAME2 @528 SAY DESC @529
+COPY ~Severian/Items/#SCollie.itm~ ~override~ SAY NAME1 @530 SAY NAME2 @530 SAY DESC @531
+COPY ~Severian/Items/#SBroche.itm~ ~override~ SAY NAME1 @532 SAY NAME2 @532 SAY DESC @533
+COPY ~Severian/Items/#SYaman2.itm~ ~override~ SAY NAME1 @524 SAY NAME2 @524 SAY DESC @600
+COPY ~Severian/Items/#SInvCha.itm~ ~override~ SAY NAME1 @539 SAY NAME2 @539 SAY DESC @540
+COPY ~Severian/Items/#SInvSev.itm~ ~override~ SAY NAME1 @539 SAY NAME2 @539 SAY DESC @541
+COPY ~Severian/Items/#SInvit.itm~ ~override~ SAY NAME1 @539 SAY NAME2 @539 SAY DESC @542
+COPY ~Severian/Items/#SPoup.itm~ ~override~ SAY NAME1 @543 SAY NAME2 @543 SAY DESC @544
+COPY ~Severian/Items/#SBiere.itm~ ~override~ SAY NAME1 @547 SAY NAME2 @547 SAY DESC @548
+COPY ~Severian/Items/#SPants.itm~ ~override~ SAY NAME1 @549 SAY NAME2 @549 SAY DESC @550
+COPY ~Severian/Items/#SRingF.itm~ ~override~ SAY NAME1 @500 SAY NAME2 @500 SAY DESC @501
+COPY ~Severian/Items/#SMallo.itm~ ~override~ SAY NAME1 @551 SAY NAME2 @551 SAY DESC @552
+COPY ~Severian/Items/#SMoust.itm~ ~override~ SAY NAME1 @553 SAY NAME2 @553 SAY DESC @554
+COPY ~Severian/Items/#SIlkar.itm~ ~override~ SAY NAME1 @560 SAY NAME2 @560 LPF ~GW_EE~ STR_VAR GW_desc_to_update = "@561" END
+COPY ~Severian/Items/#SJourn.itm~ ~override~ SAY NAME1 @562 SAY NAME2 @562 SAY DESC @563
+COPY ~Severian/Items/#SLeath.itm~ ~override~ SAY NAME1 @565 SAY NAME2 @565 SAY DESC @566
+COPY ~Severian/Items/#SImun.itm~ ~override~
+COPY ~Severian/Items/#SNoImun.itm~ ~override~
+COPY ~Severian/Items/#SNoFog.itm~ ~override~
+COPY ~Severian/Items/#SOeilTy.itm~ ~override~ SAY NAME1 @580 SAY NAME2 @580 LPF ~GW_EE~ STR_VAR GW_desc_to_update = "@581" END
+COPY ~Severian/Items/#SCyric.itm~ ~override~ SAY NAME1 @582 SAY NAME2 @582 LPF ~GW_EE~ STR_VAR GW_desc_to_update = "@583" END 
+
+// Items Zentharim
+
+COPY ~Severian/Items/Items Zentharim/#SAlleat.itm~ ~override~
+COPY ~Severian/Items/Items Zentharim/#SAlosw1.itm~ ~override~
+COPY ~Severian/Items/Items Zentharim/#SAlosw2.itm~ ~override~
+COPY ~Severian/Items/Items Zentharim/#SDiham.itm~ ~override~
+COPY ~Severian/Items/Items Zentharim/#SDihelm.itm~ ~override~
+COPY ~Severian/Items/Items Zentharim/#SDiplat.itm~ ~override~
+COPY ~Severian/Items/Items Zentharim/#SDishi.itm~ ~override~
+COPY ~Severian/Items/Items Zentharim/#SThorhe.itm~ ~override~
+COPY ~Severian/Items/Items Zentharim/#SThorpl.itm~ ~override~
+COPY ~Severian/Items/Items Zentharim/#SThorsh.itm~ ~override~
+COPY ~Severian/Items/Items Zentharim/#SZhobow.itm~ ~override~
+COPY ~Severian/Items/Items Zentharim/#SZhohel.itm~ ~override~
+COPY ~Severian/Items/Items Zentharim/#SZholea.itm~ ~override~
+COPY ~Severian/Items/Items Zentharim/#SSarv.itm~ ~override~
+COPY ~Severian/Items/Items Zentharim/#SAxthor.itm~ ~override~
+
+// COMPILATION SPELLS DIVERS
+
+COPY ~Severian/Spells/#SInnate.spl~ ~override~ 
+
+
+// PORTRAITS
+
+ACTION_IF GAME_IS ~TOB BGT~ THEN BEGIN
+	COPY ~Severian/Pictures/NonEE~ ~override~
+END
+
+ACTION_IF GAME_IS ~BG2EE EET~ THEN BEGIN
+	COPY ~Severian/Pictures/EE~ ~override~
+END
+
+
+// BAMS
+
+COPY ~Severian/Bam~ ~override~
+
+// SCRIPTS DE MAPS POUR SOA
+
+EXTEND_BOTTOM ~AR0704.bcs~ ~Severian/Scripts/#SAr0704.baf~
+     USING ~Severian/Translations/French/#SHugor.tra~
+EXTEND_BOTTOM ~AR0800.bcs~ ~Severian/Scripts/#SAr0800.baf~
+EXTEND_BOTTOM ~AR0811.bcs~ ~Severian/Scripts/#SAr0811.baf~
+EXTEND_BOTTOM ~AR0509.bcs~ ~Severian/Scripts/#SAr0509.baf~
+EXTEND_BOTTOM ~AR0511.bcs~ ~Severian/Scripts/#SAr0511.baf~
+EXTEND_BOTTOM ~HaerFive.bcs~ ~Severian/Scripts/#S5Flago.baf~
+EXTEND_BOTTOM ~AR1100.bcs~ ~Severian/Scripts/#SAr1100.baf~
+    USING ~Severian/Translations/French/#Sever.tra~
+EXTEND_BOTTOM ~AR2000.bcs~ ~Severian/Scripts/#SAr2000.baf~
+EXTEND_BOTTOM ~AR1105.bcs~ ~Severian/Scripts/#SAr1105.baf~
+EXTEND_BOTTOM ~AR1106.bcs~ ~Severian/Scripts/#SAr1106.baf~
+COPY ~Severian/Areas/#SACab.are~ ~override~
+COMPILE ~Severian/Scripts/#SACab.baf~
+COMPILE ~Severian/Scripts/#SAr2008.baf~
+COPY ~Severian/Areas/#SAr1800.are~ ~override~
+COMPILE ~Severian/Scripts/#SAr1800.baf~
+
+// CUTSCENES POUR SOA
+
+COMPILE ~Severian/Scripts/#SCut800.baf~
+COMPILE ~Severian/Scripts/#SCut704.baf~
+COMPILE ~Severian/Scripts/#SCut511.baf~
+COMPILE ~Severian/Scripts/#SCtRom4.baf~
+COMPILE ~Severian/Scripts/#SCtRom5.baf~
+COMPILE ~Severian/Scripts/#SCutR81.baf~
+COMPILE ~Severian/Scripts/#SCutR82.baf~
+COMPILE ~Severian/Scripts/#SCutR83.baf~
+    USING ~Severian/Translations/French/#Sever.tra~
+COMPILE ~Severian/Scripts/#SCutR84.baf~
+    USING ~Severian/Translations/French/#Sever.tra~
+COMPILE ~Severian/Scripts/#SCutR85.baf~
+COMPILE ~Severian/Scripts/#SCutR86.baf~
+COMPILE ~Severian/Scripts/#SCutR87.baf~
+COMPILE ~Severian/Scripts/#SCutR88.baf~
+COMPILE ~Severian/Scripts/#SCutR89.baf~
+COMPILE ~Severian/Scripts/#SCutR90.baf~
+COMPILE ~Severian/Scripts/#SCutRV1.baf~
+COMPILE ~Severian/Scripts/#SCutRV2.baf~
+COMPILE ~Severian/Scripts/#SCutEnt.baf~
+COMPILE ~Severian/Scripts/#SCutBle.baf~
+COMPILE ~Severian/Scripts/#SCutMa.baf~
+COMPILE ~Severian/Scripts/#SCutMa2.baf~
+COMPILE ~Severian/Scripts/#SCutMa3.baf~
+COMPILE ~Severian/Scripts/#SCutMa4.baf~
+COMPILE ~Severian/Scripts/#SCutMa5.baf~
+COMPILE ~Severian/Scripts/#SCutMa6.baf~
+COMPILE ~Severian/Scripts/#SCutPi1.baf~
+COMPILE ~Severian/Scripts/#SCutMaQ.baf~
+COMPILE ~Severian/Scripts/#SCutMQ2.baf~
+COMPILE ~Severian/Scripts/#SCutLou.baf~
+    USING ~Severian/Translations/French/#Sever.tra~
+COMPILE ~Severian/Scripts/#SCutApp.baf~
+COMPILE ~Severian/Scripts/#SCutAp2.baf~
+COMPILE ~Severian/Scripts/#SCutWe1.baf~
+COMPILE ~Severian/Scripts/#SCutWe2.baf~
+COMPILE ~Severian/Scripts/#SCutWe3.baf~
+COMPILE ~Severian/Scripts/#SCutWe4.baf~
+COMPILE ~Severian/Scripts/#SCutNu1.baf~
+COMPILE ~Severian/Scripts/#SCutNu2.baf~
+COMPILE ~Severian/Scripts/#SCutDe1.baf~
+COMPILE ~Severian/Scripts/#SCutEnl.baf~
+COMPILE ~Severian/Scripts/#SCtRo10.baf~
+COMPILE ~Severian/Scripts/#SCutRet.baf~
+    USING ~Severian/Translations/French/#Sever.tra~
+COMPILE ~Severian/Scripts/#SCutHer.baf~
+    USING ~Severian/Translations/French/#Sever.tra~
+COMPILE ~Severian/Scripts/#SCutSau.baf~
+COMPILE ~Severian/Scripts/#SCutSa2.baf~
+COMPILE ~Severian/Scripts/#SCutCom.baf~
+COMPILE ~Severian/Scripts/#SCutPey.baf~
+COMPILE ~Severian/Scripts/#SCutDra.baf~
+    USING ~Severian/Translations/French/#Sever.tra~
+COMPILE ~Severian/Scripts/#SCutTra.baf~
+ USING ~Severian/Translations/French/#Sever.tra~
+COMPILE ~Severian/Scripts/#SCutDie.baf~
+ USING ~Severian/Translations/French/#Sever.tra~
+COMPILE ~Severian/Scripts/#SCutAre.baf~
+ USING ~Severian/Translations/French/#Sever.tra~
+COMPILE ~Severian/Scripts/#SCutCab.baf~
+ USING ~Severian/Translations/French/#Sever.tra~
+COMPILE ~Severian/Scripts/#SCutFi1.baf~
+USING ~Severian/Translations/French/#SevRess.tra~
+COMPILE ~Severian/Scripts/#SCutCan.baf~
+USING ~Severian/Translations/French/#Sever.tra~
+COMPILE ~Severian/Scripts/#SCtSar1.baf~
+USING ~Severian/Translations/French/#Sever.tra~
+COMPILE ~Severian/Scripts/#SCtSar2.baf~
+USING ~Severian/Translations/French/#SPeyr.tra~
+COMPILE ~Severian/Scripts/#SHugor1.baf~
+COMPILE ~Severian/Scripts/#SCtLou2.baf~
+
+// CUTSCENES POUR TOB
+
+COMPILE ~Severian/Scripts/ThroneOfBhaal/#SCtVok1.baf~
+COMPILE ~Severian/Scripts/ThroneOfBhaal/#SCtVok2.baf~
+COMPILE ~Severian/Scripts/ThroneOfBhaal/#SCutMi1.baf~
+ USING ~Severian/Translations/French/#Sever25.tra~
+COMPILE ~Severian/Scripts/ThroneOfBhaal/#SCutMi2.baf~
+ USING ~Severian/Translations/French/#Sever25.tra~
+COMPILE ~Severian/Scripts/ThroneOfBhaal/#SCutMi3.baf~
+ USING ~Severian/Translations/French/#Sever25.tra~
+COMPILE ~Severian/Scripts/ThroneOfBhaal/#SCutMi4.baf~
+ USING ~Severian/Translations/French/#Sever25.tra~
+COMPILE ~Severian/Scripts/ThroneOfBhaal/#SCutCa1.baf~
+ USING ~Severian/Translations/French/#Sever25.tra~
+COMPILE ~Severian/Scripts/ThroneOfBhaal/#SCtEnf1.baf~
+ USING ~Severian/Translations/French/#Sever25.tra~
+COMPILE ~Severian/Scripts/ThroneOfBhaal/#SCtEnf2.baf~
+ USING ~Severian/Translations/French/#Sever25.tra~
+COMPILE ~Severian/Scripts/ThroneOfBhaal/#SCtEnf3.baf~
+ USING ~Severian/Translations/French/#Sever25.tra~
+COMPILE ~Severian/Scripts/ThroneOfBhaal/#SCtEnf4.baf~
+ USING ~Severian/Translations/French/#Sever25.tra~
+COMPILE ~Severian/Scripts/ThroneOfBhaal/#SCtEnf5.baf~
+ USING ~Severian/Translations/French/#Sever25.tra~
+COMPILE ~Severian/Scripts/ThroneOfBhaal/#SCtEnf6.baf~
+ USING ~Severian/Translations/French/#Sever25.tra~
+COMPILE ~Severian/Scripts/ThroneOfBhaal/#SCtEnf7.baf~
+ USING ~Severian/Translations/French/#Sever25.tra~
+COMPILE ~Severian/Scripts/ThroneOfBhaal/#SCtTel1.baf~
+ USING ~Severian/Translations/French/#Sever25.tra~
+COMPILE ~Severian/Scripts/ThroneOfBhaal/#SCtTel2.baf~
+ USING ~Severian/Translations/French/#Sever25.tra~
+COMPILE ~Severian/Scripts/ThroneOfBhaal/#SCtTel3.baf~
+ USING ~Severian/Translations/French/#Sever25.tra~
+COMPILE ~Severian/Scripts/ThroneOfBhaal/#SCtTel4.baf~
+ USING ~Severian/Translations/French/#Sever25.tra~
+COMPILE ~Severian/Scripts/ThroneOfBhaal/#SCtTel5.baf~
+ USING ~Severian/Translations/French/#Sever25.tra~
+COMPILE ~Severian/Scripts/ThroneOfBhaal/#SCtTel6.baf~
+ USING ~Severian/Translations/French/#Sever25.tra~
+COMPILE ~Severian/Scripts/ThroneOfBhaal/#SCutCa2.baf~
+ USING ~Severian/Translations/French/#Sever25.tra~
+COMPILE ~Severian/Scripts/ThroneOfBhaal/#SCtAdo1.baf~
+ USING ~Severian/Translations/French/#Sever25.tra~
+COMPILE ~Severian/Scripts/ThroneOfBhaal/#SCtAdo2.baf~
+ USING ~Severian/Translations/French/#Sever25.tra~
+COMPILE ~Severian/Scripts/ThroneOfBhaal/#SCtAdo3.baf~
+ USING ~Severian/Translations/French/#Sever25.tra~
+COMPILE ~Severian/Scripts/ThroneOfBhaal/#SCtAdo4.baf~
+ USING ~Severian/Translations/French/#Sever25.tra~
+COMPILE ~Severian/Scripts/ThroneOfBhaal/#SCtAmk1.baf~
+ USING ~Severian/Translations/French/#Sever25.tra~
+COMPILE ~Severian/Scripts/ThroneOfBhaal/#SCtAmk2.baf~
+ USING ~Severian/Translations/French/#Sever25.tra~
+COMPILE ~Severian/Scripts/ThroneOfBhaal/#SCtAmk3.baf~
+ USING ~Severian/Translations/French/#Sever25.tra~
+COMPILE ~Severian/Scripts/ThroneOfBhaal/#SCtAmk4.baf~
+ USING ~Severian/Translations/French/#Sever25.tra~
+COMPILE ~Severian/Scripts/ThroneOfBhaal/#SCtPri1.baf~
+ USING ~Severian/Translations/French/#Sever25.tra~
+COMPILE ~Severian/Scripts/ThroneOfBhaal/#SCtPri2.baf~
+ USING ~Severian/Translations/French/#Sever25.tra~
+COMPILE ~Severian/Scripts/ThroneOfBhaal/#SCtPri3.baf~
+ USING ~Severian/Translations/French/#Sever25.tra~
+COMPILE ~Severian/Scripts/ThroneOfBhaal/#SCtPri4.baf~
+ USING ~Severian/Translations/French/#Sever25.tra~
+COMPILE ~Severian/Scripts/ThroneOfBhaal/#SCtPri5.baf~
+ USING ~Severian/Translations/French/#Sever25.tra~
+COMPILE ~Severian/Scripts/ThroneOfBhaal/#SCtPri6.baf~
+ USING ~Severian/Translations/French/#Sever25.tra~
+COMPILE ~Severian/Scripts/ThroneOfBhaal/#SCtPri7.baf~
+ USING ~Severian/Translations/French/#Sever25.tra~
+COMPILE ~Severian/Scripts/ThroneOfBhaal/#SCtPri8.baf~
+ USING ~Severian/Translations/French/#Sever25.tra~
+COMPILE ~Severian/Scripts/ThroneOfBhaal/#SCtPri9.baf~
+ USING ~Severian/Translations/French/#Sever25.tra~
+COMPILE ~Severian/Scripts/ThroneOfBhaal/#SCtPr10.baf~
+ USING ~Severian/Translations/French/#Sever25.tra~
+COMPILE ~Severian/Scripts/ThroneOfBhaal/#SCtPr11.baf~
+ USING ~Severian/Translations/French/#Sever25.tra~
+COMPILE ~Severian/Scripts/ThroneOfBhaal/#SCtPr12.baf~
+ USING ~Severian/Translations/French/#Sever25.tra~
+COMPILE ~Severian/Scripts/ThroneOfBhaal/#SCtPr13.baf~
+ USING ~Severian/Translations/French/#Sever25.tra~
+COMPILE ~Severian/Scripts/ThroneOfBhaal/#SCutFi1.baf~
+ USING ~Severian/Translations/French/#Sever25.tra~
+COMPILE ~Severian/Scripts/ThroneOfBhaal/#SCutFi2.baf~
+ USING ~Severian/Translations/French/#Sever25.tra~
+COMPILE ~Severian/Scripts/ThroneOfBhaal/#SCutFi4.baf~
+ USING ~Severian/Translations/French/#Sever25.tra~
+COMPILE ~Severian/Scripts/ThroneOfBhaal/#SCutFi5.baf~
+ USING ~Severian/Translations/French/#Sever25.tra~
+COMPILE ~Severian/Scripts/ThroneOfBhaal/#SCutFi6.baf~
+ USING ~Severian/Translations/French/#Sever25.tra~
+COMPILE ~Severian/Scripts/ThroneOfBhaal/#SCutFi7.baf~
+ USING ~Severian/Translations/French/#Sever25.tra~
+COMPILE ~Severian/Scripts/ThroneOfBhaal/#SCutFi8.baf~
+ USING ~Severian/Translations/French/#Sever25.tra~
+COMPILE ~Severian/Scripts/ThroneOfBhaal/#SCtDar2.baf~
+ USING ~Severian/Translations/French/#Sever25.tra~
+COMPILE ~Severian/Scripts/ThroneOfBhaal/#SCtDar3.baf~
+ USING ~Severian/Translations/French/#Sever25.tra~
+COMPILE ~Severian/Scripts/ThroneOfBhaal/#SCtDar4.baf~
+ USING ~Severian/Translations/French/#Sever25.tra~
+COMPILE ~Severian/Scripts/ThroneOfBhaal/#SCtMi20.baf~
+ USING ~Severian/Translations/French/#Sever25.tra~
+COMPILE ~Severian/Scripts/ThroneOfBhaal/#SCtRapp.baf~
+ USING ~Severian/Translations/French/#Sever25.tra~
+COMPILE ~Severian/Scripts/ThroneOfBhaal/#SCtTav1.baf~
+ USING ~Severian/Translations/French/#Sever25.tra~
+COMPILE ~Severian/Scripts/ThroneOfBhaal/#SCtTav2.baf~
+ USING ~Severian/Translations/French/#Sever25.tra~
+COMPILE ~Severian/Scripts/ThroneOfBhaal/#SCtMask.baf~
+ USING ~Severian/Translations/French/#Sever25.tra~
+COMPILE ~Severian/Scripts/ThroneOfBhaal/#SCutYag.baf~
+ USING ~Severian/Translations/French/#Sever25.tra~
+COMPILE ~Severian/Scripts/ThroneOfBhaal/#SCtDar5.baf~
+ USING ~Severian/Translations/French/#Sever25.tra~
+COMPILE ~Severian/Scripts/ThroneOfBhaal/#SCtDar6.baf~
+ USING ~Severian/Translations/French/#Sever25.tra~
+COMPILE ~Severian/Scripts/ThroneOfBhaal/#SCtDar7.baf~
+ USING ~Severian/Translations/French/#Sever25.tra~
+COMPILE ~Severian/Scripts/ThroneOfBhaal/#SCtDar8.baf~
+ USING ~Severian/Translations/French/#Sever25.tra~
+COMPILE ~Severian/Scripts/ThroneOfBhaal/#SCtDea1.baf~
+ USING ~Severian/Translations/French/#Sever25.tra~
+COMPILE ~Severian/Scripts/ThroneOfBhaal/#SCtDea2.baf~
+ USING ~Severian/Translations/French/#Sever25.tra~
+COMPILE ~Severian/Scripts/ThroneOfBhaal/#SCtDa10.baf~
+ USING ~Severian/Translations/French/#Sever25.tra~
+COMPILE ~Severian/Scripts/ThroneOfBhaal/#SCtDa11.baf~
+ USING ~Severian/Translations/French/#Sever25.tra~
+COMPILE ~Severian/Scripts/ThroneOfBhaal/#SCtGro1.baf~
+ USING ~Severian/Translations/French/#Sever25.tra~
+COMPILE ~Severian/Scripts/ThroneOfBhaal/#SCtGro2.baf~
+ USING ~Severian/Translations/French/#Sever25.tra~
+COMPILE ~Severian/Scripts/ThroneOfBhaal/#SCutYa1.baf~
+ USING ~Severian/Translations/French/#Sever25.tra~
+
+
+// SCRIPTS DE MAPS POUR TOB
+
+EXTEND_BOTTOM ~AR6400.bcs~ ~Severian/Scripts/ThroneOfBhaal/#SAr6400.baf~
+    USING ~Severian/Translations/French/#Sever25.tra~
+EXTEND_BOTTOM ~AR5000.bcs~ ~Severian/Scripts/ThroneOfBhaal/#SAr5000.baf~
+    USING ~Severian/Translations/French/#Sever25.tra~
+EXTEND_TOP ~AR5500.bcs~ ~Severian/Scripts/ThroneOfBhaal/#SAr5500.baf~
+    USING ~Severian/Translations/French/#Sever25.tra~
+EXTEND_TOP ~AR6200.bcs~ ~Severian/Scripts/ThroneOfBhaal/#SAr6200.baf~
+EXTEND_TOP ~AR5003.bcs~ ~Severian/Scripts/ThroneOfBhaal/#SAr5003.baf~
+
+
+// MAPS POUR TOB
+
+COPY ~Severian/Areas/#SArmi.are~ ~override~
+COMPILE ~Severian/Scripts/ThroneOfBhaal/#SArmi.baf~
+COPY ~Severian/Areas/#SArm1.are~ ~override~
+COMPILE ~Severian/Scripts/ThroneOfBhaal/#SArm1.baf~
+COPY ~Severian/Areas/#SCamp.are~ ~override~
+COMPILE ~Severian/Scripts/ThroneOfBhaal/#SCamp.baf~
+COPY ~Severian/Areas/#SArAn.are~ ~override~
+COMPILE ~Severian/Scripts/ThroneOfBhaal/#SArAn.baf~
+COPY ~Severian/Areas/#SArMa.are~ ~override~
+COMPILE ~Severian/Scripts/ThroneOfBhaal/#SArMa.baf~
+COPY ~Severian/Areas/#SAmke.are~ ~override~
+COMPILE ~Severian/Scripts/ThroneOfBhaal/#SAmke.baf~
+COPY ~Severian/Areas/#SArpr.are~ ~override~
+COMPILE ~Severian/Scripts/ThroneOfBhaal/#SArpr.baf~
+COPY ~Severian/Areas/#SArTo.are~ ~override~
+COMPILE ~Severian/Scripts/ThroneOfBhaal/#SArTo.baf~
+COPY ~Severian/Areas/#SDark.are~ ~override~
+COMPILE ~Severian/Scripts/ThroneOfBhaal/#SDark.baf~
+
+
+// ITEMS POUR TOB
+
+COPY ~Severian/Items/Items ToB/Items Store/#SLicorn.itm~ ~override~ SAY NAME1 @300000 SAY NAME2 @300000 LPF ~GW_EE~ STR_VAR GW_desc_to_update = "@300001" END
+COPY ~Severian/Items/Items ToB/Items Store/#SArcL.itm~ ~override~ SAY NAME1 @300002 SAY NAME2 @300002 LPF ~GW_EE~ STR_VAR GW_desc_to_update = "@300003" END
+COPY ~Severian/Items/Items ToB/Items Store/#SHamm.itm~ ~override~ SAY NAME1 @300010 SAY NAME2 @300010 LPF ~GW_EE~ STR_VAR GW_desc_to_update = "@300011" END
+COPY ~Severian/Items/Items ToB/Items Store/#SBotte.itm~ ~override~ SAY NAME1 @403000 SAY NAME2 @403000 LPF ~GW_EE~ STR_VAR GW_desc_to_update = "@403001" END
+COPY ~Severian/Items/Items ToB/Items Store/#SCloak.itm~ ~override~ SAY NAME1 @403002 SAY NAME2 @403002 SAY DESC @403003
+COPY ~Severian/Items/Items ToB/Items Store/#SAmul.itm~ ~override~ SAY NAME1 @403004 SAY NAME2 @403004 SAY DESC @403005
+COPY ~Severian/Items/Items ToB/Items Store/#Sbague.itm~ ~override~ SAY NAME1 @403006 SAY NAME2 @403006 LPF ~GW_EE~ STR_VAR GW_desc_to_update = "@403007" END
+COPY ~Severian/Items/Items ToB/Items Store/#SBoucl.itm~ ~override~ SAY NAME1 @403008 SAY NAME2 @403008 LPF ~GW_EE~ STR_VAR GW_desc_to_update = "@403009" END
+COPY ~Severian/Items/Items ToB/Items Store/#SWand.itm~ ~override~ SAY NAME1 @403010 SAY NAME2 @403010 LPF ~GW_EE~ STR_VAR GW_desc_to_update = "@403011" END
+COPY ~Severian/Items/Items ToB/Items Store/#SCeint.itm~ ~override~ SAY NAME1 @403012 SAY NAME2 @403012 SAY DESC @403013
+COPY ~Severian/Items/Items ToB/Items Store/#SAventu.itm~ ~override~ SAY NAME1 @403014 SAY NAME2 @403014 SAY DESC @403015
+ 
+COPY ~Severian/Items/Items ToB/Items Store/#Sbolt03.itm~ ~override~
+COPY ~Severian/Items/Items ToB/Items Store/#Sbolt04.itm~ ~override~
+COPY ~Severian/Items/Items ToB/Items Store/#Sbolt05.itm~ ~override~
+COPY ~Severian/Items/Items ToB/Items Store/#Sbolt06.itm~ ~override~ 
+COPY ~Severian/Items/Items ToB/Items Store/#Sbolt09.itm~ ~override~ 
+COPY ~Severian/Items/Items ToB/Items Store/#Sbull03.itm~ ~override~ 
+COPY ~Severian/Items/Items ToB/Items Store/#Sbull04.itm~ ~override~
+COPY ~Severian/Items/Items ToB/Items Store/#Sbull05.itm~ ~override~
+COPY ~Severian/Items/Items ToB/Items Store/#Sbull06.itm~ ~override~ 
+COPY ~Severian/Items/Items ToB/Items Store/#Sdart02.itm~ ~override~
+COPY ~Severian/Items/Items ToB/Items Store/#Sdart03.itm~ ~override~
+COPY ~Severian/Items/Items ToB/Items Store/#Sdart04.itm~ ~override~ 
+COPY ~Severian/Items/Items ToB/Items Store/#Sdart05.itm~ ~override~ 
+COPY ~Severian/Items/Items ToB/Items Store/#Smisc3p.itm~ ~override~
+COPY ~Severian/Items/Items ToB/Items Store/#Spotn20.itm~ ~override~
+COPY ~Severian/Items/Items ToB/Items Store/#Spotn55.itm~ ~override~
+COPY ~Severian/Items/Items ToB/Items Store/#Srods06.itm~ ~override~
+COPY ~Severian/Items/Items ToB/Items Store/#Sarow04.itm~ ~override~
+COPY ~Severian/Items/Items ToB/Items Store/#Sarow05.itm~ ~override~
+COPY ~Severian/Items/Items ToB/Items Store/#Sarow06.itm~ ~override~ 
+COPY ~Severian/Items/Items ToB/Items Store/#Sarow07.itm~ ~override~ 
+COPY ~Severian/Items/Items ToB/Items Store/#Sarow08.itm~ ~override~
+COPY ~Severian/Items/Items ToB/Items Store/#Sarow09.itm~ ~override~ 
+COPY ~Severian/Items/Items ToB/Items Store/#Sarow10.itm~ ~override~ 
+COPY ~Severian/Items/Items ToB/Items Store/#Sarow11.itm~ ~override~
+COPY ~Severian/Items/Items ToB/Items Store/#Sarow12.itm~ ~override~ 
+COPY ~Severian/Items/Items ToB/Items Store/#Sarow14.itm~ ~override~ 
+COPY ~Severian/Items/Items ToB/Items Store/#Sbag06D.itm~ ~override~ 
+COPY ~Severian/Items/Items ToB/Items Store/#Spotn14.itm~ ~override~ 
+COPY ~Severian/Items/Items ToB/Items Store/#Spotn52.itm~ ~override~ 
+COPY ~Severian/Items/Items ToB/Items Store/#Spotn55.itm~ ~override~ 
+COPY ~Severian/Items/Items ToB/Items Store/#SMisc3p.itm~ ~override~ 
+COPY ~Severian/Items/Items ToB/Items Store/#Srods06.itm~ ~override~ 
+COPY ~Severian/Items/Items ToB/Items Store/#Srestor.itm~ ~override~ 
+COPY ~Severian/Items/Items ToB/Items Store/#Scrl63.itm~ ~override~ 
+COPY ~Severian/Items/Items ToB/Items Store/#SCRL9L.itm~ ~override~ 
+COPY ~Severian/Items/Items ToB/Items Store/#SCRL9M.itm~ ~override~ 
+COPY ~Severian/Items/Items ToB/Items Store/#SCRL9N.itm~ ~override~ 
+COPY ~Severian/Items/Items ToB/Items Store/#SCRL9P.itm~ ~override~ 
+COPY ~Severian/Items/Items ToB/Items Store/#SCRL9Q.itm~ ~override~ 
+COPY ~Severian/Items/Items ToB/Items Store/#SCRL9R.itm~ ~override~ 
+COPY ~Severian/Items/Items ToB/Items Store/#SCRL9S.itm~ ~override~ 
+COPY ~Severian/Items/Items ToB/Items Store/#SCRL9T.itm~ ~override~ 
+COPY ~Severian/Items/Items ToB/Items Store/#SCRL9U.itm~ ~override~ 
+COPY ~Severian/Items/Items ToB/Items Store/#SCRL9V.itm~ ~override~ 
+COPY ~Severian/Items/Items ToB/Items Store/#SCRL9W.itm~ ~override~
+COPY ~Severian/Items/Items ToB/Items Store/#SCRL9Y.itm~ ~override~ 
+COPY ~Severian/Items/Items ToB/Items Store/#SCRL9Z.itm~ ~override~  
+COPY ~Severian/Items/Items ToB/Items Store/#SCRL9X.itm~ ~override~ 
+COPY ~Severian/Items/Items ToB/Items Store/#SCRLB4.itm~ ~override~ 
+
+// ITEMS SPECIAUX
+
+COPY ~Severian/Items/Items ToB/#Skin.itm~ ~override~ 
+COPY ~Severian/Items/Items ToB/#Skin1.itm~ ~override~ 
+COPY ~Severian/Items/Items ToB/#Skin2.itm~ ~override~
+COPY ~Severian/Items/Items ToB/#Skin3.itm~ ~override~
+COPY ~Severian/Items/Items ToB/#Skin4.itm~ ~override~
+COPY ~Severian/Items/Items ToB/#Skin5.itm~ ~override~
+COPY ~Severian/Items/Items ToB/#Skin6.itm~ ~override~
+COPY ~Severian/Items/Items ToB/#SAvatar.itm~ ~override~ 
+COPY ~Severian/Items/Items ToB/#Staf02.itm~ ~override~ 
+COPY ~Severian/Items/Items ToB/#SRobe.itm~ ~override~ 
+COPY ~Severian/Items/Items ToB/#SVisclk.itm~ ~override~ 
+COPY ~Severian/Items/Items ToB/#SAvis.itm~ ~override~ SAY NAME1 @403016 SAY NAME2 @403016 SAY DESC @403017
+COPY ~Severian/Items/Items ToB/#SRingC.itm~ ~override~ SAY NAME1 @500 SAY NAME2 @500 SAY DESC @501
+
+// ITEMS BOSS
+
+COPY ~Severian/Items/Items ToB/Items Boss/#SAmul21.itm~ ~override~ 
+COPY ~Severian/Items/Items ToB/Items Boss/#SClck17.itm~ ~override~ 
+COPY ~Severian/Items/Items ToB/Items Boss/#SHelm18.itm~ ~override~ 
+COPY ~Severian/Items/Items ToB/Items Boss/#SOeil25.itm~ ~override~ 
+COPY ~Severian/Items/Items ToB/Items Boss/#SRein25.itm~ ~override~ 
+COPY ~Severian/Items/Items ToB/Items Boss/#SArt25.itm~ ~override~ 
+COPY ~Severian/Items/Items ToB/Items Boss/#SCyr25.itm~ ~override~ 
+COPY ~Severian/Items/Items ToB/Items Boss/#SLeat17.itm~ ~override~ 
+COPY ~Severian/Items/Items ToB/Items Boss/#SPlat19.itm~ ~override~ 
+COPY ~Severian/Items/Items ToB/Items Boss/#SShld17.itm~ ~override~ 
+
+
+// PATCHS DIVERS POUR SOA
+
+COPY_EXISTING ~AR1105.are~ ~override~
+WRITE_LONG 0x37C 0 // Suppression de la femme endormie dans la chambre ouest*
+
+COPY ~Severian/spells/#SGivSpl.spl~ ~override~
+SAY 0xCE @536
+
+
+// EPILOGUE THRONE OF BHAAL
+// IMPLEMENTATION DU 2DA POUR EPILOGUE DE SEVERIAN
+
+COPY ~Severian/2da/#Sevpil1.2da~ ~override/#Sevpil1.2da~
+REPLACE ~999999~ @400001
+
+COPY ~Severian/2da/#Sevpil2.2da~ ~override/#Sevpil2.2da~
+REPLACE ~999998~ @400004
+
+COPY ~Severian/2da/#Sevpil3.2da~ ~override/#Sevpil3.2da~
+REPLACE ~999997~ @400003
+
+COPY ~Severian/2da/#Sevpil4.2da~ ~override/#Sevpil4.2da~
+REPLACE ~999996~ @400005
+
+
+// PATCH MUSIQUE EPILOGUE 1
+// ANNULE LA MUSIQUE ORIGINALE DE L'EPILOGUE DE THRONE OF BHAAL
+
+ COPY_EXISTING ~SONGLIST.2DA~ ~override~
+ REPLACE_TEXTUALLY ~NPC.mus~ ~#SBlank.mus~
+
+// PATCH MUSIQUE EPILOGUE 2
+// REPLACEMENT DE LA MUSIQUE ORIGINALE DE L'EPILOGUE DE THRONE OF BHAAL
+// POUR TOUS LES PNJS SAUF SEVERIAN
+// RECOPIE TOUS LES EPILOGUES DANS LEUR VERSION INTEGRALE ET ORIGINELLE
+
+COPY_EXISTING ~NALIAND.2DA~ ~override~
+REPLACE ~73918~ @400011
+COPY_EXISTING ~MINSCND.2DA~ ~override~
+REPLACE ~73927~ @400012
+COPY_EXISTING ~CERNDND.2DA~ ~override~
+REPLACE ~73925~ @400013
+COPY_EXISTING ~EDWINND.2DA~ ~override~
+REPLACE ~73928~ @400014
+COPY_EXISTING ~HAERND.2DA~ ~override~
+REPLACE ~73924~ @400015
+COPY_EXISTING ~IMOENND.2DA~ ~override~
+REPLACE ~73929~ @400016
+COPY_EXISTING ~JAHEIND1.2DA~ ~override~
+REPLACE ~73931~ @400017
+COPY_EXISTING ~JAHEIND2.2DA~ ~override~
+REPLACE ~73930~ @400018
+COPY_EXISTING ~JANND.2DA~ ~override~
+REPLACE ~73933~ @400019
+COPY_EXISTING ~KELDORND.2DA~ ~override~
+REPLACE ~73935~ @400020
+COPY_EXISTING ~KORGAND.2DA~ ~override~
+REPLACE ~73934~ @400021
+COPY_EXISTING ~MAZZYND.2DA~ ~override~
+REPLACE ~73932~ @400022
+COPY_EXISTING ~SAREVND.2DA~ ~override~
+REPLACE ~73926~ @400023
+COPY_EXISTING ~VALYGND.2DA~ ~override~
+REPLACE ~73923~ @400024
+COPY_EXISTING ~VICONND1.2DA~ ~override~
+REPLACE ~73921~ @400025
+COPY_EXISTING ~VICONND2.2DA~ ~override~
+REPLACE ~73922~ @400026
+COPY_EXISTING ~AERIEND1.2DA~ ~override~
+REPLACE ~73916~ @400007
+COPY_EXISTING ~AERIEND2.2DA~ ~override~
+REPLACE ~73917~ @400008
+COPY_EXISTING ~ANOMEND1.2DA~ ~override~
+REPLACE ~73919~ @400009
+COPY_EXISTING ~ANOMEND2.2DA~ ~override~
+REPLACE ~73920~ @400010
+
+// MAGASIN ET AUBERGE DES HORS-LA-LOI DU TETHYR
+
+COPY ~Severian/Stores/#SMarya2.sto~ ~override~
+SPRINT nom_store @400031
+SAY_EVALUATED 0x000c ~%nom_store%~
+
+COPY ~Severian/Stores/#SFrere1.sto~ ~override~
+SPRINT nom_store @400031
+SAY_EVALUATED 0x000c ~%nom_store%~
+
+COPY ~Severian/Stores/#SFrere2.sto~ ~override~
+SPRINT nom_store @400031
+SAY_EVALUATED 0x000c ~%nom_store%~
+
+COMPILE ~Severian/Dialogues/ThroneOfBhaal/#SRumo.d~ 
+    USING ~Severian/Translations/French/#Sever25.tra~
+COMPILE ~Severian/Scripts/ThroneOfBhaal/#SRumo.baf~
+
+// SCRIPT ACCELERATEUR DE BANTERS POUR TOB
+
+EXTEND_TOP ~baldur25.bcs~ ~Severian/Scripts/ThroneOfBhaal/#SBanter.baf~
+
+// SOUNDTRACK
+
+// Patch No Musique
+
+COPY ~Severian/Musics/#Sblank.mus~ ~music~
+COPY_EXISTING ~songlist.2da~ ~override~
+SET_2DA_ENTRY 0 2 3 ~#SBLANK.MUS~
+
+// Répertoire Sons
+
+COPY ~Severian/Sounds~ ~override~
+
+// Commandes décodeurs/encodeurs
+
+AT_INTERACTIVE_EXIT ~Severian/Musics/Install-mus.bat~ 
+AT_INTERACTIVE_UNINSTALL ~Severian/Musics/Uninstall-mus.bat~
+
+AT_INTERACTIVE_EXIT ~Severian/Sounds/Audioin.bat~ 
+AT_INTERACTIVE_UNINSTALL ~Severian/Sounds/Audiouninstall.bat~
+
+
+// 2DA POUR DIALOGUES
+
+// Pour SoA
+
+APPEND ~pdialog.2da~
+~#Severian      #SeverP           #SeverJ          #SeverD~
+UNLESS ~#Severian~
+UNLESS ~25POST~
+
+// Pour SoA + ToB
+
+APPEND ~pdialog.2da~
+~#Severian      #SeverP           #SeverJ          #SeverD       #Sev25P           #Sev25J              #Sev25D              #SevD25~
+UNLESS ~#Severian~
+IF ~25POST~
+
+// Banters SoA + ToB
+
+APPEND ~interdia.2da~
+  ~#Severian      #SBSever       #SBSev25~
+UNLESS ~#Severian~
+
+// PORTRAIT ALTERNATIF DE SEVERIAN
+
+BEGIN @400030
+
+ACTION_IF GAME_IS ~TOB BGT~ THEN BEGIN
+	COPY ~Severian/Pictures/Alt~ ~override~
+END
+
+ACTION_IF GAME_IS ~BG2EE EET~ THEN BEGIN
+	COPY ~Severian/Pictures/AltEE~ ~override~
+END
+
+

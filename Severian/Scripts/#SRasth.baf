@@ -1,0 +1,18 @@
+
+IF
+Global("#SeverChapDeux","GLOBAL",12)
+Global("#SInvisibleStalker","LOCALS",0)
+THEN
+ RESPONSE #100
+ ReallyForceSpell(Myself,WIZARD_IMPROVED_INVISIBILITY)
+ ReallyForceSpell(Myself,WIZARD_FIRE_SHIELD_RED)
+ ReallyForceSpell(Myself,WIZARD_FIRE_SHIELD_BLUE)
+ ReallyForceSpell(Myself,WIZARD_INVISIBLE_STALKER)
+ ReallyForceSpell(Myself,WIZARD_INVISIBLE_STALKER)
+ ReallyForceSpell(Myself,WIZARD_INVISIBLE_STALKER)
+ ReallyForceSpell(Myself,WIZARD_INVISIBLE_STALKER)
+ SetGlobal("#SInvisibleStalker","LOCALS",1)
+ SetGlobal("#SeverChapDeux","GLOBAL",13)
+END
+
+

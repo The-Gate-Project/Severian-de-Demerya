@@ -1,0 +1,24 @@
+
+@0 = ~Sacrédié, v'la t'y pas que ce s'rait ma p'tite ? Qu'est-ce qu'elle a fait encore ? Vous savez, avec elle, on peut pas s'absenter sans qu'y s'passe quequ'chose !~
+@1 = ~Ah mais ce s'rait pas la tête du Moustache que j'vois sortir d'vot' sac ? C'est un filou çui-là, moi j'vous l'dis : une fois, j'l'ai trouvé par ici à plumer les poules de c'bon Hendrick.~
+@2 = ~(Severian s'accroupit pour permettre à Mallory de descendre de ses épaules.)~
+@3 = ~J'suis contente qu'vous m'ram'niez la p'tite en même temps, fait pas bon s'ballader seule comme ça mais que voulez-vous : j'peux pas être au four et au moulin, hein ?~
+@4 = ~J'imagine que vous alliez bientôt rameuter le village tout entier pour ce chat : on connaît la chanson. Et qu'est-ce que j'en fais, maintenant ? J'ai l'impression qu'il regarde ces poules avec grand intérêt...~
+@5 = ~J'vous l'prends et j'le ramène à la chaumière. Viens, ma chérie : c'est l'heure d'la soupe.~
+@6 = ~Oh non, pas l'horrible soupe aux poireaux...'Man, avant je dis au revoir à Severian et à ses amis.~ [#SMusicW]
+@7 = ~Ne t'en fais pas, Mallory. Nous nous reverrons au mariage. Et puis, tu vas encore oublier ça (Le jeune homme tend sa poupée de chiffon à la fillette dont le visage triste s'illumine soudain.)~
+@8 = ~C'est vrai ! Merci d'avoir pris soin de Wendy, elle a peur toute seule quand je ne suis pas avec elle. Et en fait, maintenant je me dis que je vais avoir peur sans toi pour me protéger.~
+@9 = ~(Severian glisse un doigt attendri sur sa joue.) Tu es une brave petite fille. Il en faut du courage pour s'aventurer dans la grotte d'Umar. Qui sait ce qui rôdait dans l'ombre ? Grâce à toi, Moustache est sain et sauf.~
+@10 = ~(Le jeune homme se redresse.) Nous nous reverrons au mariage, Mallory. D'ici là, essaye quand même de ne pas faire trop de bêtises, hein ?~
+@11 = ~Promis ! Au revoir, les amis ! Occupe-toi bien de Severian, <CHARNAME> ! Il doit guérir pour pouvoir danser avec moi ! Je compte sur toi !~
+@12 = ~(L'intéressé vous jette un coup d’œil en biais pour le moins indéchiffrable et vous observez tranquillement la Mère Michèle et sa fille disparaître au détour du chemin.)~
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// Entrée dans le journal
+@5000 = ~Les Chroniques de Severian - Livre 2 : Les fantômes du passé
+
+La Mère Michèle a retrouvé son chat
+
+En retrouvant Mallory dans la grotte d'Umar, nous avons également récupéré Moustache, le chat que la fillette était partie chercher. Nous avons retrouvé celle que le village appelle la Mère Michèle près de la ferme d'Hendrick et lui avons remis l'encombrant animal. Mallory quant à elle, a récupéré sa poupée des mains de Severian. Nous la reverrons au mariage.~
+
+

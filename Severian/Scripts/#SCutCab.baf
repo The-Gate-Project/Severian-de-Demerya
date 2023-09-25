@@ -1,0 +1,23 @@
+IF
+  True()
+THEN
+  RESPONSE #100
+    CutSceneId(Player1)
+    MoveViewPoint([702.1706],VERY_FAST)
+    FadeToColor([20.0],0)
+    Wait(1)
+    Activate("#Severian")
+    ActionOverride("#SDuorok",DestroySelf())
+    ActionOverride("#SPerian",DestroySelf())
+    LeaveAreaLUA("AR1100","",[543.3164],9)
+    ActionOverride(Player2,LeaveAreaLUA("AR1100","",[533.3254],9))
+    ActionOverride(Player3,LeaveAreaLUA("AR1100","",[531.3252],9))
+    ActionOverride(Player4,LeaveAreaLUA("AR1100","",[487.3279],9))
+    ActionOverride(Player5,LeaveAreaLUA("AR1100","",[444.3255],9))
+    ActionOverride(Player6,LeaveAreaLUA("AR1100","",[446.3258],9))
+    ActionOverride("#Severian",EscapeAreaMove("#SACab",486,291,2))
+    SetGlobal("#SRomanceFinalCouronne","GLOBAL",25)
+    FadeFromColor([20.0],0)
+    Wait(1)
+    EndCutSceneMode()
+END
