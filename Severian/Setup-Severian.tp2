@@ -386,6 +386,7 @@ COMPILE ~Severian/Dialogues/ThroneOfBhaal/#Sev25P.d~
     USING ~Severian/Translations/French/#Sever25.tra~
 
 COMPILE ~Severian/Scripts/ThroneOfBhaal/#SevD25.baf~
+    EVALUATE_BUFFER
     USING ~Severian/Translations/French/#Sever25.tra~
 
 // COMPILATION CREATURES POUR THRONE OF BHAAL (SUITE)
@@ -1506,6 +1507,7 @@ EXTEND_BOTTOM ~AR6400.bcs~ ~Severian/Scripts/ThroneOfBhaal/#SAr6400.baf~
 EXTEND_BOTTOM ~AR5000.bcs~ ~Severian/Scripts/ThroneOfBhaal/#SAr5000.baf~
     USING ~Severian/Translations/French/#Sever25.tra~
 EXTEND_TOP ~AR5500.bcs~ ~Severian/Scripts/ThroneOfBhaal/#SAr5500.baf~
+    EVALUATE_BUFFER
     USING ~Severian/Translations/French/#Sever25.tra~
 EXTEND_TOP ~AR6200.bcs~ ~Severian/Scripts/ThroneOfBhaal/#SAr6200.baf~
 EXTEND_TOP ~AR5003.bcs~ ~Severian/Scripts/ThroneOfBhaal/#SAr5003.baf~

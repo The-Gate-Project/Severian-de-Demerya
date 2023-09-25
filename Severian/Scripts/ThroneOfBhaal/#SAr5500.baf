@@ -2,7 +2,7 @@ IF
  Global("#SFeuDeCamp","GLOBAL",0)
  InParty("#Severian")
  Gender(Protagonist,FEMALE)
- Global("Chapter","GLOBAL",9)
+ Global("Chapter","GLOBAL","%bg2_chapter_9%")
  Global("#SeverRomanceActive","GLOBAL",2)
  Global("#SApparitionVoloAmkehtranFeu","GLOBAL",1)
 THEN
