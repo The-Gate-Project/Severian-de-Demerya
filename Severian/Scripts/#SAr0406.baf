@@ -6,8 +6,8 @@ IF
 THEN
   RESPONSE #100
   SetGlobal("#SRomanceFinalCouronne","GLOBAL",2)
-  CreateCreatureObject("#SAicha","#Severian")
-  CreateCreatureObject("#SAnnae","#Severian")
+  CreateCreatureObject("#SAicha","#Severian",0,0,0)
+  CreateCreatureObject("#SAnnae","#Severian",0,0,0)
 END
 
 // CREATION MERCENAIRES RUNE POURPRE

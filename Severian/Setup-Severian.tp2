@@ -262,7 +262,7 @@ SAY @101
 SAY @102
 SAY @103
 
-ACTION_IF GAME_IS ~bgee sod bg2ee iwdee eet~ THEN BEGIN
+ACTION_IF GAME_IS ~bgee bg2ee iwdee eet~ OR GAME_INCLUDES ~sod~ THEN BEGIN
 	LAF fl#add_kit_ee STR_VAR kit_name = PISTEUR END
 END
 
