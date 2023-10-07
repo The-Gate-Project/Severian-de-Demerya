@@ -3,7 +3,7 @@
 // ROMANCE DIALOGUE INITIAL
 
 IF 
- Global("Chapter","GLOBAL","%bg2_chapter_8%")
+ Global("Chapter","GLOBAL",%bg2_chapter_8%)
  InParty("#Severian")
  Gender(Protagonist,FEMALE)
  !StateCheck(Player1,CD_STATE_NOTVALID)
