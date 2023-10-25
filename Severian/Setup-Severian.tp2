@@ -6,6 +6,7 @@ AUTHOR ~Coyote
         Installation ToB requise!
         Important : consultez le Read-Me !
         Important : sur oBG2 ou BGT, l'installation préalable du BG2Fixpack (Correctifs Principaux uniquement !) est vivement recommandée et ce, quel que soit le mod. Consultez le chapitre Conditions d'Installation de la rubrique Téléchargement sur le site !~
+VERSION ~v034~		  
 README ~Severian/Readme-Severian.html~
 
 ALWAYS
@@ -40,6 +41,7 @@ LANGUAGE ~Francais~
 	 ~Severian/Translations/French/Setup.tra~
 
 BEGIN @0
+LABEL ~Coyote-Severian-Main~				
 
 REQUIRE_FILE ~data/25dialog.bif~ ~Le programme ne détecte pas Throne Of Bhaal. L'expansion Throne Of Bhaal doit être installé pour permettre l'installation de Severian de Demerya.~
 REQUIRE_FILE ~data/25scripts.bif~ ~Le programme ne détecte pas Throne Of Bhaal. Throne Of Bhaal doit être installé pour permettre l'installation de Severian de Demerya.~
@@ -1723,6 +1725,7 @@ UNLESS ~#Severian~
 // PORTRAIT ALTERNATIF DE SEVERIAN
 
 BEGIN @400030
+LABEL ~Coyote-Severian-Portraits~
 
 ACTION_IF GAME_IS ~tob bgt~ THEN BEGIN
 	COPY ~Severian/Pictures/Alt~ ~override~
@@ -1737,6 +1740,7 @@ END
 // RECOPIE TOUS LES EPILOGUES DANS LEUR VERSION INTEGRALE ET ORIGINELLE
 
 BEGIN @400032
+LABEL ~Coyote-Severian-Épilogues~				 
 
 
 // PATCH MUSIQUE EPILOGUE 1
